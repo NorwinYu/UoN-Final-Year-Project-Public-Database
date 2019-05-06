@@ -1,0 +1,808 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-ea2c1574ba9efaf3bd2425b101d4ffc3" data-file-deleted="false" data-file-type=".java" data-path="chpl/chpl-api/src/main/java/gov/healthit/chpl/web/controller/CertificationBodyController.java" data-short-path="ea2c157">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="chpl/chpl-api/src/main/java/gov/healthit/chpl/web/controller/CertificationBodyController.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/andlar/chpl-api/blob/0960adcb45a2337dc59988b054383146180a35da/chpl/chpl-api/src/main/java/gov/healthit/chpl/web/controller/CertificationBodyController.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="6 additions &amp; 2 deletions" class="diffstat tooltipped tooltipped-e">8 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-ea2c1574ba9efaf3bd2425b101d4ffc3" title="chpl/chpl-api/src/main/java/gov/healthit/chpl/web/controller/CertificationBodyController.java">.../chpl-api/src/main/java/gov/healthit/chpl/web/controller/CertificationBodyController.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-ea2c1574ba9efaf3bd2425b101d4ffc3" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-3" data-right-range="1-3" data-url="/chpladmin/chpl-api/blob_excerpt/ecbbe36fe963e23afe3a14722dd949a33a33a980?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=4&amp;left_hunk_size=6&amp;mode=100644&amp;path=chpl%2Fchpl-api%2Fsrc%2Fmain%2Fjava%2Fgov%2Fhealthit%2Fchpl%2Fweb%2Fcontroller%2FCertificationBodyController.java&amp;right=4&amp;right_hunk_size=7" href="#diff-ea2c1574ba9efaf3bd2425b101d4ffc3" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -4,6 +4,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R4"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.List</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R5"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.Set</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R6"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="7" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R7"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.quartz.SchedulerException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R8"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.springframework.beans.factory.annotation.Autowired</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R9"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.springframework.http.MediaType</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L9"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R10"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.springframework.security.acls.domain.PrincipalSid</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="8">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="10-20" data-right-range="11-21" data-url="/chpladmin/chpl-api/blob_excerpt/ecbbe36fe963e23afe3a14722dd949a33a33a980?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=9&amp;last_right=10&amp;left=33&amp;left_hunk_size=6&amp;mode=100644&amp;path=chpl%2Fchpl-api%2Fsrc%2Fmain%2Fjava%2Fgov%2Fhealthit%2Fchpl%2Fweb%2Fcontroller%2FCertificationBodyController.java&amp;right=34&amp;right_hunk_size=7" href="#diff-ea2c1574ba9efaf3bd2425b101d4ffc3" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="21-32" data-right-range="22-33" data-url="/chpladmin/chpl-api/blob_excerpt/ecbbe36fe963e23afe3a14722dd949a33a33a980?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=9&amp;last_right=10&amp;left=33&amp;left_hunk_size=6&amp;mode=100644&amp;path=chpl%2Fchpl-api%2Fsrc%2Fmain%2Fjava%2Fgov%2Fhealthit%2Fchpl%2Fweb%2Fcontroller%2FCertificationBodyController.java&amp;right=34&amp;right_hunk_size=7" href="#diff-ea2c1574ba9efaf3bd2425b101d4ffc3" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -33,6 +34,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.exception.EntityCreationException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.exception.EntityRetrievalException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.exception.InvalidArgumentsException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R37"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.exception.ValidationException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R38"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.manager.CertificationBodyManager</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R39"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.manager.impl.UpdateCertifiedBodyException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R40"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.web.controller.results.CertificationBodyResults</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="16">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="39-83" data-right-range="41-85" data-url="/chpladmin/chpl-api/blob_excerpt/ecbbe36fe963e23afe3a14722dd949a33a33a980?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=38&amp;last_right=40&amp;left=131&amp;left_hunk_size=13&amp;mode=100644&amp;path=chpl%2Fchpl-api%2Fsrc%2Fmain%2Fjava%2Fgov%2Fhealthit%2Fchpl%2Fweb%2Fcontroller%2FCertificationBodyController.java&amp;right=133&amp;right_hunk_size=15" href="#diff-ea2c1574ba9efaf3bd2425b101d4ffc3" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="84-130" data-right-range="86-132" data-url="/chpladmin/chpl-api/blob_excerpt/ecbbe36fe963e23afe3a14722dd949a33a33a980?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=38&amp;last_right=40&amp;left=131&amp;left_hunk_size=13&amp;mode=100644&amp;path=chpl%2Fchpl-api%2Fsrc%2Fmain%2Fjava%2Fgov%2Fhealthit%2Fchpl%2Fweb%2Fcontroller%2FCertificationBodyController.java&amp;right=133&amp;right_hunk_size=15" href="#diff-ea2c1574ba9efaf3bd2425b101d4ffc3" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -131,13 +133,15 @@ private CertificationBody create(final CertificationBody acbInfo)</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="131" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L131"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="133" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R133"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@RequestMapping</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>/{acbId}<span class="pl-pds">"</span></span>, <span class="pl-c1">method</span> <span class="pl-k">=</span> <span class="pl-smi">RequestMethod</span><span class="pl-c1"><span class="pl-k">.</span>PUT</span>, <span class="pl-c1">consumes</span> <span class="pl-k">=</span> <span class="pl-smi">MediaType</span><span class="pl-c1"><span class="pl-k">.</span>APPLICATION_JSON_VALUE</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="132" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L132"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="134" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R134"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">produces</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>application/json; charset=utf-8<span class="pl-pds">"</span></span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="133" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L133"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="135" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R135"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">CertificationBody</span> <span class="pl-en">updateAcb</span>(<span class="pl-k">@RequestBody</span> <span class="pl-k">final</span> <span class="pl-smi">CertificationBody</span> <span class="pl-v">acbInfo</span>) <span class="pl-k">throws</span> <span class="pl-smi">InvalidArgumentsException</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="134" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L134"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">EntityRetrievalException</span>, <span class="pl-smi">JsonProcessingException</span>, <span class="pl-smi">EntityCreationException</span>, <span class="pl-smi">UpdateCertifiedBodyException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="136" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R136"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">EntityRetrievalException</span>, <span class="pl-smi">JsonProcessingException</span>, <span class="pl-smi">EntityCreationException</span>, <span class="pl-smi">UpdateCertifiedBodyException</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="137" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R137"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">SchedulerException</span>, <span class="pl-smi">ValidationException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="135" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L135"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="138" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R138"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="136" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L136"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="139" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R139"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> update(acbInfo);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="137" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L137"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="140" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R140"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="138" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L138"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R141"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="139" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L139"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R142"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">CertificationBody</span> <span class="pl-en">update</span>(<span class="pl-k">final</span> <span class="pl-smi">CertificationBody</span> <span class="pl-v">updatedAcb</span>) <span class="pl-k">throws</span> <span class="pl-smi">InvalidArgumentsException</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="140" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L140"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">EntityRetrievalException</span>, <span class="pl-smi">JsonProcessingException</span>, <span class="pl-smi">EntityCreationException</span>, <span class="pl-smi">UpdateCertifiedBodyException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="143" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R143"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">EntityRetrievalException</span>, <span class="pl-smi">JsonProcessingException</span>, <span class="pl-smi">EntityCreationException</span>, <span class="pl-smi">UpdateCertifiedBodyException</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="144" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R144"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">SchedulerException</span>, <span class="pl-smi">ValidationException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L141"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="145" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R145"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span>Get the ACB as it is currently in the database to find out if</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="146" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R146"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span>the retired flag was changed.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="143" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L143"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="147" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R147"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span>Retirement and un-retirement is done as a separate manager action because</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="144-272" data-right-range="148-272" data-url="/chpladmin/chpl-api/blob_excerpt/ecbbe36fe963e23afe3a14722dd949a33a33a980?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=143&amp;last_right=147&amp;left=273&amp;left_hunk_size=&amp;mode=100644&amp;path=chpl%2Fchpl-api%2Fsrc%2Fmain%2Fjava%2Fgov%2Fhealthit%2Fchpl%2Fweb%2Fcontroller%2FCertificationBodyController.java&amp;right=273&amp;right_hunk_size=" href="#diff-ea2c1574ba9efaf3bd2425b101d4ffc3" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R6"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="7" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R9"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L9"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R36"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="131" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L131"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="133" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R133"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="132" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L132"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="134" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R134"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="133" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L133"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="135" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R135"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="134" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L134"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="136" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R136"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="137" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R137"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="135" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L135"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="138" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R138"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="136" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L136"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="139" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R139"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="137" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L137"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="140" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R140"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="138" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L138"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R141"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="139" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L139"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R142"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="140" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L140"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="143" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R143"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="144" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R144"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L141"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="145" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R145"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="146" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R146"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="143" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3L143"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="147" id="diff-ea2c1574ba9efaf3bd2425b101d4ffc3R147"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-1">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-6c8b43c0a7cb505026e1005f1789aca5" data-file-deleted="false" data-file-type=".java" data-path="chpl/chpl-api/src/test/java/gov/healthit/chpl/listener/CacheRefreshTest.java" data-short-path="6c8b43c">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="chpl/chpl-api/src/test/java/gov/healthit/chpl/listener/CacheRefreshTest.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/andlar/chpl-api/blob/0960adcb45a2337dc59988b054383146180a35da/chpl/chpl-api/src/test/java/gov/healthit/chpl/listener/CacheRefreshTest.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="4 additions &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">5 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span></span>
+<a class="link-gray-dark" href="#diff-6c8b43c0a7cb505026e1005f1789aca5" title="chpl/chpl-api/src/test/java/gov/healthit/chpl/listener/CacheRefreshTest.java">chpl/chpl-api/src/test/java/gov/healthit/chpl/listener/CacheRefreshTest.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-6c8b43c0a7cb505026e1005f1789aca5" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-9" data-right-range="1-9" data-url="/chpladmin/chpl-api/blob_excerpt/9e74f02d4a8edc0ca46a2304fc22f9319ba47af0?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=10&amp;left_hunk_size=6&amp;mode=100644&amp;path=chpl%2Fchpl-api%2Fsrc%2Ftest%2Fjava%2Fgov%2Fhealthit%2Fchpl%2Flistener%2FCacheRefreshTest.java&amp;right=10&amp;right_hunk_size=7" href="#diff-6c8b43c0a7cb505026e1005f1789aca5" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -10,6 +10,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-6c8b43c0a7cb505026e1005f1789aca5L10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-6c8b43c0a7cb505026e1005f1789aca5R10"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.junit.Rule</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-6c8b43c0a7cb505026e1005f1789aca5L11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-6c8b43c0a7cb505026e1005f1789aca5R11"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.junit.Test</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-6c8b43c0a7cb505026e1005f1789aca5L12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-6c8b43c0a7cb505026e1005f1789aca5R12"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.junit.runner.RunWith</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="13" id="diff-6c8b43c0a7cb505026e1005f1789aca5R13"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.quartz.SchedulerException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-6c8b43c0a7cb505026e1005f1789aca5L13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-6c8b43c0a7cb505026e1005f1789aca5R14"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.springframework.beans.factory.annotation.Autowired</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-6c8b43c0a7cb505026e1005f1789aca5L14"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-6c8b43c0a7cb505026e1005f1789aca5R15"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.springframework.http.ResponseEntity</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-6c8b43c0a7cb505026e1005f1789aca5L15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-6c8b43c0a7cb505026e1005f1789aca5R16"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.springframework.security.core.context.SecurityContextHolder</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="8">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="16-139" data-right-range="17-140" data-url="/chpladmin/chpl-api/blob_excerpt/9e74f02d4a8edc0ca46a2304fc22f9319ba47af0?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=15&amp;last_right=16&amp;left=266&amp;left_hunk_size=14&amp;mode=100644&amp;path=chpl%2Fchpl-api%2Fsrc%2Ftest%2Fjava%2Fgov%2Fhealthit%2Fchpl%2Flistener%2FCacheRefreshTest.java&amp;right=267&amp;right_hunk_size=16" href="#diff-6c8b43c0a7cb505026e1005f1789aca5" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="140-265" data-right-range="141-266" data-url="/chpladmin/chpl-api/blob_excerpt/9e74f02d4a8edc0ca46a2304fc22f9319ba47af0?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=15&amp;last_right=16&amp;left=266&amp;left_hunk_size=14&amp;mode=100644&amp;path=chpl%2Fchpl-api%2Fsrc%2Ftest%2Fjava%2Fgov%2Fhealthit%2Fchpl%2Flistener%2FCacheRefreshTest.java&amp;right=267&amp;right_hunk_size=16" href="#diff-6c8b43c0a7cb505026e1005f1789aca5" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -266,14 +267,16 @@ public void testUpdateVersionRefreshesCache() throws</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="266" id="diff-6c8b43c0a7cb505026e1005f1789aca5L266"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="267" id="diff-6c8b43c0a7cb505026e1005f1789aca5R267"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@throws</span> EntityCreationException</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="267" id="diff-6c8b43c0a7cb505026e1005f1789aca5L267"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="268" id="diff-6c8b43c0a7cb505026e1005f1789aca5R268"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@throws</span> JsonProcessingException</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="268" id="diff-6c8b43c0a7cb505026e1005f1789aca5L268"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="269" id="diff-6c8b43c0a7cb505026e1005f1789aca5R269"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@throws</span> InvalidArgumentsException</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="270" id="diff-6c8b43c0a7cb505026e1005f1789aca5R270"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@throws</span> ValidationException</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="271" id="diff-6c8b43c0a7cb505026e1005f1789aca5R271"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@throws</span> SchedulerException</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="269" id="diff-6c8b43c0a7cb505026e1005f1789aca5L269"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="272" id="diff-6c8b43c0a7cb505026e1005f1789aca5R272"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="270" id="diff-6c8b43c0a7cb505026e1005f1789aca5L270"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="273" id="diff-6c8b43c0a7cb505026e1005f1789aca5R273"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Test</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="271" id="diff-6c8b43c0a7cb505026e1005f1789aca5L271"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="274" id="diff-6c8b43c0a7cb505026e1005f1789aca5R274"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Transactional</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="272" id="diff-6c8b43c0a7cb505026e1005f1789aca5L272"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="275" id="diff-6c8b43c0a7cb505026e1005f1789aca5R275"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Rollback</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="273" id="diff-6c8b43c0a7cb505026e1005f1789aca5L273"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="276" id="diff-6c8b43c0a7cb505026e1005f1789aca5R276"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Ignore</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="274" id="diff-6c8b43c0a7cb505026e1005f1789aca5L274"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="277" id="diff-6c8b43c0a7cb505026e1005f1789aca5R277"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">testUpdateAcbNameRefreshesCache</span>() <span class="pl-k">throws</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="275" id="diff-6c8b43c0a7cb505026e1005f1789aca5L275"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="278" id="diff-6c8b43c0a7cb505026e1005f1789aca5R278"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">UpdateCertifiedBodyException</span>, <span class="pl-smi">EntityRetrievalException</span>, <span class="pl-smi">EntityCreationException</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="276" id="diff-6c8b43c0a7cb505026e1005f1789aca5L276"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">JsonProcessingException</span>, <span class="pl-smi">InvalidArgumentsException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="279" id="diff-6c8b43c0a7cb505026e1005f1789aca5R279"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">JsonProcessingException</span>, <span class="pl-smi">InvalidArgumentsException</span><span class="x x-first">, </span><span class="pl-smi x">SchedulerException</span><span class="x">, </span><span class="pl-smi x x-last">ValidationException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="277" id="diff-6c8b43c0a7cb505026e1005f1789aca5L277"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="280" id="diff-6c8b43c0a7cb505026e1005f1789aca5R280"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">SecurityContextHolder</span><span class="pl-k">.</span>getContext()<span class="pl-k">.</span>setAuthentication(adminUser);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="278" id="diff-6c8b43c0a7cb505026e1005f1789aca5L278"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="281" id="diff-6c8b43c0a7cb505026e1005f1789aca5R281"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="279" id="diff-6c8b43c0a7cb505026e1005f1789aca5L279"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="282" id="diff-6c8b43c0a7cb505026e1005f1789aca5R282"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">List&lt;<span class="pl-smi">CertifiedProductFlatSearchResult</span>&gt;</span> listingsFromAcb <span class="pl-k">=</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="280-509" data-right-range="283-509" data-url="/chpladmin/chpl-api/blob_excerpt/9e74f02d4a8edc0ca46a2304fc22f9319ba47af0?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=279&amp;last_right=282&amp;left=510&amp;left_hunk_size=&amp;mode=100644&amp;path=chpl%2Fchpl-api%2Fsrc%2Ftest%2Fjava%2Fgov%2Fhealthit%2Fchpl%2Flistener%2FCacheRefreshTest.java&amp;right=510&amp;right_hunk_size=" href="#diff-6c8b43c0a7cb505026e1005f1789aca5" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-6c8b43c0a7cb505026e1005f1789aca5L10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-6c8b43c0a7cb505026e1005f1789aca5R10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-6c8b43c0a7cb505026e1005f1789aca5L11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-6c8b43c0a7cb505026e1005f1789aca5R11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-6c8b43c0a7cb505026e1005f1789aca5L12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-6c8b43c0a7cb505026e1005f1789aca5R12"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="13" id="diff-6c8b43c0a7cb505026e1005f1789aca5R13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-6c8b43c0a7cb505026e1005f1789aca5L13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-6c8b43c0a7cb505026e1005f1789aca5R14"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-6c8b43c0a7cb505026e1005f1789aca5L14"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-6c8b43c0a7cb505026e1005f1789aca5R15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-6c8b43c0a7cb505026e1005f1789aca5L15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-6c8b43c0a7cb505026e1005f1789aca5R16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="266" id="diff-6c8b43c0a7cb505026e1005f1789aca5L266"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="267" id="diff-6c8b43c0a7cb505026e1005f1789aca5R267"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="267" id="diff-6c8b43c0a7cb505026e1005f1789aca5L267"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="268" id="diff-6c8b43c0a7cb505026e1005f1789aca5R268"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="268" id="diff-6c8b43c0a7cb505026e1005f1789aca5L268"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="269" id="diff-6c8b43c0a7cb505026e1005f1789aca5R269"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="270" id="diff-6c8b43c0a7cb505026e1005f1789aca5R270"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="271" id="diff-6c8b43c0a7cb505026e1005f1789aca5R271"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="269" id="diff-6c8b43c0a7cb505026e1005f1789aca5L269"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="272" id="diff-6c8b43c0a7cb505026e1005f1789aca5R272"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="270" id="diff-6c8b43c0a7cb505026e1005f1789aca5L270"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="273" id="diff-6c8b43c0a7cb505026e1005f1789aca5R273"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="271" id="diff-6c8b43c0a7cb505026e1005f1789aca5L271"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="274" id="diff-6c8b43c0a7cb505026e1005f1789aca5R274"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="272" id="diff-6c8b43c0a7cb505026e1005f1789aca5L272"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="275" id="diff-6c8b43c0a7cb505026e1005f1789aca5R275"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="273" id="diff-6c8b43c0a7cb505026e1005f1789aca5L273"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="276" id="diff-6c8b43c0a7cb505026e1005f1789aca5R276"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="274" id="diff-6c8b43c0a7cb505026e1005f1789aca5L274"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="277" id="diff-6c8b43c0a7cb505026e1005f1789aca5R277"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="275" id="diff-6c8b43c0a7cb505026e1005f1789aca5L275"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="278" id="diff-6c8b43c0a7cb505026e1005f1789aca5R278"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="276" id="diff-6c8b43c0a7cb505026e1005f1789aca5L276"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="279" id="diff-6c8b43c0a7cb505026e1005f1789aca5R279"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="277" id="diff-6c8b43c0a7cb505026e1005f1789aca5L277"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="280" id="diff-6c8b43c0a7cb505026e1005f1789aca5R280"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="278" id="diff-6c8b43c0a7cb505026e1005f1789aca5L278"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="281" id="diff-6c8b43c0a7cb505026e1005f1789aca5R281"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="279" id="diff-6c8b43c0a7cb505026e1005f1789aca5L279"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="282" id="diff-6c8b43c0a7cb505026e1005f1789aca5R282"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-2">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-3e9013e90d1760383562c19d66049489" data-file-deleted="false" data-file-type=".java" data-path="chpl/chpl-service/src/test/java/gov/healthit/chpl/manager/impl/SearchMenuManagerTest.java" data-short-path="3e9013e">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="chpl/chpl-service/src/test/java/gov/healthit/chpl/manager/impl/SearchMenuManagerTest.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/andlar/chpl-api/blob/0960adcb45a2337dc59988b054383146180a35da/chpl/chpl-service/src/test/java/gov/healthit/chpl/manager/impl/SearchMenuManagerTest.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="0 additions &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">1 <span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-3e9013e90d1760383562c19d66049489" title="chpl/chpl-service/src/test/java/gov/healthit/chpl/manager/impl/SearchMenuManagerTest.java">chpl/chpl-service/src/test/java/gov/healthit/chpl/manager/impl/SearchMenuManagerTest.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-3e9013e90d1760383562c19d66049489" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-32" data-right-range="1-32" data-url="/chpladmin/chpl-api/blob_excerpt/78f50e80c204d2842fa6fad95ce210e2a192c170?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=33&amp;left_hunk_size=7&amp;mode=100644&amp;path=chpl%2Fchpl-service%2Fsrc%2Ftest%2Fjava%2Fgov%2Fhealthit%2Fchpl%2Fmanager%2Fimpl%2FSearchMenuManagerTest.java&amp;right=33&amp;right_hunk_size=6" href="#diff-3e9013e90d1760383562c19d66049489" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -33,7 +33,6 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-3e9013e90d1760383562c19d66049489L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-3e9013e90d1760383562c19d66049489R33"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.domain.CriteriaSpecificDescriptiveModel</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-3e9013e90d1760383562c19d66049489L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-3e9013e90d1760383562c19d66049489R34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.domain.DescriptiveModel</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-3e9013e90d1760383562c19d66049489L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-3e9013e90d1760383562c19d66049489R35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.domain.KeyValueModel</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="36" id="diff-3e9013e90d1760383562c19d66049489L36"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.domain.KeyValueModelBody</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-3e9013e90d1760383562c19d66049489L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-3e9013e90d1760383562c19d66049489R36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.domain.KeyValueModelStatuses</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-3e9013e90d1760383562c19d66049489L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-3e9013e90d1760383562c19d66049489R37"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.domain.Statuses</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-3e9013e90d1760383562c19d66049489L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-3e9013e90d1760383562c19d66049489R38"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">gov.healthit.chpl.domain.TestFunctionality</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="40-660" data-right-range="39-660" data-url="/chpladmin/chpl-api/blob_excerpt/78f50e80c204d2842fa6fad95ce210e2a192c170?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=39&amp;last_right=38&amp;left=661&amp;left_hunk_size=&amp;mode=100644&amp;path=chpl%2Fchpl-service%2Fsrc%2Ftest%2Fjava%2Fgov%2Fhealthit%2Fchpl%2Fmanager%2Fimpl%2FSearchMenuManagerTest.java&amp;right=661&amp;right_hunk_size=" href="#diff-3e9013e90d1760383562c19d66049489" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-3e9013e90d1760383562c19d66049489L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-3e9013e90d1760383562c19d66049489R33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-3e9013e90d1760383562c19d66049489L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-3e9013e90d1760383562c19d66049489R34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-3e9013e90d1760383562c19d66049489L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-3e9013e90d1760383562c19d66049489R35"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="36" id="diff-3e9013e90d1760383562c19d66049489L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-3e9013e90d1760383562c19d66049489L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-3e9013e90d1760383562c19d66049489R36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-3e9013e90d1760383562c19d66049489L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-3e9013e90d1760383562c19d66049489R37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-3e9013e90d1760383562c19d66049489L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-3e9013e90d1760383562c19d66049489R38"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

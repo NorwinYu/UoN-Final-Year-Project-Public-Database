@@ -1,0 +1,1181 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-058c244386958b75b1f6c923b5170183" data-file-deleted="false" data-file-type=".ts" data-path="discovery-frontend/src/app/dashboard/filters/component/filter-multi-select/filter-multi-select.component.ts" data-short-path="058c244">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="discovery-frontend/src/app/dashboard/filters/component/filter-multi-select/filter-multi-select.component.ts">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/metatron-app/metatron-discovery/blob/a1f395cc2dff8fd9071fa041010c9e0785553f07/discovery-frontend/src/app/dashboard/filters/component/filter-multi-select/filter-multi-select.component.ts" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="22 additions &amp; 22 deletions" class="diffstat tooltipped tooltipped-e">44 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-058c244386958b75b1f6c923b5170183" title="discovery-frontend/src/app/dashboard/filters/component/filter-multi-select/filter-multi-select.component.ts">.../src/app/dashboard/filters/component/filter-multi-select/filter-multi-select.component.ts</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-058c244386958b75b1f6c923b5170183" data-tab-size="2">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-11" data-right-range="1-11" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=12&amp;left_hunk_size=16&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=12&amp;right_hunk_size=16" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -12,16 +12,16 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-058c244386958b75b1f6c923b5170183L12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-058c244386958b75b1f6c923b5170183R12"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> * limitations under the License.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-058c244386958b75b1f6c923b5170183L13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-058c244386958b75b1f6c923b5170183R13"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-058c244386958b75b1f6c923b5170183L14"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-058c244386958b75b1f6c923b5170183R14"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="15" id="diff-058c244386958b75b1f6c923b5170183L15"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> {<span class="x x-first x-last"> </span><span class="pl-smi">Component</span>, <span class="pl-smi">ElementRef</span>, <span class="pl-smi">EventEmitter</span>, <span class="pl-smi">Injector</span>, <span class="pl-smi">Input</span>, <span class="pl-smi">OnInit</span>, <span class="pl-smi">Output</span>, <span class="pl-smi">ViewChild</span><span class="x x-first x-last"> </span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>@angular/core<span class="pl-pds">'</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="16" id="diff-058c244386958b75b1f6c923b5170183L16"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> {<span class="x x-first x-last"> </span><span class="pl-smi">AbstractComponent</span><span class="x x-first x-last"> </span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>../../../../common/component/abstract.component<span class="pl-pds">'</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="17" id="diff-058c244386958b75b1f6c923b5170183L17"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> {<span class="x x-first x-last"> </span><span class="pl-smi">Alert</span><span class="x x-first x-last"> </span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>../../../../common/util/alert.util<span class="pl-pds">'</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="18" id="diff-058c244386958b75b1f6c923b5170183L18"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> {<span class="x x-first x-last"> </span><span class="pl-smi">Candidate</span><span class="x x-first x-last"> </span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>../../../../domain/workbook/configurations/filter/inclusion-filter<span class="pl-pds">'</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="19" id="diff-058c244386958b75b1f6c923b5170183L19"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> {<span class="x x-first x-last"> </span><span class="pl-smi">isNullOrUndefined</span><span class="x x-first x-last"> </span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>util<span class="pl-pds">'</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="15" id="diff-058c244386958b75b1f6c923b5170183R15"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> {<span class="pl-smi">Component</span>, <span class="pl-smi">ElementRef</span>, <span class="pl-smi">EventEmitter</span>, <span class="pl-smi">Injector</span>, <span class="pl-smi">Input</span>, <span class="pl-smi">OnInit</span>, <span class="pl-smi">Output</span>, <span class="pl-smi">ViewChild</span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>@angular/core<span class="pl-pds">'</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="16" id="diff-058c244386958b75b1f6c923b5170183R16"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> {<span class="pl-smi">AbstractComponent</span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>../../../../common/component/abstract.component<span class="pl-pds">'</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="17" id="diff-058c244386958b75b1f6c923b5170183R17"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> {<span class="pl-smi">Alert</span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>../../../../common/util/alert.util<span class="pl-pds">'</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="18" id="diff-058c244386958b75b1f6c923b5170183R18"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> {<span class="pl-smi">Candidate</span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>../../../../domain/workbook/configurations/filter/inclusion-filter<span class="pl-pds">'</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="19" id="diff-058c244386958b75b1f6c923b5170183R19"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> {<span class="pl-smi">isNullOrUndefined</span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>util<span class="pl-pds">'</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-058c244386958b75b1f6c923b5170183L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-058c244386958b75b1f6c923b5170183R20"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-058c244386958b75b1f6c923b5170183L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-058c244386958b75b1f6c923b5170183R21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">@<span class="pl-en">Component</span>({</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-058c244386958b75b1f6c923b5170183L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-058c244386958b75b1f6c923b5170183R22"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  selector: <span class="pl-s"><span class="pl-pds">'</span>component-filter-multi-select<span class="pl-pds">'</span></span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-058c244386958b75b1f6c923b5170183L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-058c244386958b75b1f6c923b5170183R23"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  templateUrl: <span class="pl-s"><span class="pl-pds">'</span>./filter-multi-select.component.html<span class="pl-pds">'</span></span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="24" id="diff-058c244386958b75b1f6c923b5170183L24"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">  host: {<span class="x x-first x-last"> </span><span class="pl-s"><span class="pl-pds">'</span>(document:click)<span class="pl-pds">'</span></span>: <span class="pl-s"><span class="pl-pds">'</span>onClickHost($event)<span class="pl-pds">'</span></span><span class="x x-first x-last"> </span>}</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-058c244386958b75b1f6c923b5170183R24"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  host: {<span class="pl-s"><span class="pl-pds">'</span>(document:click)<span class="pl-pds">'</span></span>: <span class="pl-s"><span class="pl-pds">'</span>onClickHost($event)<span class="pl-pds">'</span></span>}</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-058c244386958b75b1f6c923b5170183L25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-058c244386958b75b1f6c923b5170183R25"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">})</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-058c244386958b75b1f6c923b5170183L26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-058c244386958b75b1f6c923b5170183R26"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">export</span> <span class="pl-k">class</span> <span class="pl-en">FilterMultiSelectComponent</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractComponent</span> <span class="pl-k">implements</span> <span class="pl-e">OnInit</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-058c244386958b75b1f6c923b5170183L27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-058c244386958b75b1f6c923b5170183R27"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="23">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="28-39" data-right-range="28-39" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=27&amp;last_right=27&amp;left=54&amp;left_hunk_size=7&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=54&amp;right_hunk_size=7" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="40-53" data-right-range="40-53" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=27&amp;last_right=27&amp;left=54&amp;left_hunk_size=7&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=54&amp;right_hunk_size=7" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -54,7 +54,7 @@ export class FilterMultiSelectComponent extends AbstractComponent implements OnI</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-058c244386958b75b1f6c923b5170183L54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-058c244386958b75b1f6c923b5170183R54"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-058c244386958b75b1f6c923b5170183L55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-058c244386958b75b1f6c923b5170183R55"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> 기본 메시지</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-058c244386958b75b1f6c923b5170183L56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-058c244386958b75b1f6c923b5170183R56"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  @<span class="pl-en">Input</span>()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="57" id="diff-058c244386958b75b1f6c923b5170183L57"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">public</span> unselectedMessage <span class="pl-k">=</span> <span class="pl-c1">this</span>.<span class="pl-smi">translateService</span>.<span class="pl-en">instant</span>(<span class="x x-first x-last"> </span><span class="pl-s"><span class="pl-pds">'</span>msg.comm.ui.list.all<span class="pl-pds">'</span></span><span class="x x-first x-last"> </span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="57" id="diff-058c244386958b75b1f6c923b5170183R57"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> unselectedMessage <span class="pl-k">=</span> <span class="pl-c1">this</span>.<span class="pl-smi">translateService</span>.<span class="pl-en">instant</span>(<span class="pl-s"><span class="pl-pds">'</span>msg.comm.ui.list.all<span class="pl-pds">'</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-058c244386958b75b1f6c923b5170183L58"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-058c244386958b75b1f6c923b5170183R58"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-058c244386958b75b1f6c923b5170183L59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-058c244386958b75b1f6c923b5170183R59"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> 비활성화 여부</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-058c244386958b75b1f6c923b5170183L60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-058c244386958b75b1f6c923b5170183R60"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  @<span class="pl-en">Input</span>()</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="32">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="61-88" data-right-range="61-88" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=60&amp;last_right=60&amp;left=119&amp;left_hunk_size=7&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=119&amp;right_hunk_size=7" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="89-118" data-right-range="89-118" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=60&amp;last_right=60&amp;left=119&amp;left_hunk_size=7&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=119&amp;right_hunk_size=7" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -119,7 +119,7 @@ export class FilterMultiSelectComponent extends AbstractComponent implements OnI</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="119" id="diff-058c244386958b75b1f6c923b5170183L119"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="119" id="diff-058c244386958b75b1f6c923b5170183R119"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">super</span>.<span class="pl-en">ngOnInit</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="120" id="diff-058c244386958b75b1f6c923b5170183L120"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="120" id="diff-058c244386958b75b1f6c923b5170183R120"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="121" id="diff-058c244386958b75b1f6c923b5170183L121"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="121" id="diff-058c244386958b75b1f6c923b5170183R121"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> array check</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="122" id="diff-058c244386958b75b1f6c923b5170183L122"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    (<span class="x x-first x-last"> </span><span class="pl-en">isNullOrUndefined</span>(<span class="x x-first x-last"> </span><span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span><span class="x x-first x-last"> ) )  </span><span class="pl-k">&amp;&amp;</span> (<span class="x x-first x-last"> </span><span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span> <span class="pl-k">=</span> []<span class="x x-first x-last"> </span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="122" id="diff-058c244386958b75b1f6c923b5170183R122"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    (<span class="pl-en">isNullOrUndefined</span>(<span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span><span class="x x-first x-last">)) </span><span class="pl-k">&amp;&amp;</span> (<span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span> <span class="pl-k">=</span> []);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="123" id="diff-058c244386958b75b1f6c923b5170183L123"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="123" id="diff-058c244386958b75b1f6c923b5170183R123"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="124" id="diff-058c244386958b75b1f6c923b5170183L124"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="124" id="diff-058c244386958b75b1f6c923b5170183R124"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span>.<span class="pl-en">updateView</span>(<span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="125" id="diff-058c244386958b75b1f6c923b5170183L125"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="125" id="diff-058c244386958b75b1f6c923b5170183R125"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="41">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="126-129" data-right-range="126-129" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;in_wiki_context=&amp;last_left=125&amp;last_right=125&amp;left=136&amp;left_hunk_size=8&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=136&amp;right_hunk_size=8" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -136,8 +136,8 @@ export class FilterMultiSelectComponent extends AbstractComponent implements OnI</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="136" id="diff-058c244386958b75b1f6c923b5170183L136"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="136" id="diff-058c244386958b75b1f6c923b5170183R136"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">   * Returns whether Item is selected.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="137" id="diff-058c244386958b75b1f6c923b5170183L137"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="137" id="diff-058c244386958b75b1f6c923b5170183R137"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">   * <span class="pl-k">@param</span> <span class="pl-smi">targetItem</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="138" id="diff-058c244386958b75b1f6c923b5170183L138"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="138" id="diff-058c244386958b75b1f6c923b5170183R138"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="139" id="diff-058c244386958b75b1f6c923b5170183L139"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">public</span> isSelectedItem(<span class="x x-first x-last"> </span><span class="pl-v">targetItem</span><span class="pl-k">:</span><span class="pl-c1 x x-first">any</span><span class="x x-last"> </span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="140" id="diff-058c244386958b75b1f6c923b5170183L140"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span>.<span class="pl-en">some</span>(<span class="pl-v">item</span> <span class="pl-k">=&gt;</span> <span class="pl-smi">item</span>.<span class="pl-c1">name</span> <span class="pl-k">===</span> <span class="pl-smi">targetItem</span>.<span class="pl-c1">name</span><span class="x x-first x-last"> </span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="139" id="diff-058c244386958b75b1f6c923b5170183R139"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> isSelectedItem(<span class="pl-v">targetItem</span><span class="pl-k">:</span><span class="x x-first"> </span><span class="pl-c1 x x-last">any</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="140" id="diff-058c244386958b75b1f6c923b5170183R140"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span>.<span class="pl-en">some</span>(<span class="pl-v">item</span> <span class="pl-k">=&gt;</span> <span class="pl-smi">item</span>.<span class="pl-c1">name</span> <span class="pl-k">===</span> <span class="pl-smi">targetItem</span>.<span class="pl-c1">name</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-058c244386958b75b1f6c923b5170183L141"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-058c244386958b75b1f6c923b5170183R141"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  } <span class="pl-c"><span class="pl-c">//</span> function - isSelectedItem</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-058c244386958b75b1f6c923b5170183L142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-058c244386958b75b1f6c923b5170183R142"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="143" id="diff-058c244386958b75b1f6c923b5170183L143"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="143" id="diff-058c244386958b75b1f6c923b5170183R143"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="52">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="144-148" data-right-range="144-148" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;in_wiki_context=&amp;last_left=143&amp;last_right=143&amp;left=155&amp;left_hunk_size=13&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=155&amp;right_hunk_size=13" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -155,13 +155,13 @@ export class FilterMultiSelectComponent extends AbstractComponent implements OnI</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="155" id="diff-058c244386958b75b1f6c923b5170183L155"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="155" id="diff-058c244386958b75b1f6c923b5170183R155"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> selected(<span class="pl-v">item</span><span class="pl-k">:</span> <span class="pl-c1">any</span>, <span class="pl-v">$event</span><span class="pl-k">:</span> <span class="pl-c1">any</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="156" id="diff-058c244386958b75b1f6c923b5170183L156"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="156" id="diff-058c244386958b75b1f6c923b5170183R156"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="157" id="diff-058c244386958b75b1f6c923b5170183L157"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="157" id="diff-058c244386958b75b1f6c923b5170183R157"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> 모형 모드일 때는 기능 동작을 하지 않는다</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="158" id="diff-058c244386958b75b1f6c923b5170183L158"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">if</span><span class="x x-first x-last">( </span><span class="pl-c1">this</span>.<span class="pl-smi">isMockup</span><span class="x x-first x-last"> </span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="158" id="diff-058c244386958b75b1f6c923b5170183R158"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span><span class="x x-first x-last"> (</span><span class="pl-c1">this</span>.<span class="pl-smi">isMockup</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="159" id="diff-058c244386958b75b1f6c923b5170183L159"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="159" id="diff-058c244386958b75b1f6c923b5170183R159"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">Alert</span>.<span class="pl-en">info</span>(<span class="pl-c1">this</span>.<span class="pl-smi">translateService</span>.<span class="pl-en">instant</span>(<span class="pl-s"><span class="pl-pds">'</span>msg.board.alert.not-select-editmode<span class="pl-pds">'</span></span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="160" id="diff-058c244386958b75b1f6c923b5170183L160"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="160" id="diff-058c244386958b75b1f6c923b5170183R160"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="161" id="diff-058c244386958b75b1f6c923b5170183L161"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="161" id="diff-058c244386958b75b1f6c923b5170183R161"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="162" id="diff-058c244386958b75b1f6c923b5170183L162"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="162" id="diff-058c244386958b75b1f6c923b5170183R162"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="163" id="diff-058c244386958b75b1f6c923b5170183L163"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-c1">this</span>.<span class="pl-en">isSelectedItem</span>(<span class="x x-first x-last"> </span><span class="pl-smi">item</span><span class="x x-first x-last"> </span>)) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="164" id="diff-058c244386958b75b1f6c923b5170183L164"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k"><span class="pl-k">const</span></span> idx <span class="pl-k">=</span> <span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span>.<span class="pl-c1 x x-first">indexOf</span><span class="x x-last">(</span><span class="pl-smi">item</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="163" id="diff-058c244386958b75b1f6c923b5170183R163"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-c1">this</span>.<span class="pl-en">isSelectedItem</span>(<span class="pl-smi">item</span>)) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="164" id="diff-058c244386958b75b1f6c923b5170183R164"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k"><span class="pl-k">const</span></span> idx <span class="pl-k">=</span> <span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span>.<span class="pl-en x x-first">findIndex</span><span class="x">(</span><span class="pl-v x">arrItem</span><span class="x"> </span><span class="pl-k x">=&gt;</span><span class="x"> </span><span class="pl-smi x">arrItem</span><span class="x">.</span><span class="pl-c1 x">name</span><span class="x"> </span><span class="pl-k x">===</span><span class="x x-last"> </span><span class="pl-smi">item</span><span class="x x-first">.</span><span class="pl-c1 x x-last">name</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="165" id="diff-058c244386958b75b1f6c923b5170183L165"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="165" id="diff-058c244386958b75b1f6c923b5170183R165"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span>.<span class="pl-c1">splice</span>(<span class="pl-smi">idx</span>, <span class="pl-c1">1</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="166" id="diff-058c244386958b75b1f6c923b5170183L166"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="166" id="diff-058c244386958b75b1f6c923b5170183R166"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    } <span class="pl-k">else</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="167" id="diff-058c244386958b75b1f6c923b5170183L167"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="167" id="diff-058c244386958b75b1f6c923b5170183R167"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span>.<span class="pl-smi">selectedArray</span>.<span class="pl-c1">push</span>(<span class="pl-smi">item</span>);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="69">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="168-171" data-right-range="168-171" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;in_wiki_context=&amp;last_left=167&amp;last_right=167&amp;left=177&amp;left_hunk_size=7&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=177&amp;right_hunk_size=7" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -177,7 +177,7 @@ export class FilterMultiSelectComponent extends AbstractComponent implements OnI</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="177" id="diff-058c244386958b75b1f6c923b5170183L177"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="177" id="diff-058c244386958b75b1f6c923b5170183R177"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> checkAll(<span class="pl-v">$event</span><span class="pl-k">?</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="178" id="diff-058c244386958b75b1f6c923b5170183L178"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="178" id="diff-058c244386958b75b1f6c923b5170183R178"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="179" id="diff-058c244386958b75b1f6c923b5170183L179"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="179" id="diff-058c244386958b75b1f6c923b5170183R179"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> 모형 모드일 때는 기능 동작을 하지 않는다</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="180" id="diff-058c244386958b75b1f6c923b5170183L180"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">if</span><span class="x x-first x-last">( </span><span class="pl-c1">this</span>.<span class="pl-smi">isMockup</span><span class="x x-first x-last"> </span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="180" id="diff-058c244386958b75b1f6c923b5170183R180"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span><span class="x x-first x-last"> (</span><span class="pl-c1">this</span>.<span class="pl-smi">isMockup</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="181" id="diff-058c244386958b75b1f6c923b5170183L181"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="181" id="diff-058c244386958b75b1f6c923b5170183R181"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">Alert</span>.<span class="pl-en">info</span>(<span class="pl-c1">this</span>.<span class="pl-smi">translateService</span>.<span class="pl-en">instant</span>(<span class="pl-s"><span class="pl-pds">'</span>msg.board.alert.not-select-editmode<span class="pl-pds">'</span></span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="182" id="diff-058c244386958b75b1f6c923b5170183L182"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="182" id="diff-058c244386958b75b1f6c923b5170183R182"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="183" id="diff-058c244386958b75b1f6c923b5170183L183"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="183" id="diff-058c244386958b75b1f6c923b5170183R183"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="78">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="184-188" data-right-range="184-188" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;in_wiki_context=&amp;last_left=183&amp;last_right=183&amp;left=196&amp;left_hunk_size=7&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=196&amp;right_hunk_size=7" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -196,7 +196,7 @@ export class FilterMultiSelectComponent extends AbstractComponent implements OnI</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="196" id="diff-058c244386958b75b1f6c923b5170183L196"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="196" id="diff-058c244386958b75b1f6c923b5170183R196"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">   * 외부영역 클릭</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="197" id="diff-058c244386958b75b1f6c923b5170183L197"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="197" id="diff-058c244386958b75b1f6c923b5170183R197"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">   * <span class="pl-k">@param</span> <span class="pl-en">{MouseEvent}</span> <span class="pl-smi">event</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="198" id="diff-058c244386958b75b1f6c923b5170183L198"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="198" id="diff-058c244386958b75b1f6c923b5170183R198"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="199" id="diff-058c244386958b75b1f6c923b5170183L199"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">public</span> onClickHost(<span class="pl-v">event</span><span class="pl-k">:</span><span class="pl-en">MouseEvent</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="199" id="diff-058c244386958b75b1f6c923b5170183R199"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> onClickHost(<span class="pl-v">event</span><span class="pl-k">:</span><span class="x x-first x-last"> </span><span class="pl-en">MouseEvent</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="200" id="diff-058c244386958b75b1f6c923b5170183L200"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="200" id="diff-058c244386958b75b1f6c923b5170183R200"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> 현재 element 내부에서 생긴 이벤트가 아닌경우 hide 처리</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="201" id="diff-058c244386958b75b1f6c923b5170183L201"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="201" id="diff-058c244386958b75b1f6c923b5170183R201"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-k">!</span><span class="pl-c1">this</span>.<span class="pl-smi">elementRef</span>.<span class="pl-smi">nativeElement</span>.<span class="pl-c1">contains</span>(<span class="pl-c1">event</span>.<span class="pl-c1">target</span>)) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="202" id="diff-058c244386958b75b1f6c923b5170183L202"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="202" id="diff-058c244386958b75b1f6c923b5170183R202"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-c1">this</span>.<span class="pl-smi">isShowSelectList</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">this</span>.<span class="pl-smi">array</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">this</span>.<span class="pl-smi">array</span>.<span class="pl-c1">length</span>) {</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="87">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="203-217" data-right-range="203-217" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=202&amp;last_right=202&amp;left=234&amp;left_hunk_size=12&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=234&amp;right_hunk_size=12" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="218-233" data-right-range="218-233" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=202&amp;last_right=202&amp;left=234&amp;left_hunk_size=12&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=234&amp;right_hunk_size=12" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -234,12 +234,12 @@ export class FilterMultiSelectComponent extends AbstractComponent implements OnI</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="234" id="diff-058c244386958b75b1f6c923b5170183L234"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="234" id="diff-058c244386958b75b1f6c923b5170183R234"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">   * <span class="pl-k">@param</span> <span class="pl-smi">selectedArray</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="235" id="diff-058c244386958b75b1f6c923b5170183L235"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="235" id="diff-058c244386958b75b1f6c923b5170183R235"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="236" id="diff-058c244386958b75b1f6c923b5170183L236"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="236" id="diff-058c244386958b75b1f6c923b5170183R236"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> updateView(<span class="pl-v">selectedArray</span><span class="pl-k">:</span> <span class="pl-c1">any</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="237" id="diff-058c244386958b75b1f6c923b5170183L237"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-smi">selectedArray</span> <span class="pl-k">==</span> <span class="pl-c1">null</span> <span class="pl-k">||</span> <span class="pl-smi">selectedArray</span>.<span class="pl-c1">length</span> <span class="pl-k">===</span> <span class="pl-c1">0</span>) <span class="x x-first x-last"> </span>{</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="237" id="diff-058c244386958b75b1f6c923b5170183R237"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-smi">selectedArray</span> <span class="pl-k">==</span> <span class="pl-c1">null</span> <span class="pl-k">||</span> <span class="pl-smi">selectedArray</span>.<span class="pl-c1">length</span> <span class="pl-k">===</span> <span class="pl-c1">0</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="238" id="diff-058c244386958b75b1f6c923b5170183L238"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="238" id="diff-058c244386958b75b1f6c923b5170183R238"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span>.<span class="pl-smi">viewText</span> <span class="pl-k">=</span> <span class="pl-c1">this</span>.<span class="pl-smi">unselectedMessage</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="239" id="diff-058c244386958b75b1f6c923b5170183L239"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    } <span class="pl-k">else</span> <span class="pl-k">if</span> (<span class="x x-first x-last"> </span><span class="pl-smi">selectedArray</span>.<span class="pl-c1">length</span> <span class="pl-k">===</span> <span class="pl-c1">this</span>.<span class="pl-smi">array</span>.<span class="pl-c1">length</span><span class="x x-first x-last"> </span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="240" id="diff-058c244386958b75b1f6c923b5170183L240"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">this</span>.<span class="pl-smi">viewText</span> <span class="pl-k">=</span> <span class="pl-c1">this</span>.<span class="pl-smi">translateService</span>.<span class="pl-en">instant</span>(<span class="x x-first x-last"> </span><span class="pl-s"><span class="pl-pds">'</span>msg.comm.ui.list.all<span class="pl-pds">'</span></span><span class="x x-first x-last"> </span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="239" id="diff-058c244386958b75b1f6c923b5170183R239"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    } <span class="pl-k">else</span> <span class="pl-k">if</span> (<span class="pl-smi">selectedArray</span>.<span class="pl-c1">length</span> <span class="pl-k">===</span> <span class="pl-c1">this</span>.<span class="pl-smi">array</span>.<span class="pl-c1">length</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="240" id="diff-058c244386958b75b1f6c923b5170183R240"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">this</span>.<span class="pl-smi">viewText</span> <span class="pl-k">=</span> <span class="pl-c1">this</span>.<span class="pl-smi">translateService</span>.<span class="pl-en">instant</span>(<span class="pl-s"><span class="pl-pds">'</span>msg.comm.ui.list.all<span class="pl-pds">'</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="241" id="diff-058c244386958b75b1f6c923b5170183L241"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="241" id="diff-058c244386958b75b1f6c923b5170183R241"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    } <span class="pl-k">else</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="242" id="diff-058c244386958b75b1f6c923b5170183L242"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">this</span>.<span class="pl-smi">viewText</span> <span class="pl-k">=</span> <span class="pl-smi">selectedArray</span>.<span class="pl-en">map</span>(<span class="x x-first x-last"> </span><span class="pl-v">item</span> <span class="pl-k">=&gt;</span> <span class="pl-smi">item</span>.<span class="pl-c1">name</span><span class="x x-first x-last"> </span>).<span class="pl-c1">join</span>(<span class="pl-s"><span class="pl-pds">'</span>,<span class="pl-pds">'</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="242" id="diff-058c244386958b75b1f6c923b5170183R242"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">this</span>.<span class="pl-smi">viewText</span> <span class="pl-k">=</span> <span class="pl-smi">selectedArray</span>.<span class="pl-en">map</span>(<span class="pl-v">item</span> <span class="pl-k">=&gt;</span> <span class="pl-smi">item</span>.<span class="pl-c1">name</span>).<span class="pl-c1">join</span>(<span class="pl-s"><span class="pl-pds">'</span>,<span class="pl-pds">'</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="243" id="diff-058c244386958b75b1f6c923b5170183L243"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="243" id="diff-058c244386958b75b1f6c923b5170183R243"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="244" id="diff-058c244386958b75b1f6c923b5170183L244"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="244" id="diff-058c244386958b75b1f6c923b5170183R244"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  } <span class="pl-c"><span class="pl-c">//</span> function - updateView</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="245" id="diff-058c244386958b75b1f6c923b5170183L245"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="245" id="diff-058c244386958b75b1f6c923b5170183R245"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="104">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="246-258" data-right-range="246-258" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=245&amp;last_right=245&amp;left=274&amp;left_hunk_size=9&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=274&amp;right_hunk_size=9" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="259-273" data-right-range="259-273" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=245&amp;last_right=245&amp;left=274&amp;left_hunk_size=9&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=274&amp;right_hunk_size=9" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -274,9 +274,9 @@ export class FilterMultiSelectComponent extends AbstractComponent implements OnI</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="274" id="diff-058c244386958b75b1f6c923b5170183L274"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="274" id="diff-058c244386958b75b1f6c923b5170183R274"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k"><span class="pl-k">const</span></span> $dropboxTop <span class="pl-k">=</span> <span class="pl-smi">$ddpOffSetEl</span>.<span class="pl-en">offset</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="275" id="diff-058c244386958b75b1f6c923b5170183L275"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="275" id="diff-058c244386958b75b1f6c923b5170183R275"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k"><span class="pl-k">const</span></span> $dropboxWidth <span class="pl-k">=</span> <span class="pl-smi">$ddpOffSetEl</span>.<span class="pl-en">width</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="276" id="diff-058c244386958b75b1f6c923b5170183L276"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="276" id="diff-058c244386958b75b1f6c923b5170183R276"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">$ddpOffSetEl</span>.<span class="pl-c1">find</span>(<span class="pl-s"><span class="pl-pds">'</span>.ddp-drop<span class="pl-pds">'</span></span>).<span class="pl-en">css</span>({</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="277" id="diff-058c244386958b75b1f6c923b5170183L277"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        top<span class="x x-first x-last"> </span>: <span class="pl-smi">$dropboxTop</span>.<span class="pl-c1">top</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="278" id="diff-058c244386958b75b1f6c923b5170183L278"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        left<span class="x x-first x-last"> </span>: <span class="pl-smi">$dropboxTop</span>.<span class="pl-c1">left</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="279" id="diff-058c244386958b75b1f6c923b5170183L279"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        width<span class="x x-first x-last"> </span>: <span class="pl-smi">$dropboxWidth</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="277" id="diff-058c244386958b75b1f6c923b5170183R277"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        top: <span class="pl-smi">$dropboxTop</span>.<span class="pl-c1">top</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="278" id="diff-058c244386958b75b1f6c923b5170183R278"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        left: <span class="pl-smi">$dropboxTop</span>.<span class="pl-c1">left</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="279" id="diff-058c244386958b75b1f6c923b5170183R279"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        width: <span class="pl-smi">$dropboxWidth</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="280" id="diff-058c244386958b75b1f6c923b5170183L280"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="280" id="diff-058c244386958b75b1f6c923b5170183R280"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">      });</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="281" id="diff-058c244386958b75b1f6c923b5170183L281"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="281" id="diff-058c244386958b75b1f6c923b5170183R281"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="282" id="diff-058c244386958b75b1f6c923b5170183L282"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="282" id="diff-058c244386958b75b1f6c923b5170183R282"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  } <span class="pl-c"><span class="pl-c">//</span> function - _setViewListPosition</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="283-284" data-right-range="283-284" data-url="/metatron-app/metatron-discovery/blob_excerpt/1e168e3a2482ecc3fbc2597c79a93e26778427a8?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=282&amp;last_right=282&amp;left=285&amp;left_hunk_size=&amp;mode=100644&amp;path=discovery-frontend%2Fsrc%2Fapp%2Fdashboard%2Ffilters%2Fcomponent%2Ffilter-multi-select%2Ffilter-multi-select.component.ts&amp;right=285&amp;right_hunk_size=" href="#diff-058c244386958b75b1f6c923b5170183" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-058c244386958b75b1f6c923b5170183L12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-058c244386958b75b1f6c923b5170183R12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-058c244386958b75b1f6c923b5170183L13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-058c244386958b75b1f6c923b5170183R13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-058c244386958b75b1f6c923b5170183L14"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-058c244386958b75b1f6c923b5170183R14"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="15" id="diff-058c244386958b75b1f6c923b5170183L15"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="16" id="diff-058c244386958b75b1f6c923b5170183L16"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="17" id="diff-058c244386958b75b1f6c923b5170183L17"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="18" id="diff-058c244386958b75b1f6c923b5170183L18"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="19" id="diff-058c244386958b75b1f6c923b5170183L19"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="15" id="diff-058c244386958b75b1f6c923b5170183R15"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="16" id="diff-058c244386958b75b1f6c923b5170183R16"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="17" id="diff-058c244386958b75b1f6c923b5170183R17"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="18" id="diff-058c244386958b75b1f6c923b5170183R18"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="19" id="diff-058c244386958b75b1f6c923b5170183R19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-058c244386958b75b1f6c923b5170183L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-058c244386958b75b1f6c923b5170183R20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-058c244386958b75b1f6c923b5170183L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-058c244386958b75b1f6c923b5170183R21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-058c244386958b75b1f6c923b5170183L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-058c244386958b75b1f6c923b5170183R22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-058c244386958b75b1f6c923b5170183L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-058c244386958b75b1f6c923b5170183R23"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="24" id="diff-058c244386958b75b1f6c923b5170183L24"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-058c244386958b75b1f6c923b5170183R24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-058c244386958b75b1f6c923b5170183L25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-058c244386958b75b1f6c923b5170183R25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-058c244386958b75b1f6c923b5170183L26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-058c244386958b75b1f6c923b5170183R26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-058c244386958b75b1f6c923b5170183L27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-058c244386958b75b1f6c923b5170183R27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-058c244386958b75b1f6c923b5170183L54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-058c244386958b75b1f6c923b5170183R54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-058c244386958b75b1f6c923b5170183L55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-058c244386958b75b1f6c923b5170183R55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-058c244386958b75b1f6c923b5170183L56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-058c244386958b75b1f6c923b5170183R56"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="57" id="diff-058c244386958b75b1f6c923b5170183L57"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="57" id="diff-058c244386958b75b1f6c923b5170183R57"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-058c244386958b75b1f6c923b5170183L58"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-058c244386958b75b1f6c923b5170183R58"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-058c244386958b75b1f6c923b5170183L59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-058c244386958b75b1f6c923b5170183R59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-058c244386958b75b1f6c923b5170183L60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-058c244386958b75b1f6c923b5170183R60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="119" id="diff-058c244386958b75b1f6c923b5170183L119"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="119" id="diff-058c244386958b75b1f6c923b5170183R119"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="120" id="diff-058c244386958b75b1f6c923b5170183L120"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="120" id="diff-058c244386958b75b1f6c923b5170183R120"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="121" id="diff-058c244386958b75b1f6c923b5170183L121"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="121" id="diff-058c244386958b75b1f6c923b5170183R121"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="122" id="diff-058c244386958b75b1f6c923b5170183L122"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="122" id="diff-058c244386958b75b1f6c923b5170183R122"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="123" id="diff-058c244386958b75b1f6c923b5170183L123"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="123" id="diff-058c244386958b75b1f6c923b5170183R123"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="124" id="diff-058c244386958b75b1f6c923b5170183L124"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="124" id="diff-058c244386958b75b1f6c923b5170183R124"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="125" id="diff-058c244386958b75b1f6c923b5170183L125"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="125" id="diff-058c244386958b75b1f6c923b5170183R125"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="136" id="diff-058c244386958b75b1f6c923b5170183L136"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="136" id="diff-058c244386958b75b1f6c923b5170183R136"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="137" id="diff-058c244386958b75b1f6c923b5170183L137"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="137" id="diff-058c244386958b75b1f6c923b5170183R137"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="138" id="diff-058c244386958b75b1f6c923b5170183L138"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="138" id="diff-058c244386958b75b1f6c923b5170183R138"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="139" id="diff-058c244386958b75b1f6c923b5170183L139"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="140" id="diff-058c244386958b75b1f6c923b5170183L140"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="139" id="diff-058c244386958b75b1f6c923b5170183R139"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="140" id="diff-058c244386958b75b1f6c923b5170183R140"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-058c244386958b75b1f6c923b5170183L141"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-058c244386958b75b1f6c923b5170183R141"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-058c244386958b75b1f6c923b5170183L142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-058c244386958b75b1f6c923b5170183R142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="143" id="diff-058c244386958b75b1f6c923b5170183L143"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="143" id="diff-058c244386958b75b1f6c923b5170183R143"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="155" id="diff-058c244386958b75b1f6c923b5170183L155"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="155" id="diff-058c244386958b75b1f6c923b5170183R155"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="156" id="diff-058c244386958b75b1f6c923b5170183L156"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="156" id="diff-058c244386958b75b1f6c923b5170183R156"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="157" id="diff-058c244386958b75b1f6c923b5170183L157"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="157" id="diff-058c244386958b75b1f6c923b5170183R157"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="158" id="diff-058c244386958b75b1f6c923b5170183L158"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="158" id="diff-058c244386958b75b1f6c923b5170183R158"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="159" id="diff-058c244386958b75b1f6c923b5170183L159"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="159" id="diff-058c244386958b75b1f6c923b5170183R159"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="160" id="diff-058c244386958b75b1f6c923b5170183L160"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="160" id="diff-058c244386958b75b1f6c923b5170183R160"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="161" id="diff-058c244386958b75b1f6c923b5170183L161"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="161" id="diff-058c244386958b75b1f6c923b5170183R161"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="162" id="diff-058c244386958b75b1f6c923b5170183L162"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="162" id="diff-058c244386958b75b1f6c923b5170183R162"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="163" id="diff-058c244386958b75b1f6c923b5170183L163"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="164" id="diff-058c244386958b75b1f6c923b5170183L164"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="163" id="diff-058c244386958b75b1f6c923b5170183R163"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="164" id="diff-058c244386958b75b1f6c923b5170183R164"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="165" id="diff-058c244386958b75b1f6c923b5170183L165"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="165" id="diff-058c244386958b75b1f6c923b5170183R165"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="166" id="diff-058c244386958b75b1f6c923b5170183L166"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="166" id="diff-058c244386958b75b1f6c923b5170183R166"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="167" id="diff-058c244386958b75b1f6c923b5170183L167"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="167" id="diff-058c244386958b75b1f6c923b5170183R167"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="177" id="diff-058c244386958b75b1f6c923b5170183L177"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="177" id="diff-058c244386958b75b1f6c923b5170183R177"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="178" id="diff-058c244386958b75b1f6c923b5170183L178"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="178" id="diff-058c244386958b75b1f6c923b5170183R178"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="179" id="diff-058c244386958b75b1f6c923b5170183L179"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="179" id="diff-058c244386958b75b1f6c923b5170183R179"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="180" id="diff-058c244386958b75b1f6c923b5170183L180"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="180" id="diff-058c244386958b75b1f6c923b5170183R180"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="181" id="diff-058c244386958b75b1f6c923b5170183L181"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="181" id="diff-058c244386958b75b1f6c923b5170183R181"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="182" id="diff-058c244386958b75b1f6c923b5170183L182"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="182" id="diff-058c244386958b75b1f6c923b5170183R182"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="183" id="diff-058c244386958b75b1f6c923b5170183L183"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="183" id="diff-058c244386958b75b1f6c923b5170183R183"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="196" id="diff-058c244386958b75b1f6c923b5170183L196"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="196" id="diff-058c244386958b75b1f6c923b5170183R196"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="197" id="diff-058c244386958b75b1f6c923b5170183L197"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="197" id="diff-058c244386958b75b1f6c923b5170183R197"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="198" id="diff-058c244386958b75b1f6c923b5170183L198"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="198" id="diff-058c244386958b75b1f6c923b5170183R198"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="199" id="diff-058c244386958b75b1f6c923b5170183L199"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="199" id="diff-058c244386958b75b1f6c923b5170183R199"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="200" id="diff-058c244386958b75b1f6c923b5170183L200"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="200" id="diff-058c244386958b75b1f6c923b5170183R200"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="201" id="diff-058c244386958b75b1f6c923b5170183L201"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="201" id="diff-058c244386958b75b1f6c923b5170183R201"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="202" id="diff-058c244386958b75b1f6c923b5170183L202"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="202" id="diff-058c244386958b75b1f6c923b5170183R202"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="234" id="diff-058c244386958b75b1f6c923b5170183L234"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="234" id="diff-058c244386958b75b1f6c923b5170183R234"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="235" id="diff-058c244386958b75b1f6c923b5170183L235"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="235" id="diff-058c244386958b75b1f6c923b5170183R235"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="236" id="diff-058c244386958b75b1f6c923b5170183L236"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="236" id="diff-058c244386958b75b1f6c923b5170183R236"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="237" id="diff-058c244386958b75b1f6c923b5170183L237"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="237" id="diff-058c244386958b75b1f6c923b5170183R237"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="238" id="diff-058c244386958b75b1f6c923b5170183L238"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="238" id="diff-058c244386958b75b1f6c923b5170183R238"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="239" id="diff-058c244386958b75b1f6c923b5170183L239"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="240" id="diff-058c244386958b75b1f6c923b5170183L240"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="239" id="diff-058c244386958b75b1f6c923b5170183R239"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="240" id="diff-058c244386958b75b1f6c923b5170183R240"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="241" id="diff-058c244386958b75b1f6c923b5170183L241"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="241" id="diff-058c244386958b75b1f6c923b5170183R241"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="242" id="diff-058c244386958b75b1f6c923b5170183L242"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="242" id="diff-058c244386958b75b1f6c923b5170183R242"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="243" id="diff-058c244386958b75b1f6c923b5170183L243"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="243" id="diff-058c244386958b75b1f6c923b5170183R243"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="244" id="diff-058c244386958b75b1f6c923b5170183L244"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="244" id="diff-058c244386958b75b1f6c923b5170183R244"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="245" id="diff-058c244386958b75b1f6c923b5170183L245"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="245" id="diff-058c244386958b75b1f6c923b5170183R245"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="274" id="diff-058c244386958b75b1f6c923b5170183L274"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="274" id="diff-058c244386958b75b1f6c923b5170183R274"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="275" id="diff-058c244386958b75b1f6c923b5170183L275"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="275" id="diff-058c244386958b75b1f6c923b5170183R275"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="276" id="diff-058c244386958b75b1f6c923b5170183L276"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="276" id="diff-058c244386958b75b1f6c923b5170183R276"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="277" id="diff-058c244386958b75b1f6c923b5170183L277"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="278" id="diff-058c244386958b75b1f6c923b5170183L278"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="279" id="diff-058c244386958b75b1f6c923b5170183L279"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="277" id="diff-058c244386958b75b1f6c923b5170183R277"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="278" id="diff-058c244386958b75b1f6c923b5170183R278"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="279" id="diff-058c244386958b75b1f6c923b5170183R279"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="280" id="diff-058c244386958b75b1f6c923b5170183L280"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="280" id="diff-058c244386958b75b1f6c923b5170183R280"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="281" id="diff-058c244386958b75b1f6c923b5170183L281"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="281" id="diff-058c244386958b75b1f6c923b5170183R281"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="282" id="diff-058c244386958b75b1f6c923b5170183L282"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="282" id="diff-058c244386958b75b1f6c923b5170183R282"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

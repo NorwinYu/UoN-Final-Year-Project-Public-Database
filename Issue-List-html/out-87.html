@@ -1,0 +1,251 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-1b3f0477e660d0d75acc206a104c52a0" data-file-deleted="false" data-file-type=".java" data-path="game-core/src/main/java/games/strategy/debug/error/reporting/StackTraceErrorReportFormatter.java" data-short-path="1b3f047">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="game-core/src/main/java/games/strategy/debug/error/reporting/StackTraceErrorReportFormatter.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/DanVanAtta/triplea/blob/6b381a6e835f86966cc5c556712b546c1347a4f3/game-core/src/main/java/games/strategy/debug/error/reporting/StackTraceErrorReportFormatter.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="4 additions &amp; 4 deletions" class="diffstat tooltipped tooltipped-e">8 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-1b3f0477e660d0d75acc206a104c52a0" title="game-core/src/main/java/games/strategy/debug/error/reporting/StackTraceErrorReportFormatter.java">...re/src/main/java/games/strategy/debug/error/reporting/StackTraceErrorReportFormatter.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-1b3f0477e660d0d75acc206a104c52a0" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-73" data-right-range="1-73" data-url="/triplea-game/triplea/blob_excerpt/c5da581b20bf44273b366da991f5c53aa424d4c3?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=74&amp;left_hunk_size=15&amp;mode=100644&amp;path=game-core%2Fsrc%2Fmain%2Fjava%2Fgames%2Fstrategy%2Fdebug%2Ferror%2Freporting%2FStackTraceErrorReportFormatter.java&amp;right=74&amp;right_hunk_size=15" href="#diff-1b3f0477e660d0d75acc206a104c52a0" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -74,15 +74,15 @@ private String buildBody(@Nullable final String userDescription, final LogRecord</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-1b3f0477e660d0d75acc206a104c52a0L74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-1b3f0477e660d0d75acc206a104c52a0R74"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-smi">Optional</span><span class="pl-k">.</span>ofNullable(logRecord<span class="pl-k">.</span>getMessage())</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-1b3f0477e660d0d75acc206a104c52a0L75"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-1b3f0477e660d0d75acc206a104c52a0R75"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            .map(msg <span class="pl-k">-</span><span class="pl-k">&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>## Log Message<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span> msg <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-cce">\n\n</span><span class="pl-pds">"</span></span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="76" id="diff-1b3f0477e660d0d75acc206a104c52a0L76"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="76" id="diff-1b3f0477e660d0d75acc206a104c52a0R76"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            .orElse(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="77" id="diff-1b3f0477e660d0d75acc206a104c52a0L77"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-smi">Optional</span><span class="pl-k">.</span>ofNullable(logRecord<span class="pl-k">.</span>getThrown())</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="78" id="diff-1b3f0477e660d0d75acc206a104c52a0L78"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">            .map(<span class="pl-smi">StackTraceErrorReportFormatter</span><span class="pl-k">::</span>throwableToString)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="79" id="diff-1b3f0477e660d0d75acc206a104c52a0L79"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">            .orElse(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-1b3f0477e660d0d75acc206a104c52a0L80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-1b3f0477e660d0d75acc206a104c52a0R77"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>## TripleA Version<span class="pl-cce">\n</span><span class="pl-pds">"</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-1b3f0477e660d0d75acc206a104c52a0L81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-1b3f0477e660d0d75acc206a104c52a0R78"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-smi">ClientContext</span><span class="pl-k">.</span>engineVersion()<span class="pl-k">.</span>toStringFull() <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-cce">\n\n</span><span class="pl-pds">"</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-1b3f0477e660d0d75acc206a104c52a0L82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-1b3f0477e660d0d75acc206a104c52a0R79"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>## Java Version<span class="pl-cce">\n</span><span class="pl-pds">"</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-1b3f0477e660d0d75acc206a104c52a0L83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-1b3f0477e660d0d75acc206a104c52a0R80"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-smi">SystemProperties</span><span class="pl-k">.</span>getJavaVersion() <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-cce">\n\n</span><span class="pl-pds">"</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-1b3f0477e660d0d75acc206a104c52a0L84"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-1b3f0477e660d0d75acc206a104c52a0R81"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>## Operating System<span class="pl-cce">\n</span><span class="pl-pds">"</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="85" id="diff-1b3f0477e660d0d75acc206a104c52a0L85"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-smi">SystemProperties</span><span class="pl-k">.</span>getOperatingSystem();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="82" id="diff-1b3f0477e660d0d75acc206a104c52a0R82"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-smi">SystemProperties</span><span class="pl-k">.</span>getOperatingSystem() <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-cce">\n\n</span><span class="pl-pds">"</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="83" id="diff-1b3f0477e660d0d75acc206a104c52a0R83"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-smi">Optional</span><span class="pl-k">.</span>ofNullable(logRecord<span class="pl-k">.</span>getThrown())</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="84" id="diff-1b3f0477e660d0d75acc206a104c52a0R84"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            .map(<span class="pl-smi">StackTraceErrorReportFormatter</span><span class="pl-k">::</span>throwableToString)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="85" id="diff-1b3f0477e660d0d75acc206a104c52a0R85"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            .orElse(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-1b3f0477e660d0d75acc206a104c52a0L86"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-1b3f0477e660d0d75acc206a104c52a0R86"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-1b3f0477e660d0d75acc206a104c52a0L87"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-1b3f0477e660d0d75acc206a104c52a0R87"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-1b3f0477e660d0d75acc206a104c52a0L88"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-1b3f0477e660d0d75acc206a104c52a0R88"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-smi">String</span> <span class="pl-en">throwableToString</span>(<span class="pl-k">final</span> <span class="pl-smi">Throwable</span> <span class="pl-v">e</span>) {</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="89-108" data-right-range="89-108" data-url="/triplea-game/triplea/blob_excerpt/c5da581b20bf44273b366da991f5c53aa424d4c3?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=88&amp;last_right=88&amp;left=109&amp;left_hunk_size=&amp;mode=100644&amp;path=game-core%2Fsrc%2Fmain%2Fjava%2Fgames%2Fstrategy%2Fdebug%2Ferror%2Freporting%2FStackTraceErrorReportFormatter.java&amp;right=109&amp;right_hunk_size=" href="#diff-1b3f0477e660d0d75acc206a104c52a0" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-1b3f0477e660d0d75acc206a104c52a0L74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-1b3f0477e660d0d75acc206a104c52a0R74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-1b3f0477e660d0d75acc206a104c52a0L75"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-1b3f0477e660d0d75acc206a104c52a0R75"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="76" id="diff-1b3f0477e660d0d75acc206a104c52a0L76"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="76" id="diff-1b3f0477e660d0d75acc206a104c52a0R76"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="77" id="diff-1b3f0477e660d0d75acc206a104c52a0L77"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="78" id="diff-1b3f0477e660d0d75acc206a104c52a0L78"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="79" id="diff-1b3f0477e660d0d75acc206a104c52a0L79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-1b3f0477e660d0d75acc206a104c52a0L80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-1b3f0477e660d0d75acc206a104c52a0R77"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-1b3f0477e660d0d75acc206a104c52a0L81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-1b3f0477e660d0d75acc206a104c52a0R78"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-1b3f0477e660d0d75acc206a104c52a0L82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-1b3f0477e660d0d75acc206a104c52a0R79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-1b3f0477e660d0d75acc206a104c52a0L83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-1b3f0477e660d0d75acc206a104c52a0R80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-1b3f0477e660d0d75acc206a104c52a0L84"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-1b3f0477e660d0d75acc206a104c52a0R81"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="85" id="diff-1b3f0477e660d0d75acc206a104c52a0L85"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="82" id="diff-1b3f0477e660d0d75acc206a104c52a0R82"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="83" id="diff-1b3f0477e660d0d75acc206a104c52a0R83"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="84" id="diff-1b3f0477e660d0d75acc206a104c52a0R84"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="85" id="diff-1b3f0477e660d0d75acc206a104c52a0R85"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-1b3f0477e660d0d75acc206a104c52a0L86"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-1b3f0477e660d0d75acc206a104c52a0R86"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-1b3f0477e660d0d75acc206a104c52a0L87"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-1b3f0477e660d0d75acc206a104c52a0R87"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-1b3f0477e660d0d75acc206a104c52a0L88"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-1b3f0477e660d0d75acc206a104c52a0R88"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

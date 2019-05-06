@@ -1,0 +1,333 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-f6d80e57f18a66927c0d3f5d70dfe49c" data-file-deleted="false" data-file-type=".java" data-path="sharding-jdbc/sharding-jdbc-orchestration/src/main/java/org/apache/shardingsphere/shardingjdbc/orchestration/internal/datasource/OrchestrationMasterSlaveDataSource.java" data-short-path="f6d80e5">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="sharding-jdbc/sharding-jdbc-orchestration/src/main/java/org/apache/shardingsphere/shardingjdbc/orchestration/internal/datasource/OrchestrationMasterSlaveDataSource.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/joooohnli/incubator-shardingsphere/blob/fc7258f805d93e8f1e3650cd9e584ef446969ae2/sharding-jdbc/sharding-jdbc-orchestration/src/main/java/org/apache/shardingsphere/shardingjdbc/orchestration/internal/datasource/OrchestrationMasterSlaveDataSource.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="2 additions &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">3 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-f6d80e57f18a66927c0d3f5d70dfe49c" title="sharding-jdbc/sharding-jdbc-orchestration/src/main/java/org/apache/shardingsphere/shardingjdbc/orchestration/internal/datasource/OrchestrationMasterSlaveDataSource.java">...re/shardingjdbc/orchestration/internal/datasource/OrchestrationMasterSlaveDataSource.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-f6d80e57f18a66927c0d3f5d70dfe49c" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-101" data-right-range="1-101" data-url="/apache/incubator-shardingsphere/blob_excerpt/01c1fd460e3da8ef128c4c039dc4c406de23ed66?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=102&amp;left_hunk_size=9&amp;mode=100644&amp;path=sharding-jdbc%2Fsharding-jdbc-orchestration%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fshardingsphere%2Fshardingjdbc%2Forchestration%2Finternal%2Fdatasource%2FOrchestrationMasterSlaveDataSource.java&amp;right=102&amp;right_hunk_size=10" href="#diff-f6d80e57f18a66927c0d3f5d70dfe49c" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -102,9 +102,10 @@ public final synchronized void renew(final MasterSlaveRuleChangedEvent masterSla</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL102"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR102"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Subscribe</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL103"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR103"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@SneakyThrows</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="104" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL104"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="104" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR104"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">final</span> <span class="pl-k">synchronized</span> <span class="pl-k">void</span> <span class="pl-en">renew</span>(<span class="pl-k">final</span> <span class="pl-smi">DataSourceChangedEvent</span> <span class="pl-v">dataSourceChangedEvent</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="105" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL105"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        dataSource<span class="pl-k x x-first">.</span><span class="x x-last">close()</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="105" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR105"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi x x-first">MasterSlaveDataSource</span><span class="x"> dataSourceOld </span><span class="pl-k x">=</span><span class="x x-last"> </span>dataSource;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR106"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        dataSource <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">MasterSlaveDataSource</span>(</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL107"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR107"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">DataSourceConverter</span><span class="pl-k">.</span>getDataSourceMap(dataSourceChangedEvent<span class="pl-k">.</span>getDataSourceConfigurations()), dataSource<span class="pl-k">.</span>getMasterSlaveRule(), dataSource<span class="pl-k">.</span>getShardingProperties()<span class="pl-k">.</span>getProps());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="108" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR108"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        dataSourceOld<span class="pl-k">.</span>close();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="108" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL108"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="109" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR109"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="109" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL109"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="110" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR110"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="110" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL110"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="111" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR111"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="111-134" data-right-range="112-134" data-url="/apache/incubator-shardingsphere/blob_excerpt/01c1fd460e3da8ef128c4c039dc4c406de23ed66?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=110&amp;last_right=111&amp;left=135&amp;left_hunk_size=&amp;mode=100644&amp;path=sharding-jdbc%2Fsharding-jdbc-orchestration%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fshardingsphere%2Fshardingjdbc%2Forchestration%2Finternal%2Fdatasource%2FOrchestrationMasterSlaveDataSource.java&amp;right=135&amp;right_hunk_size=" href="#diff-f6d80e57f18a66927c0d3f5d70dfe49c" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL102"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR102"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL103"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR103"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="104" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL104"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="104" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR104"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="105" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL105"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="105" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL107"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR107"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="108" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR108"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="108" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL108"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="109" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR109"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="109" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL109"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="110" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR110"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="110" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cL110"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="111" id="diff-f6d80e57f18a66927c0d3f5d70dfe49cR111"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-1">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-e8975dbcfb7f8d61811471a335f20c6a" data-file-deleted="false" data-file-type=".java" data-path="sharding-jdbc/sharding-jdbc-orchestration/src/main/java/org/apache/shardingsphere/shardingjdbc/orchestration/internal/datasource/OrchestrationShardingDataSource.java" data-short-path="e8975db">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="sharding-jdbc/sharding-jdbc-orchestration/src/main/java/org/apache/shardingsphere/shardingjdbc/orchestration/internal/datasource/OrchestrationShardingDataSource.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/joooohnli/incubator-shardingsphere/blob/fc7258f805d93e8f1e3650cd9e584ef446969ae2/sharding-jdbc/sharding-jdbc-orchestration/src/main/java/org/apache/shardingsphere/shardingjdbc/orchestration/internal/datasource/OrchestrationShardingDataSource.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="2 additions &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">3 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-e8975dbcfb7f8d61811471a335f20c6a" title="sharding-jdbc/sharding-jdbc-orchestration/src/main/java/org/apache/shardingsphere/shardingjdbc/orchestration/internal/datasource/OrchestrationShardingDataSource.java">...phere/shardingjdbc/orchestration/internal/datasource/OrchestrationShardingDataSource.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-e8975dbcfb7f8d61811471a335f20c6a" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-97" data-right-range="1-97" data-url="/apache/incubator-shardingsphere/blob_excerpt/d1a41bc604dd4600976cb962288cf232cd6faf14?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=98&amp;left_hunk_size=9&amp;mode=100644&amp;path=sharding-jdbc%2Fsharding-jdbc-orchestration%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fshardingsphere%2Fshardingjdbc%2Forchestration%2Finternal%2Fdatasource%2FOrchestrationShardingDataSource.java&amp;right=98&amp;right_hunk_size=10" href="#diff-e8975dbcfb7f8d61811471a335f20c6a" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -98,9 +98,10 @@ public final synchronized void renew(final ShardingRuleChangedEvent shardingRule</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-e8975dbcfb7f8d61811471a335f20c6aL98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-e8975dbcfb7f8d61811471a335f20c6aR98"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Subscribe</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-e8975dbcfb7f8d61811471a335f20c6aL99"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-e8975dbcfb7f8d61811471a335f20c6aR99"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@SneakyThrows</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-e8975dbcfb7f8d61811471a335f20c6aL100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-e8975dbcfb7f8d61811471a335f20c6aR100"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">final</span> <span class="pl-k">synchronized</span> <span class="pl-k">void</span> <span class="pl-en">renew</span>(<span class="pl-k">final</span> <span class="pl-smi">DataSourceChangedEvent</span> <span class="pl-v">dataSourceChangedEvent</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="101" id="diff-e8975dbcfb7f8d61811471a335f20c6aL101"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        dataSource<span class="pl-k x x-first">.</span><span class="x x-last">close()</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="101" id="diff-e8975dbcfb7f8d61811471a335f20c6aR101"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi x x-first">ShardingDataSource</span><span class="x"> dataSourceOld </span><span class="pl-k x">=</span><span class="x x-last"> </span>dataSource;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-e8975dbcfb7f8d61811471a335f20c6aL102"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-e8975dbcfb7f8d61811471a335f20c6aR102"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        dataSource <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">ShardingDataSource</span>(<span class="pl-smi">DataSourceConverter</span><span class="pl-k">.</span>getDataSourceMap(dataSourceChangedEvent<span class="pl-k">.</span>getDataSourceConfigurations()), dataSource<span class="pl-k">.</span>getShardingContext()<span class="pl-k">.</span>getShardingRule(),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-e8975dbcfb7f8d61811471a335f20c6aL103"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-e8975dbcfb7f8d61811471a335f20c6aR103"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">                dataSource<span class="pl-k">.</span>getShardingContext()<span class="pl-k">.</span>getShardingProperties()<span class="pl-k">.</span>getProps());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="104" id="diff-e8975dbcfb7f8d61811471a335f20c6aR104"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        dataSourceOld<span class="pl-k">.</span>close();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="104" id="diff-e8975dbcfb7f8d61811471a335f20c6aL104"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-e8975dbcfb7f8d61811471a335f20c6aR105"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-e8975dbcfb7f8d61811471a335f20c6aL105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-e8975dbcfb7f8d61811471a335f20c6aR106"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-e8975dbcfb7f8d61811471a335f20c6aL106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-e8975dbcfb7f8d61811471a335f20c6aR107"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="107-133" data-right-range="108-133" data-url="/apache/incubator-shardingsphere/blob_excerpt/d1a41bc604dd4600976cb962288cf232cd6faf14?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=106&amp;last_right=107&amp;left=134&amp;left_hunk_size=&amp;mode=100644&amp;path=sharding-jdbc%2Fsharding-jdbc-orchestration%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fshardingsphere%2Fshardingjdbc%2Forchestration%2Finternal%2Fdatasource%2FOrchestrationShardingDataSource.java&amp;right=134&amp;right_hunk_size=" href="#diff-e8975dbcfb7f8d61811471a335f20c6a" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-e8975dbcfb7f8d61811471a335f20c6aL98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-e8975dbcfb7f8d61811471a335f20c6aR98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-e8975dbcfb7f8d61811471a335f20c6aL99"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-e8975dbcfb7f8d61811471a335f20c6aR99"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-e8975dbcfb7f8d61811471a335f20c6aL100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-e8975dbcfb7f8d61811471a335f20c6aR100"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="101" id="diff-e8975dbcfb7f8d61811471a335f20c6aL101"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="101" id="diff-e8975dbcfb7f8d61811471a335f20c6aR101"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-e8975dbcfb7f8d61811471a335f20c6aL102"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-e8975dbcfb7f8d61811471a335f20c6aR102"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-e8975dbcfb7f8d61811471a335f20c6aL103"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-e8975dbcfb7f8d61811471a335f20c6aR103"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="104" id="diff-e8975dbcfb7f8d61811471a335f20c6aR104"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="104" id="diff-e8975dbcfb7f8d61811471a335f20c6aL104"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-e8975dbcfb7f8d61811471a335f20c6aR105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-e8975dbcfb7f8d61811471a335f20c6aL105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-e8975dbcfb7f8d61811471a335f20c6aR106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-e8975dbcfb7f8d61811471a335f20c6aL106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-e8975dbcfb7f8d61811471a335f20c6aR107"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

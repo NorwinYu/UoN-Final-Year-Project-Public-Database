@@ -1,0 +1,1167 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-e730675bd9a1a3d322fa1e33ca585348" data-file-deleted="false" data-file-type=".java" data-path="titus-common/src/main/java/com/netflix/titus/common/util/rx/MapWithStateTransformer.java" data-short-path="e730675">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="titus-common/src/main/java/com/netflix/titus/common/util/rx/MapWithStateTransformer.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/tbak/titus-control-plane/blob/a83adc6c930c3787637afcfcc3df3e7b9dca1a01/titus-common/src/main/java/com/netflix/titus/common/util/rx/MapWithStateTransformer.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="5 additions &amp; 4 deletions" class="diffstat tooltipped tooltipped-e">9 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-e730675bd9a1a3d322fa1e33ca585348" title="titus-common/src/main/java/com/netflix/titus/common/util/rx/MapWithStateTransformer.java">titus-common/src/main/java/com/netflix/titus/common/util/rx/MapWithStateTransformer.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-e730675bd9a1a3d322fa1e33ca585348" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-18" data-right-range="1-18" data-url="/Netflix/titus-control-plane/blob_excerpt/07d07cc9bcbe28dfa6a4e8f0b4d516ca77b9480f?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=19&amp;left_hunk_size=6&amp;mode=100644&amp;path=titus-common%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fcommon%2Futil%2Frx%2FMapWithStateTransformer.java&amp;right=19&amp;right_hunk_size=7" href="#diff-e730675bd9a1a3d322fa1e33ca585348" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -19,6 +19,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-e730675bd9a1a3d322fa1e33ca585348L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-e730675bd9a1a3d322fa1e33ca585348R19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.concurrent.atomic.AtomicReference</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-e730675bd9a1a3d322fa1e33ca585348L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-e730675bd9a1a3d322fa1e33ca585348R20"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.function.BiFunction</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-e730675bd9a1a3d322fa1e33ca585348L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-e730675bd9a1a3d322fa1e33ca585348R21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.function.Function</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-e730675bd9a1a3d322fa1e33ca585348R22"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.function.Supplier</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-e730675bd9a1a3d322fa1e33ca585348L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-e730675bd9a1a3d322fa1e33ca585348R23"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-e730675bd9a1a3d322fa1e33ca585348L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-e730675bd9a1a3d322fa1e33ca585348R24"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.netflix.titus.common.util.tuple.Either</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-e730675bd9a1a3d322fa1e33ca585348L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-e730675bd9a1a3d322fa1e33ca585348R25"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.netflix.titus.common.util.tuple.Pair</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="8">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="25-26" data-right-range="26-27" data-url="/Netflix/titus-control-plane/blob_excerpt/07d07cc9bcbe28dfa6a4e8f0b4d516ca77b9480f?diff=unified&amp;in_wiki_context=&amp;last_left=24&amp;last_right=25&amp;left=30&amp;left_hunk_size=20&amp;mode=100644&amp;path=titus-common%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fcommon%2Futil%2Frx%2FMapWithStateTransformer.java&amp;right=31&amp;right_hunk_size=20" href="#diff-e730675bd9a1a3d322fa1e33ca585348" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -30,20 +31,20 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-e730675bd9a1a3d322fa1e33ca585348L30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-e730675bd9a1a3d322fa1e33ca585348R31"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-e730675bd9a1a3d322fa1e33ca585348L31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-e730675bd9a1a3d322fa1e33ca585348R32"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">class</span> <span class="pl-en">MapWithStateTransformer</span>&lt;T, R, S&gt; <span class="pl-k">implements</span> <span class="pl-e">Observable</span>.<span class="pl-e">Transformer&lt;<span class="pl-smi">T</span>, <span class="pl-smi">R</span>&gt;</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-e730675bd9a1a3d322fa1e33ca585348L32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-e730675bd9a1a3d322fa1e33ca585348R33"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="33" id="diff-e730675bd9a1a3d322fa1e33ca585348L33"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi x x-first">S</span><span class="x x-last"> zero</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="34" id="diff-e730675bd9a1a3d322fa1e33ca585348R34"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k"><span class="x x-first">Supplier&lt;</span><span class="pl-smi x">S</span><span class="x">&gt;</span></span><span class="x x-last"> zeroSupplier</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-e730675bd9a1a3d322fa1e33ca585348L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-e730675bd9a1a3d322fa1e33ca585348R35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k">BiFunction&lt;<span class="pl-smi">T</span>, <span class="pl-smi">S</span>, <span class="pl-k">Pair&lt;<span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span>&gt;</span> transformer;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-e730675bd9a1a3d322fa1e33ca585348L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-e730675bd9a1a3d322fa1e33ca585348R36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k">Observable&lt;<span class="pl-k">Function&lt;<span class="pl-smi">S</span>, <span class="pl-k">Pair&lt;<span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span>&gt;</span>&gt;</span> cleanupActions;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-e730675bd9a1a3d322fa1e33ca585348L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-e730675bd9a1a3d322fa1e33ca585348R37"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="37" id="diff-e730675bd9a1a3d322fa1e33ca585348L37"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-en">MapWithStateTransformer</span>(<span class="pl-smi x x-first">S</span><span class="x"> </span><span class="pl-v x x-last">zero</span>, <span class="pl-k">BiFunction&lt;<span class="pl-smi">T</span>, <span class="pl-smi">S</span>, <span class="pl-k">Pair&lt;<span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span>&gt;</span> <span class="pl-v">transformer</span>, <span class="pl-k">Observable&lt;<span class="pl-k">Function&lt;<span class="pl-smi">S</span>, <span class="pl-k">Pair&lt;<span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span>&gt;</span>&gt;</span> <span class="pl-v">cleanupActions</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="38" id="diff-e730675bd9a1a3d322fa1e33ca585348L38"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span><span class="x x-first x-last">zero</span> <span class="pl-k">=</span> <span class="x x-first x-last">zero</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-e730675bd9a1a3d322fa1e33ca585348R38"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-en">MapWithStateTransformer</span>(<span class="pl-k"><span class="x x-first">Supplier&lt;</span><span class="pl-smi x">S</span><span class="x">&gt;</span></span><span class="x"> </span><span class="pl-v x x-last">zeroSupplier</span>, <span class="pl-k">BiFunction&lt;<span class="pl-smi">T</span>, <span class="pl-smi">S</span>, <span class="pl-k">Pair&lt;<span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span>&gt;</span> <span class="pl-v">transformer</span>, <span class="pl-k">Observable&lt;<span class="pl-k">Function&lt;<span class="pl-smi">S</span>, <span class="pl-k">Pair&lt;<span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span>&gt;</span>&gt;</span> <span class="pl-v">cleanupActions</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-e730675bd9a1a3d322fa1e33ca585348R39"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span><span class="x x-first x-last">zeroSupplier</span> <span class="pl-k">=</span> <span class="x x-first x-last">zeroSupplier</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-e730675bd9a1a3d322fa1e33ca585348L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-e730675bd9a1a3d322fa1e33ca585348R40"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>transformer <span class="pl-k">=</span> transformer;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-e730675bd9a1a3d322fa1e33ca585348L40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-e730675bd9a1a3d322fa1e33ca585348R41"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>cleanupActions <span class="pl-k">=</span> cleanupActions;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-e730675bd9a1a3d322fa1e33ca585348L41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-e730675bd9a1a3d322fa1e33ca585348R42"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-e730675bd9a1a3d322fa1e33ca585348L42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-e730675bd9a1a3d322fa1e33ca585348R43"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-e730675bd9a1a3d322fa1e33ca585348L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-e730675bd9a1a3d322fa1e33ca585348R44"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-e730675bd9a1a3d322fa1e33ca585348L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-e730675bd9a1a3d322fa1e33ca585348R45"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">Observable&lt;<span class="pl-smi">R</span>&gt;</span> <span class="pl-en">call</span>(<span class="pl-k">Observable&lt;<span class="pl-smi">T</span>&gt;</span> <span class="pl-v">source</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-e730675bd9a1a3d322fa1e33ca585348L45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-e730675bd9a1a3d322fa1e33ca585348R46"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-smi">Observable</span><span class="pl-k">.</span>unsafeCreate(subscriber <span class="pl-k">-</span><span class="pl-k">&gt;</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="46" id="diff-e730675bd9a1a3d322fa1e33ca585348L46"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">AtomicReference&lt;<span class="pl-smi">S</span>&gt;</span> lastState <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">AtomicReference&lt;&gt;</span>(<span class="x x-first x-last">zero</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-e730675bd9a1a3d322fa1e33ca585348R47"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">AtomicReference&lt;<span class="pl-smi">S</span>&gt;</span> lastState <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">AtomicReference&lt;&gt;</span>(<span class="x x-first">zeroSupplier</span><span class="pl-k x">.</span><span class="x x-last">get()</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-e730675bd9a1a3d322fa1e33ca585348L47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-e730675bd9a1a3d322fa1e33ca585348R48"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-e730675bd9a1a3d322fa1e33ca585348L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-e730675bd9a1a3d322fa1e33ca585348R49"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">Observable&lt;<span class="pl-k">Either&lt;<span class="pl-smi">T</span>, <span class="pl-k">Function&lt;<span class="pl-smi">S</span>, <span class="pl-k">Pair&lt;<span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span>&gt;</span>&gt;</span>&gt;</span> sourceEither <span class="pl-k">=</span> source<span class="pl-k">.</span>map(<span class="pl-smi">Either</span><span class="pl-k">::</span>ofValue);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-e730675bd9a1a3d322fa1e33ca585348L49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-e730675bd9a1a3d322fa1e33ca585348R50"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">Observable&lt;<span class="pl-k">Either&lt;<span class="pl-smi">T</span>, <span class="pl-k">Function&lt;<span class="pl-smi">S</span>, <span class="pl-k">Pair&lt;<span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span>&gt;</span>&gt;</span>&gt;</span> cleanupEither <span class="pl-k">=</span> cleanupActions<span class="pl-k">.</span>map(<span class="pl-smi">Either</span><span class="pl-k">::</span>ofError);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="50-79" data-right-range="51-79" data-url="/Netflix/titus-control-plane/blob_excerpt/07d07cc9bcbe28dfa6a4e8f0b4d516ca77b9480f?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=49&amp;last_right=50&amp;left=80&amp;left_hunk_size=&amp;mode=100644&amp;path=titus-common%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fcommon%2Futil%2Frx%2FMapWithStateTransformer.java&amp;right=80&amp;right_hunk_size=" href="#diff-e730675bd9a1a3d322fa1e33ca585348" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-e730675bd9a1a3d322fa1e33ca585348L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-e730675bd9a1a3d322fa1e33ca585348R19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-e730675bd9a1a3d322fa1e33ca585348L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-e730675bd9a1a3d322fa1e33ca585348R20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-e730675bd9a1a3d322fa1e33ca585348L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-e730675bd9a1a3d322fa1e33ca585348R21"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-e730675bd9a1a3d322fa1e33ca585348R22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-e730675bd9a1a3d322fa1e33ca585348L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-e730675bd9a1a3d322fa1e33ca585348R23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-e730675bd9a1a3d322fa1e33ca585348L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-e730675bd9a1a3d322fa1e33ca585348R24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-e730675bd9a1a3d322fa1e33ca585348L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-e730675bd9a1a3d322fa1e33ca585348R25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-e730675bd9a1a3d322fa1e33ca585348L30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-e730675bd9a1a3d322fa1e33ca585348R31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-e730675bd9a1a3d322fa1e33ca585348L31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-e730675bd9a1a3d322fa1e33ca585348R32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-e730675bd9a1a3d322fa1e33ca585348L32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-e730675bd9a1a3d322fa1e33ca585348R33"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="33" id="diff-e730675bd9a1a3d322fa1e33ca585348L33"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="34" id="diff-e730675bd9a1a3d322fa1e33ca585348R34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-e730675bd9a1a3d322fa1e33ca585348L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-e730675bd9a1a3d322fa1e33ca585348R35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-e730675bd9a1a3d322fa1e33ca585348L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-e730675bd9a1a3d322fa1e33ca585348R36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-e730675bd9a1a3d322fa1e33ca585348L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-e730675bd9a1a3d322fa1e33ca585348R37"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="37" id="diff-e730675bd9a1a3d322fa1e33ca585348L37"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="38" id="diff-e730675bd9a1a3d322fa1e33ca585348L38"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-e730675bd9a1a3d322fa1e33ca585348R38"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-e730675bd9a1a3d322fa1e33ca585348R39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-e730675bd9a1a3d322fa1e33ca585348L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-e730675bd9a1a3d322fa1e33ca585348R40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-e730675bd9a1a3d322fa1e33ca585348L40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-e730675bd9a1a3d322fa1e33ca585348R41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-e730675bd9a1a3d322fa1e33ca585348L41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-e730675bd9a1a3d322fa1e33ca585348R42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-e730675bd9a1a3d322fa1e33ca585348L42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-e730675bd9a1a3d322fa1e33ca585348R43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-e730675bd9a1a3d322fa1e33ca585348L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-e730675bd9a1a3d322fa1e33ca585348R44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-e730675bd9a1a3d322fa1e33ca585348L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-e730675bd9a1a3d322fa1e33ca585348R45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-e730675bd9a1a3d322fa1e33ca585348L45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-e730675bd9a1a3d322fa1e33ca585348R46"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="46" id="diff-e730675bd9a1a3d322fa1e33ca585348L46"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-e730675bd9a1a3d322fa1e33ca585348R47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-e730675bd9a1a3d322fa1e33ca585348L47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-e730675bd9a1a3d322fa1e33ca585348R48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-e730675bd9a1a3d322fa1e33ca585348L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-e730675bd9a1a3d322fa1e33ca585348R49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-e730675bd9a1a3d322fa1e33ca585348L49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-e730675bd9a1a3d322fa1e33ca585348R50"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-1">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-cae577c7fcd797c46cb753c617034ebd" data-file-deleted="false" data-file-type=".java" data-path="titus-common/src/main/java/com/netflix/titus/common/util/rx/ObservableExt.java" data-short-path="cae577c">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="titus-common/src/main/java/com/netflix/titus/common/util/rx/ObservableExt.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/tbak/titus-control-plane/blob/a83adc6c930c3787637afcfcc3df3e7b9dca1a01/titus-common/src/main/java/com/netflix/titus/common/util/rx/ObservableExt.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="9 additions &amp; 2 deletions" class="diffstat tooltipped tooltipped-e">11 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-cae577c7fcd797c46cb753c617034ebd" title="titus-common/src/main/java/com/netflix/titus/common/util/rx/ObservableExt.java">titus-common/src/main/java/com/netflix/titus/common/util/rx/ObservableExt.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-cae577c7fcd797c46cb753c617034ebd" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-128" data-right-range="1-128" data-url="/Netflix/titus-control-plane/blob_excerpt/9252e16bd3e4e8f7bcacfe620872594237894422?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=129&amp;left_hunk_size=7&amp;mode=100644&amp;path=titus-common%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fcommon%2Futil%2Frx%2FObservableExt.java&amp;right=129&amp;right_hunk_size=14" href="#diff-cae577c7fcd797c46cb753c617034ebd" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -129,7 +129,14 @@ public static Completable fromCallableSupplier(Callable&lt;Completable&gt; completable</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="129" id="diff-cae577c7fcd797c46cb753c617034ebdL129"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="129" id="diff-cae577c7fcd797c46cb753c617034ebdR129"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * when next item is emitted.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="130" id="diff-cae577c7fcd797c46cb753c617034ebdL130"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="130" id="diff-cae577c7fcd797c46cb753c617034ebdR130"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="131" id="diff-cae577c7fcd797c46cb753c617034ebdL131"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="131" id="diff-cae577c7fcd797c46cb753c617034ebdR131"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">&lt;<span class="pl-smi">T</span>, <span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span> <span class="pl-smi">Observable</span>.<span class="pl-k">Transformer&lt;<span class="pl-smi">T</span>, <span class="pl-smi">R</span>&gt;</span> <span class="pl-en">mapWithState</span>(<span class="pl-smi">S</span> <span class="pl-v">zero</span>, <span class="pl-k">BiFunction&lt;<span class="pl-smi">T</span>, <span class="pl-smi">S</span>, <span class="pl-k">Pair&lt;<span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span>&gt;</span> <span class="pl-v">transformer</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="132" id="diff-cae577c7fcd797c46cb753c617034ebdL132"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-k">MapWithStateTransformer&lt;&gt;</span>(zero, transformer, <span class="pl-smi">Observable</span><span class="pl-k">.</span>empty());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="132" id="diff-cae577c7fcd797c46cb753c617034ebdR132"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-k">MapWithStateTransformer&lt;&gt;</span>(() <span class="pl-k">-</span><span class="pl-k">&gt;</span> zero, transformer, <span class="pl-smi">Observable</span><span class="pl-k">.</span>empty());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="133" id="diff-cae577c7fcd797c46cb753c617034ebdR133"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="134" id="diff-cae577c7fcd797c46cb753c617034ebdR134"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="135" id="diff-cae577c7fcd797c46cb753c617034ebdR135"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="136" id="diff-cae577c7fcd797c46cb753c617034ebdR136"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * See {<span class="pl-k">@link</span> #mapWithState(Object, <span class="pl-corl">BiFunction)</span>}. The difference is that the initial value is computed on each subscription.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="137" id="diff-cae577c7fcd797c46cb753c617034ebdR137"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="138" id="diff-cae577c7fcd797c46cb753c617034ebdR138"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">&lt;<span class="pl-smi">T</span>, <span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span> <span class="pl-smi">Observable</span>.<span class="pl-k">Transformer&lt;<span class="pl-smi">T</span>, <span class="pl-smi">R</span>&gt;</span> <span class="pl-en">mapWithState</span>(<span class="pl-k">Supplier&lt;<span class="pl-smi">S</span>&gt;</span> <span class="pl-v">zeroSupplier</span>, <span class="pl-k">BiFunction&lt;<span class="pl-smi">T</span>, <span class="pl-smi">S</span>, <span class="pl-k">Pair&lt;<span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span>&gt;</span> <span class="pl-v">transformer</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="139" id="diff-cae577c7fcd797c46cb753c617034ebdR139"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-k">MapWithStateTransformer&lt;&gt;</span>(zeroSupplier, transformer, <span class="pl-smi">Observable</span><span class="pl-k">.</span>empty());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="133" id="diff-cae577c7fcd797c46cb753c617034ebdL133"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="140" id="diff-cae577c7fcd797c46cb753c617034ebdR140"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="134" id="diff-cae577c7fcd797c46cb753c617034ebdL134"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-cae577c7fcd797c46cb753c617034ebdR141"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="135" id="diff-cae577c7fcd797c46cb753c617034ebdL135"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-cae577c7fcd797c46cb753c617034ebdR142"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="16">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="136-135" data-right-range="143-142" data-url="/Netflix/titus-control-plane/blob_excerpt/9252e16bd3e4e8f7bcacfe620872594237894422?diff=unified&amp;in_wiki_context=&amp;last_left=135&amp;last_right=142&amp;left=138&amp;left_hunk_size=7&amp;mode=100644&amp;path=titus-common%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fcommon%2Futil%2Frx%2FObservableExt.java&amp;right=145&amp;right_hunk_size=7" href="#diff-cae577c7fcd797c46cb753c617034ebd" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -138,7 +145,7 @@ public static Completable fromCallableSupplier(Callable&lt;Completable&gt; completable</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="138" id="diff-cae577c7fcd797c46cb753c617034ebdL138"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="145" id="diff-cae577c7fcd797c46cb753c617034ebdR145"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">&lt;<span class="pl-smi">T</span>, <span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span> <span class="pl-smi">Observable</span>.<span class="pl-k">Transformer&lt;<span class="pl-smi">T</span>, <span class="pl-smi">R</span>&gt;</span> <span class="pl-en">mapWithState</span>(<span class="pl-smi">S</span> <span class="pl-v">zero</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="139" id="diff-cae577c7fcd797c46cb753c617034ebdL139"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="146" id="diff-cae577c7fcd797c46cb753c617034ebdR146"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">BiFunction&lt;<span class="pl-smi">T</span>, <span class="pl-smi">S</span>, <span class="pl-k">Pair&lt;<span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span>&gt;</span> <span class="pl-v">transformer</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="140" id="diff-cae577c7fcd797c46cb753c617034ebdL140"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="147" id="diff-cae577c7fcd797c46cb753c617034ebdR147"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">Observable&lt;<span class="pl-k">Function&lt;<span class="pl-smi">S</span>, <span class="pl-k">Pair&lt;<span class="pl-smi">R</span>, <span class="pl-smi">S</span>&gt;</span>&gt;</span>&gt;</span> <span class="pl-v">cleanupActions</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="141" id="diff-cae577c7fcd797c46cb753c617034ebdL141"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-k">MapWithStateTransformer&lt;&gt;</span>(zero, transformer, cleanupActions);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="148" id="diff-cae577c7fcd797c46cb753c617034ebdR148"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-k">MapWithStateTransformer&lt;&gt;</span>(<span class="x x-first">() </span><span class="pl-k x">-</span><span class="pl-k x">&gt;</span><span class="x x-last"> </span>zero, transformer, cleanupActions);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-cae577c7fcd797c46cb753c617034ebdL142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="149" id="diff-cae577c7fcd797c46cb753c617034ebdR149"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="143" id="diff-cae577c7fcd797c46cb753c617034ebdL143"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="150" id="diff-cae577c7fcd797c46cb753c617034ebdR150"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="144" id="diff-cae577c7fcd797c46cb753c617034ebdL144"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="151" id="diff-cae577c7fcd797c46cb753c617034ebdR151"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="145-417" data-right-range="152-417" data-url="/Netflix/titus-control-plane/blob_excerpt/9252e16bd3e4e8f7bcacfe620872594237894422?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=144&amp;last_right=151&amp;left=418&amp;left_hunk_size=&amp;mode=100644&amp;path=titus-common%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fcommon%2Futil%2Frx%2FObservableExt.java&amp;right=418&amp;right_hunk_size=" href="#diff-cae577c7fcd797c46cb753c617034ebd" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="129" id="diff-cae577c7fcd797c46cb753c617034ebdL129"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="129" id="diff-cae577c7fcd797c46cb753c617034ebdR129"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="130" id="diff-cae577c7fcd797c46cb753c617034ebdL130"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="130" id="diff-cae577c7fcd797c46cb753c617034ebdR130"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="131" id="diff-cae577c7fcd797c46cb753c617034ebdL131"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="131" id="diff-cae577c7fcd797c46cb753c617034ebdR131"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="132" id="diff-cae577c7fcd797c46cb753c617034ebdL132"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="132" id="diff-cae577c7fcd797c46cb753c617034ebdR132"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="133" id="diff-cae577c7fcd797c46cb753c617034ebdR133"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="134" id="diff-cae577c7fcd797c46cb753c617034ebdR134"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="135" id="diff-cae577c7fcd797c46cb753c617034ebdR135"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="136" id="diff-cae577c7fcd797c46cb753c617034ebdR136"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="137" id="diff-cae577c7fcd797c46cb753c617034ebdR137"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="138" id="diff-cae577c7fcd797c46cb753c617034ebdR138"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="139" id="diff-cae577c7fcd797c46cb753c617034ebdR139"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="133" id="diff-cae577c7fcd797c46cb753c617034ebdL133"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="140" id="diff-cae577c7fcd797c46cb753c617034ebdR140"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="134" id="diff-cae577c7fcd797c46cb753c617034ebdL134"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-cae577c7fcd797c46cb753c617034ebdR141"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="135" id="diff-cae577c7fcd797c46cb753c617034ebdL135"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-cae577c7fcd797c46cb753c617034ebdR142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="138" id="diff-cae577c7fcd797c46cb753c617034ebdL138"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="145" id="diff-cae577c7fcd797c46cb753c617034ebdR145"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="139" id="diff-cae577c7fcd797c46cb753c617034ebdL139"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="146" id="diff-cae577c7fcd797c46cb753c617034ebdR146"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="140" id="diff-cae577c7fcd797c46cb753c617034ebdL140"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="147" id="diff-cae577c7fcd797c46cb753c617034ebdR147"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="141" id="diff-cae577c7fcd797c46cb753c617034ebdL141"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="148" id="diff-cae577c7fcd797c46cb753c617034ebdR148"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-cae577c7fcd797c46cb753c617034ebdL142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="149" id="diff-cae577c7fcd797c46cb753c617034ebdR149"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="143" id="diff-cae577c7fcd797c46cb753c617034ebdL143"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="150" id="diff-cae577c7fcd797c46cb753c617034ebdR150"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="144" id="diff-cae577c7fcd797c46cb753c617034ebdL144"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="151" id="diff-cae577c7fcd797c46cb753c617034ebdR151"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-2">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-5fc5d117d7abddf09cbde97b9183f336" data-file-deleted="false" data-file-type=".java" data-path="titus-ext/zookeeper/src/main/java/com/netflix/titus/ext/zookeeper/supervisor/ZookeeperLeaderElector.java" data-short-path="5fc5d11">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="titus-ext/zookeeper/src/main/java/com/netflix/titus/ext/zookeeper/supervisor/ZookeeperLeaderElector.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/tbak/titus-control-plane/blob/a83adc6c930c3787637afcfcc3df3e7b9dca1a01/titus-ext/zookeeper/src/main/java/com/netflix/titus/ext/zookeeper/supervisor/ZookeeperLeaderElector.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="2 additions &amp; 2 deletions" class="diffstat tooltipped tooltipped-e">4 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-5fc5d117d7abddf09cbde97b9183f336" title="titus-ext/zookeeper/src/main/java/com/netflix/titus/ext/zookeeper/supervisor/ZookeeperLeaderElector.java">...eper/src/main/java/com/netflix/titus/ext/zookeeper/supervisor/ZookeeperLeaderElector.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-5fc5d117d7abddf09cbde97b9183f336" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-41" data-right-range="1-41" data-url="/Netflix/titus-control-plane/blob_excerpt/4b23461c06ff28719f5608a32a92a1c1430e2e9b?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=42&amp;left_hunk_size=7&amp;mode=100644&amp;path=titus-ext%2Fzookeeper%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fext%2Fzookeeper%2Fsupervisor%2FZookeeperLeaderElector.java&amp;right=42&amp;right_hunk_size=7" href="#diff-5fc5d117d7abddf09cbde97b9183f336" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -42,7 +42,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-5fc5d117d7abddf09cbde97b9183f336L42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-5fc5d117d7abddf09cbde97b9183f336R42"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.slf4j.Logger</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-5fc5d117d7abddf09cbde97b9183f336L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-5fc5d117d7abddf09cbde97b9183f336R43"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.slf4j.LoggerFactory</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-5fc5d117d7abddf09cbde97b9183f336L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-5fc5d117d7abddf09cbde97b9183f336R44"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">rx.Observable</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="45" id="diff-5fc5d117d7abddf09cbde97b9183f336L45"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">rx.subjects.<span class="x x-first x-last">PublishSubject</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="45" id="diff-5fc5d117d7abddf09cbde97b9183f336R45"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">rx.subjects.<span class="x x-first x-last">BehaviorSubject</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-5fc5d117d7abddf09cbde97b9183f336L46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-5fc5d117d7abddf09cbde97b9183f336R46"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-5fc5d117d7abddf09cbde97b9183f336L47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-5fc5d117d7abddf09cbde97b9183f336R47"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">org.apache.zookeeper.KeeperException.Code.OK</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-5fc5d117d7abddf09cbde97b9183f336L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-5fc5d117d7abddf09cbde97b9183f336R48"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="9">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="49-52" data-right-range="49-52" data-url="/Netflix/titus-control-plane/blob_excerpt/4b23461c06ff28719f5608a32a92a1c1430e2e9b?diff=unified&amp;in_wiki_context=&amp;last_left=48&amp;last_right=48&amp;left=59&amp;left_hunk_size=7&amp;mode=100644&amp;path=titus-ext%2Fzookeeper%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fext%2Fzookeeper%2Fsupervisor%2FZookeeperLeaderElector.java&amp;right=59&amp;right_hunk_size=7" href="#diff-5fc5d117d7abddf09cbde97b9183f336" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -59,7 +59,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-5fc5d117d7abddf09cbde97b9183f336L59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-5fc5d117d7abddf09cbde97b9183f336R59"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> The path where a selected leader announces itself.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-5fc5d117d7abddf09cbde97b9183f336L60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-5fc5d117d7abddf09cbde97b9183f336R60"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> leaderPath;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="61" id="diff-5fc5d117d7abddf09cbde97b9183f336L61"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="61" id="diff-5fc5d117d7abddf09cbde97b9183f336R61"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="62" id="diff-5fc5d117d7abddf09cbde97b9183f336L62"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k"><span class="x x-first x-last">PublishSubject</span>&lt;<span class="pl-smi">MasterState</span>&gt;</span> electionSubject <span class="pl-k">=</span> <span class="pl-smi x x-first x-last">PublishSubject</span><span class="pl-k">.</span>create();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="62" id="diff-5fc5d117d7abddf09cbde97b9183f336R62"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k"><span class="x x-first x-last">BehaviorSubject</span>&lt;<span class="pl-smi">MasterState</span>&gt;</span> electionSubject <span class="pl-k">=</span> <span class="pl-smi x x-first x-last">BehaviorSubject</span><span class="pl-k">.</span>create();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="63" id="diff-5fc5d117d7abddf09cbde97b9183f336L63"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="63" id="diff-5fc5d117d7abddf09cbde97b9183f336R63"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k">Observable&lt;<span class="pl-smi">MasterState</span>&gt;</span> electionObserver <span class="pl-k">=</span> <span class="pl-smi">ObservableExt</span><span class="pl-k">.</span>protectFromMissingExceptionHandlers(electionSubject, logger);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="64" id="diff-5fc5d117d7abddf09cbde97b9183f336L64"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="64" id="diff-5fc5d117d7abddf09cbde97b9183f336R64"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="65" id="diff-5fc5d117d7abddf09cbde97b9183f336L65"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="65" id="diff-5fc5d117d7abddf09cbde97b9183f336R65"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k">AtomicReference&lt;<span class="pl-smi">LeaderElectionProcess</span>&gt;</span> leaderElectionProcessRef <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">AtomicReference&lt;&gt;</span>();</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="66-235" data-right-range="66-235" data-url="/Netflix/titus-control-plane/blob_excerpt/4b23461c06ff28719f5608a32a92a1c1430e2e9b?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=65&amp;last_right=65&amp;left=236&amp;left_hunk_size=&amp;mode=100644&amp;path=titus-ext%2Fzookeeper%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fext%2Fzookeeper%2Fsupervisor%2FZookeeperLeaderElector.java&amp;right=236&amp;right_hunk_size=" href="#diff-5fc5d117d7abddf09cbde97b9183f336" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-5fc5d117d7abddf09cbde97b9183f336L42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-5fc5d117d7abddf09cbde97b9183f336R42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-5fc5d117d7abddf09cbde97b9183f336L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-5fc5d117d7abddf09cbde97b9183f336R43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-5fc5d117d7abddf09cbde97b9183f336L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-5fc5d117d7abddf09cbde97b9183f336R44"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="45" id="diff-5fc5d117d7abddf09cbde97b9183f336L45"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="45" id="diff-5fc5d117d7abddf09cbde97b9183f336R45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-5fc5d117d7abddf09cbde97b9183f336L46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-5fc5d117d7abddf09cbde97b9183f336R46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-5fc5d117d7abddf09cbde97b9183f336L47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-5fc5d117d7abddf09cbde97b9183f336R47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-5fc5d117d7abddf09cbde97b9183f336L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-5fc5d117d7abddf09cbde97b9183f336R48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-5fc5d117d7abddf09cbde97b9183f336L59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-5fc5d117d7abddf09cbde97b9183f336R59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-5fc5d117d7abddf09cbde97b9183f336L60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-5fc5d117d7abddf09cbde97b9183f336R60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="61" id="diff-5fc5d117d7abddf09cbde97b9183f336L61"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="61" id="diff-5fc5d117d7abddf09cbde97b9183f336R61"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="62" id="diff-5fc5d117d7abddf09cbde97b9183f336L62"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="62" id="diff-5fc5d117d7abddf09cbde97b9183f336R62"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="63" id="diff-5fc5d117d7abddf09cbde97b9183f336L63"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="63" id="diff-5fc5d117d7abddf09cbde97b9183f336R63"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="64" id="diff-5fc5d117d7abddf09cbde97b9183f336L64"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="64" id="diff-5fc5d117d7abddf09cbde97b9183f336R64"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="65" id="diff-5fc5d117d7abddf09cbde97b9183f336L65"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="65" id="diff-5fc5d117d7abddf09cbde97b9183f336R65"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-3">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-7815ccd41b538ea215b3457d0bd931de" data-file-deleted="false" data-file-type=".java" data-path="titus-server-master/src/main/java/com/netflix/titus/master/supervisor/service/leader/LeaderElectionOrchestrator.java" data-short-path="7815ccd">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="titus-server-master/src/main/java/com/netflix/titus/master/supervisor/service/leader/LeaderElectionOrchestrator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/tbak/titus-control-plane/blob/a83adc6c930c3787637afcfcc3df3e7b9dca1a01/titus-server-master/src/main/java/com/netflix/titus/master/supervisor/service/leader/LeaderElectionOrchestrator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="9 additions &amp; 4 deletions" class="diffstat tooltipped tooltipped-e">13 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-7815ccd41b538ea215b3457d0bd931de" title="titus-server-master/src/main/java/com/netflix/titus/master/supervisor/service/leader/LeaderElectionOrchestrator.java">...n/java/com/netflix/titus/master/supervisor/service/leader/LeaderElectionOrchestrator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-7815ccd41b538ea215b3457d0bd931de" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-17" data-right-range="1-17" data-url="/Netflix/titus-control-plane/blob_excerpt/a99c32b9f8b7eab2d5029e0e4c589ad9481d9687?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=18&amp;left_hunk_size=6&amp;mode=100644&amp;path=titus-server-master%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fmaster%2Fsupervisor%2Fservice%2Fleader%2FLeaderElectionOrchestrator.java&amp;right=18&amp;right_hunk_size=8" href="#diff-7815ccd41b538ea215b3457d0bd931de" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -18,6 +18,8 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-7815ccd41b538ea215b3457d0bd931deL18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-7815ccd41b538ea215b3457d0bd931deR18"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-7815ccd41b538ea215b3457d0bd931deL19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-7815ccd41b538ea215b3457d0bd931deR19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.Optional</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-7815ccd41b538ea215b3457d0bd931deL20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-7815ccd41b538ea215b3457d0bd931deR20"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.concurrent.TimeUnit</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="21" id="diff-7815ccd41b538ea215b3457d0bd931deR21"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.function.BiFunction</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-7815ccd41b538ea215b3457d0bd931deR22"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.function.Supplier</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-7815ccd41b538ea215b3457d0bd931deL21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-7815ccd41b538ea215b3457d0bd931deR23"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.annotation.PreDestroy</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-7815ccd41b538ea215b3457d0bd931deL22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-7815ccd41b538ea215b3457d0bd931deR24"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.inject.Inject</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-7815ccd41b538ea215b3457d0bd931deL23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-7815ccd41b538ea215b3457d0bd931deR25"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.inject.Singleton</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="9">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="24-86" data-right-range="26-88" data-url="/Netflix/titus-control-plane/blob_excerpt/a99c32b9f8b7eab2d5029e0e4c589ad9481d9687?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=23&amp;last_right=25&amp;left=151&amp;left_hunk_size=10&amp;mode=100644&amp;path=titus-server-master%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fmaster%2Fsupervisor%2Fservice%2Fleader%2FLeaderElectionOrchestrator.java&amp;right=153&amp;right_hunk_size=13" href="#diff-7815ccd41b538ea215b3457d0bd931de" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="87-150" data-right-range="89-152" data-url="/Netflix/titus-control-plane/blob_excerpt/a99c32b9f8b7eab2d5029e0e4c589ad9481d9687?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=23&amp;last_right=25&amp;left=151&amp;left_hunk_size=10&amp;mode=100644&amp;path=titus-server-master%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fmaster%2Fsupervisor%2Fservice%2Fleader%2FLeaderElectionOrchestrator.java&amp;right=153&amp;right_hunk_size=13" href="#diff-7815ccd41b538ea215b3457d0bd931de" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -151,10 +153,13 @@ private Subscription subscribeToLocalMasterUpdateStream() {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="151" id="diff-7815ccd41b538ea215b3457d0bd931deL151"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="153" id="diff-7815ccd41b538ea215b3457d0bd931deR153"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">                localMasterInstanceResolver<span class="pl-k">.</span>observeLocalMasterInstanceUpdates(),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="152" id="diff-7815ccd41b538ea215b3457d0bd931deL152"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="154" id="diff-7815ccd41b538ea215b3457d0bd931deR154"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">                leaderElector<span class="pl-k">.</span>awaitElection()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="153" id="diff-7815ccd41b538ea215b3457d0bd931deL153"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="155" id="diff-7815ccd41b538ea215b3457d0bd931deR155"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        )<span class="pl-k">.</span>compose(</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="154" id="diff-7815ccd41b538ea215b3457d0bd931deL154"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">ObservableExt</span><span class="pl-k">.</span>mapWithState(masterMonitor<span class="pl-k">.</span>getCurrentMasterInstance(), (change, currentMaster) <span class="pl-k">-</span><span class="pl-k">&gt;</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="155" id="diff-7815ccd41b538ea215b3457d0bd931deL155"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">                        processChange(change, currentMaster)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="156" id="diff-7815ccd41b538ea215b3457d0bd931deL156"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">                                .map(newMasterInstance <span class="pl-k">-</span><span class="pl-k">&gt;</span> <span class="pl-smi">Pair</span><span class="pl-k">.</span>of(<span class="pl-smi">Optional</span><span class="pl-k">.</span>of(newMasterInstance), newMasterInstance))</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="157" id="diff-7815ccd41b538ea215b3457d0bd931deL157"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">                                .orElseGet(() <span class="pl-k">-</span><span class="pl-k">&gt;</span> <span class="pl-smi">Pair</span><span class="pl-k">.</span>of(<span class="pl-smi">Optional</span><span class="pl-k">.</span>empty(), currentMaster)))</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="156" id="diff-7815ccd41b538ea215b3457d0bd931deR156"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">ObservableExt</span><span class="pl-k">.</span>mapWithState(</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="157" id="diff-7815ccd41b538ea215b3457d0bd931deR157"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                        (<span class="pl-k">Supplier&lt;<span class="pl-smi">MasterInstance</span>&gt;</span>) masterMonitor<span class="pl-k">::</span>getCurrentMasterInstance,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="158" id="diff-7815ccd41b538ea215b3457d0bd931deR158"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                        (<span class="pl-k">BiFunction&lt;<span class="pl-smi">Object</span>, <span class="pl-smi">MasterInstance</span>, <span class="pl-k">Pair&lt;<span class="pl-k">Optional&lt;<span class="pl-smi">MasterInstance</span>&gt;</span>, <span class="pl-smi">MasterInstance</span>&gt;</span>&gt;</span>) (change, currentMaster) <span class="pl-k">-</span><span class="pl-k">&gt;</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="159" id="diff-7815ccd41b538ea215b3457d0bd931deR159"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                                processChange(change, currentMaster)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="160" id="diff-7815ccd41b538ea215b3457d0bd931deR160"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                                        .map(newMasterInstance <span class="pl-k">-</span><span class="pl-k">&gt;</span> <span class="pl-smi">Pair</span><span class="pl-k">.</span>of(<span class="pl-smi">Optional</span><span class="pl-k">.</span>of(newMasterInstance), newMasterInstance))</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="161" id="diff-7815ccd41b538ea215b3457d0bd931deR161"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                                        .orElseGet(() <span class="pl-k">-</span><span class="pl-k">&gt;</span> <span class="pl-smi">Pair</span><span class="pl-k">.</span>of(<span class="pl-smi">Optional</span><span class="pl-k">.</span>empty(), currentMaster))</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="162" id="diff-7815ccd41b538ea215b3457d0bd931deR162"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                )</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="158" id="diff-7815ccd41b538ea215b3457d0bd931deL158"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="163" id="diff-7815ccd41b538ea215b3457d0bd931deR163"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        )<span class="pl-k">.</span>flatMapCompletable(<span class="pl-c1">this</span><span class="pl-k">::</span>updateOwnMasterInstanceIfChanged);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="159" id="diff-7815ccd41b538ea215b3457d0bd931deL159"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="164" id="diff-7815ccd41b538ea215b3457d0bd931deR164"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="160" id="diff-7815ccd41b538ea215b3457d0bd931deL160"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="165" id="diff-7815ccd41b538ea215b3457d0bd931deR165"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> titusRuntime<span class="pl-k">.</span>persistentStream(updateStream)<span class="pl-k">.</span>subscribe();</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="161-236" data-right-range="166-236" data-url="/Netflix/titus-control-plane/blob_excerpt/a99c32b9f8b7eab2d5029e0e4c589ad9481d9687?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=160&amp;last_right=165&amp;left=237&amp;left_hunk_size=&amp;mode=100644&amp;path=titus-server-master%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnetflix%2Ftitus%2Fmaster%2Fsupervisor%2Fservice%2Fleader%2FLeaderElectionOrchestrator.java&amp;right=237&amp;right_hunk_size=" href="#diff-7815ccd41b538ea215b3457d0bd931de" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-7815ccd41b538ea215b3457d0bd931deL18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-7815ccd41b538ea215b3457d0bd931deR18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-7815ccd41b538ea215b3457d0bd931deL19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-7815ccd41b538ea215b3457d0bd931deR19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-7815ccd41b538ea215b3457d0bd931deL20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-7815ccd41b538ea215b3457d0bd931deR20"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="21" id="diff-7815ccd41b538ea215b3457d0bd931deR21"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-7815ccd41b538ea215b3457d0bd931deR22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-7815ccd41b538ea215b3457d0bd931deL21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-7815ccd41b538ea215b3457d0bd931deR23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-7815ccd41b538ea215b3457d0bd931deL22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-7815ccd41b538ea215b3457d0bd931deR24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-7815ccd41b538ea215b3457d0bd931deL23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-7815ccd41b538ea215b3457d0bd931deR25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="151" id="diff-7815ccd41b538ea215b3457d0bd931deL151"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="153" id="diff-7815ccd41b538ea215b3457d0bd931deR153"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="152" id="diff-7815ccd41b538ea215b3457d0bd931deL152"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="154" id="diff-7815ccd41b538ea215b3457d0bd931deR154"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="153" id="diff-7815ccd41b538ea215b3457d0bd931deL153"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="155" id="diff-7815ccd41b538ea215b3457d0bd931deR155"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="154" id="diff-7815ccd41b538ea215b3457d0bd931deL154"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="155" id="diff-7815ccd41b538ea215b3457d0bd931deL155"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="156" id="diff-7815ccd41b538ea215b3457d0bd931deL156"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="157" id="diff-7815ccd41b538ea215b3457d0bd931deL157"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="156" id="diff-7815ccd41b538ea215b3457d0bd931deR156"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="157" id="diff-7815ccd41b538ea215b3457d0bd931deR157"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="158" id="diff-7815ccd41b538ea215b3457d0bd931deR158"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="159" id="diff-7815ccd41b538ea215b3457d0bd931deR159"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="160" id="diff-7815ccd41b538ea215b3457d0bd931deR160"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="161" id="diff-7815ccd41b538ea215b3457d0bd931deR161"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="162" id="diff-7815ccd41b538ea215b3457d0bd931deR162"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="158" id="diff-7815ccd41b538ea215b3457d0bd931deL158"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="163" id="diff-7815ccd41b538ea215b3457d0bd931deR163"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="159" id="diff-7815ccd41b538ea215b3457d0bd931deL159"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="164" id="diff-7815ccd41b538ea215b3457d0bd931deR164"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="160" id="diff-7815ccd41b538ea215b3457d0bd931deL160"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="165" id="diff-7815ccd41b538ea215b3457d0bd931deR165"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

@@ -1,0 +1,502 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-b6491fb4fc5119b9f775e1bfbdfe9bdc" data-file-deleted="false" data-file-type=".java" data-path="tools/plugins/com.liferay.ide.upgrade.plan.ui/src/com/liferay/ide/upgrade/plan/ui/internal/NewUpgradePlanWizard.java" data-short-path="b6491fb">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="tools/plugins/com.liferay.ide.upgrade.plan.ui/src/com/liferay/ide/upgrade/plan/ui/internal/NewUpgradePlanWizard.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/jtydhr88/liferay-ide/blob/c1885f70c50df929387d3c97deaded8dec19a120/tools/plugins/com.liferay.ide.upgrade.plan.ui/src/com/liferay/ide/upgrade/plan/ui/internal/NewUpgradePlanWizard.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="21 additions &amp; 0 deletions" class="diffstat tooltipped tooltipped-e">21 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span></span>
+<a class="link-gray-dark" href="#diff-b6491fb4fc5119b9f775e1bfbdfe9bdc" title="tools/plugins/com.liferay.ide.upgrade.plan.ui/src/com/liferay/ide/upgrade/plan/ui/internal/NewUpgradePlanWizard.java">...de.upgrade.plan.ui/src/com/liferay/ide/upgrade/plan/ui/internal/NewUpgradePlanWizard.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-b6491fb4fc5119b9f775e1bfbdfe9bdc" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-16" data-right-range="1-16" data-url="/gamerson/liferay-ide/blob_excerpt/4ded6f50c4e1009c3a64b5c66774057b0c0de7b3?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=17&amp;left_hunk_size=20&amp;mode=100644&amp;path=tools%2Fplugins%2Fcom.liferay.ide.upgrade.plan.ui%2Fsrc%2Fcom%2Fliferay%2Fide%2Fupgrade%2Fplan%2Fui%2Finternal%2FNewUpgradePlanWizard.java&amp;right=17&amp;right_hunk_size=39" href="#diff-b6491fb4fc5119b9f775e1bfbdfe9bdc" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -17,20 +17,39 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR17"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.liferay.ide.upgrade.plan.core.NewUpgradePlanOp</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR18"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.core.runtime.IConfigurationElement</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="20" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR20"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.jface.wizard.IWizardPage</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.sapphire.ui.def.DefinitionLoader</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR22"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.sapphire.ui.forms.swt.SapphireWizard</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="23" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR23"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.sapphire.ui.forms.swt.SapphireWizardPage</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR24"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.ui.wizards.newresource.BasicNewProjectResourceWizard</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR25"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR26"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR27"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> * <span class="pl-k">@author</span> Gregory Amerson</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR28"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> * <span class="pl-k">@author</span> Terry Jia</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="29" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR29"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> * <span class="pl-k">@author</span> Simon Jiang</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR30"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR31"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">NewUpgradePlanWizard</span> <span class="pl-k">extends</span> <span class="pl-e">SapphireWizard&lt;<span class="pl-smi">NewUpgradePlanOp</span>&gt;</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR32"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR33"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-en">NewUpgradePlanWizard</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">super</span>(<span class="pl-smi">NewUpgradePlanOp</span><span class="pl-c1"><span class="pl-k">.</span>TYPE</span>, <span class="pl-smi">DefinitionLoader</span><span class="pl-k">.</span>sdef(<span class="pl-smi">NewUpgradePlanWizard</span><span class="pl-k">.</span>class)<span class="pl-k">.</span>wizard());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">	}</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR37"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR38"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">IWizardPage</span>[] <span class="pl-en">getPages</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR39"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-k">IWizardPage</span>[] wizardPages <span class="pl-k">=</span> <span class="pl-c1">super</span><span class="pl-k">.</span>getPages();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="40" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR40"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="41" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR41"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-k">!</span>_firstErrorMessageRemoved <span class="pl-k">&amp;&amp;</span> (wizardPages <span class="pl-k">!=</span> <span class="pl-c1">null</span>)) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="42" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR42"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">SapphireWizardPage</span> wizardPage <span class="pl-k">=</span> (<span class="pl-smi">SapphireWizardPage</span>)wizardPages[<span class="pl-c1">0</span>];</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="43" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR43"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="44" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR44"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			wizardPage<span class="pl-k">.</span>setMessage(</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="45" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR45"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-s"><span class="pl-pds">"</span>Create and start a new Upgrade Plan. Any existing plan will be replaced.<span class="pl-pds">"</span></span>, <span class="pl-smi">SapphireWizardPage</span><span class="pl-c1"><span class="pl-k">.</span>NONE</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="46" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR46"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR47"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			_firstErrorMessageRemoved <span class="pl-k">=</span> <span class="pl-c1">true</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="48" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR48"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">		}</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="49" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR49"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="50" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR50"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> wizardPages;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="51" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR51"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">	}</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="52" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR52"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="53" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR53"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR54"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">protected</span> <span class="pl-k">void</span> <span class="pl-en">performPostFinish</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR55"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">super</span><span class="pl-k">.</span>performPostFinish();</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="40">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="37-42" data-right-range="56-61" data-url="/gamerson/liferay-ide/blob_excerpt/4ded6f50c4e1009c3a64b5c66774057b0c0de7b3?diff=unified&amp;in_wiki_context=&amp;last_left=36&amp;last_right=55&amp;left=51&amp;left_hunk_size=4&amp;mode=100644&amp;path=tools%2Fplugins%2Fcom.liferay.ide.upgrade.plan.ui%2Fsrc%2Fcom%2Fliferay%2Fide%2Fupgrade%2Fplan%2Fui%2Finternal%2FNewUpgradePlanWizard.java&amp;right=70&amp;right_hunk_size=6" href="#diff-b6491fb4fc5119b9f775e1bfbdfe9bdc" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -51,4 +70,6 @@ public String getAttribute(String name) {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="70" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR70"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">BasicNewProjectResourceWizard</span><span class="pl-k">.</span>updatePerspective(element);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL52"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="71" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR71"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">	}</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="53" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL53"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="72" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR72"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="73" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR73"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">boolean</span> _firstErrorMessageRemoved <span class="pl-k">=</span> <span class="pl-c1">false</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="74" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR74"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR75"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">}</span>
+<span aria-label="No newline at end of file" class="no-nl-marker tooltipped tooltipped-n">
+<svg aria-hidden="true" class="octicon octicon-no-newline" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M16 5v3c0 .55-.45 1-1 1h-3v2L9 8l3-3v2h2V5h2zM8 8c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4zM1.5 9.66L5.66 5.5C5.18 5.19 4.61 5 4 5 2.34 5 1 6.34 1 8c0 .61.19 1.17.5 1.66zM7 8c0-.61-.19-1.17-.5-1.66L2.34 10.5c.48.31 1.05.5 1.66.5 1.66 0 3-1.34 3-3z" fill-rule="evenodd"></path></svg>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR19"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="20" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR22"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="23" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR28"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="29" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR36"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR37"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR38"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR39"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="40" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR40"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="41" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR41"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="42" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR42"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="43" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR43"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="44" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR44"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="45" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR45"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="46" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR46"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR47"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="48" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR48"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="49" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR49"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="50" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR50"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="51" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR51"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="52" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR52"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="53" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR53"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="70" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR70"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL52"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="71" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR71"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="53" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL53"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="72" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR72"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="73" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR73"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="74" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcL54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-b6491fb4fc5119b9f775e1bfbdfe9bdcR75"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

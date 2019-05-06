@@ -1,0 +1,727 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-c9fbf7fd098cc4507894992a65c0e1ea" data-file-deleted="false" data-file-type=".java" data-path="src/com/intellij/idea/plugin/hybris/tools/remote/http/AbstractHybrisHacHttpClient.java" data-short-path="c9fbf7f">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="src/com/intellij/idea/plugin/hybris/tools/remote/http/AbstractHybrisHacHttpClient.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/AlexanderBartash/hybris-integration-intellij-idea-plugin/blob/981344f639da9e72af7e875e82b0b8df3f31895b/src/com/intellij/idea/plugin/hybris/tools/remote/http/AbstractHybrisHacHttpClient.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="22 additions &amp; 6 deletions" class="diffstat tooltipped tooltipped-e">28 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-c9fbf7fd098cc4507894992a65c0e1ea" title="src/com/intellij/idea/plugin/hybris/tools/remote/http/AbstractHybrisHacHttpClient.java">src/com/intellij/idea/plugin/hybris/tools/remote/http/AbstractHybrisHacHttpClient.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-c9fbf7fd098cc4507894992a65c0e1ea" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-5" data-right-range="1-5" data-url="/AlexanderBartash/hybris-integration-intellij-idea-plugin/blob_excerpt/0a606d53073c7b01c6c70ed1425eecdedc216f98?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=6&amp;left_hunk_size=6&amp;mode=100644&amp;path=src%2Fcom%2Fintellij%2Fidea%2Fplugin%2Fhybris%2Ftools%2Fremote%2Fhttp%2FAbstractHybrisHacHttpClient.java&amp;right=6&amp;right_hunk_size=7" href="#diff-c9fbf7fd098cc4507894992a65c0e1ea" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -6,6 +6,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR6"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.intellij.openapi.diagnostic.Logger</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR7"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.intellij.openapi.project.Project</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR8"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.commons.lang3.StringUtils</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="9" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR9"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.http.Header</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL9"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR10"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.http.HttpResponse</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR11"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.http.client.HttpClient</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR12"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.http.client.config.RequestConfig</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="8">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="12-32" data-right-range="13-33" data-url="/AlexanderBartash/hybris-integration-intellij-idea-plugin/blob_excerpt/0a606d53073c7b01c6c70ed1425eecdedc216f98?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=11&amp;last_right=12&amp;left=55&amp;left_hunk_size=6&amp;mode=100644&amp;path=src%2Fcom%2Fintellij%2Fidea%2Fplugin%2Fhybris%2Ftools%2Fremote%2Fhttp%2FAbstractHybrisHacHttpClient.java&amp;right=56&amp;right_hunk_size=7" href="#diff-c9fbf7fd098cc4507894992a65c0e1ea" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="33-54" data-right-range="34-55" data-url="/AlexanderBartash/hybris-integration-intellij-idea-plugin/blob_excerpt/0a606d53073c7b01c6c70ed1425eecdedc216f98?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=11&amp;last_right=12&amp;left=55&amp;left_hunk_size=6&amp;mode=100644&amp;path=src%2Fcom%2Fintellij%2Fidea%2Fplugin%2Fhybris%2Ftools%2Fremote%2Fhttp%2FAbstractHybrisHacHttpClient.java&amp;right=56&amp;right_hunk_size=7" href="#diff-c9fbf7fd098cc4507894992a65c0e1ea" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -55,6 +56,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR56"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">java.net.HttpURLConnection.HTTP_OK</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR57"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">org.apache.http.HttpHeaders.USER_AGENT</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL57"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR58"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">org.apache.http.HttpStatus.SC_FORBIDDEN</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="59" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR59"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">org.apache.http.HttpStatus.SC_MOVED_TEMPORARILY</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL58"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR60"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">org.apache.http.HttpStatus.SC_SERVICE_UNAVAILABLE</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="61" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR61"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">org.apache.http.HttpVersion.HTTP_1_1</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="62" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR62"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="16">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="61-64" data-right-range="63-66" data-url="/AlexanderBartash/hybris-integration-intellij-idea-plugin/blob_excerpt/0a606d53073c7b01c6c70ed1425eecdedc216f98?diff=unified&amp;in_wiki_context=&amp;last_left=60&amp;last_right=62&amp;left=71&amp;left_hunk_size=7&amp;mode=100644&amp;path=src%2Fcom%2Fintellij%2Fidea%2Fplugin%2Fhybris%2Ftools%2Fremote%2Fhttp%2FAbstractHybrisHacHttpClient.java&amp;right=73&amp;right_hunk_size=7" href="#diff-c9fbf7fd098cc4507894992a65c0e1ea" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -71,7 +73,7 @@ public String login(@NotNull Project project, @NotNull HybrisRemoteConnectionSet</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="71" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL71"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR73"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">String</span> hostHacURL <span class="pl-k">=</span> getHostHacURL(project);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="72" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL72"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR74"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        sessionId <span class="pl-k">=</span> getSessionId(hostHacURL);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL73"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR75"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (sessionId <span class="pl-k">==</span> <span class="pl-c1">null</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="74" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL74"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Unable to obtain sessionId<span class="pl-pds x x-first x-last">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="76" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR76"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Unable to obtain sessionId<span class="x x-first"> for </span><span class="pl-pds x">"</span></span><span class="pl-k x">+</span><span class="x x-last">hostHacURL</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL75"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR77"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="76" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL76"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR78"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">String</span> csrfToken <span class="pl-k">=</span> getCsrfToken(hostHacURL, sessionId);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL77"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR79"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">List&lt;<span class="pl-smi">BasicNameValuePair</span>&gt;</span> params <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">ArrayList&lt;&gt;</span>();</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="25">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="78-77" data-right-range="80-79" data-url="/AlexanderBartash/hybris-integration-intellij-idea-plugin/blob_excerpt/0a606d53073c7b01c6c70ed1425eecdedc216f98?diff=unified&amp;in_wiki_context=&amp;last_left=77&amp;last_right=79&amp;left=80&amp;left_hunk_size=6&amp;mode=100644&amp;path=src%2Fcom%2Fintellij%2Fidea%2Fplugin%2Fhybris%2Ftools%2Fremote%2Fhttp%2FAbstractHybrisHacHttpClient.java&amp;right=82&amp;right_hunk_size=12" href="#diff-c9fbf7fd098cc4507894992a65c0e1ea" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -80,6 +82,12 @@ public String login(@NotNull Project project, @NotNull HybrisRemoteConnectionSet</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR82"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        params<span class="pl-k">.</span>add(<span class="pl-k">new</span> <span class="pl-smi">BasicNameValuePair</span>(<span class="pl-s"><span class="pl-pds">"</span>_csrf<span class="pl-pds">"</span></span>, csrfToken));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR83"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">String</span> loginURL <span class="pl-k">=</span> hostHacURL <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>/j_spring_security_check<span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR84"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">HttpResponse</span> response <span class="pl-k">=</span> post(project, loginURL, params, <span class="pl-c1">false</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="85" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR85"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (response<span class="pl-k">.</span>getStatusLine()<span class="pl-k">.</span>getStatusCode() <span class="pl-k">==</span> <span class="pl-c1">SC_MOVED_TEMPORARILY</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="86" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR86"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">Header</span> location <span class="pl-k">=</span> response<span class="pl-k">.</span>getFirstHeader(<span class="pl-s"><span class="pl-pds">"</span>Location<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="87" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR87"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (location <span class="pl-k">!=</span> <span class="pl-c1">null</span> <span class="pl-k">&amp;&amp;</span> location<span class="pl-k">.</span>getValue()<span class="pl-k">.</span>contains(<span class="pl-s"><span class="pl-pds">"</span>login_error<span class="pl-pds">"</span></span>)) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="88" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR88"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Wrong username/password. Set your credentials in [y] tool window.<span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="89" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR89"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="90" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR90"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="91" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR91"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        sessionId <span class="pl-k">=</span> <span class="pl-smi">CookieParser</span><span class="pl-k">.</span>getInstance()<span class="pl-k">.</span>getSpecialCookie(response<span class="pl-k">.</span>getAllHeaders());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL84"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR92"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (sessionId <span class="pl-k">!=</span> <span class="pl-c1">null</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="85" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL85"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR93"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-smi">StringUtils</span><span class="pl-c1"><span class="pl-k">.</span>EMPTY</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="38">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="86-94" data-right-range="94-102" data-url="/AlexanderBartash/hybris-integration-intellij-idea-plugin/blob_excerpt/0a606d53073c7b01c6c70ed1425eecdedc216f98?diff=unified&amp;in_wiki_context=&amp;last_left=85&amp;last_right=93&amp;left=105&amp;left_hunk_size=10&amp;mode=100644&amp;path=src%2Fcom%2Fintellij%2Fidea%2Fplugin%2Fhybris%2Ftools%2Fremote%2Fhttp%2FAbstractHybrisHacHttpClient.java&amp;right=113&amp;right_hunk_size=10" href="#diff-c9fbf7fd098cc4507894992a65c0e1ea" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -105,10 +113,10 @@ public String login(@NotNull Project project, @NotNull HybrisRemoteConnectionSet</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="113" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR113"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@NotNull</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="114" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR114"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">final</span> <span class="pl-smi">HttpResponse</span> <span class="pl-en">post</span>(<span class="pl-k">@NotNull</span> <span class="pl-smi">Project</span> <span class="pl-v">project</span>, <span class="pl-k">@NotNull</span> <span class="pl-smi">String</span> <span class="pl-v">actionUrl</span>, <span class="pl-k">@NotNull</span> <span class="pl-k">List&lt;<span class="pl-smi">BasicNameValuePair</span>&gt;</span> <span class="pl-v">params</span>, <span class="pl-k">boolean</span> <span class="pl-v">canReLoginIfNeeded</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL107"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="115" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR115"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (sessionId <span class="pl-k">==</span> <span class="pl-c1">null</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="108" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL108"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">            login(project);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="109" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL109"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="x x-first x-last">}</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="110" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL110"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k x x-first">if</span><span class="x"> (sessionId </span><span class="pl-k x">==</span><span class="x"> </span><span class="pl-c1 x">null</span><span class="x x-last">) {</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="111" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL111"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k x x-first">return</span><span class="x"> createErrorResponse(</span><span class="pl-s"><span class="pl-pds x">"</span><span class="x">Unable to get sessionId from </span><span class="pl-pds x">"</span></span><span class="pl-k x">+</span><span class="x x-last">actionUrl);</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="116" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR116"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi x x-first">String</span><span class="x"> errorMessage </span><span class="pl-k x">=</span><span class="x x-last"> </span>login(project);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="117" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR117"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="x x-first"> </span><span class="pl-k x">if</span><span class="x"> (</span><span class="pl-smi x">StringUtils</span><span class="pl-k x">.</span><span class="x x-last">isNotBlank(errorMessage)) {</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="118" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR118"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="x x-first"> </span><span class="pl-k x">return</span><span class="x x-last"> createErrorResponse(errorMessage);</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="119" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR119"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="x x-first x-last">}</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="112" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL112"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="120" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR120"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="113" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL113"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="121" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR121"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">String</span> csrfToken <span class="pl-k">=</span> getCsrfToken(getHostHacURL(project), sessionId);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="114" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL114"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="122" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR122"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (csrfToken <span class="pl-k">==</span> <span class="pl-c1">null</span>) {</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="53">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="115-124" data-right-range="123-132" data-url="/AlexanderBartash/hybris-integration-intellij-idea-plugin/blob_excerpt/0a606d53073c7b01c6c70ed1425eecdedc216f98?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=114&amp;last_right=122&amp;left=136&amp;left_hunk_size=7&amp;mode=100644&amp;path=src%2Fcom%2Fintellij%2Fidea%2Fplugin%2Fhybris%2Ftools%2Fremote%2Fhttp%2FAbstractHybrisHacHttpClient.java&amp;right=144&amp;right_hunk_size=15" href="#diff-c9fbf7fd098cc4507894992a65c0e1ea" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="125-135" data-right-range="133-143" data-url="/AlexanderBartash/hybris-integration-intellij-idea-plugin/blob_excerpt/0a606d53073c7b01c6c70ed1425eecdedc216f98?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=114&amp;last_right=122&amp;left=136&amp;left_hunk_size=7&amp;mode=100644&amp;path=src%2Fcom%2Fintellij%2Fidea%2Fplugin%2Fhybris%2Ftools%2Fremote%2Fhttp%2FAbstractHybrisHacHttpClient.java&amp;right=144&amp;right_hunk_size=15" href="#diff-c9fbf7fd098cc4507894992a65c0e1ea" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -136,7 +144,15 @@ public final HttpResponse post(@NotNull Project project, @NotNull String actionU</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="136" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL136"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="144" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR144"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> createErrorResponse(e<span class="pl-k">.</span>getMessage());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="137" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL137"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="145" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR145"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="138" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL138"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="146" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR146"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="139" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL139"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (response<span class="pl-k">.</span>getStatusLine()<span class="pl-k">.</span>getStatusCode() <span class="pl-k">==</span> <span class="pl-c1">SC_FORBIDDEN</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="147" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR147"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">boolean</span> needsLogin <span class="pl-k">=</span> response<span class="pl-k">.</span>getStatusLine()<span class="pl-k">.</span>getStatusCode() <span class="pl-k">==</span> <span class="pl-c1">SC_FORBIDDEN</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="148" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR148"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (response<span class="pl-k">.</span>getStatusLine()<span class="pl-k">.</span>getStatusCode() <span class="pl-k">==</span> <span class="pl-c1">SC_MOVED_TEMPORARILY</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="149" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR149"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">Header</span> location <span class="pl-k">=</span> response<span class="pl-k">.</span>getFirstHeader(<span class="pl-s"><span class="pl-pds">"</span>Location<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="150" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR150"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (location <span class="pl-k">!=</span> <span class="pl-c1">null</span> <span class="pl-k">&amp;&amp;</span> location<span class="pl-k">.</span>getValue()<span class="pl-k">.</span>contains(<span class="pl-s"><span class="pl-pds">"</span>login<span class="pl-pds">"</span></span>)) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="151" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR151"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                needsLogin <span class="pl-k">=</span> <span class="pl-c1">true</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="152" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR152"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="153" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR153"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="154" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR154"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="155" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR155"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (needsLogin) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="140" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL140"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="156" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR156"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>sessionId <span class="pl-k">=</span> <span class="pl-c1">null</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL141"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="157" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR157"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (canReLoginIfNeeded) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="158" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR158"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> post(project, actionUrl, params, <span class="pl-c1">false</span>);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="143-255" data-right-range="159-255" data-url="/AlexanderBartash/hybris-integration-intellij-idea-plugin/blob_excerpt/0a606d53073c7b01c6c70ed1425eecdedc216f98?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=142&amp;last_right=158&amp;left=256&amp;left_hunk_size=&amp;mode=100644&amp;path=src%2Fcom%2Fintellij%2Fidea%2Fplugin%2Fhybris%2Ftools%2Fremote%2Fhttp%2FAbstractHybrisHacHttpClient.java&amp;right=256&amp;right_hunk_size=" href="#diff-c9fbf7fd098cc4507894992a65c0e1ea" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR8"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="9" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR9"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL9"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR57"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL57"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR58"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="59" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL58"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="61" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR61"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="62" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR62"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="71" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL71"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR73"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="72" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL72"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL73"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR75"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="74" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL74"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="76" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR76"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL75"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR77"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="76" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL76"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR78"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL77"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR84"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="85" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR85"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="86" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR86"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="87" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR87"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="88" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR88"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="89" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR89"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="90" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR90"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="91" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR91"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL84"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR92"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="85" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL85"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR93"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="113" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR113"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="114" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR114"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL107"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="115" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR115"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="108" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL108"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="109" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL109"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="110" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL110"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="111" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL111"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="116" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR116"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="117" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR117"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="118" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR118"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="119" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR119"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="112" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL112"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="120" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR120"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="113" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL113"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="121" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR121"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="114" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL114"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="122" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR122"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="136" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL136"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="144" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR144"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="137" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL137"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="145" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR145"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="138" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL138"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="146" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR146"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="139" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL139"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="147" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR147"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="148" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR148"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="149" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR149"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="150" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR150"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="151" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR151"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="152" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR152"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="153" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR153"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="154" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR154"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="155" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR155"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="140" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL140"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="156" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR156"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL141"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="157" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR157"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-c9fbf7fd098cc4507894992a65c0e1eaL142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="158" id="diff-c9fbf7fd098cc4507894992a65c0e1eaR158"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

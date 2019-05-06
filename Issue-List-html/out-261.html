@@ -1,0 +1,1555 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-ca76e07cb1fcfc35d4fb77d50a268dcf" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/net/librec/eval/ranking/AUCEvaluator.java" data-short-path="ca76e07">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/net/librec/eval/ranking/AUCEvaluator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/lzw429/librec/blob/b3c0f6efef64d3f554d400df878b865e2913b449/core/src/main/java/net/librec/eval/ranking/AUCEvaluator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-ca76e07cb1fcfc35d4fb77d50a268dcf" title="core/src/main/java/net/librec/eval/ranking/AUCEvaluator.java">core/src/main/java/net/librec/eval/ranking/AUCEvaluator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-ca76e07cb1fcfc35d4fb77d50a268dcf" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-35" data-right-range="1-35" data-url="/guoguibing/librec/blob_excerpt/4dd101a5d920353eb795680d2389b75d88bdd98f?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=36&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FAUCEvaluator.java&amp;right=36&amp;right_hunk_size=7" href="#diff-ca76e07cb1fcfc35d4fb77d50a268dcf" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -36,7 +36,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">AUCEvaluator</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractRecommenderEvaluator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR37"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR38"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="39" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL39"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the <span class="x x-first x-last">the </span>list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR39"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR40"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR41"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> groundTruthList the given  ground truth list</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR42"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> recommendedList the list of recommended items</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="43-107" data-right-range="43-107" data-url="/guoguibing/librec/blob_excerpt/4dd101a5d920353eb795680d2389b75d88bdd98f?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=42&amp;last_right=42&amp;left=108&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FAUCEvaluator.java&amp;right=108&amp;right_hunk_size=" href="#diff-ca76e07cb1fcfc35d4fb77d50a268dcf" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR38"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="39" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL39"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfL42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-ca76e07cb1fcfc35d4fb77d50a268dcfR42"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-1">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-33da021898b23beaa8663343b275c585" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/net/librec/eval/ranking/AveragePrecisionEvaluator.java" data-short-path="33da021">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/net/librec/eval/ranking/AveragePrecisionEvaluator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/lzw429/librec/blob/b3c0f6efef64d3f554d400df878b865e2913b449/core/src/main/java/net/librec/eval/ranking/AveragePrecisionEvaluator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-33da021898b23beaa8663343b275c585" title="core/src/main/java/net/librec/eval/ranking/AveragePrecisionEvaluator.java">core/src/main/java/net/librec/eval/ranking/AveragePrecisionEvaluator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-33da021898b23beaa8663343b275c585" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-34" data-right-range="1-34" data-url="/guoguibing/librec/blob_excerpt/0684e28030057bf00f5435f4d995201851c33064?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=35&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FAveragePrecisionEvaluator.java&amp;right=35&amp;right_hunk_size=7" href="#diff-33da021898b23beaa8663343b275c585" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -35,7 +35,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-33da021898b23beaa8663343b275c585L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-33da021898b23beaa8663343b275c585R35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">AveragePrecisionEvaluator</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractRecommenderEvaluator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-33da021898b23beaa8663343b275c585L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-33da021898b23beaa8663343b275c585R36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-33da021898b23beaa8663343b275c585L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-33da021898b23beaa8663343b275c585R37"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="38" id="diff-33da021898b23beaa8663343b275c585L38"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the <span class="x x-first x-last">the </span>list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-33da021898b23beaa8663343b275c585R38"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-33da021898b23beaa8663343b275c585L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-33da021898b23beaa8663343b275c585R39"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-33da021898b23beaa8663343b275c585L40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-33da021898b23beaa8663343b275c585R40"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> groundTruthList the given ground truth list</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-33da021898b23beaa8663343b275c585L41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-33da021898b23beaa8663343b275c585R41"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> recommendedList the list of recommended items</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="42-72" data-right-range="42-72" data-url="/guoguibing/librec/blob_excerpt/0684e28030057bf00f5435f4d995201851c33064?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=41&amp;last_right=41&amp;left=73&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FAveragePrecisionEvaluator.java&amp;right=73&amp;right_hunk_size=" href="#diff-33da021898b23beaa8663343b275c585" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-33da021898b23beaa8663343b275c585L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-33da021898b23beaa8663343b275c585R35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-33da021898b23beaa8663343b275c585L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-33da021898b23beaa8663343b275c585R36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-33da021898b23beaa8663343b275c585L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-33da021898b23beaa8663343b275c585R37"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="38" id="diff-33da021898b23beaa8663343b275c585L38"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-33da021898b23beaa8663343b275c585R38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-33da021898b23beaa8663343b275c585L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-33da021898b23beaa8663343b275c585R39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-33da021898b23beaa8663343b275c585L40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-33da021898b23beaa8663343b275c585R40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-33da021898b23beaa8663343b275c585L41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-33da021898b23beaa8663343b275c585R41"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-2">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-3a5fbdc3d07e871bfa0d4a381da24b06" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/net/librec/eval/ranking/AverageReciprocalHitRankEvaluator.java" data-short-path="3a5fbdc">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/net/librec/eval/ranking/AverageReciprocalHitRankEvaluator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/lzw429/librec/blob/b3c0f6efef64d3f554d400df878b865e2913b449/core/src/main/java/net/librec/eval/ranking/AverageReciprocalHitRankEvaluator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-3a5fbdc3d07e871bfa0d4a381da24b06" title="core/src/main/java/net/librec/eval/ranking/AverageReciprocalHitRankEvaluator.java">core/src/main/java/net/librec/eval/ranking/AverageReciprocalHitRankEvaluator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-3a5fbdc3d07e871bfa0d4a381da24b06" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-20" data-right-range="1-20" data-url="/guoguibing/librec/blob_excerpt/5f3125b9ac7b4b1f77a7e27b0d637decf2ac23f9?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=21&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FAverageReciprocalHitRankEvaluator.java&amp;right=21&amp;right_hunk_size=7" href="#diff-3a5fbdc3d07e871bfa0d4a381da24b06" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -21,7 +21,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">AverageReciprocalHitRankEvaluator</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractRecommenderEvaluator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R22"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R23"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="24" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L24"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the <span class="x x-first x-last">the </span>list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R24"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R25"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R26"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> groundTruthList the given ground truth list</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R27"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> recommendedList the list of recommended items</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="28-53" data-right-range="28-53" data-url="/guoguibing/librec/blob_excerpt/5f3125b9ac7b4b1f77a7e27b0d637decf2ac23f9?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=27&amp;last_right=27&amp;left=54&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FAverageReciprocalHitRankEvaluator.java&amp;right=54&amp;right_hunk_size=" href="#diff-3a5fbdc3d07e871bfa0d4a381da24b06" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R23"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="24" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L24"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06L27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-3a5fbdc3d07e871bfa0d4a381da24b06R27"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-3">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-585e08948d87cc521b65a6111483cb57" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/net/librec/eval/ranking/DiversityEvaluator.java" data-short-path="585e089">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/net/librec/eval/ranking/DiversityEvaluator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/lzw429/librec/blob/b3c0f6efef64d3f554d400df878b865e2913b449/core/src/main/java/net/librec/eval/ranking/DiversityEvaluator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-585e08948d87cc521b65a6111483cb57" title="core/src/main/java/net/librec/eval/ranking/DiversityEvaluator.java">core/src/main/java/net/librec/eval/ranking/DiversityEvaluator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-585e08948d87cc521b65a6111483cb57" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-33" data-right-range="1-33" data-url="/guoguibing/librec/blob_excerpt/7ab69c3678cd4ebfaef549ba67681842d4ce6054?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=34&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FDiversityEvaluator.java&amp;right=34&amp;right_hunk_size=7" href="#diff-585e08948d87cc521b65a6111483cb57" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -34,7 +34,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-585e08948d87cc521b65a6111483cb57L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-585e08948d87cc521b65a6111483cb57R34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">DiversityEvaluator</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractRecommenderEvaluator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-585e08948d87cc521b65a6111483cb57L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-585e08948d87cc521b65a6111483cb57R35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-585e08948d87cc521b65a6111483cb57L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-585e08948d87cc521b65a6111483cb57R36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="37" id="diff-585e08948d87cc521b65a6111483cb57L37"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the <span class="x x-first x-last">the </span>list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-585e08948d87cc521b65a6111483cb57R37"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-585e08948d87cc521b65a6111483cb57L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-585e08948d87cc521b65a6111483cb57R38"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-585e08948d87cc521b65a6111483cb57L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-585e08948d87cc521b65a6111483cb57R39"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> groundTruthList</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-585e08948d87cc521b65a6111483cb57L40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-585e08948d87cc521b65a6111483cb57R40"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *            the given ground truth list</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="41-77" data-right-range="41-77" data-url="/guoguibing/librec/blob_excerpt/7ab69c3678cd4ebfaef549ba67681842d4ce6054?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=40&amp;last_right=40&amp;left=78&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FDiversityEvaluator.java&amp;right=78&amp;right_hunk_size=" href="#diff-585e08948d87cc521b65a6111483cb57" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-585e08948d87cc521b65a6111483cb57L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-585e08948d87cc521b65a6111483cb57R34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-585e08948d87cc521b65a6111483cb57L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-585e08948d87cc521b65a6111483cb57R35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-585e08948d87cc521b65a6111483cb57L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-585e08948d87cc521b65a6111483cb57R36"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="37" id="diff-585e08948d87cc521b65a6111483cb57L37"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-585e08948d87cc521b65a6111483cb57R37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-585e08948d87cc521b65a6111483cb57L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-585e08948d87cc521b65a6111483cb57R38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-585e08948d87cc521b65a6111483cb57L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-585e08948d87cc521b65a6111483cb57R39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-585e08948d87cc521b65a6111483cb57L40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-585e08948d87cc521b65a6111483cb57R40"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-4">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/net/librec/eval/ranking/EntropyEvaluator.java" data-short-path="7ef4eac">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/net/librec/eval/ranking/EntropyEvaluator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/lzw429/librec/blob/b3c0f6efef64d3f554d400df878b865e2913b449/core/src/main/java/net/librec/eval/ranking/EntropyEvaluator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-7ef4eac3e6b7c7daa2dd1a469d3dd950" title="core/src/main/java/net/librec/eval/ranking/EntropyEvaluator.java">core/src/main/java/net/librec/eval/ranking/EntropyEvaluator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-47" data-right-range="1-47" data-url="/guoguibing/librec/blob_excerpt/81d63d60fe693cabf5a94b53cd99c9291be46210?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=48&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FEntropyEvaluator.java&amp;right=48&amp;right_hunk_size=7" href="#diff-7ef4eac3e6b7c7daa2dd1a469d3dd950" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -48,7 +48,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R48"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">EntropyEvaluator</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractRecommenderEvaluator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R49"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L50"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R50"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="51" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L51"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the <span class="x x-first x-last">the </span>list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="51" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R51"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L52"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R52"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="53" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L53"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="53" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R53"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> groundTruthList</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R54"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *            the given test set</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="55-88" data-right-range="55-88" data-url="/guoguibing/librec/blob_excerpt/81d63d60fe693cabf5a94b53cd99c9291be46210?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=54&amp;last_right=54&amp;left=89&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FEntropyEvaluator.java&amp;right=89&amp;right_hunk_size=" href="#diff-7ef4eac3e6b7c7daa2dd1a469d3dd950" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L50"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R50"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="51" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L51"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="51" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L52"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R52"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="53" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L53"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="53" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R53"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950L54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-7ef4eac3e6b7c7daa2dd1a469d3dd950R54"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-5">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-d6b6d325909d69f5fdbe068cd15fd1bb" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/net/librec/eval/ranking/HitRateEvaluator.java" data-short-path="d6b6d32">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/net/librec/eval/ranking/HitRateEvaluator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/lzw429/librec/blob/b3c0f6efef64d3f554d400df878b865e2913b449/core/src/main/java/net/librec/eval/ranking/HitRateEvaluator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-d6b6d325909d69f5fdbe068cd15fd1bb" title="core/src/main/java/net/librec/eval/ranking/HitRateEvaluator.java">core/src/main/java/net/librec/eval/ranking/HitRateEvaluator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-d6b6d325909d69f5fdbe068cd15fd1bb" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-20" data-right-range="1-20" data-url="/guoguibing/librec/blob_excerpt/b0c370cd87cfc751353a9c154a5ed9f5e090af06?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=21&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FHitRateEvaluator.java&amp;right=21&amp;right_hunk_size=7" href="#diff-d6b6d325909d69f5fdbe068cd15fd1bb" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -21,7 +21,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">HitRateEvaluator</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractRecommenderEvaluator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR22"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR23"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="24" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL24"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the <span class="x x-first x-last">the </span>list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR24"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR25"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR26"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> groundTruthList the given ground truth list</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR27"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> recommendedList the list of recommended items</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="28-61" data-right-range="28-61" data-url="/guoguibing/librec/blob_excerpt/b0c370cd87cfc751353a9c154a5ed9f5e090af06?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=27&amp;last_right=27&amp;left=62&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FHitRateEvaluator.java&amp;right=62&amp;right_hunk_size=" href="#diff-d6b6d325909d69f5fdbe068cd15fd1bb" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR23"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="24" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL24"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbL27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-d6b6d325909d69f5fdbe068cd15fd1bbR27"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-6">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-05d7f62da72dc14d8c9fae34355166fa" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/net/librec/eval/ranking/IdealDCGEvaluator.java" data-short-path="05d7f62">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/net/librec/eval/ranking/IdealDCGEvaluator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/lzw429/librec/blob/b3c0f6efef64d3f554d400df878b865e2913b449/core/src/main/java/net/librec/eval/ranking/IdealDCGEvaluator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-05d7f62da72dc14d8c9fae34355166fa" title="core/src/main/java/net/librec/eval/ranking/IdealDCGEvaluator.java">core/src/main/java/net/librec/eval/ranking/IdealDCGEvaluator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-05d7f62da72dc14d8c9fae34355166fa" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-28" data-right-range="1-28" data-url="/guoguibing/librec/blob_excerpt/327ef3da740a18adf316c2b9e4c6002f7e661937?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=29&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FIdealDCGEvaluator.java&amp;right=29&amp;right_hunk_size=7" href="#diff-05d7f62da72dc14d8c9fae34355166fa" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -29,7 +29,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-05d7f62da72dc14d8c9fae34355166faL29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-05d7f62da72dc14d8c9fae34355166faR29"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">IdealDCGEvaluator</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractRecommenderEvaluator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-05d7f62da72dc14d8c9fae34355166faL30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-05d7f62da72dc14d8c9fae34355166faR30"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-05d7f62da72dc14d8c9fae34355166faL31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-05d7f62da72dc14d8c9fae34355166faR31"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="32" id="diff-05d7f62da72dc14d8c9fae34355166faL32"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the <span class="x x-first x-last">the </span>list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="32" id="diff-05d7f62da72dc14d8c9fae34355166faR32"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-05d7f62da72dc14d8c9fae34355166faL33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-05d7f62da72dc14d8c9fae34355166faR33"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-05d7f62da72dc14d8c9fae34355166faL34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-05d7f62da72dc14d8c9fae34355166faR34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> groundTruthList the given ground truth list</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-05d7f62da72dc14d8c9fae34355166faL35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-05d7f62da72dc14d8c9fae34355166faR35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> recommendedList the list of recommended items</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="36-61" data-right-range="36-61" data-url="/guoguibing/librec/blob_excerpt/327ef3da740a18adf316c2b9e4c6002f7e661937?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=35&amp;last_right=35&amp;left=62&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FIdealDCGEvaluator.java&amp;right=62&amp;right_hunk_size=" href="#diff-05d7f62da72dc14d8c9fae34355166fa" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-05d7f62da72dc14d8c9fae34355166faL29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-05d7f62da72dc14d8c9fae34355166faR29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-05d7f62da72dc14d8c9fae34355166faL30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-05d7f62da72dc14d8c9fae34355166faR30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-05d7f62da72dc14d8c9fae34355166faL31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-05d7f62da72dc14d8c9fae34355166faR31"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="32" id="diff-05d7f62da72dc14d8c9fae34355166faL32"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="32" id="diff-05d7f62da72dc14d8c9fae34355166faR32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-05d7f62da72dc14d8c9fae34355166faL33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-05d7f62da72dc14d8c9fae34355166faR33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-05d7f62da72dc14d8c9fae34355166faL34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-05d7f62da72dc14d8c9fae34355166faR34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-05d7f62da72dc14d8c9fae34355166faL35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-05d7f62da72dc14d8c9fae34355166faR35"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-7">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-de763f2483dd17ddce9d5056703d8fe3" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/net/librec/eval/ranking/NormalizedDCGEvaluator.java" data-short-path="de763f2">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/net/librec/eval/ranking/NormalizedDCGEvaluator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/lzw429/librec/blob/b3c0f6efef64d3f554d400df878b865e2913b449/core/src/main/java/net/librec/eval/ranking/NormalizedDCGEvaluator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-de763f2483dd17ddce9d5056703d8fe3" title="core/src/main/java/net/librec/eval/ranking/NormalizedDCGEvaluator.java">core/src/main/java/net/librec/eval/ranking/NormalizedDCGEvaluator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-de763f2483dd17ddce9d5056703d8fe3" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-35" data-right-range="1-35" data-url="/guoguibing/librec/blob_excerpt/e25fa31dbc002803fffe8953a8d5cd73f3b77c91?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=36&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FNormalizedDCGEvaluator.java&amp;right=36&amp;right_hunk_size=7" href="#diff-de763f2483dd17ddce9d5056703d8fe3" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -36,7 +36,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-de763f2483dd17ddce9d5056703d8fe3L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-de763f2483dd17ddce9d5056703d8fe3R36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">NormalizedDCGEvaluator</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractRecommenderEvaluator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-de763f2483dd17ddce9d5056703d8fe3L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-de763f2483dd17ddce9d5056703d8fe3R37"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-de763f2483dd17ddce9d5056703d8fe3L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-de763f2483dd17ddce9d5056703d8fe3R38"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="39" id="diff-de763f2483dd17ddce9d5056703d8fe3L39"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the <span class="x x-first x-last">the </span>list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-de763f2483dd17ddce9d5056703d8fe3R39"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-de763f2483dd17ddce9d5056703d8fe3L40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-de763f2483dd17ddce9d5056703d8fe3R40"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-de763f2483dd17ddce9d5056703d8fe3L41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-de763f2483dd17ddce9d5056703d8fe3R41"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> groundTruthList the given ground truth list</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-de763f2483dd17ddce9d5056703d8fe3L42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-de763f2483dd17ddce9d5056703d8fe3R42"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> recommendedList the list of recommended items</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="43-138" data-right-range="43-138" data-url="/guoguibing/librec/blob_excerpt/e25fa31dbc002803fffe8953a8d5cd73f3b77c91?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=42&amp;last_right=42&amp;left=139&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FNormalizedDCGEvaluator.java&amp;right=139&amp;right_hunk_size=" href="#diff-de763f2483dd17ddce9d5056703d8fe3" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-de763f2483dd17ddce9d5056703d8fe3L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-de763f2483dd17ddce9d5056703d8fe3R36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-de763f2483dd17ddce9d5056703d8fe3L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-de763f2483dd17ddce9d5056703d8fe3R37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-de763f2483dd17ddce9d5056703d8fe3L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-de763f2483dd17ddce9d5056703d8fe3R38"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="39" id="diff-de763f2483dd17ddce9d5056703d8fe3L39"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-de763f2483dd17ddce9d5056703d8fe3R39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-de763f2483dd17ddce9d5056703d8fe3L40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-de763f2483dd17ddce9d5056703d8fe3R40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-de763f2483dd17ddce9d5056703d8fe3L41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-de763f2483dd17ddce9d5056703d8fe3R41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-de763f2483dd17ddce9d5056703d8fe3L42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-de763f2483dd17ddce9d5056703d8fe3R42"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-8">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-9b7384409244bb863ef7ac2e51387f2e" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/net/librec/eval/ranking/NoveltyEvaluator.java" data-short-path="9b73844">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/net/librec/eval/ranking/NoveltyEvaluator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/lzw429/librec/blob/b3c0f6efef64d3f554d400df878b865e2913b449/core/src/main/java/net/librec/eval/ranking/NoveltyEvaluator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-9b7384409244bb863ef7ac2e51387f2e" title="core/src/main/java/net/librec/eval/ranking/NoveltyEvaluator.java">core/src/main/java/net/librec/eval/ranking/NoveltyEvaluator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-9b7384409244bb863ef7ac2e51387f2e" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-49" data-right-range="1-49" data-url="/guoguibing/librec/blob_excerpt/2ff2b14802c951ac9caa3c86da7f78d2d88d22b3?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=50&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FNoveltyEvaluator.java&amp;right=50&amp;right_hunk_size=7" href="#diff-9b7384409244bb863ef7ac2e51387f2e" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -50,7 +50,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-9b7384409244bb863ef7ac2e51387f2eL50"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-9b7384409244bb863ef7ac2e51387f2eR50"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">NoveltyEvaluator</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractRecommenderEvaluator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-9b7384409244bb863ef7ac2e51387f2eL51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-9b7384409244bb863ef7ac2e51387f2eR51"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-9b7384409244bb863ef7ac2e51387f2eL52"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-9b7384409244bb863ef7ac2e51387f2eR52"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="53" id="diff-9b7384409244bb863ef7ac2e51387f2eL53"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the <span class="x x-first x-last">the </span>list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="53" id="diff-9b7384409244bb863ef7ac2e51387f2eR53"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-9b7384409244bb863ef7ac2e51387f2eL54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-9b7384409244bb863ef7ac2e51387f2eR54"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-9b7384409244bb863ef7ac2e51387f2eL55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-9b7384409244bb863ef7ac2e51387f2eR55"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> groundTruthList</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-9b7384409244bb863ef7ac2e51387f2eL56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-9b7384409244bb863ef7ac2e51387f2eR56"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *            the given test set</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="57-87" data-right-range="57-87" data-url="/guoguibing/librec/blob_excerpt/2ff2b14802c951ac9caa3c86da7f78d2d88d22b3?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=56&amp;last_right=56&amp;left=88&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FNoveltyEvaluator.java&amp;right=88&amp;right_hunk_size=" href="#diff-9b7384409244bb863ef7ac2e51387f2e" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-9b7384409244bb863ef7ac2e51387f2eL50"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-9b7384409244bb863ef7ac2e51387f2eR50"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-9b7384409244bb863ef7ac2e51387f2eL51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-9b7384409244bb863ef7ac2e51387f2eR51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-9b7384409244bb863ef7ac2e51387f2eL52"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-9b7384409244bb863ef7ac2e51387f2eR52"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="53" id="diff-9b7384409244bb863ef7ac2e51387f2eL53"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="53" id="diff-9b7384409244bb863ef7ac2e51387f2eR53"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-9b7384409244bb863ef7ac2e51387f2eL54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-9b7384409244bb863ef7ac2e51387f2eR54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-9b7384409244bb863ef7ac2e51387f2eL55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-9b7384409244bb863ef7ac2e51387f2eR55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-9b7384409244bb863ef7ac2e51387f2eL56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-9b7384409244bb863ef7ac2e51387f2eR56"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-9">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-5905c7afea9d2682f881988ff6c779f8" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/net/librec/eval/ranking/PrecisionEvaluator.java" data-short-path="5905c7a">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/net/librec/eval/ranking/PrecisionEvaluator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/lzw429/librec/blob/b3c0f6efef64d3f554d400df878b865e2913b449/core/src/main/java/net/librec/eval/ranking/PrecisionEvaluator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-5905c7afea9d2682f881988ff6c779f8" title="core/src/main/java/net/librec/eval/ranking/PrecisionEvaluator.java">core/src/main/java/net/librec/eval/ranking/PrecisionEvaluator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-5905c7afea9d2682f881988ff6c779f8" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-14" data-right-range="1-14" data-url="/guoguibing/librec/blob_excerpt/f5b8d6813af1dabd6300511fcbae2a8f46cd7250?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=15&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FPrecisionEvaluator.java&amp;right=15&amp;right_hunk_size=7" href="#diff-5905c7afea9d2682f881988ff6c779f8" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -15,7 +15,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-5905c7afea9d2682f881988ff6c779f8L15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-5905c7afea9d2682f881988ff6c779f8R15"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-5905c7afea9d2682f881988ff6c779f8L16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-5905c7afea9d2682f881988ff6c779f8R16"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">PrecisionEvaluator</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractRecommenderEvaluator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-5905c7afea9d2682f881988ff6c779f8L17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-5905c7afea9d2682f881988ff6c779f8R17"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="18" id="diff-5905c7afea9d2682f881988ff6c779f8L18"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the <span class="x x-first x-last">the </span>list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="18" id="diff-5905c7afea9d2682f881988ff6c779f8R18"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-5905c7afea9d2682f881988ff6c779f8L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-5905c7afea9d2682f881988ff6c779f8R19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-5905c7afea9d2682f881988ff6c779f8L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-5905c7afea9d2682f881988ff6c779f8R20"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> groundTruthList the given ground truth list</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-5905c7afea9d2682f881988ff6c779f8L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-5905c7afea9d2682f881988ff6c779f8R21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> recommendedList the list of recommended items</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="22-47" data-right-range="22-47" data-url="/guoguibing/librec/blob_excerpt/f5b8d6813af1dabd6300511fcbae2a8f46cd7250?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=21&amp;last_right=21&amp;left=48&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FPrecisionEvaluator.java&amp;right=48&amp;right_hunk_size=" href="#diff-5905c7afea9d2682f881988ff6c779f8" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-5905c7afea9d2682f881988ff6c779f8L15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-5905c7afea9d2682f881988ff6c779f8R15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-5905c7afea9d2682f881988ff6c779f8L16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-5905c7afea9d2682f881988ff6c779f8R16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-5905c7afea9d2682f881988ff6c779f8L17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-5905c7afea9d2682f881988ff6c779f8R17"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="18" id="diff-5905c7afea9d2682f881988ff6c779f8L18"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="18" id="diff-5905c7afea9d2682f881988ff6c779f8R18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-5905c7afea9d2682f881988ff6c779f8L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-5905c7afea9d2682f881988ff6c779f8R19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-5905c7afea9d2682f881988ff6c779f8L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-5905c7afea9d2682f881988ff6c779f8R20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-5905c7afea9d2682f881988ff6c779f8L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-5905c7afea9d2682f881988ff6c779f8R21"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-10">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-97b6c97532aa90369f6e6ab271376457" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/net/librec/eval/ranking/RecallEvaluator.java" data-short-path="97b6c97">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/net/librec/eval/ranking/RecallEvaluator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/lzw429/librec/blob/b3c0f6efef64d3f554d400df878b865e2913b449/core/src/main/java/net/librec/eval/ranking/RecallEvaluator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-97b6c97532aa90369f6e6ab271376457" title="core/src/main/java/net/librec/eval/ranking/RecallEvaluator.java">core/src/main/java/net/librec/eval/ranking/RecallEvaluator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-97b6c97532aa90369f6e6ab271376457" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-32" data-right-range="1-32" data-url="/guoguibing/librec/blob_excerpt/04926e8fd958c240a2f1702a4add33ff1dc62ef3?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=33&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FRecallEvaluator.java&amp;right=33&amp;right_hunk_size=7" href="#diff-97b6c97532aa90369f6e6ab271376457" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -33,7 +33,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-97b6c97532aa90369f6e6ab271376457L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-97b6c97532aa90369f6e6ab271376457R33"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">RecallEvaluator</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractRecommenderEvaluator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-97b6c97532aa90369f6e6ab271376457L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-97b6c97532aa90369f6e6ab271376457R34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-97b6c97532aa90369f6e6ab271376457L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-97b6c97532aa90369f6e6ab271376457R35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="36" id="diff-97b6c97532aa90369f6e6ab271376457L36"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the <span class="x x-first x-last">the </span>list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="36" id="diff-97b6c97532aa90369f6e6ab271376457R36"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-97b6c97532aa90369f6e6ab271376457L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-97b6c97532aa90369f6e6ab271376457R37"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-97b6c97532aa90369f6e6ab271376457L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-97b6c97532aa90369f6e6ab271376457R38"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> groundTruthList the given ground truth list</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-97b6c97532aa90369f6e6ab271376457L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-97b6c97532aa90369f6e6ab271376457R39"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> recommendedList the list of recommended items</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="40-67" data-right-range="40-67" data-url="/guoguibing/librec/blob_excerpt/04926e8fd958c240a2f1702a4add33ff1dc62ef3?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=39&amp;last_right=39&amp;left=68&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FRecallEvaluator.java&amp;right=68&amp;right_hunk_size=" href="#diff-97b6c97532aa90369f6e6ab271376457" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-97b6c97532aa90369f6e6ab271376457L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-97b6c97532aa90369f6e6ab271376457R33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-97b6c97532aa90369f6e6ab271376457L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-97b6c97532aa90369f6e6ab271376457R34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-97b6c97532aa90369f6e6ab271376457L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-97b6c97532aa90369f6e6ab271376457R35"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="36" id="diff-97b6c97532aa90369f6e6ab271376457L36"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="36" id="diff-97b6c97532aa90369f6e6ab271376457R36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-97b6c97532aa90369f6e6ab271376457L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-97b6c97532aa90369f6e6ab271376457R37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-97b6c97532aa90369f6e6ab271376457L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-97b6c97532aa90369f6e6ab271376457R38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-97b6c97532aa90369f6e6ab271376457L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-97b6c97532aa90369f6e6ab271376457R39"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-11">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-5b8d5543f693adaf6ef9db802d54e898" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/net/librec/eval/ranking/ReciprocalRankEvaluator.java" data-short-path="5b8d554">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/net/librec/eval/ranking/ReciprocalRankEvaluator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/lzw429/librec/blob/b3c0f6efef64d3f554d400df878b865e2913b449/core/src/main/java/net/librec/eval/ranking/ReciprocalRankEvaluator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-5b8d5543f693adaf6ef9db802d54e898" title="core/src/main/java/net/librec/eval/ranking/ReciprocalRankEvaluator.java">core/src/main/java/net/librec/eval/ranking/ReciprocalRankEvaluator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-5b8d5543f693adaf6ef9db802d54e898" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-33" data-right-range="1-33" data-url="/guoguibing/librec/blob_excerpt/d46f06885d79807ac3c3c499a4940659ff52ec18?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=34&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FReciprocalRankEvaluator.java&amp;right=34&amp;right_hunk_size=7" href="#diff-5b8d5543f693adaf6ef9db802d54e898" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -34,7 +34,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-5b8d5543f693adaf6ef9db802d54e898L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-5b8d5543f693adaf6ef9db802d54e898R34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">ReciprocalRankEvaluator</span> <span class="pl-k">extends</span> <span class="pl-e">AbstractRecommenderEvaluator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-5b8d5543f693adaf6ef9db802d54e898L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-5b8d5543f693adaf6ef9db802d54e898R35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-5b8d5543f693adaf6ef9db802d54e898L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-5b8d5543f693adaf6ef9db802d54e898R36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="37" id="diff-5b8d5543f693adaf6ef9db802d54e898L37"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the <span class="x x-first x-last">the </span>list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-5b8d5543f693adaf6ef9db802d54e898R37"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * Evaluate on the test set with the list of recommended items.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-5b8d5543f693adaf6ef9db802d54e898L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-5b8d5543f693adaf6ef9db802d54e898R38"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-5b8d5543f693adaf6ef9db802d54e898L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-5b8d5543f693adaf6ef9db802d54e898R39"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> groundTruthList the given ground truth list</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-5b8d5543f693adaf6ef9db802d54e898L40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-5b8d5543f693adaf6ef9db802d54e898R40"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> recommendedList the list of recommended items</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="41-66" data-right-range="41-66" data-url="/guoguibing/librec/blob_excerpt/d46f06885d79807ac3c3c499a4940659ff52ec18?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=40&amp;last_right=40&amp;left=67&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fnet%2Flibrec%2Feval%2Franking%2FReciprocalRankEvaluator.java&amp;right=67&amp;right_hunk_size=" href="#diff-5b8d5543f693adaf6ef9db802d54e898" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-5b8d5543f693adaf6ef9db802d54e898L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-5b8d5543f693adaf6ef9db802d54e898R34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-5b8d5543f693adaf6ef9db802d54e898L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-5b8d5543f693adaf6ef9db802d54e898R35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-5b8d5543f693adaf6ef9db802d54e898L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-5b8d5543f693adaf6ef9db802d54e898R36"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="37" id="diff-5b8d5543f693adaf6ef9db802d54e898L37"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-5b8d5543f693adaf6ef9db802d54e898R37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-5b8d5543f693adaf6ef9db802d54e898L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-5b8d5543f693adaf6ef9db802d54e898R38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-5b8d5543f693adaf6ef9db802d54e898L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-5b8d5543f693adaf6ef9db802d54e898R39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-5b8d5543f693adaf6ef9db802d54e898L40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-5b8d5543f693adaf6ef9db802d54e898R40"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

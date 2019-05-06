@@ -1,0 +1,87 @@
+/*
+ * Copyright (c) 2012-2018 Red Hat, Inc.
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ *
+ * Contributors:
+ *   Red Hat, Inc. - initial API and implementation
+ */
+package org.eclipse.che.workspace.infrastructure.kubernetes.wsplugins;
+
+import com.google.common.annotations.Beta;
+import com.google.common.collect.ImmutableMap;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import javax.inject.Inject;
+import org.eclipse.che.api.core.model.workspace.runtime.RuntimeIdentity;
+import org.eclipse.che.api.workspace.server.spi.InfrastructureException;
+import org.eclipse.che.api.workspace.server.wsplugins.ChePluginsApplier;
+import org.eclipse.che.api.workspace.server.wsplugins.PluginFQNParser;
+import org.eclipse.che.api.workspace.server.wsplugins.model.ChePlugin;
+import org.eclipse.che.api.workspace.server.wsplugins.model.PluginFQN;
+import org.eclipse.che.commons.annotation.Traced;
+import org.eclipse.che.workspace.infrastructure.kubernetes.StartSynchronizer;
+import org.eclipse.che.workspace.infrastructure.kubernetes.environment.KubernetesEnvironment;
+import org.eclipse.che.workspace.infrastructure.kubernetes.namespace.pvc.EphemeralWorkspaceUtility;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+/**
+ * Provisions sidecars-powered development tooling in a workspace.
+ *
+ * @author Oleksandr Garagatyi
+ */
+@Beta
+public class SidecarToolingProvisioner<E extends KubernetesEnvironment> {
+
+  private static final Logger LOG = LoggerFactory.getLogger(SidecarToolingProvisioner.class);
+
+  private final Map<String, ChePluginsApplier> workspaceNextAppliers;
+  private final KubernetesBrokerInitContainerApplier<E> brokerApplier;
+  private final PluginFQNParser pluginFQNParser;
+  private final PluginBrokerManager<E> pluginBrokerManager;
+
+  @Inject
+  public SidecarToolingProvisioner(
+      Map<String, ChePluginsApplier> workspaceNextAppliers,
+      KubernetesBrokerInitContainerApplier<E> brokerApplier,
+      PluginFQNParser pluginFQNParser,
+      PluginBrokerManager<E> pluginBrokerManager) {
+    this.workspaceNextAppliers = ImmutableMap.copyOf(workspaceNextAppliers);
+    this.brokerApplier = brokerApplier;
+    this.pluginFQNParser = pluginFQNParser;
+    this.pluginBrokerManager = pluginBrokerManager;
+  }
+
+  @Traced
+  @Beta
+  public void provision(RuntimeIdentity id, StartSynchronizer startSynchronizer, E environment)
+      throws InfrastructureException {
+
+    Collection<PluginFQN> pluginFQNs = pluginFQNParser.parsePlugins(environment.getAttributes());
+    if (pluginFQNs.isEmpty()) {
+      return;
+    }
+    LOG.debug("Started sidecar tooling provisioning workspace '{}'", id.getWorkspaceId());
+    String recipeType = environment.getType();
+    ChePluginsApplier pluginsApplier = workspaceNextAppliers.get(recipeType);
+    if (pluginsApplier == null) {
+      throw new InfrastructureException(
+          "Sidecar tooling configuration is not supported with environment type " + recipeType);
+    }
+
+    boolean isEphemeral = EphemeralWorkspaceUtility.isEphemeral(environment.getAttributes());
+    List<ChePlugin> chePlugins =
+        pluginBrokerManager.getTooling(id, startSynchronizer, pluginFQNs, isEphemeral);
+
+    pluginsApplier.apply(id, environment, chePlugins);
+    if (isEphemeral) {
+      brokerApplier.apply(environment, id, pluginFQNs);
+    }
+    LOG.debug("Finished sidecar tooling provisioning workspace '{}'", id.getWorkspaceId());
+  }
+}

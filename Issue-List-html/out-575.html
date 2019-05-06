@@ -1,0 +1,1121 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-adf0ac20419d58b737c2dbbc67594de5" data-file-deleted="false" data-file-type=".java" data-path="rest-backend/src/main/java/com/sap/psr/vulas/backend/cve/CveReader2.java" data-short-path="adf0ac2">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="rest-backend/src/main/java/com/sap/psr/vulas/backend/cve/CveReader2.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/SAP/vulnerability-assessment-tool/blob/19cdf5be00aa2050618b5fd637cac49c6495fa68/rest-backend/src/main/java/com/sap/psr/vulas/backend/cve/CveReader2.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="17 additions &amp; 7 deletions" class="diffstat tooltipped tooltipped-e">24 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-adf0ac20419d58b737c2dbbc67594de5" title="rest-backend/src/main/java/com/sap/psr/vulas/backend/cve/CveReader2.java">rest-backend/src/main/java/com/sap/psr/vulas/backend/cve/CveReader2.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-adf0ac20419d58b737c2dbbc67594de5" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-4" data-right-range="1-4" data-url="/SAP/vulnerability-assessment-tool/blob_excerpt/4da573621a2aba566e0730f0b5eb076e697aa895?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=5&amp;left_hunk_size=7&amp;mode=100755&amp;path=rest-backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsap%2Fpsr%2Fvulas%2Fbackend%2Fcve%2FCveReader2.java&amp;right=5&amp;right_hunk_size=6" href="#diff-adf0ac20419d58b737c2dbbc67594de5" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -5,7 +5,6 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-adf0ac20419d58b737c2dbbc67594de5L5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-adf0ac20419d58b737c2dbbc67594de5R5"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.text.SimpleDateFormat</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-adf0ac20419d58b737c2dbbc67594de5L6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-adf0ac20419d58b737c2dbbc67594de5R6"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.Calendar</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-adf0ac20419d58b737c2dbbc67594de5L7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-adf0ac20419d58b737c2dbbc67594de5R7"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.GregorianCalendar</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="8" id="diff-adf0ac20419d58b737c2dbbc67594de5L8"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.regex.Pattern</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-adf0ac20419d58b737c2dbbc67594de5L9"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-adf0ac20419d58b737c2dbbc67594de5R8"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-adf0ac20419d58b737c2dbbc67594de5L10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-adf0ac20419d58b737c2dbbc67594de5R9"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.http.HttpEntity</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-adf0ac20419d58b737c2dbbc67594de5L11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-adf0ac20419d58b737c2dbbc67594de5R10"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.http.client.ClientProtocolException</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="8">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="12-13" data-right-range="11-12" data-url="/SAP/vulnerability-assessment-tool/blob_excerpt/4da573621a2aba566e0730f0b5eb076e697aa895?diff=unified&amp;in_wiki_context=&amp;last_left=11&amp;last_right=10&amp;left=18&amp;left_hunk_size=13&amp;mode=100755&amp;path=rest-backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsap%2Fpsr%2Fvulas%2Fbackend%2Fcve%2FCveReader2.java&amp;right=17&amp;right_hunk_size=14" href="#diff-adf0ac20419d58b737c2dbbc67594de5" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -18,13 +17,14 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-adf0ac20419d58b737c2dbbc67594de5L18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-adf0ac20419d58b737c2dbbc67594de5R17"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-adf0ac20419d58b737c2dbbc67594de5L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-adf0ac20419d58b737c2dbbc67594de5R18"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.jayway.jsonpath.Configuration</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-adf0ac20419d58b737c2dbbc67594de5L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-adf0ac20419d58b737c2dbbc67594de5R19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.jayway.jsonpath.JsonPath</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="21" id="diff-adf0ac20419d58b737c2dbbc67594de5L21"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.jayway.jsonpath.Option</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-adf0ac20419d58b737c2dbbc67594de5L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-adf0ac20419d58b737c2dbbc67594de5R20"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.sap.psr.vulas.backend.util.ConnectionUtil</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-adf0ac20419d58b737c2dbbc67594de5L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-adf0ac20419d58b737c2dbbc67594de5R21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.sap.psr.vulas.shared.cache.Cache</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-adf0ac20419d58b737c2dbbc67594de5L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-adf0ac20419d58b737c2dbbc67594de5R22"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.sap.psr.vulas.shared.cache.CacheException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-adf0ac20419d58b737c2dbbc67594de5L25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-adf0ac20419d58b737c2dbbc67594de5R23"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.sap.psr.vulas.shared.cache.ObjectFetcher</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-adf0ac20419d58b737c2dbbc67594de5L26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-adf0ac20419d58b737c2dbbc67594de5R24"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.sap.psr.vulas.shared.util.VulasConfiguration</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-adf0ac20419d58b737c2dbbc67594de5L27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-adf0ac20419d58b737c2dbbc67594de5R25"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="26" id="diff-adf0ac20419d58b737c2dbbc67594de5R26"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">net.minidev.json.JSONArray</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="27" id="diff-adf0ac20419d58b737c2dbbc67594de5R27"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-adf0ac20419d58b737c2dbbc67594de5L28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-adf0ac20419d58b737c2dbbc67594de5R28"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-adf0ac20419d58b737c2dbbc67594de5L29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-adf0ac20419d58b737c2dbbc67594de5R29"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> * Reads {<span class="pl-k">@link</span> CVE} from a service configured with "vulas.backend.cveCache.serviceUrl".</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-adf0ac20419d58b737c2dbbc67594de5L30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-adf0ac20419d58b737c2dbbc67594de5R30"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="24">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="31-50" data-right-range="31-50" data-url="/SAP/vulnerability-assessment-tool/blob_excerpt/4da573621a2aba566e0730f0b5eb076e697aa895?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=30&amp;last_right=30&amp;left=72&amp;left_hunk_size=23&amp;mode=100755&amp;path=rest-backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsap%2Fpsr%2Fvulas%2Fbackend%2Fcve%2FCveReader2.java&amp;right=72&amp;right_hunk_size=25" href="#diff-adf0ac20419d58b737c2dbbc67594de5" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="51-71" data-right-range="51-71" data-url="/SAP/vulnerability-assessment-tool/blob_excerpt/4da573621a2aba566e0730f0b5eb076e697aa895?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=30&amp;last_right=30&amp;left=72&amp;left_hunk_size=23&amp;mode=100755&amp;path=rest-backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsap%2Fpsr%2Fvulas%2Fbackend%2Fcve%2FCveReader2.java&amp;right=72&amp;right_hunk_size=25" href="#diff-adf0ac20419d58b737c2dbbc67594de5" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -72,23 +72,25 @@ public Cve fetch(String _key) throws CacheException {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="72" id="diff-adf0ac20419d58b737c2dbbc67594de5L72"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="72" id="diff-adf0ac20419d58b737c2dbbc67594de5R72"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">CloseableHttpResponse</span> response <span class="pl-k">=</span> httpclient<span class="pl-k">.</span>execute(method);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-adf0ac20419d58b737c2dbbc67594de5L73"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-adf0ac20419d58b737c2dbbc67594de5R73"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">try</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-adf0ac20419d58b737c2dbbc67594de5L74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-adf0ac20419d58b737c2dbbc67594de5R74"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">				sc <span class="pl-k">=</span> response<span class="pl-k">.</span>getStatusLine()<span class="pl-k">.</span>getStatusCode();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="75" id="diff-adf0ac20419d58b737c2dbbc67594de5L75"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">HttpEntity</span> entity <span class="pl-k">=</span> response<span class="pl-k">.</span>getEntity();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="75" id="diff-adf0ac20419d58b737c2dbbc67594de5R75"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k x x-first">final</span><span class="x x-last"> </span><span class="pl-smi">HttpEntity</span> entity <span class="pl-k">=</span> response<span class="pl-k">.</span>getEntity();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="76" id="diff-adf0ac20419d58b737c2dbbc67594de5L76"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="76" id="diff-adf0ac20419d58b737c2dbbc67594de5R76"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (sc<span class="pl-k">==</span><span class="pl-smi">org.apache.http<span class="pl-k">.</span>HttpStatus</span><span class="pl-c1"><span class="pl-k">.</span>SC_OK</span> <span class="pl-k">&amp;&amp;</span> entity <span class="pl-k">!=</span> <span class="pl-c1">null</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-adf0ac20419d58b737c2dbbc67594de5L77"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-adf0ac20419d58b737c2dbbc67594de5R77"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			       	result <span class="pl-k">=</span> <span class="pl-smi">ConnectionUtil</span><span class="pl-k">.</span>readInputStream(entity<span class="pl-k">.</span>getContent());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-adf0ac20419d58b737c2dbbc67594de5L78"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-adf0ac20419d58b737c2dbbc67594de5R78"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			       	cve <span class="pl-k">=</span> buildFromJson(_key, result);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="79" id="diff-adf0ac20419d58b737c2dbbc67594de5R79"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			    } <span class="pl-k">else</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="80" id="diff-adf0ac20419d58b737c2dbbc67594de5R80"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			    	log<span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>HTTP GET [url=<span class="pl-pds">"</span></span> <span class="pl-k">+</span> uri <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>] completed with [<span class="pl-pds">"</span></span> <span class="pl-k">+</span> sc <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>], and entity [<span class="pl-pds">"</span></span> <span class="pl-k">+</span> entity <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>]<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-adf0ac20419d58b737c2dbbc67594de5L79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-adf0ac20419d58b737c2dbbc67594de5R81"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-adf0ac20419d58b737c2dbbc67594de5L80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-adf0ac20419d58b737c2dbbc67594de5R82"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			} <span class="pl-k">catch</span> (<span class="pl-smi">ParseException</span> e) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="81" id="diff-adf0ac20419d58b737c2dbbc67594de5L81"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">				log<span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>HTTP GET [<span class="x x-first x-last">uri</span>=<span class="pl-pds">"</span></span> <span class="pl-k">+</span> uri <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>] caused an exception: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> e<span class="pl-k">.</span>getMessage());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="83" id="diff-adf0ac20419d58b737c2dbbc67594de5R83"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">				log<span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>HTTP GET [<span class="x x-first x-last">url</span>=<span class="pl-pds">"</span></span> <span class="pl-k">+</span> uri <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>] caused an exception: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> e<span class="pl-k">.</span>getMessage());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-adf0ac20419d58b737c2dbbc67594de5L82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-adf0ac20419d58b737c2dbbc67594de5R84"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">CacheException</span>(_key, e);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-adf0ac20419d58b737c2dbbc67594de5L83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="85" id="diff-adf0ac20419d58b737c2dbbc67594de5R85"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			} <span class="pl-k">finally</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-adf0ac20419d58b737c2dbbc67594de5L84"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-adf0ac20419d58b737c2dbbc67594de5R86"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">				response<span class="pl-k">.</span>close();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="85" id="diff-adf0ac20419d58b737c2dbbc67594de5L85"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-adf0ac20419d58b737c2dbbc67594de5R87"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			}</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-adf0ac20419d58b737c2dbbc67594de5L86"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-adf0ac20419d58b737c2dbbc67594de5R88"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			log<span class="pl-k">.</span>info(<span class="pl-s"><span class="pl-pds">"</span>Fetched <span class="pl-pds">"</span></span> <span class="pl-k">+</span> cve <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> for key [<span class="pl-pds">"</span></span> <span class="pl-k">+</span> _key <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>]<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-adf0ac20419d58b737c2dbbc67594de5L87"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="89" id="diff-adf0ac20419d58b737c2dbbc67594de5R89"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">		} <span class="pl-k">catch</span> (<span class="pl-smi">ClientProtocolException</span> e) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="88" id="diff-adf0ac20419d58b737c2dbbc67594de5L88"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">			log<span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>HTTP GET [<span class="x x-first x-last">uri</span>=<span class="pl-pds">"</span></span> <span class="pl-k">+</span> uri <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>] caused an exception: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> e<span class="pl-k">.</span>getMessage());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="90" id="diff-adf0ac20419d58b737c2dbbc67594de5R90"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			log<span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>HTTP GET [<span class="x x-first x-last">url</span>=<span class="pl-pds">"</span></span> <span class="pl-k">+</span> uri <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>] caused an exception: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> e<span class="pl-k">.</span>getMessage());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="89" id="diff-adf0ac20419d58b737c2dbbc67594de5L89"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="91" id="diff-adf0ac20419d58b737c2dbbc67594de5R91"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">CacheException</span>(_key, e);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="90" id="diff-adf0ac20419d58b737c2dbbc67594de5L90"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-adf0ac20419d58b737c2dbbc67594de5R92"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">		} <span class="pl-k">catch</span> (<span class="pl-smi">IOException</span> e) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="91" id="diff-adf0ac20419d58b737c2dbbc67594de5L91"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">			log<span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>HTTP GET [<span class="x x-first x-last">uri</span>=<span class="pl-pds">"</span></span> <span class="pl-k">+</span> uri <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>] caused an exception: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> e<span class="pl-k">.</span>getMessage());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="93" id="diff-adf0ac20419d58b737c2dbbc67594de5R93"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			log<span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>HTTP GET [<span class="x x-first x-last">url</span>=<span class="pl-pds">"</span></span> <span class="pl-k">+</span> uri <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>] caused an exception: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> e<span class="pl-k">.</span>getMessage());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-adf0ac20419d58b737c2dbbc67594de5L92"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-adf0ac20419d58b737c2dbbc67594de5R94"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			log<span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>Error: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> e<span class="pl-k">.</span>getMessage(), e);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-adf0ac20419d58b737c2dbbc67594de5L93"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-adf0ac20419d58b737c2dbbc67594de5R95"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">CacheException</span>(_key, e);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-adf0ac20419d58b737c2dbbc67594de5L94"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-adf0ac20419d58b737c2dbbc67594de5R96"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">		}</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="54">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="95-98" data-right-range="97-100" data-url="/SAP/vulnerability-assessment-tool/blob_excerpt/4da573621a2aba566e0730f0b5eb076e697aa895?diff=unified&amp;in_wiki_context=&amp;last_left=94&amp;last_right=96&amp;left=105&amp;left_hunk_size=7&amp;mode=100755&amp;path=rest-backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsap%2Fpsr%2Fvulas%2Fbackend%2Fcve%2FCveReader2.java&amp;right=107&amp;right_hunk_size=15" href="#diff-adf0ac20419d58b737c2dbbc67594de5" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -105,7 +107,15 @@ static Cve buildFromJson(String _id, String _json) throws ParseException {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-adf0ac20419d58b737c2dbbc67594de5L105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-adf0ac20419d58b737c2dbbc67594de5R107"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span>conf.addOptions(Option.DEFAULT_PATH_LEAF_TO_NULL);		</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-adf0ac20419d58b737c2dbbc67594de5L106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="108" id="diff-adf0ac20419d58b737c2dbbc67594de5R108"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">Object</span> document <span class="pl-k">=</span> conf<span class="pl-k">.</span>jsonProvider()<span class="pl-k">.</span>parse(_json);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-adf0ac20419d58b737c2dbbc67594de5L107"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="109" id="diff-adf0ac20419d58b737c2dbbc67594de5R109"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="108" id="diff-adf0ac20419d58b737c2dbbc67594de5L108"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">		cve<span class="pl-k">.</span>setSummary((<span class="pl-smi">String</span>)<span class="pl-smi">JsonPath</span><span class="pl-k">.</span>read(document, <span class="pl-s"><span class="pl-pds">"</span>$.cve.description.description_data[0].value<span class="pl-pds">"</span></span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="110" id="diff-adf0ac20419d58b737c2dbbc67594de5R110"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> Take first english description</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="111" id="diff-adf0ac20419d58b737c2dbbc67594de5R111"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">JSONArray</span> descriptions <span class="pl-k">=</span> <span class="pl-smi">JsonPath</span><span class="pl-k">.</span>read(document, <span class="pl-s"><span class="pl-pds">"</span>$.cve.description.description_data[?(@.lang=='en')].value<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="112" id="diff-adf0ac20419d58b737c2dbbc67594de5R112"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span>(descriptions<span class="pl-k">==</span><span class="pl-c1">null</span> <span class="pl-k">||</span> descriptions<span class="pl-k">.</span>size()<span class="pl-k">==</span><span class="pl-c1">0</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="113" id="diff-adf0ac20419d58b737c2dbbc67594de5R113"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			log<span class="pl-k">.</span>warn(<span class="pl-s"><span class="pl-pds">"</span>No english description found for CVE [<span class="pl-pds">"</span></span> <span class="pl-k">+</span> _id <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>]<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="114" id="diff-adf0ac20419d58b737c2dbbc67594de5R114"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			cve<span class="pl-k">.</span>setSummary(<span class="pl-s"><span class="pl-pds">"</span>Not available<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="115" id="diff-adf0ac20419d58b737c2dbbc67594de5R115"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">		}</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="116" id="diff-adf0ac20419d58b737c2dbbc67594de5R116"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">else</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="117" id="diff-adf0ac20419d58b737c2dbbc67594de5R117"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			cve<span class="pl-k">.</span>setSummary(descriptions<span class="pl-k">.</span>get(<span class="pl-c1">0</span>)<span class="pl-k">.</span>toString());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="118" id="diff-adf0ac20419d58b737c2dbbc67594de5R118"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">		}</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="109" id="diff-adf0ac20419d58b737c2dbbc67594de5L109"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="119" id="diff-adf0ac20419d58b737c2dbbc67594de5R119"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="110" id="diff-adf0ac20419d58b737c2dbbc67594de5L110"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="120" id="diff-adf0ac20419d58b737c2dbbc67594de5R120"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">String</span> published <span class="pl-k">=</span> <span class="pl-smi">JsonPath</span><span class="pl-k">.</span>read(document, <span class="pl-s"><span class="pl-pds">"</span>$.publishedDate<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="111" id="diff-adf0ac20419d58b737c2dbbc67594de5L111"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="121" id="diff-adf0ac20419d58b737c2dbbc67594de5R121"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">Calendar</span> publ <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">GregorianCalendar</span>();</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="112-168" data-right-range="122-168" data-url="/SAP/vulnerability-assessment-tool/blob_excerpt/4da573621a2aba566e0730f0b5eb076e697aa895?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=111&amp;last_right=121&amp;left=169&amp;left_hunk_size=&amp;mode=100755&amp;path=rest-backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsap%2Fpsr%2Fvulas%2Fbackend%2Fcve%2FCveReader2.java&amp;right=169&amp;right_hunk_size=" href="#diff-adf0ac20419d58b737c2dbbc67594de5" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-adf0ac20419d58b737c2dbbc67594de5L5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-adf0ac20419d58b737c2dbbc67594de5R5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-adf0ac20419d58b737c2dbbc67594de5L6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-adf0ac20419d58b737c2dbbc67594de5R6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-adf0ac20419d58b737c2dbbc67594de5L7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-adf0ac20419d58b737c2dbbc67594de5R7"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="8" id="diff-adf0ac20419d58b737c2dbbc67594de5L8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-adf0ac20419d58b737c2dbbc67594de5L9"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-adf0ac20419d58b737c2dbbc67594de5R8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-adf0ac20419d58b737c2dbbc67594de5L10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-adf0ac20419d58b737c2dbbc67594de5R9"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-adf0ac20419d58b737c2dbbc67594de5L11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-adf0ac20419d58b737c2dbbc67594de5R10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-adf0ac20419d58b737c2dbbc67594de5L18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-adf0ac20419d58b737c2dbbc67594de5R17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-adf0ac20419d58b737c2dbbc67594de5L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-adf0ac20419d58b737c2dbbc67594de5R18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-adf0ac20419d58b737c2dbbc67594de5L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-adf0ac20419d58b737c2dbbc67594de5R19"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="21" id="diff-adf0ac20419d58b737c2dbbc67594de5L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-adf0ac20419d58b737c2dbbc67594de5L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-adf0ac20419d58b737c2dbbc67594de5R20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-adf0ac20419d58b737c2dbbc67594de5L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-adf0ac20419d58b737c2dbbc67594de5R21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-adf0ac20419d58b737c2dbbc67594de5L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-adf0ac20419d58b737c2dbbc67594de5R22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-adf0ac20419d58b737c2dbbc67594de5L25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-adf0ac20419d58b737c2dbbc67594de5R23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-adf0ac20419d58b737c2dbbc67594de5L26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-adf0ac20419d58b737c2dbbc67594de5R24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-adf0ac20419d58b737c2dbbc67594de5L27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-adf0ac20419d58b737c2dbbc67594de5R25"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="26" id="diff-adf0ac20419d58b737c2dbbc67594de5R26"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="27" id="diff-adf0ac20419d58b737c2dbbc67594de5R27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-adf0ac20419d58b737c2dbbc67594de5L28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-adf0ac20419d58b737c2dbbc67594de5R28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-adf0ac20419d58b737c2dbbc67594de5L29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-adf0ac20419d58b737c2dbbc67594de5R29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-adf0ac20419d58b737c2dbbc67594de5L30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-adf0ac20419d58b737c2dbbc67594de5R30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="72" id="diff-adf0ac20419d58b737c2dbbc67594de5L72"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="72" id="diff-adf0ac20419d58b737c2dbbc67594de5R72"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-adf0ac20419d58b737c2dbbc67594de5L73"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-adf0ac20419d58b737c2dbbc67594de5R73"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-adf0ac20419d58b737c2dbbc67594de5L74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-adf0ac20419d58b737c2dbbc67594de5R74"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="75" id="diff-adf0ac20419d58b737c2dbbc67594de5L75"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="75" id="diff-adf0ac20419d58b737c2dbbc67594de5R75"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="76" id="diff-adf0ac20419d58b737c2dbbc67594de5L76"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="76" id="diff-adf0ac20419d58b737c2dbbc67594de5R76"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-adf0ac20419d58b737c2dbbc67594de5L77"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-adf0ac20419d58b737c2dbbc67594de5R77"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-adf0ac20419d58b737c2dbbc67594de5L78"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-adf0ac20419d58b737c2dbbc67594de5R78"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="79" id="diff-adf0ac20419d58b737c2dbbc67594de5R79"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="80" id="diff-adf0ac20419d58b737c2dbbc67594de5R80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-adf0ac20419d58b737c2dbbc67594de5L79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-adf0ac20419d58b737c2dbbc67594de5R81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-adf0ac20419d58b737c2dbbc67594de5L80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-adf0ac20419d58b737c2dbbc67594de5R82"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="81" id="diff-adf0ac20419d58b737c2dbbc67594de5L81"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="83" id="diff-adf0ac20419d58b737c2dbbc67594de5R83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-adf0ac20419d58b737c2dbbc67594de5L82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-adf0ac20419d58b737c2dbbc67594de5R84"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-adf0ac20419d58b737c2dbbc67594de5L83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="85" id="diff-adf0ac20419d58b737c2dbbc67594de5R85"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-adf0ac20419d58b737c2dbbc67594de5L84"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-adf0ac20419d58b737c2dbbc67594de5R86"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="85" id="diff-adf0ac20419d58b737c2dbbc67594de5L85"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-adf0ac20419d58b737c2dbbc67594de5R87"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-adf0ac20419d58b737c2dbbc67594de5L86"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-adf0ac20419d58b737c2dbbc67594de5R88"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-adf0ac20419d58b737c2dbbc67594de5L87"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="89" id="diff-adf0ac20419d58b737c2dbbc67594de5R89"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="88" id="diff-adf0ac20419d58b737c2dbbc67594de5L88"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="90" id="diff-adf0ac20419d58b737c2dbbc67594de5R90"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="89" id="diff-adf0ac20419d58b737c2dbbc67594de5L89"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="91" id="diff-adf0ac20419d58b737c2dbbc67594de5R91"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="90" id="diff-adf0ac20419d58b737c2dbbc67594de5L90"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-adf0ac20419d58b737c2dbbc67594de5R92"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="91" id="diff-adf0ac20419d58b737c2dbbc67594de5L91"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="93" id="diff-adf0ac20419d58b737c2dbbc67594de5R93"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-adf0ac20419d58b737c2dbbc67594de5L92"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-adf0ac20419d58b737c2dbbc67594de5R94"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-adf0ac20419d58b737c2dbbc67594de5L93"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-adf0ac20419d58b737c2dbbc67594de5R95"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-adf0ac20419d58b737c2dbbc67594de5L94"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-adf0ac20419d58b737c2dbbc67594de5R96"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-adf0ac20419d58b737c2dbbc67594de5L105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-adf0ac20419d58b737c2dbbc67594de5R107"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-adf0ac20419d58b737c2dbbc67594de5L106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="108" id="diff-adf0ac20419d58b737c2dbbc67594de5R108"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-adf0ac20419d58b737c2dbbc67594de5L107"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="109" id="diff-adf0ac20419d58b737c2dbbc67594de5R109"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="108" id="diff-adf0ac20419d58b737c2dbbc67594de5L108"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="110" id="diff-adf0ac20419d58b737c2dbbc67594de5R110"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="111" id="diff-adf0ac20419d58b737c2dbbc67594de5R111"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="112" id="diff-adf0ac20419d58b737c2dbbc67594de5R112"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="113" id="diff-adf0ac20419d58b737c2dbbc67594de5R113"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="114" id="diff-adf0ac20419d58b737c2dbbc67594de5R114"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="115" id="diff-adf0ac20419d58b737c2dbbc67594de5R115"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="116" id="diff-adf0ac20419d58b737c2dbbc67594de5R116"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="117" id="diff-adf0ac20419d58b737c2dbbc67594de5R117"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="118" id="diff-adf0ac20419d58b737c2dbbc67594de5R118"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="109" id="diff-adf0ac20419d58b737c2dbbc67594de5L109"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="119" id="diff-adf0ac20419d58b737c2dbbc67594de5R119"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="110" id="diff-adf0ac20419d58b737c2dbbc67594de5L110"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="120" id="diff-adf0ac20419d58b737c2dbbc67594de5R120"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="111" id="diff-adf0ac20419d58b737c2dbbc67594de5L111"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="121" id="diff-adf0ac20419d58b737c2dbbc67594de5R121"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-1">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-cd9cb27825f398d3aebad578ccb68f0f" data-file-deleted="false" data-file-type=".java" data-path="rest-backend/src/test/java/com/sap/psr/vulas/backend/cve/CveReader2Test.java" data-short-path="cd9cb27">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="rest-backend/src/test/java/com/sap/psr/vulas/backend/cve/CveReader2Test.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/SAP/vulnerability-assessment-tool/blob/19cdf5be00aa2050618b5fd637cac49c6495fa68/rest-backend/src/test/java/com/sap/psr/vulas/backend/cve/CveReader2Test.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="11 additions &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">12 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-cd9cb27825f398d3aebad578ccb68f0f" title="rest-backend/src/test/java/com/sap/psr/vulas/backend/cve/CveReader2Test.java">rest-backend/src/test/java/com/sap/psr/vulas/backend/cve/CveReader2Test.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-cd9cb27825f398d3aebad578ccb68f0f" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-38" data-right-range="1-38" data-url="/SAP/vulnerability-assessment-tool/blob_excerpt/8f06d7894b95d847bb95c13ccd7aba163ed8fc12?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=39&amp;left_hunk_size=11&amp;mode=100755&amp;path=rest-backend%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsap%2Fpsr%2Fvulas%2Fbackend%2Fcve%2FCveReader2Test.java&amp;right=39&amp;right_hunk_size=21" href="#diff-cd9cb27825f398d3aebad578ccb68f0f" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -39,11 +39,21 @@ public void testBuildFromJson() throws CacheException {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-cd9cb27825f398d3aebad578ccb68f0fL39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-cd9cb27825f398d3aebad578ccb68f0fR39"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			assertEquals(<span class="pl-smi">Float</span><span class="pl-k">.</span>valueOf(<span class="pl-s"><span class="pl-pds">"</span>5.5<span class="pl-pds">"</span></span>), cve_2018_0123<span class="pl-k">.</span>getCvssScore());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-cd9cb27825f398d3aebad578ccb68f0fL40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-cd9cb27825f398d3aebad578ccb68f0fR40"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			assertEquals(<span class="pl-s"><span class="pl-pds">"</span>3.0<span class="pl-pds">"</span></span>, cve_2018_0123<span class="pl-k">.</span>getCvssVersion());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-cd9cb27825f398d3aebad578ccb68f0fL41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-cd9cb27825f398d3aebad578ccb68f0fR41"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			assertEquals(<span class="pl-s"><span class="pl-pds">"</span>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N<span class="pl-pds">"</span></span>, cve_2018_0123<span class="pl-k">.</span>getCvssVector());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="42" id="diff-cd9cb27825f398d3aebad578ccb68f0fL42"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">			assertEquals(<span class="pl-s"><span class="pl-pds">"</span>A Path Traversal vulnerability in the diagnostic shell for Cisco IOS and IOS XE Software could allow an authenticated, local attacker to use certain diagnostic shell commands that can overwrite system files. These system files may be sensitive and should not be able to be overwritten by a user of the diagnostic shell. The vulnerability is due to lack of proper input validation for certain diagnostic shell commands. An attacker could exploit this vulnerability by authenticating to the device, entering the diagnostic shell, and providing crafted user input to commands at the local diagnostic shell CLI. Successful exploitation could allow the attacker to overwrite system files that should be restricted. Cisco Bug IDs: CSCvg41950.<span class="pl-pds">"</span></span>, cve_2018_0123<span class="pl-k">.</span>getSummary());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="42" id="diff-cd9cb27825f398d3aebad578ccb68f0fR42"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			assertEquals(<span class="pl-s"><span class="pl-pds">"</span>Not available<span class="pl-pds">"</span></span>, cve_2018_0123<span class="pl-k">.</span>getSummary()); <span class="pl-c"><span class="pl-c">//</span> lang was changed to 'de', thus, no english description is found</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-cd9cb27825f398d3aebad578ccb68f0fL43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-cd9cb27825f398d3aebad578ccb68f0fR43"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			publ<span class="pl-k">.</span>setTime(format<span class="pl-k">.</span>parse(<span class="pl-s"><span class="pl-pds">"</span>2018-02-08T07:29Z<span class="pl-pds">"</span></span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-cd9cb27825f398d3aebad578ccb68f0fL44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-cd9cb27825f398d3aebad578ccb68f0fR44"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			assertEquals(publ, cve_2018_0123<span class="pl-k">.</span>getPublished());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-cd9cb27825f398d3aebad578ccb68f0fL45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-cd9cb27825f398d3aebad578ccb68f0fR45"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			modi<span class="pl-k">.</span>setTime(format<span class="pl-k">.</span>parse(<span class="pl-s"><span class="pl-pds">"</span>2018-03-13T13:53Z<span class="pl-pds">"</span></span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-cd9cb27825f398d3aebad578ccb68f0fL46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-cd9cb27825f398d3aebad578ccb68f0fR46"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			assertEquals(modi, cve_2018_0123<span class="pl-k">.</span>getModified());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-cd9cb27825f398d3aebad578ccb68f0fR47"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="48" id="diff-cd9cb27825f398d3aebad578ccb68f0fR48"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">Cve</span> cve_2018_1000865 <span class="pl-k">=</span> <span class="pl-smi">CveReader2</span><span class="pl-k">.</span>buildFromJson(<span class="pl-s"><span class="pl-pds">"</span>CVE-2018-1000865<span class="pl-pds">"</span></span>, <span class="pl-smi">FileUtil</span><span class="pl-k">.</span>readFile(<span class="pl-s"><span class="pl-pds">"</span>./src/test/resources/cves/cve-2018-1000865-new.json<span class="pl-pds">"</span></span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="49" id="diff-cd9cb27825f398d3aebad578ccb68f0fR49"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			assertEquals(<span class="pl-smi">Float</span><span class="pl-k">.</span>valueOf(<span class="pl-s"><span class="pl-pds">"</span>8.8<span class="pl-pds">"</span></span>), cve_2018_1000865<span class="pl-k">.</span>getCvssScore());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="50" id="diff-cd9cb27825f398d3aebad578ccb68f0fR50"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			assertEquals(<span class="pl-s"><span class="pl-pds">"</span>3.0<span class="pl-pds">"</span></span>, cve_2018_1000865<span class="pl-k">.</span>getCvssVersion());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="51" id="diff-cd9cb27825f398d3aebad578ccb68f0fR51"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			assertEquals(<span class="pl-s"><span class="pl-pds">"</span>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H<span class="pl-pds">"</span></span>, cve_2018_1000865<span class="pl-k">.</span>getCvssVector());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="52" id="diff-cd9cb27825f398d3aebad578ccb68f0fR52"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			assertEquals(<span class="pl-s"><span class="pl-pds">"</span>A sandbox bypass vulnerability exists in Script Security Plugin 1.47 and earlier in groovy-sandbox/src/main/java/org/kohsuke/groovy/sandbox/SandboxTransformer.java that allows attackers with Job/Configure permission to execute arbitrary code on the Jenkins master JVM, if plugins using the Groovy sandbox are installed.<span class="pl-pds">"</span></span>, cve_2018_1000865<span class="pl-k">.</span>getSummary());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="53" id="diff-cd9cb27825f398d3aebad578ccb68f0fR53"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			publ<span class="pl-k">.</span>setTime(format<span class="pl-k">.</span>parse(<span class="pl-s"><span class="pl-pds">"</span>2018-12-10T14:29Z<span class="pl-pds">"</span></span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="54" id="diff-cd9cb27825f398d3aebad578ccb68f0fR54"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			assertEquals(publ, cve_2018_1000865<span class="pl-k">.</span>getPublished());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="55" id="diff-cd9cb27825f398d3aebad578ccb68f0fR55"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			modi<span class="pl-k">.</span>setTime(format<span class="pl-k">.</span>parse(<span class="pl-s"><span class="pl-pds">"</span>2019-02-06T19:02Z<span class="pl-pds">"</span></span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="56" id="diff-cd9cb27825f398d3aebad578ccb68f0fR56"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">			assertEquals(modi, cve_2018_1000865<span class="pl-k">.</span>getModified());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-cd9cb27825f398d3aebad578ccb68f0fL47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-cd9cb27825f398d3aebad578ccb68f0fR57"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">		} <span class="pl-k">catch</span> (<span class="pl-smi">IOException</span> e) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-cd9cb27825f398d3aebad578ccb68f0fL48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-cd9cb27825f398d3aebad578ccb68f0fR58"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			e<span class="pl-k">.</span>printStackTrace();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-cd9cb27825f398d3aebad578ccb68f0fL49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-cd9cb27825f398d3aebad578ccb68f0fR59"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">			assertTrue(<span class="pl-c1">false</span>);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="50-65" data-right-range="60-65" data-url="/SAP/vulnerability-assessment-tool/blob_excerpt/8f06d7894b95d847bb95c13ccd7aba163ed8fc12?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=49&amp;last_right=59&amp;left=66&amp;left_hunk_size=&amp;mode=100755&amp;path=rest-backend%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsap%2Fpsr%2Fvulas%2Fbackend%2Fcve%2FCveReader2Test.java&amp;right=66&amp;right_hunk_size=" href="#diff-cd9cb27825f398d3aebad578ccb68f0f" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-cd9cb27825f398d3aebad578ccb68f0fL39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-cd9cb27825f398d3aebad578ccb68f0fR39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-cd9cb27825f398d3aebad578ccb68f0fL40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-cd9cb27825f398d3aebad578ccb68f0fR40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-cd9cb27825f398d3aebad578ccb68f0fL41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-cd9cb27825f398d3aebad578ccb68f0fR41"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="42" id="diff-cd9cb27825f398d3aebad578ccb68f0fL42"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="42" id="diff-cd9cb27825f398d3aebad578ccb68f0fR42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-cd9cb27825f398d3aebad578ccb68f0fL43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-cd9cb27825f398d3aebad578ccb68f0fR43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-cd9cb27825f398d3aebad578ccb68f0fL44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-cd9cb27825f398d3aebad578ccb68f0fR44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-cd9cb27825f398d3aebad578ccb68f0fL45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-cd9cb27825f398d3aebad578ccb68f0fR45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-cd9cb27825f398d3aebad578ccb68f0fL46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-cd9cb27825f398d3aebad578ccb68f0fR46"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-cd9cb27825f398d3aebad578ccb68f0fR47"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="48" id="diff-cd9cb27825f398d3aebad578ccb68f0fR48"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="49" id="diff-cd9cb27825f398d3aebad578ccb68f0fR49"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="50" id="diff-cd9cb27825f398d3aebad578ccb68f0fR50"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="51" id="diff-cd9cb27825f398d3aebad578ccb68f0fR51"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="52" id="diff-cd9cb27825f398d3aebad578ccb68f0fR52"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="53" id="diff-cd9cb27825f398d3aebad578ccb68f0fR53"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="54" id="diff-cd9cb27825f398d3aebad578ccb68f0fR54"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="55" id="diff-cd9cb27825f398d3aebad578ccb68f0fR55"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="56" id="diff-cd9cb27825f398d3aebad578ccb68f0fR56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-cd9cb27825f398d3aebad578ccb68f0fL47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-cd9cb27825f398d3aebad578ccb68f0fR57"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-cd9cb27825f398d3aebad578ccb68f0fL48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-cd9cb27825f398d3aebad578ccb68f0fR58"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-cd9cb27825f398d3aebad578ccb68f0fL49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-cd9cb27825f398d3aebad578ccb68f0fR59"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-2">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-65d716e28646b5a72c11b65364ded4b4" data-file-deleted="false" data-file-type=".json" data-path="rest-backend/src/test/resources/cves/cve-2018-0123-new.json" data-short-path="65d716e">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="rest-backend/src/test/resources/cves/cve-2018-0123-new.json">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/SAP/vulnerability-assessment-tool/blob/19cdf5be00aa2050618b5fd637cac49c6495fa68/rest-backend/src/test/resources/cves/cve-2018-0123-new.json" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-65d716e28646b5a72c11b65364ded4b4" title="rest-backend/src/test/resources/cves/cve-2018-0123-new.json">rest-backend/src/test/resources/cves/cve-2018-0123-new.json</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-65d716e28646b5a72c11b65364ded4b4" data-tab-size="8">
+<tr data-position="0">
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-65d716e28646b5a72c11b65364ded4b4HL1"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-65d716e28646b5a72c11b65364ded4b4HR1"></td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -1 +1 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="1" id="diff-65d716e28646b5a72c11b65364ded4b4L1"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">{"cve": {"data_type": "CVE", "data_format": "MITRE", "data_version": "4.0", "CVE_data_meta": {"ID": "CVE-2018-0123", "ASSIGNER": "cve@mitre.org"}, "affects": {"vendor": {"vendor_data": [{"vendor_name": "cisco", "product": {"product_data": [{"product_name": "ios", "version": {"version_data": [{"version_value": "16.7(1)", "version_affected": "="}]}}, {"product_name": "ios_xe", "version": {"version_data": [{"version_value": "-", "version_affected": "="}]}}]}}]}}, "problemtype": {"problemtype_data": [{"description": [{"lang": "en", "value": "CWE-22"}]}]}, "references": {"reference_data": [{"url": "http://www.securityfocus.com/bid/102967", "name": "102967", "refsource": "BID", "tags": ["Third Party Advisory", "VDB Entry"]}, {"url": "http://www.securitytracker.com/id/1040346", "name": "1040346", "refsource": "SECTRACK", "tags": ["Third Party Advisory", "VDB Entry"]}, {"url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180207-ios", "name": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180207-ios", "refsource": "CONFIRM", "tags": ["Vendor Advisory"]}]}, "description": {"description_data": [{"lang": "en", "value": "A Path Traversal vulnerability in the diagnostic shell for Cisco IOS and IOS XE Software could allow an authenticated, local attacker to use certain diagnostic shell commands that can overwrite system files. These system files may be sensitive and should not be able to be overwritten by a user of the diagnostic shell. The vulnerability is due to lack of proper input validation for certain diagnostic shell commands. An attacker could exploit this vulnerability by authenticating to the device, entering the diagnostic shell, and providing crafted user input to commands at the local diagnostic shell CLI. Successful exploitation could allow the attacker to overwrite system files that should be restricted. Cisco Bug IDs: CSCvg41950."}]}}, "configurations": {"CVE_data_version": "4.0", "nodes": [{"operator": "OR", "cpe_match": [{"vulnerable": true, "cpe23Uri": "cpe:2.3:o:cisco:ios:16.7\\(1\\):*:*:*:*:*:*:*"}, {"vulnerable": true, "cpe23Uri": "cpe:2.3:o:cisco:ios_xe:-:*:*:*:*:*:*:*"}]}]}, "impact": {"baseMetricV3": {"cvssV3": {"version": "3.0", "vectorString": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N", "attackVector": "LOCAL", "attackComplexity": "LOW", "privilegesRequired": "LOW", "userInteraction": "NONE", "scope": "UNCHANGED", "confidentialityImpact": "NONE", "integrityImpact": "HIGH", "availabilityImpact": "NONE", "baseScore": 5.5, "baseSeverity": "MEDIUM"}, "exploitabilityScore": 1.8, "impactScore": 3.6}, "baseMetricV2": {"cvssV2": {"version": "2.0", "vectorString": "AV:L/AC:L/Au:N/C:N/I:C/A:N", "accessVector": "LOCAL", "accessComplexity": "LOW", "authentication": "NONE", "confidentialityImpact": "NONE", "integrityImpact": "COMPLETE", "availabilityImpact": "NONE", "baseScore": 4.9}, "severity": "MEDIUM", "exploitabilityScore": 3.9, "impactScore": 6.9, "obtainAllPrivilege": false, "obtainUserPrivilege": false, "obtainOtherPrivilege": false, "userInteractionRequired": false}}, "publishedDate": "2018-02-08T07:29Z", "lastModifiedDate": "2018-03-13T13:53Z"}</span>
+<span aria-label="No newline at end of file" class="no-nl-marker tooltipped tooltipped-n">
+<svg aria-hidden="true" class="octicon octicon-no-newline" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M16 5v3c0 .55-.45 1-1 1h-3v2L9 8l3-3v2h2V5h2zM8 8c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4zM1.5 9.66L5.66 5.5C5.18 5.19 4.61 5 4 5 2.34 5 1 6.34 1 8c0 .61.19 1.17.5 1.66zM7 8c0-.61-.19-1.17-.5-1.66L2.34 10.5c.48.31 1.05.5 1.66.5 1.66 0 3-1.34 3-3z" fill-rule="evenodd"></path></svg>
+</span>
+</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="1" id="diff-65d716e28646b5a72c11b65364ded4b4R1"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">{"cve": {"data_type": "CVE", "data_format": "MITRE", "data_version": "4.0", "CVE_data_meta": {"ID": "CVE-2018-0123", "ASSIGNER": "cve@mitre.org"}, "affects": {"vendor": {"vendor_data": [{"vendor_name": "cisco", "product": {"product_data": [{"product_name": "ios", "version": {"version_data": [{"version_value": "16.7(1)", "version_affected": "="}]}}, {"product_name": "ios_xe", "version": {"version_data": [{"version_value": "-", "version_affected": "="}]}}]}}]}}, "problemtype": {"problemtype_data": [{"description": [{"lang": "en", "value": "CWE-22"}]}]}, "references": {"reference_data": [{"url": "http://www.securityfocus.com/bid/102967", "name": "102967", "refsource": "BID", "tags": ["Third Party Advisory", "VDB Entry"]}, {"url": "http://www.securitytracker.com/id/1040346", "name": "1040346", "refsource": "SECTRACK", "tags": ["Third Party Advisory", "VDB Entry"]}, {"url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180207-ios", "name": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180207-ios", "refsource": "CONFIRM", "tags": ["Vendor Advisory"]}]}, "description": {"description_data": [{"lang": "de", "value": "A Path Traversal vulnerability in the diagnostic shell for Cisco IOS and IOS XE Software could allow an authenticated, local attacker to use certain diagnostic shell commands that can overwrite system files. These system files may be sensitive and should not be able to be overwritten by a user of the diagnostic shell. The vulnerability is due to lack of proper input validation for certain diagnostic shell commands. An attacker could exploit this vulnerability by authenticating to the device, entering the diagnostic shell, and providing crafted user input to commands at the local diagnostic shell CLI. Successful exploitation could allow the attacker to overwrite system files that should be restricted. Cisco Bug IDs: CSCvg41950."}]}}, "configurations": {"CVE_data_version": "4.0", "nodes": [{"operator": "OR", "cpe_match": [{"vulnerable": true, "cpe23Uri": "cpe:2.3:o:cisco:ios:16.7\\(1\\):*:*:*:*:*:*:*"}, {"vulnerable": true, "cpe23Uri": "cpe:2.3:o:cisco:ios_xe:-:*:*:*:*:*:*:*"}]}]}, "impact": {"baseMetricV3": {"cvssV3": {"version": "3.0", "vectorString": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N", "attackVector": "LOCAL", "attackComplexity": "LOW", "privilegesRequired": "LOW", "userInteraction": "NONE", "scope": "UNCHANGED", "confidentialityImpact": "NONE", "integrityImpact": "HIGH", "availabilityImpact": "NONE", "baseScore": 5.5, "baseSeverity": "MEDIUM"}, "exploitabilityScore": 1.8, "impactScore": 3.6}, "baseMetricV2": {"cvssV2": {"version": "2.0", "vectorString": "AV:L/AC:L/Au:N/C:N/I:C/A:N", "accessVector": "LOCAL", "accessComplexity": "LOW", "authentication": "NONE", "confidentialityImpact": "NONE", "integrityImpact": "COMPLETE", "availabilityImpact": "NONE", "baseScore": 4.9}, "severity": "MEDIUM", "exploitabilityScore": 3.9, "impactScore": 6.9, "obtainAllPrivilege": false, "obtainUserPrivilege": false, "obtainOtherPrivilege": false, "userInteractionRequired": false}}, "publishedDate": "2018-02-08T07:29Z", "lastModifiedDate": "2018-03-13T13:53Z"}</span>
+<span aria-label="No newline at end of file" class="no-nl-marker tooltipped tooltipped-n">
+<svg aria-hidden="true" class="octicon octicon-no-newline" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M16 5v3c0 .55-.45 1-1 1h-3v2L9 8l3-3v2h2V5h2zM8 8c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4zM1.5 9.66L5.66 5.5C5.18 5.19 4.61 5 4 5 2.34 5 1 6.34 1 8c0 .61.19 1.17.5 1.66zM7 8c0-.61-.19-1.17-.5-1.66L2.34 10.5c.48.31 1.05.5 1.66.5 1.66 0 3-1.34 3-3z" fill-rule="evenodd"></path></svg>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-65d716e28646b5a72c11b65364ded4b4HL1"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-65d716e28646b5a72c11b65364ded4b4HR1"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="1" id="diff-65d716e28646b5a72c11b65364ded4b4L1"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="1" id="diff-65d716e28646b5a72c11b65364ded4b4R1"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-3">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-1ce7692ca111d022f5fb2966266f7eb6" data-file-deleted="false" data-file-type=".json" data-path="rest-backend/src/test/resources/cves/cve-2018-1000865-new.json" data-short-path="1ce7692">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="rest-backend/src/test/resources/cves/cve-2018-1000865-new.json">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/SAP/vulnerability-assessment-tool/blob/19cdf5be00aa2050618b5fd637cac49c6495fa68/rest-backend/src/test/resources/cves/cve-2018-1000865-new.json" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 0 deletions" class="diffstat tooltipped tooltipped-e">1 <span class="block-diff-added"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-1ce7692ca111d022f5fb2966266f7eb6" title="rest-backend/src/test/resources/cves/cve-2018-1000865-new.json">rest-backend/src/test/resources/cves/cve-2018-1000865-new.json</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-1ce7692ca111d022f5fb2966266f7eb6" data-tab-size="8">
+<tr data-position="0">
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-1ce7692ca111d022f5fb2966266f7eb6HL0"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-1ce7692ca111d022f5fb2966266f7eb6HR1"></td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -0,0 +1 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="1" id="diff-1ce7692ca111d022f5fb2966266f7eb6R1"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">{"cve": {"data_type": "CVE", "data_format": "MITRE", "data_version": "4.0", "CVE_data_meta": {"ID": "CVE-2018-1000865", "ASSIGNER": "cve@mitre.org"}, "affects": {"vendor": {"vendor_data": [{"vendor_name": "jenkins", "product": {"product_data": [{"product_name": "script_security_plugin", "version": {"version_data": [{"version_value": "1.47", "version_affected": "&lt;="}]}}]}}]}}, "problemtype": {"problemtype_data": [{"description": [{"lang": "en", "value": "CWE-264"}]}]}, "references": {"reference_data": [{"url": "https://jenkins.io/security/advisory/2018-10-29/#SECURITY-1186", "name": "https://jenkins.io/security/advisory/2018-10-29/#SECURITY-1186", "refsource": "CONFIRM", "tags": ["Vendor Advisory"]}]}, "description": {"description_data": [{"lang": "en", "value": "A sandbox bypass vulnerability exists in Script Security Plugin 1.47 and earlier in groovy-sandbox/src/main/java/org/kohsuke/groovy/sandbox/SandboxTransformer.java that allows attackers with Job/Configure permission to execute arbitrary code on the Jenkins master JVM, if plugins using the Groovy sandbox are installed."}]}}, "configurations": {"CVE_data_version": "4.0", "nodes": [{"operator": "OR", "cpe_match": [{"vulnerable": true, "cpe23Uri": "cpe:2.3:a:jenkins:script_security_plugin:*:*:*:*:*:jenkins:*:*", "versionEndIncluding": "1.47"}]}]}, "impact": {"baseMetricV3": {"cvssV3": {"version": "3.0", "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H", "attackVector": "NETWORK", "attackComplexity": "LOW", "privilegesRequired": "LOW", "userInteraction": "NONE", "scope": "UNCHANGED", "confidentialityImpact": "HIGH", "integrityImpact": "HIGH", "availabilityImpact": "HIGH", "baseScore": 8.8, "baseSeverity": "HIGH"}, "exploitabilityScore": 2.8, "impactScore": 5.9}, "baseMetricV2": {"cvssV2": {"version": "2.0", "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P", "accessVector": "NETWORK", "accessComplexity": "LOW", "authentication": "SINGLE", "confidentialityImpact": "PARTIAL", "integrityImpact": "PARTIAL", "availabilityImpact": "PARTIAL", "baseScore": 6.5}, "severity": "MEDIUM", "exploitabilityScore": 8.0, "impactScore": 6.4, "acInsufInfo": false, "obtainAllPrivilege": false, "obtainUserPrivilege": false, "obtainOtherPrivilege": false, "userInteractionRequired": false}}, "publishedDate": "2018-12-10T14:29Z", "lastModifiedDate": "2019-02-06T19:02Z"}</span>
+<span aria-label="No newline at end of file" class="no-nl-marker tooltipped tooltipped-n">
+<svg aria-hidden="true" class="octicon octicon-no-newline" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M16 5v3c0 .55-.45 1-1 1h-3v2L9 8l3-3v2h2V5h2zM8 8c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4zM1.5 9.66L5.66 5.5C5.18 5.19 4.61 5 4 5 2.34 5 1 6.34 1 8c0 .61.19 1.17.5 1.66zM7 8c0-.61-.19-1.17-.5-1.66L2.34 10.5c.48.31 1.05.5 1.66.5 1.66 0 3-1.34 3-3z" fill-rule="evenodd"></path></svg>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-1ce7692ca111d022f5fb2966266f7eb6HL0"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-1ce7692ca111d022f5fb2966266f7eb6HR1"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="1" id="diff-1ce7692ca111d022f5fb2966266f7eb6R1"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

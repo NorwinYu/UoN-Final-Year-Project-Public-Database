@@ -1,0 +1,1261 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-c949d88a345421517fcc9ef85d9cc88d" data-file-deleted="false" data-file-type=".java" data-path="compiler/ballerina-lang/src/main/java/org/wso2/ballerinalang/compiler/desugar/StreamingCodeDesugar.java" data-short-path="c949d88">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="compiler/ballerina-lang/src/main/java/org/wso2/ballerinalang/compiler/desugar/StreamingCodeDesugar.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/warunalakshitha/ballerina-lang/blob/90b9170fe786a8f3440cc1cc396e82becf312980/compiler/ballerina-lang/src/main/java/org/wso2/ballerinalang/compiler/desugar/StreamingCodeDesugar.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 0 deletions" class="diffstat tooltipped tooltipped-e">1 <span class="block-diff-added"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-c949d88a345421517fcc9ef85d9cc88d" title="compiler/ballerina-lang/src/main/java/org/wso2/ballerinalang/compiler/desugar/StreamingCodeDesugar.java">...rina-lang/src/main/java/org/wso2/ballerinalang/compiler/desugar/StreamingCodeDesugar.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-c949d88a345421517fcc9ef85d9cc88d" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-92" data-right-range="1-92" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/b9f86f31a2be13db23e62b37af6dece00f26930e?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=93&amp;left_hunk_size=6&amp;mode=100644&amp;path=compiler%2Fballerina-lang%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fballerinalang%2Fcompiler%2Fdesugar%2FStreamingCodeDesugar.java&amp;right=93&amp;right_hunk_size=7" href="#diff-c949d88a345421517fcc9ef85d9cc88d" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -93,6 +93,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-c949d88a345421517fcc9ef85d9cc88dL93"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-c949d88a345421517fcc9ef85d9cc88dR93"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.wso2.ballerinalang.compiler.util.FieldKind</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-c949d88a345421517fcc9ef85d9cc88dL94"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-c949d88a345421517fcc9ef85d9cc88dR94"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.wso2.ballerinalang.compiler.util.Name</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-c949d88a345421517fcc9ef85d9cc88dL95"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-c949d88a345421517fcc9ef85d9cc88dR95"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.wso2.ballerinalang.compiler.util.Names</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="96" id="diff-c949d88a345421517fcc9ef85d9cc88dR96"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.wso2.ballerinalang.compiler.util.TypeTags</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-c949d88a345421517fcc9ef85d9cc88dL96"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-c949d88a345421517fcc9ef85d9cc88dR97"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.wso2.ballerinalang.compiler.util.diagnotic.BLangDiagnosticLog</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-c949d88a345421517fcc9ef85d9cc88dL97"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-c949d88a345421517fcc9ef85d9cc88dR98"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.wso2.ballerinalang.compiler.util.diagnotic.DiagnosticPos</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-c949d88a345421517fcc9ef85d9cc88dL98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-c949d88a345421517fcc9ef85d9cc88dR99"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.wso2.ballerinalang.util.Lists</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="99-1807" data-right-range="100-1807" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/b9f86f31a2be13db23e62b37af6dece00f26930e?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=98&amp;last_right=99&amp;left=1808&amp;left_hunk_size=&amp;mode=100644&amp;path=compiler%2Fballerina-lang%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fballerinalang%2Fcompiler%2Fdesugar%2FStreamingCodeDesugar.java&amp;right=1808&amp;right_hunk_size=" href="#diff-c949d88a345421517fcc9ef85d9cc88d" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-c949d88a345421517fcc9ef85d9cc88dL93"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-c949d88a345421517fcc9ef85d9cc88dR93"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-c949d88a345421517fcc9ef85d9cc88dL94"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-c949d88a345421517fcc9ef85d9cc88dR94"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-c949d88a345421517fcc9ef85d9cc88dL95"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-c949d88a345421517fcc9ef85d9cc88dR95"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="96" id="diff-c949d88a345421517fcc9ef85d9cc88dR96"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-c949d88a345421517fcc9ef85d9cc88dL96"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-c949d88a345421517fcc9ef85d9cc88dR97"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-c949d88a345421517fcc9ef85d9cc88dL97"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-c949d88a345421517fcc9ef85d9cc88dR98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-c949d88a345421517fcc9ef85d9cc88dL98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-c949d88a345421517fcc9ef85d9cc88dR99"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-1">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-6acd1489d65b9cfc9740060596168953" data-file-deleted="false" data-file-type=".java" data-path="compiler/ballerina-lang/src/main/java/org/wso2/ballerinalang/compiler/semantics/model/SymbolTable.java" data-short-path="6acd148">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="compiler/ballerina-lang/src/main/java/org/wso2/ballerinalang/compiler/semantics/model/SymbolTable.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/warunalakshitha/ballerina-lang/blob/90b9170fe786a8f3440cc1cc396e82becf312980/compiler/ballerina-lang/src/main/java/org/wso2/ballerinalang/compiler/semantics/model/SymbolTable.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-6acd1489d65b9cfc9740060596168953" title="compiler/ballerina-lang/src/main/java/org/wso2/ballerinalang/compiler/semantics/model/SymbolTable.java">...erina-lang/src/main/java/org/wso2/ballerinalang/compiler/semantics/model/SymbolTable.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-6acd1489d65b9cfc9740060596168953" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-507" data-right-range="1-507" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/e4bd8c24cb3895f95831006377c26454bec54cb6?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=508&amp;left_hunk_size=7&amp;mode=100644&amp;path=compiler%2Fballerina-lang%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fballerinalang%2Fcompiler%2Fsemantics%2Fmodel%2FSymbolTable.java&amp;right=508&amp;right_hunk_size=7" href="#diff-6acd1489d65b9cfc9740060596168953" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -508,7 +508,7 @@ private void defineConversionOperators() {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="508" id="diff-6acd1489d65b9cfc9740060596168953L508"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="508" id="diff-6acd1489d65b9cfc9740060596168953R508"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        defineConversionOperator(floatType, decimalType, <span class="pl-c1">true</span>, <span class="pl-smi">InstructionCodes</span><span class="pl-c1"><span class="pl-k">.</span>F2D</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="509" id="diff-6acd1489d65b9cfc9740060596168953L509"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="509" id="diff-6acd1489d65b9cfc9740060596168953R509"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        defineConversionOperator(floatType, booleanType, <span class="pl-c1">true</span>, <span class="pl-smi">InstructionCodes</span><span class="pl-c1"><span class="pl-k">.</span>F2B</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="510" id="diff-6acd1489d65b9cfc9740060596168953L510"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="510" id="diff-6acd1489d65b9cfc9740060596168953R510"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        defineConversionOperator(floatType, stringType, <span class="pl-c1">true</span>, <span class="pl-smi">InstructionCodes</span><span class="pl-c1"><span class="pl-k">.</span>F2S</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="511" id="diff-6acd1489d65b9cfc9740060596168953L511"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        defineConversionOperator(decimalType, intType, <span class="pl-c1 x x-first x-last">true</span>, <span class="pl-smi">InstructionCodes</span><span class="pl-c1"><span class="pl-k">.</span>D2I</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="511" id="diff-6acd1489d65b9cfc9740060596168953R511"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        defineConversionOperator(decimalType, intType, <span class="pl-c1 x x-first x-last">false</span>, <span class="pl-smi">InstructionCodes</span><span class="pl-c1"><span class="pl-k">.</span>D2I</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="512" id="diff-6acd1489d65b9cfc9740060596168953L512"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="512" id="diff-6acd1489d65b9cfc9740060596168953R512"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        defineConversionOperator(decimalType, floatType, <span class="pl-c1">true</span>, <span class="pl-smi">InstructionCodes</span><span class="pl-c1"><span class="pl-k">.</span>D2F</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="513" id="diff-6acd1489d65b9cfc9740060596168953L513"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="513" id="diff-6acd1489d65b9cfc9740060596168953R513"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        defineConversionOperator(decimalType, booleanType, <span class="pl-c1">true</span>, <span class="pl-smi">InstructionCodes</span><span class="pl-c1"><span class="pl-k">.</span>D2B</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="514" id="diff-6acd1489d65b9cfc9740060596168953L514"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="514" id="diff-6acd1489d65b9cfc9740060596168953R514"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        defineConversionOperator(decimalType, stringType, <span class="pl-c1">true</span>, <span class="pl-smi">InstructionCodes</span><span class="pl-c1"><span class="pl-k">.</span>D2S</span>);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="515-707" data-right-range="515-707" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/e4bd8c24cb3895f95831006377c26454bec54cb6?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=514&amp;last_right=514&amp;left=708&amp;left_hunk_size=&amp;mode=100644&amp;path=compiler%2Fballerina-lang%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fballerinalang%2Fcompiler%2Fsemantics%2Fmodel%2FSymbolTable.java&amp;right=708&amp;right_hunk_size=" href="#diff-6acd1489d65b9cfc9740060596168953" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="508" id="diff-6acd1489d65b9cfc9740060596168953L508"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="508" id="diff-6acd1489d65b9cfc9740060596168953R508"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="509" id="diff-6acd1489d65b9cfc9740060596168953L509"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="509" id="diff-6acd1489d65b9cfc9740060596168953R509"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="510" id="diff-6acd1489d65b9cfc9740060596168953L510"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="510" id="diff-6acd1489d65b9cfc9740060596168953R510"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="511" id="diff-6acd1489d65b9cfc9740060596168953L511"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="511" id="diff-6acd1489d65b9cfc9740060596168953R511"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="512" id="diff-6acd1489d65b9cfc9740060596168953L512"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="512" id="diff-6acd1489d65b9cfc9740060596168953R512"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="513" id="diff-6acd1489d65b9cfc9740060596168953L513"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="513" id="diff-6acd1489d65b9cfc9740060596168953R513"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="514" id="diff-6acd1489d65b9cfc9740060596168953L514"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="514" id="diff-6acd1489d65b9cfc9740060596168953R514"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-2">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-dc50ca1fc79a16722c3c703ecbac58f2" data-file-deleted="false" data-file-type=".xml" data-path="stdlib/utils/pom.xml" data-short-path="dc50ca1">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="stdlib/utils/pom.xml">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/warunalakshitha/ballerina-lang/blob/90b9170fe786a8f3440cc1cc396e82becf312980/stdlib/utils/pom.xml" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-dc50ca1fc79a16722c3c703ecbac58f2" title="stdlib/utils/pom.xml">stdlib/utils/pom.xml</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-dc50ca1fc79a16722c3c703ecbac58f2" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-21" data-right-range="1-21" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/9860e8857782d663022be35dcef6056cc34b954c?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=22&amp;left_hunk_size=7&amp;mode=100644&amp;path=stdlib%2Futils%2Fpom.xml&amp;right=22&amp;right_hunk_size=7" href="#diff-dc50ca1fc79a16722c3c703ecbac58f2" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -22,7 +22,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R22"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">parent</span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R23"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        &lt;<span class="pl-ent">artifactId</span>&gt;ballerina-parent&lt;/<span class="pl-ent">artifactId</span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R24"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        &lt;<span class="pl-ent">groupId</span>&gt;org.ballerinalang&lt;/<span class="pl-ent">groupId</span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="25" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L25"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        &lt;<span class="pl-ent">version</span>&gt;0.990.<span class="x x-first x-last">3</span>-SNAPSHOT&lt;/<span class="pl-ent">version</span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="25" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R25"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        &lt;<span class="pl-ent">version</span>&gt;0.990.<span class="x x-first x-last">4</span>-SNAPSHOT&lt;/<span class="pl-ent">version</span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R26"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        &lt;<span class="pl-ent">relativePath</span>&gt;../../pom.xml&lt;/<span class="pl-ent">relativePath</span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R27"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    &lt;/<span class="pl-ent">parent</span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R28"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">modelVersion</span>&gt;4.0.0&lt;/<span class="pl-ent">modelVersion</span>&gt;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="29-217" data-right-range="29-217" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/9860e8857782d663022be35dcef6056cc34b954c?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=28&amp;last_right=28&amp;left=218&amp;left_hunk_size=&amp;mode=100644&amp;path=stdlib%2Futils%2Fpom.xml&amp;right=218&amp;right_hunk_size=" href="#diff-dc50ca1fc79a16722c3c703ecbac58f2" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R24"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="25" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L25"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="25" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-dc50ca1fc79a16722c3c703ecbac58f2L28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-dc50ca1fc79a16722c3c703ecbac58f2R28"></td>
+<div class="file js-file js-details-container Details Details--on open has-inline-notes show-inline-notes " id="diff-3">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-184e1a6e9e88627d850319605f909ea2" data-file-deleted="false" data-file-type=".bal" data-path="tests/ballerina-spec-conformance-tests/S05_simple_values/tests/int.bal" data-short-path="184e1a6">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="tests/ballerina-spec-conformance-tests/S05_simple_values/tests/int.bal">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/warunalakshitha/ballerina-lang/blob/90b9170fe786a8f3440cc1cc396e82becf312980/tests/ballerina-spec-conformance-tests/S05_simple_values/tests/int.bal" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="2 additions &amp; 2 deletions" class="diffstat tooltipped tooltipped-e">4 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-184e1a6e9e88627d850319605f909ea2" title="tests/ballerina-spec-conformance-tests/S05_simple_values/tests/int.bal">tests/ballerina-spec-conformance-tests/S05_simple_values/tests/int.bal</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-184e1a6e9e88627d850319605f909ea2" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-41" data-right-range="1-41" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/4a63665c217e0ad8923d3ec6dad8d4fc9efeb280?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=42&amp;left_hunk_size=8&amp;mode=100644&amp;path=tests%2Fballerina-spec-conformance-tests%2FS05_simple_values%2Ftests%2Fint.bal&amp;right=42&amp;right_hunk_size=8" href="#diff-184e1a6e9e88627d850319605f909ea2" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -42,8 +42,8 @@ function testInt(int i1, int i2, int i3, int i4) {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-184e1a6e9e88627d850319605f909ea2L42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-184e1a6e9e88627d850319605f909ea2R42"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    dataProvider: <span class="pl-s">"</span><span class="pl-s">decimalDataProvider</span><span class="pl-s">"</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-184e1a6e9e88627d850319605f909ea2L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-184e1a6e9e88627d850319605f909ea2R43"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">}</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-184e1a6e9e88627d850319605f909ea2L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-184e1a6e9e88627d850319605f909ea2R44"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">function</span> <span class="pl-en">testOutOfRangeValueAsInt</span>(<span class="pl-k">decimal</span> <span class="pl-v">d</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="45" id="diff-184e1a6e9e88627d850319605f909ea2L45"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    utils:assertPanic(<span class="pl-k">function</span>() <span class="pl-k">returns</span> <span class="pl-k">int</span> <span class="pl-pds">{</span> <span class="pl-k">return</span> <span class="pl-k">int</span>.convert(d); <span class="pl-pds">}</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="46" id="diff-184e1a6e9e88627d850319605f909ea2L46"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-s">"</span><span class="pl-s">{ballerina}<span class="x x-first x-last">NumberConversionError</span></span><span class="pl-s">"</span>, <span class="pl-s">"</span><span class="pl-s">invalid reason on out of range int value</span><span class="pl-s">"</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="45" id="diff-184e1a6e9e88627d850319605f909ea2R45"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    utils:assertPanic(<span class="pl-k">function</span>() <span class="pl-k">returns</span> <span class="pl-k">int</span><span class="x x-first">|</span><span class="pl-k x x-last">error</span> <span class="pl-pds">{</span> <span class="pl-k">return</span> <span class="pl-k">int</span>.convert(d); <span class="pl-pds">}</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="46" id="diff-184e1a6e9e88627d850319605f909ea2R46"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-s">"</span><span class="pl-s">{ballerina}<span class="x x-first x-last">ConversionError</span></span><span class="pl-s">"</span>, <span class="pl-s">"</span><span class="pl-s">invalid reason on out of range int value</span><span class="pl-s">"</span>);</span></td>
+</tr>
+<tr class="inline-comments js-inline-comments-container">
+<td class="line-comments js-line-comments js-quote-selection-container" colspan="4" data-quote-markdown=".js-comment-body">
+<div class="review-thread comment-holder js-line-comments js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+<div class="review-comment js-minimizable-comment-group js-targetable-comment" data-gid="MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NzQ4OTk1NQ==" data-url="/_render_node/MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NzQ4OTk1NQ==/comments/review_comment" id="r257489955">
+<div class="minimized-comment d-none">
+<details class="Details-element details-reset " data-body-version="2da3de2029b4a0eb766915b8133e56c0">
+<summary class="text-gray f6">
+<div class="d-flex flex-justify-between flex-items-center">
+<h3 class="review-comment-contents bg-white f5 text-normal text-italic" style="margin-left:38px">
+<div class="discussion-item-icon discussion-item-icon-gray text-gray">
+<svg aria-hidden="true" class="octicon octicon-fold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z" fill-rule="evenodd"></path></svg>
+</div>
+<div class="discussion-item-copy d-inline-block">
+                This comment has been minimized.
+
+          </div>
+</h3>
+<div class="text-gray text-small">
+<a class="link-gray" href="/login?return_to=https%3A%2F%2Fgithub.com%2Fballerina-platform%2Fballerina-lang%2Fpull%2F13673%2Ffiles" rel="nofollow">Sign in to view</a>
+</div>
+</div>
+</summary>
+</details>
+</div>
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment " data-body-version="2da3de2029b4a0eb766915b8133e56c0" data-thread-side="right">
+<div class="edit-comment-hide">
+<div class="timeline-comment-actions">
+<details class="details-overlay details-reset position-relative d-inline-block js-dropdown-details" id="details-r257489955">
+<summary aria-haspopup="true" aria-label="Show more options" class="btn-link timeline-comment-action">
+<svg aria-label="Show more options" class="octicon octicon-kebab-horizontal" height="16" role="img" version="1.1" viewbox="0 0 13 16" width="13"><path d="M1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" fill-rule="evenodd"></path></svg>
+</summary>
+<div class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+<clipboard-copy aria-label="Copy link" class="dropdown-item btn-link tooltipped tooltipped-nw" data-toggle-for="details-r257489955" for="r257489955-permalink" role="menuitem">
+              Copy link
+            </clipboard-copy>
+<button class="dropdown-item btn-link d-none js-comment-quote-reply" data-toggle-for="details-r257489955" type="button">
+              Quote reply
+            </button>
+</div>
+</details>
+</div>
+<span class="float-left mt-1">
+<a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=4163165" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/warunalakshitha"><img alt="@warunalakshitha" class="avatar" height="28" src="https://avatars0.githubusercontent.com/u/4163165?s=60&amp;v=4" width="28"/></a>
+</span>
+<div class="review-comment-contents js-suggested-changes-contents" data-thread-side="right">
+<h4 class="f5 text-normal d-inline">
+<strong>
+<a class="author link-gray-dark" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=4163165" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/warunalakshitha">warunalakshitha</a>
+</strong>
+<span class="text-gray">
+<a class="js-timestamp timestamp d-inline-block" href="#r257489955" id="r257489955-permalink">
+<relative-time datetime="2019-02-17T06:24:16Z">Feb 17, 2019</relative-time>
+</a>
+</span>
+</h4>
+<span aria-label="This user is the author of this pull request." class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s">
+  Author
+</span>
+<span aria-label="This user has previously committed to the ballerina-lang repository." class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s">
+      Contributor
+    </span>
+<task-lists disabled="" sortable="">
+<div class="comment-body markdown-body js-comment-body">
+<p>ATM convert support string as well hence adding numeric conversion as error is not correct. Anyway string conversion is not part of convert. We can revert back to NumberConversionError once fixed that.</p>
+</div>
+</task-lists>
+<div class="comment-reactions js-reactions-container ">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-184e1a6e9e88627d850319605f909ea2L47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-184e1a6e9e88627d850319605f909ea2R47"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">}</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-184e1a6e9e88627d850319605f909ea2L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-184e1a6e9e88627d850319605f909ea2R48"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-184e1a6e9e88627d850319605f909ea2L49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-184e1a6e9e88627d850319605f909ea2R49"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">function</span> <span class="pl-en">intDataProvider</span>() <span class="pl-k">returns</span> <span class="pl-k">int</span>[][] {</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="50-64" data-right-range="50-64" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/4a63665c217e0ad8923d3ec6dad8d4fc9efeb280?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=49&amp;last_right=49&amp;left=65&amp;left_hunk_size=&amp;mode=100644&amp;path=tests%2Fballerina-spec-conformance-tests%2FS05_simple_values%2Ftests%2Fint.bal&amp;right=65&amp;right_hunk_size=" href="#diff-184e1a6e9e88627d850319605f909ea2" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-184e1a6e9e88627d850319605f909ea2L42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-184e1a6e9e88627d850319605f909ea2R42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-184e1a6e9e88627d850319605f909ea2L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-184e1a6e9e88627d850319605f909ea2R43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-184e1a6e9e88627d850319605f909ea2L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-184e1a6e9e88627d850319605f909ea2R44"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="45" id="diff-184e1a6e9e88627d850319605f909ea2L45"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="46" id="diff-184e1a6e9e88627d850319605f909ea2L46"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="45" id="diff-184e1a6e9e88627d850319605f909ea2R45"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="46" id="diff-184e1a6e9e88627d850319605f909ea2R46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-184e1a6e9e88627d850319605f909ea2L47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-184e1a6e9e88627d850319605f909ea2R47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-184e1a6e9e88627d850319605f909ea2L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-184e1a6e9e88627d850319605f909ea2R48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-184e1a6e9e88627d850319605f909ea2L49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-184e1a6e9e88627d850319605f909ea2R49"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-4">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-c7a73e56339f2d7fe7266c394a06e289" data-file-deleted="false" data-file-type=".bal" data-path="tests/ballerina-spec-conformance-tests/S05_structured_values/tests/mappings/maps/map_field_shape.bal" data-short-path="c7a73e5">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="tests/ballerina-spec-conformance-tests/S05_structured_values/tests/mappings/maps/map_field_shape.bal">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/warunalakshitha/ballerina-lang/blob/90b9170fe786a8f3440cc1cc396e82becf312980/tests/ballerina-spec-conformance-tests/S05_structured_values/tests/mappings/maps/map_field_shape.bal" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="2 additions &amp; 2 deletions" class="diffstat tooltipped tooltipped-e">4 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-c7a73e56339f2d7fe7266c394a06e289" title="tests/ballerina-spec-conformance-tests/S05_structured_values/tests/mappings/maps/map_field_shape.bal">...rina-spec-conformance-tests/S05_structured_values/tests/mappings/maps/map_field_shape.bal</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-c7a73e56339f2d7fe7266c394a06e289" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-29" data-right-range="1-29" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/5a345a99ed44854dedf3be90452ae2c33e342892?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=30&amp;left_hunk_size=7&amp;mode=100644&amp;path=tests%2Fballerina-spec-conformance-tests%2FS05_structured_values%2Ftests%2Fmappings%2Fmaps%2Fmap_field_shape.bal&amp;right=30&amp;right_hunk_size=7" href="#diff-c7a73e56339f2d7fe7266c394a06e289" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -30,7 +30,7 @@ function testMapFieldShape() {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-c7a73e56339f2d7fe7266c394a06e289L30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-c7a73e56339f2d7fe7266c394a06e289R30"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    m1.bazFieldTwo <span class="pl-k">=</span> <span class="pl-c1">1.0</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-c7a73e56339f2d7fe7266c394a06e289L31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-c7a73e56339f2d7fe7266c394a06e289R31"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    conversionResult <span class="pl-k">=</span> BazRecordTen.convert(m1);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-c7a73e56339f2d7fe7266c394a06e289L32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-c7a73e56339f2d7fe7266c394a06e289R32"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (conversionResult <span class="pl-k">is</span> <span class="pl-k">error</span>) <span class="pl-pds">{</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="33" id="diff-c7a73e56339f2d7fe7266c394a06e289L33"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        test:assertEquals(conversionResult.reason(), <span class="pl-s">"</span><span class="pl-s">{ballerina}<span class="x x-first x-last">StampError</span></span><span class="pl-s">"</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="33" id="diff-c7a73e56339f2d7fe7266c394a06e289R33"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        test:assertEquals(conversionResult.reason(), <span class="pl-s">"</span><span class="pl-s">{ballerina}<span class="x x-first x-last">ConversionError</span></span><span class="pl-s">"</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-c7a73e56339f2d7fe7266c394a06e289L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-c7a73e56339f2d7fe7266c394a06e289R34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            msg <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">invalid reason on conversion failure due to shape mismatch</span><span class="pl-s">"</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-c7a73e56339f2d7fe7266c394a06e289L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-c7a73e56339f2d7fe7266c394a06e289R35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-pds">}</span> <span class="pl-k">else</span> <span class="pl-pds">{</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-c7a73e56339f2d7fe7266c394a06e289L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-c7a73e56339f2d7fe7266c394a06e289R36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        test:assertFail(msg <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">expected conversion to fail</span><span class="pl-s">"</span>);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="9">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="37-38" data-right-range="37-38" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/5a345a99ed44854dedf3be90452ae2c33e342892?diff=unified&amp;in_wiki_context=&amp;last_left=36&amp;last_right=36&amp;left=42&amp;left_hunk_size=7&amp;mode=100644&amp;path=tests%2Fballerina-spec-conformance-tests%2FS05_structured_values%2Ftests%2Fmappings%2Fmaps%2Fmap_field_shape.bal&amp;right=42&amp;right_hunk_size=7" href="#diff-c7a73e56339f2d7fe7266c394a06e289" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -42,7 +42,7 @@ function testMapFieldShape() {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-c7a73e56339f2d7fe7266c394a06e289L42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-c7a73e56339f2d7fe7266c394a06e289R42"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    m1.bazFieldThree <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">test string 3</span><span class="pl-s">"</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-c7a73e56339f2d7fe7266c394a06e289L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-c7a73e56339f2d7fe7266c394a06e289R43"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    conversionResult <span class="pl-k">=</span> BazRecordTen.convert(m1);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-c7a73e56339f2d7fe7266c394a06e289L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-c7a73e56339f2d7fe7266c394a06e289R44"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (conversionResult <span class="pl-k">is</span> <span class="pl-k">error</span>) <span class="pl-pds">{</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="45" id="diff-c7a73e56339f2d7fe7266c394a06e289L45"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        test:assertEquals(conversionResult.reason(), <span class="pl-s">"</span><span class="pl-s">{ballerina}<span class="x x-first x-last">StampError</span></span><span class="pl-s">"</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="45" id="diff-c7a73e56339f2d7fe7266c394a06e289R45"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        test:assertEquals(conversionResult.reason(), <span class="pl-s">"</span><span class="pl-s">{ballerina}<span class="x x-first x-last">ConversionError</span></span><span class="pl-s">"</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-c7a73e56339f2d7fe7266c394a06e289L46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-c7a73e56339f2d7fe7266c394a06e289R46"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            msg <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">invalid reason on conversion failure due to shape mismatch</span><span class="pl-s">"</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-c7a73e56339f2d7fe7266c394a06e289L47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-c7a73e56339f2d7fe7266c394a06e289R47"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-pds">}</span> <span class="pl-k">else</span> <span class="pl-pds">{</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-c7a73e56339f2d7fe7266c394a06e289L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-c7a73e56339f2d7fe7266c394a06e289R48"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        test:assertFail(msg <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">expected conversion to fail</span><span class="pl-s">"</span>);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="49-55" data-right-range="49-55" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/5a345a99ed44854dedf3be90452ae2c33e342892?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=48&amp;last_right=48&amp;left=56&amp;left_hunk_size=&amp;mode=100644&amp;path=tests%2Fballerina-spec-conformance-tests%2FS05_structured_values%2Ftests%2Fmappings%2Fmaps%2Fmap_field_shape.bal&amp;right=56&amp;right_hunk_size=" href="#diff-c7a73e56339f2d7fe7266c394a06e289" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-c7a73e56339f2d7fe7266c394a06e289L30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-c7a73e56339f2d7fe7266c394a06e289R30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-c7a73e56339f2d7fe7266c394a06e289L31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-c7a73e56339f2d7fe7266c394a06e289R31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-c7a73e56339f2d7fe7266c394a06e289L32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-c7a73e56339f2d7fe7266c394a06e289R32"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="33" id="diff-c7a73e56339f2d7fe7266c394a06e289L33"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="33" id="diff-c7a73e56339f2d7fe7266c394a06e289R33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-c7a73e56339f2d7fe7266c394a06e289L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-c7a73e56339f2d7fe7266c394a06e289R34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-c7a73e56339f2d7fe7266c394a06e289L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-c7a73e56339f2d7fe7266c394a06e289R35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-c7a73e56339f2d7fe7266c394a06e289L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-c7a73e56339f2d7fe7266c394a06e289R36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-c7a73e56339f2d7fe7266c394a06e289L42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-c7a73e56339f2d7fe7266c394a06e289R42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-c7a73e56339f2d7fe7266c394a06e289L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-c7a73e56339f2d7fe7266c394a06e289R43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-c7a73e56339f2d7fe7266c394a06e289L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-c7a73e56339f2d7fe7266c394a06e289R44"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="45" id="diff-c7a73e56339f2d7fe7266c394a06e289L45"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="45" id="diff-c7a73e56339f2d7fe7266c394a06e289R45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-c7a73e56339f2d7fe7266c394a06e289L46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-c7a73e56339f2d7fe7266c394a06e289R46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-c7a73e56339f2d7fe7266c394a06e289L47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-c7a73e56339f2d7fe7266c394a06e289R47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-c7a73e56339f2d7fe7266c394a06e289L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-c7a73e56339f2d7fe7266c394a06e289R48"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-5">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-f1228bcaa1e863c9cc69dd6cf4b57308" data-file-deleted="false" data-file-type=".bal" data-path="tests/ballerina-spec-conformance-tests/S05_structured_values/tests/mappings/records/record_field_shape.bal" data-short-path="f1228bc">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="tests/ballerina-spec-conformance-tests/S05_structured_values/tests/mappings/records/record_field_shape.bal">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/warunalakshitha/ballerina-lang/blob/90b9170fe786a8f3440cc1cc396e82becf312980/tests/ballerina-spec-conformance-tests/S05_structured_values/tests/mappings/records/record_field_shape.bal" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="3 additions &amp; 3 deletions" class="diffstat tooltipped tooltipped-e">6 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-f1228bcaa1e863c9cc69dd6cf4b57308" title="tests/ballerina-spec-conformance-tests/S05_structured_values/tests/mappings/records/record_field_shape.bal">...pec-conformance-tests/S05_structured_values/tests/mappings/records/record_field_shape.bal</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-f1228bcaa1e863c9cc69dd6cf4b57308" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-16" data-right-range="1-16" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/12dd6ce2ad991fd634f0907f5aee15d43af43b1c?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=17&amp;left_hunk_size=7&amp;mode=100644&amp;path=tests%2Fballerina-spec-conformance-tests%2FS05_structured_values%2Ftests%2Fmappings%2Frecords%2Frecord_field_shape.bal&amp;right=17&amp;right_hunk_size=7" href="#diff-f1228bcaa1e863c9cc69dd6cf4b57308" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -17,7 +17,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R17"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> ballerina/test;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R18"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> utils;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="20" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L20"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">const</span> <span class="x x-first x-last">STAMP_ERROR_REASON</span> <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">{ballerina}<span class="x x-first x-last">StampError</span></span><span class="pl-s">"</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="20" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R20"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">const</span> <span class="x x-first x-last">CONVERSION_ERROR_REASON</span> <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">{ballerina}<span class="x x-first x-last">ConversionError</span></span><span class="pl-s">"</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R22"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">// The shape of a mapping value is an unordered collection of field shapes one for each field.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R23"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">// The field shape for a field f has a name, which is the same as the name of f, and a shape,</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="9">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="24-26" data-right-range="24-26" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/12dd6ce2ad991fd634f0907f5aee15d43af43b1c?diff=unified&amp;in_wiki_context=&amp;last_left=23&amp;last_right=23&amp;left=32&amp;left_hunk_size=7&amp;mode=100644&amp;path=tests%2Fballerina-spec-conformance-tests%2FS05_structured_values%2Ftests%2Fmappings%2Frecords%2Frecord_field_shape.bal&amp;right=32&amp;right_hunk_size=7" href="#diff-f1228bcaa1e863c9cc69dd6cf4b57308" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -32,7 +32,7 @@ function testRecordFieldShape() {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R32"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    r1.bazFieldTwo <span class="pl-k">=</span> <span class="pl-c1">1.0</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R33"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    conversionResult <span class="pl-k">=</span> BazRecordEleven.convert(r1);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (conversionResult <span class="pl-k">is</span> <span class="pl-k">error</span>) <span class="pl-pds">{</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="35" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L35"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        test:assertEquals(conversionResult.reason(), <span class="x x-first x-last">STAMP_ERROR_REASON</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="35" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R35"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        test:assertEquals(conversionResult.reason(), <span class="x x-first x-last">CONVERSION_ERROR_REASON</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            msg <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">invalid reason on conversion failure due to shape mismatch</span><span class="pl-s">"</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R37"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-pds">}</span> <span class="pl-k">else</span> <span class="pl-pds">{</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R38"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        test:assertFail(msg <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">expected conversion to fail</span><span class="pl-s">"</span>);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="18">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="39-39" data-right-range="39-39" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/12dd6ce2ad991fd634f0907f5aee15d43af43b1c?diff=unified&amp;in_wiki_context=&amp;last_left=38&amp;last_right=38&amp;left=43&amp;left_hunk_size=7&amp;mode=100644&amp;path=tests%2Fballerina-spec-conformance-tests%2FS05_structured_values%2Ftests%2Fmappings%2Frecords%2Frecord_field_shape.bal&amp;right=43&amp;right_hunk_size=7" href="#diff-f1228bcaa1e863c9cc69dd6cf4b57308" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -43,7 +43,7 @@ function testRecordFieldShape() {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R43"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    DefaultOpenRecord r2 <span class="pl-k">=</span> <span class="pl-pds">{</span> bazFieldThree: <span class="pl-s">"</span><span class="pl-s">test string 3</span><span class="pl-s">"</span>, bazFieldOne: <span class="pl-c1">1.0</span> <span class="pl-pds">}</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R44"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    conversionResult <span class="pl-k">=</span> BazRecordEleven.convert(r2);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R45"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (conversionResult <span class="pl-k">is</span> <span class="pl-k">error</span>) <span class="pl-pds">{</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="46" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L46"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        test:assertEquals(conversionResult.reason(), <span class="x x-first x-last">STAMP_ERROR_REASON</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="46" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R46"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        test:assertEquals(conversionResult.reason(), <span class="x x-first x-last">CONVERSION_ERROR_REASON</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R47"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            msg <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">invalid reason on conversion failure due to shape mismatch</span><span class="pl-s">"</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R48"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-pds">}</span> <span class="pl-k">else</span> <span class="pl-pds">{</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R49"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        test:assertFail(msg <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">expected conversion to fail</span><span class="pl-s">"</span>);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="50-59" data-right-range="50-59" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/12dd6ce2ad991fd634f0907f5aee15d43af43b1c?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=49&amp;last_right=49&amp;left=60&amp;left_hunk_size=&amp;mode=100644&amp;path=tests%2Fballerina-spec-conformance-tests%2FS05_structured_values%2Ftests%2Fmappings%2Frecords%2Frecord_field_shape.bal&amp;right=60&amp;right_hunk_size=" href="#diff-f1228bcaa1e863c9cc69dd6cf4b57308" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R19"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="20" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L20"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="20" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R34"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="35" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L35"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="35" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R45"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="46" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L46"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="46" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308L49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-f1228bcaa1e863c9cc69dd6cf4b57308R49"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-6">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-aaf4118a789c603e9bd6b11aa70d869d" data-file-deleted="false" data-file-type=".bal" data-path="tests/ballerina-spec-conformance-tests/S05_structured_values/tests/mappings/records/record_field_types.bal" data-short-path="aaf4118">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="tests/ballerina-spec-conformance-tests/S05_structured_values/tests/mappings/records/record_field_types.bal">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/warunalakshitha/ballerina-lang/blob/90b9170fe786a8f3440cc1cc396e82becf312980/tests/ballerina-spec-conformance-tests/S05_structured_values/tests/mappings/records/record_field_types.bal" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-aaf4118a789c603e9bd6b11aa70d869d" title="tests/ballerina-spec-conformance-tests/S05_structured_values/tests/mappings/records/record_field_types.bal">...pec-conformance-tests/S05_structured_values/tests/mappings/records/record_field_types.bal</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-aaf4118a789c603e9bd6b11aa70d869d" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-78" data-right-range="1-78" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/6402ac7ec9641d75aed1054700e66c7d8aee3be5?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=79&amp;left_hunk_size=7&amp;mode=100644&amp;path=tests%2Fballerina-spec-conformance-tests%2FS05_structured_values%2Ftests%2Fmappings%2Frecords%2Frecord_field_types.bal&amp;right=79&amp;right_hunk_size=7" href="#diff-aaf4118a789c603e9bd6b11aa70d869d" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -79,7 +79,7 @@ function testRequiredFields() {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-aaf4118a789c603e9bd6b11aa70d869dL79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-aaf4118a789c603e9bd6b11aa70d869dR79"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">map</span><span class="pl-k">&lt;</span><span class="pl-k">anydata</span><span class="pl-k">&gt;</span> b2 <span class="pl-k">=</span> <span class="pl-pds">{</span> fieldOne: <span class="pl-s">"</span><span class="pl-s">test string 1</span><span class="pl-s">"</span> <span class="pl-pds">}</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-aaf4118a789c603e9bd6b11aa70d869dL80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-aaf4118a789c603e9bd6b11aa70d869dR80"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    result <span class="pl-k">=</span> FooRecord.convert(b2);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-aaf4118a789c603e9bd6b11aa70d869dL81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-aaf4118a789c603e9bd6b11aa70d869dR81"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (result <span class="pl-k">is</span> <span class="pl-k">error</span>) <span class="pl-pds">{</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="82" id="diff-aaf4118a789c603e9bd6b11aa70d869dL82"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        test:assertEquals(result.reason(), <span class="pl-s">"</span><span class="pl-s">{ballerina}<span class="x x-first x-last">StampError</span></span><span class="pl-s">"</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="82" id="diff-aaf4118a789c603e9bd6b11aa70d869dR82"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        test:assertEquals(result.reason(), <span class="pl-s">"</span><span class="pl-s">{ballerina}<span class="x x-first x-last">ConversionError</span></span><span class="pl-s">"</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-aaf4118a789c603e9bd6b11aa70d869dL83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-aaf4118a789c603e9bd6b11aa70d869dR83"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            msg <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">expected conversion to fail due to missing fields</span><span class="pl-s">"</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-aaf4118a789c603e9bd6b11aa70d869dL84"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-aaf4118a789c603e9bd6b11aa70d869dR84"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-pds">}</span> <span class="pl-k">else</span> <span class="pl-pds">{</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="85" id="diff-aaf4118a789c603e9bd6b11aa70d869dL85"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="85" id="diff-aaf4118a789c603e9bd6b11aa70d869dR85"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        test:assertFail(msg <span class="pl-k">=</span> <span class="pl-s">"</span><span class="pl-s">expected conversion to fail since all required fields are not present</span><span class="pl-s">"</span>);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="86-114" data-right-range="86-114" data-url="/ballerina-platform/ballerina-lang/blob_excerpt/6402ac7ec9641d75aed1054700e66c7d8aee3be5?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=85&amp;last_right=85&amp;left=115&amp;left_hunk_size=&amp;mode=100644&amp;path=tests%2Fballerina-spec-conformance-tests%2FS05_structured_values%2Ftests%2Fmappings%2Frecords%2Frecord_field_types.bal&amp;right=115&amp;right_hunk_size=" href="#diff-aaf4118a789c603e9bd6b11aa70d869d" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-aaf4118a789c603e9bd6b11aa70d869dL79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-aaf4118a789c603e9bd6b11aa70d869dR79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-aaf4118a789c603e9bd6b11aa70d869dL80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-aaf4118a789c603e9bd6b11aa70d869dR80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-aaf4118a789c603e9bd6b11aa70d869dL81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-aaf4118a789c603e9bd6b11aa70d869dR81"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="82" id="diff-aaf4118a789c603e9bd6b11aa70d869dL82"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="82" id="diff-aaf4118a789c603e9bd6b11aa70d869dR82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-aaf4118a789c603e9bd6b11aa70d869dL83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-aaf4118a789c603e9bd6b11aa70d869dR83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-aaf4118a789c603e9bd6b11aa70d869dL84"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-aaf4118a789c603e9bd6b11aa70d869dR84"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="85" id="diff-aaf4118a789c603e9bd6b11aa70d869dL85"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="85" id="diff-aaf4118a789c603e9bd6b11aa70d869dR85"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

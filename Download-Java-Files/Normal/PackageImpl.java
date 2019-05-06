@@ -1,0 +1,294 @@
+/**
+ */
+package org.yakindu.base.types.impl;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+import org.yakindu.base.base.BasePackage;
+import org.yakindu.base.base.DomainElement;
+import org.yakindu.base.types.Declaration;
+import org.yakindu.base.types.TypesPackage;
+import org.yakindu.base.types.TypesUtil;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Package</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link org.yakindu.base.types.impl.PackageImpl#getDomainID <em>Domain ID</em>}</li>
+ *   <li>{@link org.yakindu.base.types.impl.PackageImpl#getMember <em>Member</em>}</li>
+ *   <li>{@link org.yakindu.base.types.impl.PackageImpl#getImports <em>Imports</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class PackageImpl extends DeclarationImpl implements org.yakindu.base.types.Package {
+	/**
+	 * The default value of the '{@link #getDomainID() <em>Domain ID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDomainID()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DOMAIN_ID_EDEFAULT = "org.yakindu.domain.default";
+	/**
+	 * The cached value of the '{@link #getDomainID() <em>Domain ID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDomainID()
+	 * @generated
+	 * @ordered
+	 */
+	protected String domainID = DOMAIN_ID_EDEFAULT;
+	/**
+	 * The cached value of the '{@link #getMember() <em>Member</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMember()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Declaration> member;
+	/**
+	 * The cached value of the '{@link #getImports() <em>Imports</em>}' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getImports()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<String> imports;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PackageImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return TypesPackage.Literals.PACKAGE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getDomainID() {
+		return domainID;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDomainID(String newDomainID) {
+		String oldDomainID = domainID;
+		domainID = newDomainID;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, TypesPackage.PACKAGE__DOMAIN_ID, oldDomainID, domainID));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	@Override
+	public String getId() {
+		return TypesUtil.computeQID(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Declaration> getMember() {
+		if (member == null) {
+			member = new EObjectContainmentEList<Declaration>(Declaration.class, this, TypesPackage.PACKAGE__MEMBER);
+		}
+		return member;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<String> getImports() {
+		if (imports == null) {
+			imports = new EDataTypeUniqueEList<String>(String.class, this, TypesPackage.PACKAGE__IMPORTS);
+		}
+		return imports;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case TypesPackage.PACKAGE__MEMBER:
+				return ((InternalEList<?>)getMember()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case TypesPackage.PACKAGE__DOMAIN_ID:
+				return getDomainID();
+			case TypesPackage.PACKAGE__MEMBER:
+				return getMember();
+			case TypesPackage.PACKAGE__IMPORTS:
+				return getImports();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case TypesPackage.PACKAGE__DOMAIN_ID:
+				setDomainID((String)newValue);
+				return;
+			case TypesPackage.PACKAGE__MEMBER:
+				getMember().clear();
+				getMember().addAll((Collection<? extends Declaration>)newValue);
+				return;
+			case TypesPackage.PACKAGE__IMPORTS:
+				getImports().clear();
+				getImports().addAll((Collection<? extends String>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case TypesPackage.PACKAGE__DOMAIN_ID:
+				setDomainID(DOMAIN_ID_EDEFAULT);
+				return;
+			case TypesPackage.PACKAGE__MEMBER:
+				getMember().clear();
+				return;
+			case TypesPackage.PACKAGE__IMPORTS:
+				getImports().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case TypesPackage.PACKAGE__DOMAIN_ID:
+				return DOMAIN_ID_EDEFAULT == null ? domainID != null : !DOMAIN_ID_EDEFAULT.equals(domainID);
+			case TypesPackage.PACKAGE__MEMBER:
+				return member != null && !member.isEmpty();
+			case TypesPackage.PACKAGE__IMPORTS:
+				return imports != null && !imports.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == DomainElement.class) {
+			switch (derivedFeatureID) {
+				case TypesPackage.PACKAGE__DOMAIN_ID: return BasePackage.DOMAIN_ELEMENT__DOMAIN_ID;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == DomainElement.class) {
+			switch (baseFeatureID) {
+				case BasePackage.DOMAIN_ELEMENT__DOMAIN_ID: return TypesPackage.PACKAGE__DOMAIN_ID;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (domainID: ");
+		result.append(domainID);
+		result.append(", imports: ");
+		result.append(imports);
+		result.append(')');
+		return result.toString();
+	}
+
+} //PackageImpl

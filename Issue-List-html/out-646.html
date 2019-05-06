@@ -1,0 +1,688 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-dd279942e6ffbe30c77d561ac3f0451c" data-file-deleted="false" data-file-type=".java" data-path="cloud-openstack/src/main/java/com/sequenceiq/cloudbreak/cloud/openstack/heat/OpenStackResourceConnector.java" data-short-path="dd27994">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="cloud-openstack/src/main/java/com/sequenceiq/cloudbreak/cloud/openstack/heat/OpenStackResourceConnector.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/hortonworks/cloudbreak/blob/2c01d785f2fc39049a9094c732c982f5bac0c310/cloud-openstack/src/main/java/com/sequenceiq/cloudbreak/cloud/openstack/heat/OpenStackResourceConnector.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="3 additions &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">4 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-dd279942e6ffbe30c77d561ac3f0451c" title="cloud-openstack/src/main/java/com/sequenceiq/cloudbreak/cloud/openstack/heat/OpenStackResourceConnector.java">.../main/java/com/sequenceiq/cloudbreak/cloud/openstack/heat/OpenStackResourceConnector.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-dd279942e6ffbe30c77d561ac3f0451c" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-6" data-right-range="1-6" data-url="/hortonworks/cloudbreak/blob_excerpt/2b480fe8903b4828f4273c493c87af9f52ccdc7b?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=7&amp;left_hunk_size=6&amp;mode=100644&amp;path=cloud-openstack%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsequenceiq%2Fcloudbreak%2Fcloud%2Fopenstack%2Fheat%2FOpenStackResourceConnector.java&amp;right=7&amp;right_hunk_size=7" href="#diff-dd279942e6ffbe30c77d561ac3f0451c" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -7,6 +7,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-dd279942e6ffbe30c77d561ac3f0451cL7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-dd279942e6ffbe30c77d561ac3f0451cR7"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.Collections</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-dd279942e6ffbe30c77d561ac3f0451cL8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-dd279942e6ffbe30c77d561ac3f0451cR8"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.List</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-dd279942e6ffbe30c77d561ac3f0451cL9"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-dd279942e6ffbe30c77d561ac3f0451cR9"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.Map</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="10" id="diff-dd279942e6ffbe30c77d561ac3f0451cR10"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.Optional</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-dd279942e6ffbe30c77d561ac3f0451cL10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-dd279942e6ffbe30c77d561ac3f0451cR11"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.stream.Collectors</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-dd279942e6ffbe30c77d561ac3f0451cL11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-dd279942e6ffbe30c77d561ac3f0451cR12"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-dd279942e6ffbe30c77d561ac3f0451cL12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-dd279942e6ffbe30c77d561ac3f0451cR13"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.inject.Inject</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="8">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="13-106" data-right-range="14-107" data-url="/hortonworks/cloudbreak/blob_excerpt/2b480fe8903b4828f4273c493c87af9f52ccdc7b?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=12&amp;last_right=13&amp;left=203&amp;left_hunk_size=7&amp;mode=100644&amp;path=cloud-openstack%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsequenceiq%2Fcloudbreak%2Fcloud%2Fopenstack%2Fheat%2FOpenStackResourceConnector.java&amp;right=204&amp;right_hunk_size=8" href="#diff-dd279942e6ffbe30c77d561ac3f0451c" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="107-202" data-right-range="108-203" data-url="/hortonworks/cloudbreak/blob_excerpt/2b480fe8903b4828f4273c493c87af9f52ccdc7b?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=12&amp;last_right=13&amp;left=203&amp;left_hunk_size=7&amp;mode=100644&amp;path=cloud-openstack%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsequenceiq%2Fcloudbreak%2Fcloud%2Fopenstack%2Fheat%2FOpenStackResourceConnector.java&amp;right=204&amp;right_hunk_size=8" href="#diff-dd279942e6ffbe30c77d561ac3f0451c" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -203,7 +204,8 @@ private CloudResourceStatus checkByResourceType(AuthenticatedContext authenticat</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="203" id="diff-dd279942e6ffbe30c77d561ac3f0451cL203"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="204" id="diff-dd279942e6ffbe30c77d561ac3f0451cR204"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">case</span> <span class="pl-c1">HEAT_STACK</span><span class="pl-k">:</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="204" id="diff-dd279942e6ffbe30c77d561ac3f0451cL204"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="205" id="diff-dd279942e6ffbe30c77d561ac3f0451cR205"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">String</span> heatStackId <span class="pl-k">=</span> resource<span class="pl-k">.</span>getName();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="205" id="diff-dd279942e6ffbe30c77d561ac3f0451cL205"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="206" id="diff-dd279942e6ffbe30c77d561ac3f0451cR206"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">LOGGER</span><span class="pl-k">.</span>info(<span class="pl-s"><span class="pl-pds">"</span>Checking OpenStack Heat stack status of: {}<span class="pl-pds">"</span></span>, stackName);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="206" id="diff-dd279942e6ffbe30c77d561ac3f0451cL206"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">Stack</span> heatStack <span class="pl-k">=</span> client<span class="pl-k">.</span>heat()<span class="pl-k">.</span>stacks()<span class="pl-k">.</span>getDetails(stackName, heatStackId);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="207" id="diff-dd279942e6ffbe30c77d561ac3f0451cR207"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">Stack</span> heatStack <span class="pl-k">=</span> <span class="pl-smi">Optional</span><span class="pl-k">.</span>ofNullable(client<span class="pl-k">.</span>heat()<span class="pl-k">.</span>stacks()<span class="pl-k">.</span>getDetails(stackName, heatStackId))</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="208" id="diff-dd279942e6ffbe30c77d561ac3f0451cR208"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                        .orElseThrow(() <span class="pl-k">-</span><span class="pl-k">&gt;</span> <span class="pl-k">new</span> <span class="pl-smi">CloudConnectorException</span>(<span class="pl-s"><span class="pl-pds">"</span>Stack not found on provider by id: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> heatStackId));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="207" id="diff-dd279942e6ffbe30c77d561ac3f0451cL207"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="209" id="diff-dd279942e6ffbe30c77d561ac3f0451cR209"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">                result <span class="pl-k">=</span> utils<span class="pl-k">.</span>heatStatus(resource, heatStack);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="208" id="diff-dd279942e6ffbe30c77d561ac3f0451cL208"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="210" id="diff-dd279942e6ffbe30c77d561ac3f0451cR210"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">break</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="209" id="diff-dd279942e6ffbe30c77d561ac3f0451cL209"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="211" id="diff-dd279942e6ffbe30c77d561ac3f0451cR211"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">case</span> <span class="pl-c1">OPENSTACK_NETWORK</span><span class="pl-k">:</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="210-414" data-right-range="212-414" data-url="/hortonworks/cloudbreak/blob_excerpt/2b480fe8903b4828f4273c493c87af9f52ccdc7b?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=209&amp;last_right=211&amp;left=415&amp;left_hunk_size=&amp;mode=100644&amp;path=cloud-openstack%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsequenceiq%2Fcloudbreak%2Fcloud%2Fopenstack%2Fheat%2FOpenStackResourceConnector.java&amp;right=415&amp;right_hunk_size=" href="#diff-dd279942e6ffbe30c77d561ac3f0451c" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-dd279942e6ffbe30c77d561ac3f0451cL7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-dd279942e6ffbe30c77d561ac3f0451cR7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-dd279942e6ffbe30c77d561ac3f0451cL8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-dd279942e6ffbe30c77d561ac3f0451cR8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-dd279942e6ffbe30c77d561ac3f0451cL9"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-dd279942e6ffbe30c77d561ac3f0451cR9"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="10" id="diff-dd279942e6ffbe30c77d561ac3f0451cR10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="10" id="diff-dd279942e6ffbe30c77d561ac3f0451cL10"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-dd279942e6ffbe30c77d561ac3f0451cR11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-dd279942e6ffbe30c77d561ac3f0451cL11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-dd279942e6ffbe30c77d561ac3f0451cR12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-dd279942e6ffbe30c77d561ac3f0451cL12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-dd279942e6ffbe30c77d561ac3f0451cR13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="203" id="diff-dd279942e6ffbe30c77d561ac3f0451cL203"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="204" id="diff-dd279942e6ffbe30c77d561ac3f0451cR204"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="204" id="diff-dd279942e6ffbe30c77d561ac3f0451cL204"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="205" id="diff-dd279942e6ffbe30c77d561ac3f0451cR205"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="205" id="diff-dd279942e6ffbe30c77d561ac3f0451cL205"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="206" id="diff-dd279942e6ffbe30c77d561ac3f0451cR206"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="206" id="diff-dd279942e6ffbe30c77d561ac3f0451cL206"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="207" id="diff-dd279942e6ffbe30c77d561ac3f0451cR207"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="208" id="diff-dd279942e6ffbe30c77d561ac3f0451cR208"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="207" id="diff-dd279942e6ffbe30c77d561ac3f0451cL207"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="209" id="diff-dd279942e6ffbe30c77d561ac3f0451cR209"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="208" id="diff-dd279942e6ffbe30c77d561ac3f0451cL208"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="210" id="diff-dd279942e6ffbe30c77d561ac3f0451cR210"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="209" id="diff-dd279942e6ffbe30c77d561ac3f0451cL209"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="211" id="diff-dd279942e6ffbe30c77d561ac3f0451cR211"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-1">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-81582243e1468b085b4ac37137d2bc4e" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/com/sequenceiq/cloudbreak/service/cluster/flow/AmbariOperationsStatusCheckerTask.java" data-short-path="8158224">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/com/sequenceiq/cloudbreak/service/cluster/flow/AmbariOperationsStatusCheckerTask.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/hortonworks/cloudbreak/blob/2c01d785f2fc39049a9094c732c982f5bac0c310/core/src/main/java/com/sequenceiq/cloudbreak/service/cluster/flow/AmbariOperationsStatusCheckerTask.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="15 additions &amp; 2 deletions" class="diffstat tooltipped tooltipped-e">17 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-81582243e1468b085b4ac37137d2bc4e" title="core/src/main/java/com/sequenceiq/cloudbreak/service/cluster/flow/AmbariOperationsStatusCheckerTask.java">...ava/com/sequenceiq/cloudbreak/service/cluster/flow/AmbariOperationsStatusCheckerTask.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-81582243e1468b085b4ac37137d2bc4e" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-12" data-right-range="1-12" data-url="/hortonworks/cloudbreak/blob_excerpt/73cd0b39589863ae9fb6b535510da6e671fad1ae?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=13&amp;left_hunk_size=6&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsequenceiq%2Fcloudbreak%2Fservice%2Fcluster%2Fflow%2FAmbariOperationsStatusCheckerTask.java&amp;right=13&amp;right_hunk_size=7" href="#diff-81582243e1468b085b4ac37137d2bc4e" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -13,6 +13,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-81582243e1468b085b4ac37137d2bc4eL13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-81582243e1468b085b4ac37137d2bc4eR13"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.springframework.stereotype.Component</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-81582243e1468b085b4ac37137d2bc4eL14"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-81582243e1468b085b4ac37137d2bc4eR14"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-81582243e1468b085b4ac37137d2bc4eL15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-81582243e1468b085b4ac37137d2bc4eR15"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.sequenceiq.ambari.client.AmbariClient</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="16" id="diff-81582243e1468b085b4ac37137d2bc4eR16"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.sequenceiq.ambari.client.AmbariConnectionException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-81582243e1468b085b4ac37137d2bc4eL16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-81582243e1468b085b4ac37137d2bc4eR17"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.sequenceiq.cloudbreak.api.model.CloudbreakEventsJson</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-81582243e1468b085b4ac37137d2bc4eL17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-81582243e1468b085b4ac37137d2bc4eR18"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.sequenceiq.cloudbreak.domain.stack.Stack</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-81582243e1468b085b4ac37137d2bc4eL18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-81582243e1468b085b4ac37137d2bc4eR19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.sequenceiq.cloudbreak.service.ClusterBasedStatusCheckerTask</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="8">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="19-29" data-right-range="20-30" data-url="/hortonworks/cloudbreak/blob_excerpt/73cd0b39589863ae9fb6b535510da6e671fad1ae?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=18&amp;last_right=19&amp;left=43&amp;left_hunk_size=13&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsequenceiq%2Fcloudbreak%2Fservice%2Fcluster%2Fflow%2FAmbariOperationsStatusCheckerTask.java&amp;right=44&amp;right_hunk_size=13" href="#diff-81582243e1468b085b4ac37137d2bc4e" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="30-42" data-right-range="31-43" data-url="/hortonworks/cloudbreak/blob_excerpt/73cd0b39589863ae9fb6b535510da6e671fad1ae?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=18&amp;last_right=19&amp;left=43&amp;left_hunk_size=13&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsequenceiq%2Fcloudbreak%2Fservice%2Fcluster%2Fflow%2FAmbariOperationsStatusCheckerTask.java&amp;right=44&amp;right_hunk_size=13" href="#diff-81582243e1468b085b4ac37137d2bc4e" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -43,13 +44,13 @@ public boolean checkStatus(AmbariOperations t) {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-81582243e1468b085b4ac37137d2bc4eL43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-81582243e1468b085b4ac37137d2bc4eR44"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">boolean</span> allFinished <span class="pl-k">=</span> <span class="pl-c1">true</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-81582243e1468b085b4ac37137d2bc4eL44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-81582243e1468b085b4ac37137d2bc4eR45"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">for</span> (<span class="pl-k">Entry&lt;<span class="pl-smi">String</span>, <span class="pl-smi">Integer</span>&gt;</span> request <span class="pl-k">:</span> installRequests<span class="pl-k">.</span>entrySet()) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-81582243e1468b085b4ac37137d2bc4eL45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-81582243e1468b085b4ac37137d2bc4eR46"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">AmbariClient</span> ambariClient <span class="pl-k">=</span> t<span class="pl-k">.</span>getAmbariClient();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="46" id="diff-81582243e1468b085b4ac37137d2bc4eL46"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">BigDecimal</span> installProgress <span class="pl-k">=</span> <span class="pl-smi x x-first">Optional</span><span class="pl-k x">.</span><span class="x">ofNullable(ambariClient</span><span class="pl-k x">.</span><span class="x x-last">getRequestProgress(</span>request<span class="pl-k x x-first">.</span><span class="x">getValue()))</span><span class="pl-k x">.</span><span class="x">orElse(</span><span class="pl-c1 x x-last">PENDING</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-81582243e1468b085b4ac37137d2bc4eR47"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">BigDecimal</span> installProgress <span class="pl-k">=</span> <span class="x x-first x-last">getInstallProgressFromAmbari(</span>request<span class="x x-first x-last">, ambariClient</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-81582243e1468b085b4ac37137d2bc4eL47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-81582243e1468b085b4ac37137d2bc4eR48"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">LOGGER</span><span class="pl-k">.</span>info(<span class="pl-s"><span class="pl-pds">"</span>Ambari operation: '{}', Progress: {}<span class="pl-pds">"</span></span>, request<span class="pl-k">.</span>getKey(), installProgress);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-81582243e1468b085b4ac37137d2bc4eL48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-81582243e1468b085b4ac37137d2bc4eR49"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            notificationSender<span class="pl-k">.</span>send(getAmbariProgressNotification(installProgress<span class="pl-k">.</span>longValue(), t<span class="pl-k">.</span>getStack(), t<span class="pl-k">.</span>getAmbariOperationType()));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-81582243e1468b085b4ac37137d2bc4eL49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-81582243e1468b085b4ac37137d2bc4eR50"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-c1">FAILED</span><span class="pl-k">.</span>compareTo(installProgress) <span class="pl-k">==</span> <span class="pl-c1">0</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-81582243e1468b085b4ac37137d2bc4eL50"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-81582243e1468b085b4ac37137d2bc4eR51"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">boolean</span> failed <span class="pl-k">=</span> <span class="pl-c1">true</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-81582243e1468b085b4ac37137d2bc4eL51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-81582243e1468b085b4ac37137d2bc4eR52"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">for</span> (<span class="pl-k">int</span> i <span class="pl-k">=</span> <span class="pl-c1">0</span>; i <span class="pl-k">&lt;</span> <span class="pl-c1">MAX_RETRY</span>; i<span class="pl-k">++</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="52" id="diff-81582243e1468b085b4ac37137d2bc4eL52"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="x x-first">ambariClient</span><span class="pl-k x">.</span><span class="x x-last">getRequestProgress</span>(request<span class="pl-k x x-first">.</span><span class="x x-last">getValue()</span>)<span class="pl-k">.</span>compareTo(<span class="pl-c1">FAILED</span>) <span class="pl-k">!=</span> <span class="pl-c1">0</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="53" id="diff-81582243e1468b085b4ac37137d2bc4eR53"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="x x-first x-last">getInstallProgressFromAmbari</span>(request<span class="x x-first x-last">, ambariClient</span>)<span class="pl-k">.</span>compareTo(<span class="pl-c1">FAILED</span>) <span class="pl-k">!=</span> <span class="pl-c1">0</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="53" id="diff-81582243e1468b085b4ac37137d2bc4eL53"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-81582243e1468b085b4ac37137d2bc4eR54"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">                        failed <span class="pl-k">=</span> <span class="pl-c1">false</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-81582243e1468b085b4ac37137d2bc4eL54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-81582243e1468b085b4ac37137d2bc4eR55"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">break</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-81582243e1468b085b4ac37137d2bc4eL55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-81582243e1468b085b4ac37137d2bc4eR56"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">                    }</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="24">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="56-59" data-right-range="57-60" data-url="/hortonworks/cloudbreak/blob_excerpt/73cd0b39589863ae9fb6b535510da6e671fad1ae?diff=unified&amp;in_wiki_context=&amp;last_left=55&amp;last_right=56&amp;left=65&amp;left_hunk_size=6&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsequenceiq%2Fcloudbreak%2Fservice%2Fcluster%2Fflow%2FAmbariOperationsStatusCheckerTask.java&amp;right=66&amp;right_hunk_size=18" href="#diff-81582243e1468b085b4ac37137d2bc4e" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -65,6 +66,18 @@ public boolean checkStatus(AmbariOperations t) {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="65" id="diff-81582243e1468b085b4ac37137d2bc4eL65"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="66" id="diff-81582243e1468b085b4ac37137d2bc4eR66"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> allFinished;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="66" id="diff-81582243e1468b085b4ac37137d2bc4eL66"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="67" id="diff-81582243e1468b085b4ac37137d2bc4eR67"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="67" id="diff-81582243e1468b085b4ac37137d2bc4eL67"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="68" id="diff-81582243e1468b085b4ac37137d2bc4eR68"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="69" id="diff-81582243e1468b085b4ac37137d2bc4eR69"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">BigDecimal</span> <span class="pl-en">getInstallProgressFromAmbari</span>(<span class="pl-k">Entry&lt;<span class="pl-smi">String</span>, <span class="pl-smi">Integer</span>&gt;</span> <span class="pl-v">request</span>, <span class="pl-smi">AmbariClient</span> <span class="pl-v">ambariClient</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="70" id="diff-81582243e1468b085b4ac37137d2bc4eR70"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">try</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="71" id="diff-81582243e1468b085b4ac37137d2bc4eR71"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-smi">Optional</span><span class="pl-k">.</span>ofNullable(ambariClient<span class="pl-k">.</span>getRequestProgress(request<span class="pl-k">.</span>getValue()))<span class="pl-k">.</span>orElse(<span class="pl-c1">PENDING</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="72" id="diff-81582243e1468b085b4ac37137d2bc4eR72"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        } <span class="pl-k">catch</span> (<span class="pl-smi">AmbariConnectionException</span> e) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="73" id="diff-81582243e1468b085b4ac37137d2bc4eR73"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">LOGGER</span><span class="pl-k">.</span>warn(e<span class="pl-k">.</span>getMessage());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="74" id="diff-81582243e1468b085b4ac37137d2bc4eR74"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">FAILED</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="75" id="diff-81582243e1468b085b4ac37137d2bc4eR75"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        } <span class="pl-k">catch</span> (<span class="pl-smi">Exception</span> e) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="76" id="diff-81582243e1468b085b4ac37137d2bc4eR76"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">LOGGER</span><span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>Failed to retrieve Ambari request progress.<span class="pl-pds">"</span></span>, e);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="77" id="diff-81582243e1468b085b4ac37137d2bc4eR77"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">FAILED</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="78" id="diff-81582243e1468b085b4ac37137d2bc4eR78"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="79" id="diff-81582243e1468b085b4ac37137d2bc4eR79"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="80" id="diff-81582243e1468b085b4ac37137d2bc4eR80"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="68" id="diff-81582243e1468b085b4ac37137d2bc4eL68"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-81582243e1468b085b4ac37137d2bc4eR81"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">Notification&lt;<span class="pl-smi">CloudbreakEventsJson</span>&gt;</span> <span class="pl-en">getAmbariProgressNotification</span>(<span class="pl-smi">Long</span> <span class="pl-v">progressValue</span>, <span class="pl-smi">Stack</span> <span class="pl-v">stack</span>, <span class="pl-smi">AmbariOperationType</span> <span class="pl-v">ambariOperationType</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="69" id="diff-81582243e1468b085b4ac37137d2bc4eL69"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-81582243e1468b085b4ac37137d2bc4eR82"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">CloudbreakEventsJson</span> notification <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">CloudbreakEventsJson</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="70" id="diff-81582243e1468b085b4ac37137d2bc4eL70"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-81582243e1468b085b4ac37137d2bc4eR83"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        notification<span class="pl-k">.</span>setEventType(ambariOperationType<span class="pl-k">.</span>name());</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="71-116" data-right-range="84-116" data-url="/hortonworks/cloudbreak/blob_excerpt/73cd0b39589863ae9fb6b535510da6e671fad1ae?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=70&amp;last_right=83&amp;left=117&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsequenceiq%2Fcloudbreak%2Fservice%2Fcluster%2Fflow%2FAmbariOperationsStatusCheckerTask.java&amp;right=117&amp;right_hunk_size=" href="#diff-81582243e1468b085b4ac37137d2bc4e" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-81582243e1468b085b4ac37137d2bc4eL13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-81582243e1468b085b4ac37137d2bc4eR13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-81582243e1468b085b4ac37137d2bc4eL14"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-81582243e1468b085b4ac37137d2bc4eR14"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-81582243e1468b085b4ac37137d2bc4eL15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-81582243e1468b085b4ac37137d2bc4eR15"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="16" id="diff-81582243e1468b085b4ac37137d2bc4eR16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-81582243e1468b085b4ac37137d2bc4eL16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-81582243e1468b085b4ac37137d2bc4eR17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-81582243e1468b085b4ac37137d2bc4eL17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-81582243e1468b085b4ac37137d2bc4eR18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-81582243e1468b085b4ac37137d2bc4eL18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-81582243e1468b085b4ac37137d2bc4eR19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-81582243e1468b085b4ac37137d2bc4eL43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-81582243e1468b085b4ac37137d2bc4eR44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-81582243e1468b085b4ac37137d2bc4eL44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-81582243e1468b085b4ac37137d2bc4eR45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-81582243e1468b085b4ac37137d2bc4eL45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-81582243e1468b085b4ac37137d2bc4eR46"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="46" id="diff-81582243e1468b085b4ac37137d2bc4eL46"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-81582243e1468b085b4ac37137d2bc4eR47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-81582243e1468b085b4ac37137d2bc4eL47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-81582243e1468b085b4ac37137d2bc4eR48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-81582243e1468b085b4ac37137d2bc4eL48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-81582243e1468b085b4ac37137d2bc4eR49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-81582243e1468b085b4ac37137d2bc4eL49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-81582243e1468b085b4ac37137d2bc4eR50"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-81582243e1468b085b4ac37137d2bc4eL50"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-81582243e1468b085b4ac37137d2bc4eR51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-81582243e1468b085b4ac37137d2bc4eL51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-81582243e1468b085b4ac37137d2bc4eR52"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="52" id="diff-81582243e1468b085b4ac37137d2bc4eL52"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="53" id="diff-81582243e1468b085b4ac37137d2bc4eR53"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="53" id="diff-81582243e1468b085b4ac37137d2bc4eL53"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-81582243e1468b085b4ac37137d2bc4eR54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-81582243e1468b085b4ac37137d2bc4eL54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-81582243e1468b085b4ac37137d2bc4eR55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-81582243e1468b085b4ac37137d2bc4eL55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-81582243e1468b085b4ac37137d2bc4eR56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="65" id="diff-81582243e1468b085b4ac37137d2bc4eL65"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="66" id="diff-81582243e1468b085b4ac37137d2bc4eR66"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="66" id="diff-81582243e1468b085b4ac37137d2bc4eL66"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="67" id="diff-81582243e1468b085b4ac37137d2bc4eR67"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="67" id="diff-81582243e1468b085b4ac37137d2bc4eL67"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="68" id="diff-81582243e1468b085b4ac37137d2bc4eR68"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="69" id="diff-81582243e1468b085b4ac37137d2bc4eR69"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="70" id="diff-81582243e1468b085b4ac37137d2bc4eR70"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="71" id="diff-81582243e1468b085b4ac37137d2bc4eR71"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="72" id="diff-81582243e1468b085b4ac37137d2bc4eR72"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="73" id="diff-81582243e1468b085b4ac37137d2bc4eR73"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="74" id="diff-81582243e1468b085b4ac37137d2bc4eR74"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="75" id="diff-81582243e1468b085b4ac37137d2bc4eR75"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="76" id="diff-81582243e1468b085b4ac37137d2bc4eR76"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="77" id="diff-81582243e1468b085b4ac37137d2bc4eR77"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="78" id="diff-81582243e1468b085b4ac37137d2bc4eR78"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="79" id="diff-81582243e1468b085b4ac37137d2bc4eR79"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="80" id="diff-81582243e1468b085b4ac37137d2bc4eR80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="68" id="diff-81582243e1468b085b4ac37137d2bc4eL68"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-81582243e1468b085b4ac37137d2bc4eR81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="69" id="diff-81582243e1468b085b4ac37137d2bc4eL69"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-81582243e1468b085b4ac37137d2bc4eR82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="70" id="diff-81582243e1468b085b4ac37137d2bc4eL70"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-81582243e1468b085b4ac37137d2bc4eR83"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

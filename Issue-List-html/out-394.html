@@ -1,0 +1,401 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-e4bbbdeee63a1950116043c98b83c0ab" data-file-deleted="false" data-file-type=".java" data-path="src/main/java/org/radarcns/sink/hdfs/AvroFormatRadar.java" data-short-path="e4bbbde">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="src/main/java/org/radarcns/sink/hdfs/AvroFormatRadar.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/RADAR-base/RADAR-HDFS-Sink-Connector/blob/74cc1a8051d875d2e6678db2553b7d0349a8b851/src/main/java/org/radarcns/sink/hdfs/AvroFormatRadar.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="11 additions &amp; 3 deletions" class="diffstat tooltipped tooltipped-e">14 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-e4bbbdeee63a1950116043c98b83c0ab" title="src/main/java/org/radarcns/sink/hdfs/AvroFormatRadar.java">src/main/java/org/radarcns/sink/hdfs/AvroFormatRadar.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-e4bbbdeee63a1950116043c98b83c0ab" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-15" data-right-range="1-15" data-url="/RADAR-base/RADAR-HDFS-Sink-Connector/blob_excerpt/ad5a070aac424253adc6994ad42a693d61827447?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=16&amp;left_hunk_size=7&amp;mode=100644&amp;path=src%2Fmain%2Fjava%2Forg%2Fradarcns%2Fsink%2Fhdfs%2FAvroFormatRadar.java&amp;right=16&amp;right_hunk_size=10" href="#diff-e4bbbdeee63a1950116043c98b83c0ab" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -16,7 +16,10 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-e4bbbdeee63a1950116043c98b83c0abL16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-e4bbbdeee63a1950116043c98b83c0abR16"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-e4bbbdeee63a1950116043c98b83c0abL17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-e4bbbdeee63a1950116043c98b83c0abR17"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">package</span> <span class="pl-smi">org.radarcns.sink.hdfs</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-e4bbbdeee63a1950116043c98b83c0abL18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-e4bbbdeee63a1950116043c98b83c0abR18"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="19" id="diff-e4bbbdeee63a1950116043c98b83c0abR19"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">io.confluent.connect.storage.StorageSinkConnectorConfig.SCHEMA_CACHE_SIZE_CONFIG</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="20" id="diff-e4bbbdeee63a1950116043c98b83c0abR20"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-e4bbbdeee63a1950116043c98b83c0abL19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-e4bbbdeee63a1950116043c98b83c0abR21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">io.confluent.connect.avro.AvroData</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-e4bbbdeee63a1950116043c98b83c0abR22"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">io.confluent.connect.avro.AvroDataConfig</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-e4bbbdeee63a1950116043c98b83c0abL20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-e4bbbdeee63a1950116043c98b83c0abR23"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">io.confluent.connect.hdfs.HdfsSinkConnectorConfig</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-e4bbbdeee63a1950116043c98b83c0abL21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-e4bbbdeee63a1950116043c98b83c0abR24"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">io.confluent.connect.hdfs.avro.AvroFileReader</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-e4bbbdeee63a1950116043c98b83c0abL22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-e4bbbdeee63a1950116043c98b83c0abR25"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">io.confluent.connect.hdfs.avro.AvroHiveFactory</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="11">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="23-23" data-right-range="26-26" data-url="/RADAR-base/RADAR-HDFS-Sink-Connector/blob_excerpt/ad5a070aac424253adc6994ad42a693d61827447?diff=unified&amp;in_wiki_context=&amp;last_left=22&amp;last_right=25&amp;left=27&amp;left_hunk_size=8&amp;mode=100644&amp;path=src%2Fmain%2Fjava%2Forg%2Fradarcns%2Fsink%2Fhdfs%2FAvroFormatRadar.java&amp;right=30&amp;right_hunk_size=6" href="#diff-e4bbbdeee63a1950116043c98b83c0ab" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -27,8 +30,6 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-e4bbbdeee63a1950116043c98b83c0abL27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-e4bbbdeee63a1950116043c98b83c0abR30"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">io.confluent.connect.storage.hive.HiveFactory</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-e4bbbdeee63a1950116043c98b83c0abL28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-e4bbbdeee63a1950116043c98b83c0abR31"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.hadoop.fs.Path</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-e4bbbdeee63a1950116043c98b83c0abL29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-e4bbbdeee63a1950116043c98b83c0abR32"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="30" id="diff-e4bbbdeee63a1950116043c98b83c0abL30"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">io.confluent.connect.storage.StorageSinkConnectorConfig.SCHEMA_CACHE_SIZE_CONFIG</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="31" id="diff-e4bbbdeee63a1950116043c98b83c0abL31"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-e4bbbdeee63a1950116043c98b83c0abL32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-e4bbbdeee63a1950116043c98b83c0abR33"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-e4bbbdeee63a1950116043c98b83c0abL33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-e4bbbdeee63a1950116043c98b83c0abR34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> * Extended AvroFormat class to support custom AvroRecordWriter to allow writting key and value to</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-e4bbbdeee63a1950116043c98b83c0abL34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-e4bbbdeee63a1950116043c98b83c0abR35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> * HDFS.</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="20">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="35-34" data-right-range="36-35" data-url="/RADAR-base/RADAR-HDFS-Sink-Connector/blob_excerpt/ad5a070aac424253adc6994ad42a693d61827447?diff=unified&amp;in_wiki_context=&amp;last_left=34&amp;last_right=35&amp;left=37&amp;left_hunk_size=7&amp;mode=100644&amp;path=src%2Fmain%2Fjava%2Forg%2Fradarcns%2Fsink%2Fhdfs%2FAvroFormatRadar.java&amp;right=38&amp;right_hunk_size=14" href="#diff-e4bbbdeee63a1950116043c98b83c0ab" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -37,7 +38,14 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-e4bbbdeee63a1950116043c98b83c0abL37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-e4bbbdeee63a1950116043c98b83c0abR38"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">AvroData</span> avroData;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-e4bbbdeee63a1950116043c98b83c0abL38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-e4bbbdeee63a1950116043c98b83c0abR39"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-e4bbbdeee63a1950116043c98b83c0abL39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-e4bbbdeee63a1950116043c98b83c0abR40"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-en">AvroFormatRadar</span>(<span class="pl-smi">HdfsStorage</span> <span class="pl-v">storage</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="40" id="diff-e4bbbdeee63a1950116043c98b83c0abL40"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>avroData <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">AvroData</span>(storage<span class="pl-k">.</span>conf()<span class="pl-k">.</span>getInt(<span class="pl-c1">SCHEMA_CACHE_SIZE_CONFIG</span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="41" id="diff-e4bbbdeee63a1950116043c98b83c0abR41"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">AvroDataConfig</span> avroConfig <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">AvroDataConfig</span>.<span class="pl-smi">Builder</span>()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="42" id="diff-e4bbbdeee63a1950116043c98b83c0abR42"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                .with(<span class="pl-smi">AvroDataConfig</span><span class="pl-c1"><span class="pl-k">.</span>CONNECT_META_DATA_CONFIG</span>, <span class="pl-c1">false</span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="43" id="diff-e4bbbdeee63a1950116043c98b83c0abR43"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                .with(<span class="pl-smi">AvroDataConfig</span><span class="pl-c1"><span class="pl-k">.</span>SCHEMAS_CACHE_SIZE_CONFIG</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="44" id="diff-e4bbbdeee63a1950116043c98b83c0abR44"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                        storage<span class="pl-k">.</span>conf()<span class="pl-k">.</span>getInt(<span class="pl-c1">SCHEMA_CACHE_SIZE_CONFIG</span>))</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="45" id="diff-e4bbbdeee63a1950116043c98b83c0abR45"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                .with(<span class="pl-smi">AvroDataConfig</span><span class="pl-c1"><span class="pl-k">.</span>ENHANCED_AVRO_SCHEMA_SUPPORT_CONFIG</span>, <span class="pl-c1">true</span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="46" id="diff-e4bbbdeee63a1950116043c98b83c0abR46"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                .build();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-e4bbbdeee63a1950116043c98b83c0abR47"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="48" id="diff-e4bbbdeee63a1950116043c98b83c0abR48"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>avroData <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">AvroData</span>(avroConfig);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-e4bbbdeee63a1950116043c98b83c0abL41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-e4bbbdeee63a1950116043c98b83c0abR49"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-e4bbbdeee63a1950116043c98b83c0abL42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-e4bbbdeee63a1950116043c98b83c0abR50"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-e4bbbdeee63a1950116043c98b83c0abL43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-e4bbbdeee63a1950116043c98b83c0abR51"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">RecordWriterProvider&lt;<span class="pl-smi">HdfsSinkConnectorConfig</span>&gt;</span> <span class="pl-en">getRecordWriterProvider</span>() {</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="44-62" data-right-range="52-62" data-url="/RADAR-base/RADAR-HDFS-Sink-Connector/blob_excerpt/ad5a070aac424253adc6994ad42a693d61827447?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=43&amp;last_right=51&amp;left=63&amp;left_hunk_size=&amp;mode=100644&amp;path=src%2Fmain%2Fjava%2Forg%2Fradarcns%2Fsink%2Fhdfs%2FAvroFormatRadar.java&amp;right=63&amp;right_hunk_size=" href="#diff-e4bbbdeee63a1950116043c98b83c0ab" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-e4bbbdeee63a1950116043c98b83c0abL16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-e4bbbdeee63a1950116043c98b83c0abR16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-e4bbbdeee63a1950116043c98b83c0abL17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-e4bbbdeee63a1950116043c98b83c0abR17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-e4bbbdeee63a1950116043c98b83c0abL18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-e4bbbdeee63a1950116043c98b83c0abR18"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="19" id="diff-e4bbbdeee63a1950116043c98b83c0abR19"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="20" id="diff-e4bbbdeee63a1950116043c98b83c0abR20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-e4bbbdeee63a1950116043c98b83c0abL19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-e4bbbdeee63a1950116043c98b83c0abR21"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-e4bbbdeee63a1950116043c98b83c0abR22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-e4bbbdeee63a1950116043c98b83c0abL20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-e4bbbdeee63a1950116043c98b83c0abR23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-e4bbbdeee63a1950116043c98b83c0abL21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-e4bbbdeee63a1950116043c98b83c0abR24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-e4bbbdeee63a1950116043c98b83c0abL22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-e4bbbdeee63a1950116043c98b83c0abR25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-e4bbbdeee63a1950116043c98b83c0abL27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-e4bbbdeee63a1950116043c98b83c0abR30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-e4bbbdeee63a1950116043c98b83c0abL28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-e4bbbdeee63a1950116043c98b83c0abR31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-e4bbbdeee63a1950116043c98b83c0abL29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-e4bbbdeee63a1950116043c98b83c0abR32"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="30" id="diff-e4bbbdeee63a1950116043c98b83c0abL30"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="31" id="diff-e4bbbdeee63a1950116043c98b83c0abL31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-e4bbbdeee63a1950116043c98b83c0abL32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-e4bbbdeee63a1950116043c98b83c0abR33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-e4bbbdeee63a1950116043c98b83c0abL33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-e4bbbdeee63a1950116043c98b83c0abR34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-e4bbbdeee63a1950116043c98b83c0abL34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-e4bbbdeee63a1950116043c98b83c0abR35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-e4bbbdeee63a1950116043c98b83c0abL37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-e4bbbdeee63a1950116043c98b83c0abR38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-e4bbbdeee63a1950116043c98b83c0abL38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-e4bbbdeee63a1950116043c98b83c0abR39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-e4bbbdeee63a1950116043c98b83c0abL39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-e4bbbdeee63a1950116043c98b83c0abR40"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="40" id="diff-e4bbbdeee63a1950116043c98b83c0abL40"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="41" id="diff-e4bbbdeee63a1950116043c98b83c0abR41"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="42" id="diff-e4bbbdeee63a1950116043c98b83c0abR42"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="43" id="diff-e4bbbdeee63a1950116043c98b83c0abR43"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="44" id="diff-e4bbbdeee63a1950116043c98b83c0abR44"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="45" id="diff-e4bbbdeee63a1950116043c98b83c0abR45"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="46" id="diff-e4bbbdeee63a1950116043c98b83c0abR46"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-e4bbbdeee63a1950116043c98b83c0abR47"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="48" id="diff-e4bbbdeee63a1950116043c98b83c0abR48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-e4bbbdeee63a1950116043c98b83c0abL41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-e4bbbdeee63a1950116043c98b83c0abR49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-e4bbbdeee63a1950116043c98b83c0abL42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-e4bbbdeee63a1950116043c98b83c0abR50"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-e4bbbdeee63a1950116043c98b83c0abL43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-e4bbbdeee63a1950116043c98b83c0abR51"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

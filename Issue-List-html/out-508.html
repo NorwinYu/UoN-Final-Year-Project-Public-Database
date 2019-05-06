@@ -1,0 +1,2200 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-7942ffafd41c97b7a1581c7dcc5e3850" data-file-deleted="false" data-file-type=".java" data-path="src/main/java/org/openstreetmap/atlas/geography/atlas/items/TurnRestriction.java" data-short-path="7942ffa">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="src/main/java/org/openstreetmap/atlas/geography/atlas/items/TurnRestriction.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/matthieun/atlas/blob/a88d52c9851af9c780a6e5b71f43fbf33f231853/src/main/java/org/openstreetmap/atlas/geography/atlas/items/TurnRestriction.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="8 additions &amp; 6 deletions" class="diffstat tooltipped tooltipped-e">14 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-7942ffafd41c97b7a1581c7dcc5e3850" title="src/main/java/org/openstreetmap/atlas/geography/atlas/items/TurnRestriction.java">src/main/java/org/openstreetmap/atlas/geography/atlas/items/TurnRestriction.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-7942ffafd41c97b7a1581c7dcc5e3850" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-330" data-right-range="1-330" data-url="/osmlab/atlas/blob_excerpt/53ab59f04ff9da86c8ba9368ad7664b2364b16c7?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=331&amp;left_hunk_size=17&amp;mode=100644&amp;path=src%2Fmain%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2FTurnRestriction.java&amp;right=331&amp;right_hunk_size=19" href="#diff-7942ffafd41c97b7a1581c7dcc5e3850" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -331,17 +331,19 @@ private TurnRestriction(final Relation relation)</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="331" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L331"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="331" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R331"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">                viaMember <span class="pl-k">=</span> <span class="pl-smi">Route</span><span class="pl-k">.</span>buildFullRouteIgnoringReverseEdges(viaEdges,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="332" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L332"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="332" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R332"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">                        fromMember<span class="pl-k">.</span>end()<span class="pl-k">.</span>end(), toMember<span class="pl-k">.</span>start()<span class="pl-k">.</span>start());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="333" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L333"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="333" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R333"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="334" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R334"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>from <span class="pl-k">=</span> fromMember;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="335" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R335"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>via <span class="pl-k">=</span> viaMember;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="336" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R336"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>too <span class="pl-k">=</span> toMember;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="337" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R337"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> Make sure that the route can be built</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="338" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R338"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            route();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="334" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L334"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="339" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R339"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="335" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L335"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="340" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R340"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">catch</span> (<span class="pl-k">final</span> <span class="pl-smi">CoreException</span> e)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="336" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L336"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="341" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R341"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="337" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L337"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="342" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R342"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            logger<span class="pl-k">.</span>trace(<span class="pl-s"><span class="pl-pds">"</span>Could not build TurnRestriction from relation {}<span class="pl-pds">"</span></span>, relation, e);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="338" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L338"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="x x-first x-last">fromMember</span> <span class="pl-k">=</span> <span class="pl-c1">null</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="339" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L339"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="x x-first x-last">viaMember</span> <span class="pl-k">=</span> <span class="pl-c1">null</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="340" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L340"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="x x-first x-last">toMember</span> <span class="pl-k">=</span> <span class="pl-c1">null</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="343" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R343"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1 x x-first">this</span><span class="pl-k x">.</span><span class="x x-last">from</span> <span class="pl-k">=</span> <span class="pl-c1">null</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="344" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R344"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1 x x-first">this</span><span class="pl-k x">.</span><span class="x x-last">via</span> <span class="pl-k">=</span> <span class="pl-c1">null</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="345" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R345"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1 x x-first">this</span><span class="pl-k x">.</span><span class="x x-last">too</span> <span class="pl-k">=</span> <span class="pl-c1">null</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="341" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L341"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="346" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R346"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="342" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L342"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>from <span class="pl-k">=</span> fromMember;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="343" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L343"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>via <span class="pl-k">=</span> viaMember;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="344" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L344"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>too <span class="pl-k">=</span> toMember;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="345" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L345"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="347" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R347"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="346" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L346"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="348" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R348"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="347" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L347"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="349" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R349"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@SuppressWarnings</span>(<span class="pl-s"><span class="pl-pds">"</span>deprecation<span class="pl-pds">"</span></span>)</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="348-492" data-right-range="350-492" data-url="/osmlab/atlas/blob_excerpt/53ab59f04ff9da86c8ba9368ad7664b2364b16c7?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=347&amp;last_right=349&amp;left=493&amp;left_hunk_size=&amp;mode=100644&amp;path=src%2Fmain%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2FTurnRestriction.java&amp;right=493&amp;right_hunk_size=" href="#diff-7942ffafd41c97b7a1581c7dcc5e3850" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="331" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L331"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="331" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R331"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="332" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L332"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="332" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R332"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="333" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L333"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="333" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R333"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="334" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R334"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="335" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R335"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="336" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R336"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="337" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R337"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="338" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R338"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="334" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L334"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="339" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R339"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="335" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L335"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="340" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R340"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="336" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L336"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="341" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R341"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="337" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L337"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="342" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R342"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="338" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L338"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="339" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L339"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="340" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L340"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="343" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R343"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="344" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R344"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="345" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R345"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="341" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L341"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="346" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R346"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="342" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L342"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="343" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L343"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="344" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L344"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="345" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L345"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="347" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R347"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="346" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L346"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="348" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R348"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="347" id="diff-7942ffafd41c97b7a1581c7dcc5e3850L347"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="349" id="diff-7942ffafd41c97b7a1581c7dcc5e3850R349"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-1">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-24df22c18c662864de282353e543e330" data-file-deleted="false" data-file-type=".java" data-path="src/test/java/org/openstreetmap/atlas/geography/atlas/items/complex/restriction/ComplexTurnRestrictionTest.java" data-short-path="24df22c">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="src/test/java/org/openstreetmap/atlas/geography/atlas/items/complex/restriction/ComplexTurnRestrictionTest.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/matthieun/atlas/blob/a88d52c9851af9c780a6e5b71f43fbf33f231853/src/test/java/org/openstreetmap/atlas/geography/atlas/items/complex/restriction/ComplexTurnRestrictionTest.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="21 additions &amp; 10 deletions" class="diffstat tooltipped tooltipped-e">31 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-24df22c18c662864de282353e543e330" title="src/test/java/org/openstreetmap/atlas/geography/atlas/items/complex/restriction/ComplexTurnRestrictionTest.java">...streetmap/atlas/geography/atlas/items/complex/restriction/ComplexTurnRestrictionTest.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-24df22c18c662864de282353e543e330" data-tab-size="8">
+<tr data-position="0">
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-24df22c18c662864de282353e543e330HL1"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-24df22c18c662864de282353e543e330HR1"></td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -1,5 +1,6 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="1" id="diff-24df22c18c662864de282353e543e330L1"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="1" id="diff-24df22c18c662864de282353e543e330R1"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">package</span> <span class="pl-smi">org.openstreetmap.atlas.geography.atlas.items.complex.restriction</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="2" id="diff-24df22c18c662864de282353e543e330L2"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="2" id="diff-24df22c18c662864de282353e543e330R2"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="3" id="diff-24df22c18c662864de282353e543e330R3"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.ArrayList</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="3" id="diff-24df22c18c662864de282353e543e330L3"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-24df22c18c662864de282353e543e330R4"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.HashSet</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-24df22c18c662864de282353e543e330L4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-24df22c18c662864de282353e543e330R5"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.List</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-24df22c18c662864de282353e543e330L5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-24df22c18c662864de282353e543e330R6"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.Optional</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="7">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="6-29" data-right-range="7-30" data-url="/osmlab/atlas/blob_excerpt/7e864b1064c3bbdf9e2f5c5276885720781fc69f?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=5&amp;last_right=6&amp;left=56&amp;left_hunk_size=6&amp;mode=100644&amp;path=src%2Ftest%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2Fcomplex%2Frestriction%2FComplexTurnRestrictionTest.java&amp;right=57&amp;right_hunk_size=16" href="#diff-24df22c18c662864de282353e543e330" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="30-55" data-right-range="31-56" data-url="/osmlab/atlas/blob_excerpt/7e864b1064c3bbdf9e2f5c5276885720781fc69f?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=5&amp;last_right=6&amp;left=56&amp;left_hunk_size=6&amp;mode=100644&amp;path=src%2Ftest%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2Fcomplex%2Frestriction%2FComplexTurnRestrictionTest.java&amp;right=57&amp;right_hunk_size=16" href="#diff-24df22c18c662864de282353e543e330" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -56,6 +57,16 @@ public void testBigNodeWithNoRestrictions()</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-24df22c18c662864de282353e543e330L56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-24df22c18c662864de282353e543e330R57"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">Assert</span><span class="pl-k">.</span>assertTrue(bigNode<span class="pl-k">.</span>turnRestrictions()<span class="pl-k">.</span>isEmpty());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-24df22c18c662864de282353e543e330L57"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-24df22c18c662864de282353e543e330R58"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-24df22c18c662864de282353e543e330L58"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-24df22c18c662864de282353e543e330R59"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="60" id="diff-24df22c18c662864de282353e543e330R60"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Test</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="61" id="diff-24df22c18c662864de282353e543e330R61"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">testBrokenRoute</span>()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="62" id="diff-24df22c18c662864de282353e543e330R62"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="63" id="diff-24df22c18c662864de282353e543e330R63"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-k">List&lt;<span class="pl-smi">Integer</span>&gt;</span> counter <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">ArrayList&lt;&gt;</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="64" id="diff-24df22c18c662864de282353e543e330R64"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        counter<span class="pl-k">.</span>add(<span class="pl-c1">0</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="65" id="diff-24df22c18c662864de282353e543e330R65"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">new</span> <span class="pl-smi">ComplexTurnRestrictionFinder</span>(<span class="pl-c1">null</span>)<span class="pl-k">.</span>find(<span class="pl-c1">this</span><span class="pl-k">.</span>rule<span class="pl-k">.</span>getAtlasBrokenTurnRestrictionRoute(),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="66" id="diff-24df22c18c662864de282353e543e330R66"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                broken <span class="pl-k">-</span><span class="pl-k">&gt;</span> counter<span class="pl-k">.</span>set(<span class="pl-c1">0</span>, counter<span class="pl-k">.</span>get(<span class="pl-c1">0</span>) <span class="pl-k">+</span> <span class="pl-c1">1</span>))<span class="pl-k">.</span>forEach(<span class="pl-smi">System</span><span class="pl-k">.</span>out<span class="pl-k">::</span>println);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="67" id="diff-24df22c18c662864de282353e543e330R67"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">Assert</span><span class="pl-k">.</span>assertEquals(<span class="pl-k">new</span> <span class="pl-smi">Integer</span>(<span class="pl-c1">1</span>), counter<span class="pl-k">.</span>get(<span class="pl-c1">0</span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="68" id="diff-24df22c18c662864de282353e543e330R68"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="69" id="diff-24df22c18c662864de282353e543e330R69"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-24df22c18c662864de282353e543e330L59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="70" id="diff-24df22c18c662864de282353e543e330R70"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Test</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-24df22c18c662864de282353e543e330L60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="71" id="diff-24df22c18c662864de282353e543e330R71"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">testFalsePredicate</span>()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="61" id="diff-24df22c18c662864de282353e543e330L61"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="72" id="diff-24df22c18c662864de282353e543e330R72"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    {</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="24">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="62-114" data-right-range="73-125" data-url="/osmlab/atlas/blob_excerpt/7e864b1064c3bbdf9e2f5c5276885720781fc69f?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=61&amp;last_right=72&amp;left=170&amp;left_hunk_size=6&amp;mode=100644&amp;path=src%2Ftest%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2Fcomplex%2Frestriction%2FComplexTurnRestrictionTest.java&amp;right=181&amp;right_hunk_size=16" href="#diff-24df22c18c662864de282353e543e330" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="115-169" data-right-range="126-180" data-url="/osmlab/atlas/blob_excerpt/7e864b1064c3bbdf9e2f5c5276885720781fc69f?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=61&amp;last_right=72&amp;left=170&amp;left_hunk_size=6&amp;mode=100644&amp;path=src%2Ftest%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2Fcomplex%2Frestriction%2FComplexTurnRestrictionTest.java&amp;right=181&amp;right_hunk_size=16" href="#diff-24df22c18c662864de282353e543e330" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -170,6 +181,16 @@ public void testPathThroughBigNodeToTurnRestrictionCriteria()</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="170" id="diff-24df22c18c662864de282353e543e330L170"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="181" id="diff-24df22c18c662864de282353e543e330R181"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="171" id="diff-24df22c18c662864de282353e543e330L171"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="182" id="diff-24df22c18c662864de282353e543e330R182"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="172" id="diff-24df22c18c662864de282353e543e330L172"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="183" id="diff-24df22c18c662864de282353e543e330R183"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="184" id="diff-24df22c18c662864de282353e543e330R184"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Test</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="185" id="diff-24df22c18c662864de282353e543e330R185"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">testTurnRestrictionNoUTurn</span>()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="186" id="diff-24df22c18c662864de282353e543e330R186"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="187" id="diff-24df22c18c662864de282353e543e330R187"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> Test edge as via member</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="188" id="diff-24df22c18c662864de282353e543e330R188"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">Atlas</span> testAtlas <span class="pl-k">=</span> <span class="pl-c1">this</span><span class="pl-k">.</span>rule<span class="pl-k">.</span>getAtlasNoUTurn();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="189" id="diff-24df22c18c662864de282353e543e330R189"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-k">Optional&lt;<span class="pl-smi">TurnRestriction</span>&gt;</span> possibleTurnRestriction <span class="pl-k">=</span> <span class="pl-smi">TurnRestriction</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="190" id="diff-24df22c18c662864de282353e543e330R190"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                .from(testAtlas<span class="pl-k">.</span>relation(<span class="pl-c1">1L</span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="191" id="diff-24df22c18c662864de282353e543e330R191"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">Assert</span><span class="pl-k">.</span>assertTrue(possibleTurnRestriction<span class="pl-k">.</span>isPresent());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="192" id="diff-24df22c18c662864de282353e543e330R192"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="193" id="diff-24df22c18c662864de282353e543e330R193"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="173" id="diff-24df22c18c662864de282353e543e330L173"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="194" id="diff-24df22c18c662864de282353e543e330R194"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Test</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="174" id="diff-24df22c18c662864de282353e543e330L174"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="195" id="diff-24df22c18c662864de282353e543e330R195"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">testTurnRestrictionsFromComplexBigNodes</span>()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="175" id="diff-24df22c18c662864de282353e543e330L175"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="196" id="diff-24df22c18c662864de282353e543e330R196"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    {</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="41">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="176-190" data-right-range="197-211" data-url="/osmlab/atlas/blob_excerpt/7e864b1064c3bbdf9e2f5c5276885720781fc69f?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=175&amp;last_right=196&amp;left=207&amp;left_hunk_size=14&amp;mode=100644&amp;path=src%2Ftest%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2Fcomplex%2Frestriction%2FComplexTurnRestrictionTest.java&amp;right=228&amp;right_hunk_size=4" href="#diff-24df22c18c662864de282353e543e330" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="191-206" data-right-range="212-227" data-url="/osmlab/atlas/blob_excerpt/7e864b1064c3bbdf9e2f5c5276885720781fc69f?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=175&amp;last_right=196&amp;left=207&amp;left_hunk_size=14&amp;mode=100644&amp;path=src%2Ftest%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2Fcomplex%2Frestriction%2FComplexTurnRestrictionTest.java&amp;right=228&amp;right_hunk_size=4" href="#diff-24df22c18c662864de282353e543e330" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -207,14 +228,4 @@ public void testTurnRestrictionWithTwoViaNodesInRelation()</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="207" id="diff-24df22c18c662864de282353e543e330L207"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="228" id="diff-24df22c18c662864de282353e543e330R228"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">                .from(testAtlas<span class="pl-k">.</span>relation(<span class="pl-c1">1L</span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="208" id="diff-24df22c18c662864de282353e543e330L208"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="229" id="diff-24df22c18c662864de282353e543e330R229"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">Assert</span><span class="pl-k">.</span>assertEquals(<span class="pl-smi">Optional</span><span class="pl-k">.</span>empty(), possibleTurnRestriction);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="209" id="diff-24df22c18c662864de282353e543e330L209"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="230" id="diff-24df22c18c662864de282353e543e330R230"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="210" id="diff-24df22c18c662864de282353e543e330L210"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="211" id="diff-24df22c18c662864de282353e543e330L211"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">@Test</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="212" id="diff-24df22c18c662864de282353e543e330L212"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">testTurnRestrictionNoUTurn</span>()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="213" id="diff-24df22c18c662864de282353e543e330L213"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="214" id="diff-24df22c18c662864de282353e543e330L214"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> Test edge as via member</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="215" id="diff-24df22c18c662864de282353e543e330L215"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">Atlas</span> testAtlas <span class="pl-k">=</span> <span class="pl-c1">this</span><span class="pl-k">.</span>rule<span class="pl-k">.</span>getAtlasNoUTurn();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="216" id="diff-24df22c18c662864de282353e543e330L216"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-k">Optional&lt;<span class="pl-smi">TurnRestriction</span>&gt;</span> possibleTurnRestriction <span class="pl-k">=</span> <span class="pl-smi">TurnRestriction</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="217" id="diff-24df22c18c662864de282353e543e330L217"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">                .from(testAtlas<span class="pl-k">.</span>relation(<span class="pl-c1">1L</span>));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="218" id="diff-24df22c18c662864de282353e543e330L218"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">Assert</span><span class="pl-k">.</span>assertTrue(possibleTurnRestriction<span class="pl-k">.</span>isPresent());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="219" id="diff-24df22c18c662864de282353e543e330L219"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="220" id="diff-24df22c18c662864de282353e543e330L220"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="231" id="diff-24df22c18c662864de282353e543e330R231"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">}</span></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-24df22c18c662864de282353e543e330HL1"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-24df22c18c662864de282353e543e330HR1"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="1" id="diff-24df22c18c662864de282353e543e330L1"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="1" id="diff-24df22c18c662864de282353e543e330R1"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="2" id="diff-24df22c18c662864de282353e543e330L2"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="2" id="diff-24df22c18c662864de282353e543e330R2"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="3" id="diff-24df22c18c662864de282353e543e330R3"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="3" id="diff-24df22c18c662864de282353e543e330L3"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-24df22c18c662864de282353e543e330R4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-24df22c18c662864de282353e543e330L4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-24df22c18c662864de282353e543e330R5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-24df22c18c662864de282353e543e330L5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-24df22c18c662864de282353e543e330R6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-24df22c18c662864de282353e543e330L56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-24df22c18c662864de282353e543e330R57"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-24df22c18c662864de282353e543e330L57"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-24df22c18c662864de282353e543e330R58"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-24df22c18c662864de282353e543e330L58"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-24df22c18c662864de282353e543e330R59"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="60" id="diff-24df22c18c662864de282353e543e330R60"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="61" id="diff-24df22c18c662864de282353e543e330R61"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="62" id="diff-24df22c18c662864de282353e543e330R62"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="63" id="diff-24df22c18c662864de282353e543e330R63"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="64" id="diff-24df22c18c662864de282353e543e330R64"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="65" id="diff-24df22c18c662864de282353e543e330R65"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="66" id="diff-24df22c18c662864de282353e543e330R66"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="67" id="diff-24df22c18c662864de282353e543e330R67"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="68" id="diff-24df22c18c662864de282353e543e330R68"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="69" id="diff-24df22c18c662864de282353e543e330R69"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-24df22c18c662864de282353e543e330L59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="70" id="diff-24df22c18c662864de282353e543e330R70"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-24df22c18c662864de282353e543e330L60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="71" id="diff-24df22c18c662864de282353e543e330R71"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="61" id="diff-24df22c18c662864de282353e543e330L61"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="72" id="diff-24df22c18c662864de282353e543e330R72"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="170" id="diff-24df22c18c662864de282353e543e330L170"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="181" id="diff-24df22c18c662864de282353e543e330R181"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="171" id="diff-24df22c18c662864de282353e543e330L171"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="182" id="diff-24df22c18c662864de282353e543e330R182"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="172" id="diff-24df22c18c662864de282353e543e330L172"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="183" id="diff-24df22c18c662864de282353e543e330R183"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="184" id="diff-24df22c18c662864de282353e543e330R184"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="185" id="diff-24df22c18c662864de282353e543e330R185"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="186" id="diff-24df22c18c662864de282353e543e330R186"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="187" id="diff-24df22c18c662864de282353e543e330R187"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="188" id="diff-24df22c18c662864de282353e543e330R188"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="189" id="diff-24df22c18c662864de282353e543e330R189"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="190" id="diff-24df22c18c662864de282353e543e330R190"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="191" id="diff-24df22c18c662864de282353e543e330R191"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="192" id="diff-24df22c18c662864de282353e543e330R192"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="193" id="diff-24df22c18c662864de282353e543e330R193"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="173" id="diff-24df22c18c662864de282353e543e330L173"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="194" id="diff-24df22c18c662864de282353e543e330R194"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="174" id="diff-24df22c18c662864de282353e543e330L174"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="195" id="diff-24df22c18c662864de282353e543e330R195"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="175" id="diff-24df22c18c662864de282353e543e330L175"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="196" id="diff-24df22c18c662864de282353e543e330R196"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="207" id="diff-24df22c18c662864de282353e543e330L207"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="228" id="diff-24df22c18c662864de282353e543e330R228"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="208" id="diff-24df22c18c662864de282353e543e330L208"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="229" id="diff-24df22c18c662864de282353e543e330R229"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="209" id="diff-24df22c18c662864de282353e543e330L209"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="230" id="diff-24df22c18c662864de282353e543e330R230"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="210" id="diff-24df22c18c662864de282353e543e330L210"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="211" id="diff-24df22c18c662864de282353e543e330L211"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="212" id="diff-24df22c18c662864de282353e543e330L212"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="213" id="diff-24df22c18c662864de282353e543e330L213"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="214" id="diff-24df22c18c662864de282353e543e330L214"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="215" id="diff-24df22c18c662864de282353e543e330L215"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="216" id="diff-24df22c18c662864de282353e543e330L216"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="217" id="diff-24df22c18c662864de282353e543e330L217"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="218" id="diff-24df22c18c662864de282353e543e330L218"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="219" id="diff-24df22c18c662864de282353e543e330L219"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="220" id="diff-24df22c18c662864de282353e543e330L220"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="231" id="diff-24df22c18c662864de282353e543e330R231"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-2">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-16e9299583535169d893119b7d34fbfd" data-file-deleted="false" data-file-type=".java" data-path="src/test/java/org/openstreetmap/atlas/geography/atlas/items/complex/restriction/ComplexTurnRestrictionTestCaseRule.java" data-short-path="16e9299">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="src/test/java/org/openstreetmap/atlas/geography/atlas/items/complex/restriction/ComplexTurnRestrictionTestCaseRule.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/matthieun/atlas/blob/a88d52c9851af9c780a6e5b71f43fbf33f231853/src/test/java/org/openstreetmap/atlas/geography/atlas/items/complex/restriction/ComplexTurnRestrictionTestCaseRule.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="51 additions &amp; 9 deletions" class="diffstat tooltipped tooltipped-e">60 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-16e9299583535169d893119b7d34fbfd" title="src/test/java/org/openstreetmap/atlas/geography/atlas/items/complex/restriction/ComplexTurnRestrictionTestCaseRule.java">...p/atlas/geography/atlas/items/complex/restriction/ComplexTurnRestrictionTestCaseRule.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-16e9299583535169d893119b7d34fbfd" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-30" data-right-range="1-30" data-url="/osmlab/atlas/blob_excerpt/9e1a8554566fcf4ccf537e3a80020b67305ab4b6?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=31&amp;left_hunk_size=7&amp;mode=100644&amp;path=src%2Ftest%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2Fcomplex%2Frestriction%2FComplexTurnRestrictionTestCaseRule.java&amp;right=31&amp;right_hunk_size=16" href="#diff-16e9299583535169d893119b7d34fbfd" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -31,7 +31,16 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-16e9299583535169d893119b7d34fbfdL31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-16e9299583535169d893119b7d34fbfdR31"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Node</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>4<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">FOUR</span>)),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-16e9299583535169d893119b7d34fbfdL32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-16e9299583535169d893119b7d34fbfdR32"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Node</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>5<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">SIX</span>)),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-16e9299583535169d893119b7d34fbfdL33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-16e9299583535169d893119b7d34fbfdR33"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="34" id="diff-16e9299583535169d893119b7d34fbfdL34"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">            }, <span class="pl-c1">edges</span> <span class="pl-k">=</span> { <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>102<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }), <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>203<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">THREE</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }), <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>204<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">FOUR</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }), <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>205<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">SIX</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> })</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="34" id="diff-16e9299583535169d893119b7d34fbfdR34"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            }, <span class="pl-c1">edges</span> <span class="pl-k">=</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="35" id="diff-16e9299583535169d893119b7d34fbfdR35"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="36" id="diff-16e9299583535169d893119b7d34fbfdR36"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>102<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-16e9299583535169d893119b7d34fbfdR37"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-16e9299583535169d893119b7d34fbfdR38"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>203<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-16e9299583535169d893119b7d34fbfdR39"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">THREE</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="40" id="diff-16e9299583535169d893119b7d34fbfdR40"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>204<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="41" id="diff-16e9299583535169d893119b7d34fbfdR41"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">FOUR</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="42" id="diff-16e9299583535169d893119b7d34fbfdR42"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>205<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="43" id="diff-16e9299583535169d893119b7d34fbfdR43"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">SIX</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> })</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-16e9299583535169d893119b7d34fbfdL35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-16e9299583535169d893119b7d34fbfdR44"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-16e9299583535169d893119b7d34fbfdL36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-16e9299583535169d893119b7d34fbfdR45"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            }, <span class="pl-c1">relations</span> <span class="pl-k">=</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-16e9299583535169d893119b7d34fbfdL37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-16e9299583535169d893119b7d34fbfdR46"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="18">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="38-44" data-right-range="47-53" data-url="/osmlab/atlas/blob_excerpt/9e1a8554566fcf4ccf537e3a80020b67305ab4b6?diff=unified&amp;in_wiki_context=&amp;last_left=37&amp;last_right=46&amp;left=54&amp;left_hunk_size=7&amp;mode=100644&amp;path=src%2Ftest%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2Fcomplex%2Frestriction%2FComplexTurnRestrictionTestCaseRule.java&amp;right=63&amp;right_hunk_size=18" href="#diff-16e9299583535169d893119b7d34fbfd" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -54,7 +63,18 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-16e9299583535169d893119b7d34fbfdL54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="63" id="diff-16e9299583535169d893119b7d34fbfdR63"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Node</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>4<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">FOUR</span>)),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-16e9299583535169d893119b7d34fbfdL55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="64" id="diff-16e9299583535169d893119b7d34fbfdR64"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Node</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>5<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">FIVE</span>))</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-16e9299583535169d893119b7d34fbfdL56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="65" id="diff-16e9299583535169d893119b7d34fbfdR65"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="57" id="diff-16e9299583535169d893119b7d34fbfdL57"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">            }, <span class="pl-c1">edges</span> <span class="pl-k">=</span> { <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>102<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }), <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>-102<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }), <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>203<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">THREE</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }), <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>204<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">FOUR</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }), <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>205<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">FIVE</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> })</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="66" id="diff-16e9299583535169d893119b7d34fbfdR66"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            }, <span class="pl-c1">edges</span> <span class="pl-k">=</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="67" id="diff-16e9299583535169d893119b7d34fbfdR67"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="68" id="diff-16e9299583535169d893119b7d34fbfdR68"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>102<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="69" id="diff-16e9299583535169d893119b7d34fbfdR69"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="70" id="diff-16e9299583535169d893119b7d34fbfdR70"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>-102<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="71" id="diff-16e9299583535169d893119b7d34fbfdR71"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="72" id="diff-16e9299583535169d893119b7d34fbfdR72"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>203<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="73" id="diff-16e9299583535169d893119b7d34fbfdR73"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">THREE</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="74" id="diff-16e9299583535169d893119b7d34fbfdR74"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>204<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="75" id="diff-16e9299583535169d893119b7d34fbfdR75"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">FOUR</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="76" id="diff-16e9299583535169d893119b7d34fbfdR76"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>205<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="77" id="diff-16e9299583535169d893119b7d34fbfdR77"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">FIVE</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> })</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-16e9299583535169d893119b7d34fbfdL58"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-16e9299583535169d893119b7d34fbfdR78"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-16e9299583535169d893119b7d34fbfdL59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-16e9299583535169d893119b7d34fbfdR79"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            }, <span class="pl-c1">relations</span> <span class="pl-k">=</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-16e9299583535169d893119b7d34fbfdL60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-16e9299583535169d893119b7d34fbfdR80"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="38">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="61-67" data-right-range="81-87" data-url="/osmlab/atlas/blob_excerpt/9e1a8554566fcf4ccf537e3a80020b67305ab4b6?diff=unified&amp;in_wiki_context=&amp;last_left=60&amp;last_right=80&amp;left=77&amp;left_hunk_size=7&amp;mode=100644&amp;path=src%2Ftest%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2Fcomplex%2Frestriction%2FComplexTurnRestrictionTestCaseRule.java&amp;right=97&amp;right_hunk_size=12" href="#diff-16e9299583535169d893119b7d34fbfd" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -77,7 +97,12 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-16e9299583535169d893119b7d34fbfdL77"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-16e9299583535169d893119b7d34fbfdR97"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Node</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>1<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>)),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-16e9299583535169d893119b7d34fbfdL78"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-16e9299583535169d893119b7d34fbfdR98"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Node</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>2<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>)),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-16e9299583535169d893119b7d34fbfdL79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-16e9299583535169d893119b7d34fbfdR99"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="80" id="diff-16e9299583535169d893119b7d34fbfdL80"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">            }, <span class="pl-c1">edges</span> <span class="pl-k">=</span> { <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>102<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }), <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>-102<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> })</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="100" id="diff-16e9299583535169d893119b7d34fbfdR100"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            }, <span class="pl-c1">edges</span> <span class="pl-k">=</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="101" id="diff-16e9299583535169d893119b7d34fbfdR101"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="102" id="diff-16e9299583535169d893119b7d34fbfdR102"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>102<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="103" id="diff-16e9299583535169d893119b7d34fbfdR103"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="104" id="diff-16e9299583535169d893119b7d34fbfdR104"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>-102<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="105" id="diff-16e9299583535169d893119b7d34fbfdR105"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> })</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-16e9299583535169d893119b7d34fbfdL81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-16e9299583535169d893119b7d34fbfdR106"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-16e9299583535169d893119b7d34fbfdL82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-16e9299583535169d893119b7d34fbfdR107"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            }, <span class="pl-c1">relations</span> <span class="pl-k">=</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-16e9299583535169d893119b7d34fbfdL83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="108" id="diff-16e9299583535169d893119b7d34fbfdR108"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="52">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="84-91" data-right-range="109-116" data-url="/osmlab/atlas/blob_excerpt/9e1a8554566fcf4ccf537e3a80020b67305ab4b6?diff=unified&amp;in_wiki_context=&amp;last_left=83&amp;last_right=108&amp;left=101&amp;left_hunk_size=7&amp;mode=100644&amp;path=src%2Ftest%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2Fcomplex%2Frestriction%2FComplexTurnRestrictionTestCaseRule.java&amp;right=126&amp;right_hunk_size=16" href="#diff-16e9299583535169d893119b7d34fbfd" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -101,7 +126,16 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-16e9299583535169d893119b7d34fbfdL101"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="126" id="diff-16e9299583535169d893119b7d34fbfdR126"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Node</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>4<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">FOUR</span>)),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-16e9299583535169d893119b7d34fbfdL102"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="127" id="diff-16e9299583535169d893119b7d34fbfdR127"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Node</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>6<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">SIX</span>))</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-16e9299583535169d893119b7d34fbfdL103"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="128" id="diff-16e9299583535169d893119b7d34fbfdR128"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="104" id="diff-16e9299583535169d893119b7d34fbfdL104"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">            }, <span class="pl-c1">edges</span> <span class="pl-k">=</span> { <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>102<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }), <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>203<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">THREE</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }), <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>304<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">THREE</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">FOUR</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }), <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>205<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>), <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">SIX</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> })</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="129" id="diff-16e9299583535169d893119b7d34fbfdR129"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            }, <span class="pl-c1">edges</span> <span class="pl-k">=</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="130" id="diff-16e9299583535169d893119b7d34fbfdR130"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="131" id="diff-16e9299583535169d893119b7d34fbfdR131"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>102<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">ONE</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="132" id="diff-16e9299583535169d893119b7d34fbfdR132"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="133" id="diff-16e9299583535169d893119b7d34fbfdR133"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>203<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="134" id="diff-16e9299583535169d893119b7d34fbfdR134"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">THREE</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="135" id="diff-16e9299583535169d893119b7d34fbfdR135"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>304<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">THREE</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="136" id="diff-16e9299583535169d893119b7d34fbfdR136"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">FOUR</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> }),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="137" id="diff-16e9299583535169d893119b7d34fbfdR137"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Edge</span>(<span class="pl-c1">id</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>205<span class="pl-pds">"</span></span>, <span class="pl-c1">coordinates</span> <span class="pl-k">=</span> { <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">TWO</span>),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="138" id="diff-16e9299583535169d893119b7d34fbfdR138"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Loc</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-c1">SIX</span>) }, <span class="pl-c1">tags</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>highway=trunk<span class="pl-pds">"</span></span> })</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-16e9299583535169d893119b7d34fbfdL105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="139" id="diff-16e9299583535169d893119b7d34fbfdR139"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-16e9299583535169d893119b7d34fbfdL106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="140" id="diff-16e9299583535169d893119b7d34fbfdR140"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            }, <span class="pl-c1">relations</span> <span class="pl-k">=</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-16e9299583535169d893119b7d34fbfdL107"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-16e9299583535169d893119b7d34fbfdR141"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="70">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="108-109" data-right-range="142-143" data-url="/osmlab/atlas/blob_excerpt/9e1a8554566fcf4ccf537e3a80020b67305ab4b6?diff=unified&amp;in_wiki_context=&amp;last_left=107&amp;last_right=141&amp;left=114&amp;left_hunk_size=11&amp;mode=100644&amp;path=src%2Ftest%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2Fcomplex%2Frestriction%2FComplexTurnRestrictionTestCaseRule.java&amp;right=148&amp;right_hunk_size=24" href="#diff-16e9299583535169d893119b7d34fbfd" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -114,11 +148,24 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="114" id="diff-16e9299583535169d893119b7d34fbfdL114"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="148" id="diff-16e9299583535169d893119b7d34fbfdR148"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            })</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="115" id="diff-16e9299583535169d893119b7d34fbfdL115"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="149" id="diff-16e9299583535169d893119b7d34fbfdR149"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">Atlas</span> atlasNoUTurn;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="116" id="diff-16e9299583535169d893119b7d34fbfdL116"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="150" id="diff-16e9299583535169d893119b7d34fbfdR150"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="151" id="diff-16e9299583535169d893119b7d34fbfdR151"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@TestAtlas</span>(<span class="pl-c1">loadFromJosmOsmResource</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>atlasBrokenTurnRestrictionRoute.josm.osm<span class="pl-pds">"</span></span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="152" id="diff-16e9299583535169d893119b7d34fbfdR152"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">Atlas</span> atlasBrokenTurnRestrictionRoute;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="153" id="diff-16e9299583535169d893119b7d34fbfdR153"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="154" id="diff-16e9299583535169d893119b7d34fbfdR154"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">Atlas</span> <span class="pl-en">getAtlasBrokenTurnRestrictionRoute</span>()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="155" id="diff-16e9299583535169d893119b7d34fbfdR155"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="156" id="diff-16e9299583535169d893119b7d34fbfdR156"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">this</span><span class="pl-k">.</span>atlasBrokenTurnRestrictionRoute;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="157" id="diff-16e9299583535169d893119b7d34fbfdR157"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="158" id="diff-16e9299583535169d893119b7d34fbfdR158"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="117" id="diff-16e9299583535169d893119b7d34fbfdL117"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="159" id="diff-16e9299583535169d893119b7d34fbfdR159"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">Atlas</span> <span class="pl-en">getAtlasNo</span>()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="118" id="diff-16e9299583535169d893119b7d34fbfdL118"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="160" id="diff-16e9299583535169d893119b7d34fbfdR160"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="119" id="diff-16e9299583535169d893119b7d34fbfdL119"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="161" id="diff-16e9299583535169d893119b7d34fbfdR161"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">this</span><span class="pl-k">.</span>atlasNo;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="120" id="diff-16e9299583535169d893119b7d34fbfdL120"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="162" id="diff-16e9299583535169d893119b7d34fbfdR162"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="121" id="diff-16e9299583535169d893119b7d34fbfdL121"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="163" id="diff-16e9299583535169d893119b7d34fbfdR163"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="164" id="diff-16e9299583535169d893119b7d34fbfdR164"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">Atlas</span> <span class="pl-en">getAtlasNoUTurn</span>()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="165" id="diff-16e9299583535169d893119b7d34fbfdR165"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="166" id="diff-16e9299583535169d893119b7d34fbfdR166"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">this</span><span class="pl-k">.</span>atlasNoUTurn;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="167" id="diff-16e9299583535169d893119b7d34fbfdR167"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="168" id="diff-16e9299583535169d893119b7d34fbfdR168"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="122" id="diff-16e9299583535169d893119b7d34fbfdL122"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="169" id="diff-16e9299583535169d893119b7d34fbfdR169"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">Atlas</span> <span class="pl-en">getAtlasOnly</span>()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="123" id="diff-16e9299583535169d893119b7d34fbfdL123"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="170" id="diff-16e9299583535169d893119b7d34fbfdR170"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="124" id="diff-16e9299583535169d893119b7d34fbfdL124"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="171" id="diff-16e9299583535169d893119b7d34fbfdR171"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">this</span><span class="pl-k">.</span>atlasOnly;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="95">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="125-127" data-right-range="172-174" data-url="/osmlab/atlas/blob_excerpt/9e1a8554566fcf4ccf537e3a80020b67305ab4b6?diff=unified&amp;in_wiki_context=&amp;last_left=124&amp;last_right=171&amp;left=133&amp;left_hunk_size=9&amp;mode=100644&amp;path=src%2Ftest%2Fjava%2Forg%2Fopenstreetmap%2Fatlas%2Fgeography%2Fatlas%2Fitems%2Fcomplex%2Frestriction%2FComplexTurnRestrictionTestCaseRule.java&amp;right=180&amp;right_hunk_size=4" href="#diff-16e9299583535169d893119b7d34fbfd" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -133,9 +180,4 @@ public Atlas getRelationWithTwoViaNodes()</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="133" id="diff-16e9299583535169d893119b7d34fbfdL133"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="180" id="diff-16e9299583535169d893119b7d34fbfdR180"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="134" id="diff-16e9299583535169d893119b7d34fbfdL134"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="181" id="diff-16e9299583535169d893119b7d34fbfdR181"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">this</span><span class="pl-k">.</span>relationWithTwoViaNodes;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="135" id="diff-16e9299583535169d893119b7d34fbfdL135"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="182" id="diff-16e9299583535169d893119b7d34fbfdR182"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="136" id="diff-16e9299583535169d893119b7d34fbfdL136"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="137" id="diff-16e9299583535169d893119b7d34fbfdL137"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">Atlas</span> <span class="pl-en">getAtlasNoUTurn</span>()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="138" id="diff-16e9299583535169d893119b7d34fbfdL138"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="139" id="diff-16e9299583535169d893119b7d34fbfdL139"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">this</span><span class="pl-k">.</span>atlasNoUTurn;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="140" id="diff-16e9299583535169d893119b7d34fbfdL140"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-16e9299583535169d893119b7d34fbfdL141"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="183" id="diff-16e9299583535169d893119b7d34fbfdR183"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">}</span></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-16e9299583535169d893119b7d34fbfdL31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-16e9299583535169d893119b7d34fbfdR31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-16e9299583535169d893119b7d34fbfdL32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-16e9299583535169d893119b7d34fbfdR32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-16e9299583535169d893119b7d34fbfdL33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-16e9299583535169d893119b7d34fbfdR33"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="34" id="diff-16e9299583535169d893119b7d34fbfdL34"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="34" id="diff-16e9299583535169d893119b7d34fbfdR34"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="35" id="diff-16e9299583535169d893119b7d34fbfdR35"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="36" id="diff-16e9299583535169d893119b7d34fbfdR36"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-16e9299583535169d893119b7d34fbfdR37"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-16e9299583535169d893119b7d34fbfdR38"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-16e9299583535169d893119b7d34fbfdR39"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="40" id="diff-16e9299583535169d893119b7d34fbfdR40"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="41" id="diff-16e9299583535169d893119b7d34fbfdR41"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="42" id="diff-16e9299583535169d893119b7d34fbfdR42"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="43" id="diff-16e9299583535169d893119b7d34fbfdR43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-16e9299583535169d893119b7d34fbfdL35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-16e9299583535169d893119b7d34fbfdR44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-16e9299583535169d893119b7d34fbfdL36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-16e9299583535169d893119b7d34fbfdR45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-16e9299583535169d893119b7d34fbfdL37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-16e9299583535169d893119b7d34fbfdR46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-16e9299583535169d893119b7d34fbfdL54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="63" id="diff-16e9299583535169d893119b7d34fbfdR63"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-16e9299583535169d893119b7d34fbfdL55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="64" id="diff-16e9299583535169d893119b7d34fbfdR64"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-16e9299583535169d893119b7d34fbfdL56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="65" id="diff-16e9299583535169d893119b7d34fbfdR65"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="57" id="diff-16e9299583535169d893119b7d34fbfdL57"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="66" id="diff-16e9299583535169d893119b7d34fbfdR66"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="67" id="diff-16e9299583535169d893119b7d34fbfdR67"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="68" id="diff-16e9299583535169d893119b7d34fbfdR68"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="69" id="diff-16e9299583535169d893119b7d34fbfdR69"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="70" id="diff-16e9299583535169d893119b7d34fbfdR70"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="71" id="diff-16e9299583535169d893119b7d34fbfdR71"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="72" id="diff-16e9299583535169d893119b7d34fbfdR72"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="73" id="diff-16e9299583535169d893119b7d34fbfdR73"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="74" id="diff-16e9299583535169d893119b7d34fbfdR74"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="75" id="diff-16e9299583535169d893119b7d34fbfdR75"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="76" id="diff-16e9299583535169d893119b7d34fbfdR76"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="77" id="diff-16e9299583535169d893119b7d34fbfdR77"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="58" id="diff-16e9299583535169d893119b7d34fbfdL58"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-16e9299583535169d893119b7d34fbfdR78"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-16e9299583535169d893119b7d34fbfdL59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-16e9299583535169d893119b7d34fbfdR79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-16e9299583535169d893119b7d34fbfdL60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-16e9299583535169d893119b7d34fbfdR80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-16e9299583535169d893119b7d34fbfdL77"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-16e9299583535169d893119b7d34fbfdR97"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-16e9299583535169d893119b7d34fbfdL78"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-16e9299583535169d893119b7d34fbfdR98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-16e9299583535169d893119b7d34fbfdL79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-16e9299583535169d893119b7d34fbfdR99"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="80" id="diff-16e9299583535169d893119b7d34fbfdL80"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="100" id="diff-16e9299583535169d893119b7d34fbfdR100"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="101" id="diff-16e9299583535169d893119b7d34fbfdR101"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="102" id="diff-16e9299583535169d893119b7d34fbfdR102"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="103" id="diff-16e9299583535169d893119b7d34fbfdR103"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="104" id="diff-16e9299583535169d893119b7d34fbfdR104"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="105" id="diff-16e9299583535169d893119b7d34fbfdR105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-16e9299583535169d893119b7d34fbfdL81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-16e9299583535169d893119b7d34fbfdR106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-16e9299583535169d893119b7d34fbfdL82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-16e9299583535169d893119b7d34fbfdR107"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-16e9299583535169d893119b7d34fbfdL83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="108" id="diff-16e9299583535169d893119b7d34fbfdR108"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-16e9299583535169d893119b7d34fbfdL101"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="126" id="diff-16e9299583535169d893119b7d34fbfdR126"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-16e9299583535169d893119b7d34fbfdL102"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="127" id="diff-16e9299583535169d893119b7d34fbfdR127"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-16e9299583535169d893119b7d34fbfdL103"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="128" id="diff-16e9299583535169d893119b7d34fbfdR128"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="104" id="diff-16e9299583535169d893119b7d34fbfdL104"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="129" id="diff-16e9299583535169d893119b7d34fbfdR129"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="130" id="diff-16e9299583535169d893119b7d34fbfdR130"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="131" id="diff-16e9299583535169d893119b7d34fbfdR131"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="132" id="diff-16e9299583535169d893119b7d34fbfdR132"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="133" id="diff-16e9299583535169d893119b7d34fbfdR133"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="134" id="diff-16e9299583535169d893119b7d34fbfdR134"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="135" id="diff-16e9299583535169d893119b7d34fbfdR135"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="136" id="diff-16e9299583535169d893119b7d34fbfdR136"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="137" id="diff-16e9299583535169d893119b7d34fbfdR137"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="138" id="diff-16e9299583535169d893119b7d34fbfdR138"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-16e9299583535169d893119b7d34fbfdL105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="139" id="diff-16e9299583535169d893119b7d34fbfdR139"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-16e9299583535169d893119b7d34fbfdL106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="140" id="diff-16e9299583535169d893119b7d34fbfdR140"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-16e9299583535169d893119b7d34fbfdL107"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-16e9299583535169d893119b7d34fbfdR141"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="114" id="diff-16e9299583535169d893119b7d34fbfdL114"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="148" id="diff-16e9299583535169d893119b7d34fbfdR148"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="115" id="diff-16e9299583535169d893119b7d34fbfdL115"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="149" id="diff-16e9299583535169d893119b7d34fbfdR149"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="116" id="diff-16e9299583535169d893119b7d34fbfdL116"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="150" id="diff-16e9299583535169d893119b7d34fbfdR150"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="151" id="diff-16e9299583535169d893119b7d34fbfdR151"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="152" id="diff-16e9299583535169d893119b7d34fbfdR152"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="153" id="diff-16e9299583535169d893119b7d34fbfdR153"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="154" id="diff-16e9299583535169d893119b7d34fbfdR154"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="155" id="diff-16e9299583535169d893119b7d34fbfdR155"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="156" id="diff-16e9299583535169d893119b7d34fbfdR156"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="157" id="diff-16e9299583535169d893119b7d34fbfdR157"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="158" id="diff-16e9299583535169d893119b7d34fbfdR158"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="117" id="diff-16e9299583535169d893119b7d34fbfdL117"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="159" id="diff-16e9299583535169d893119b7d34fbfdR159"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="118" id="diff-16e9299583535169d893119b7d34fbfdL118"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="160" id="diff-16e9299583535169d893119b7d34fbfdR160"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="119" id="diff-16e9299583535169d893119b7d34fbfdL119"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="161" id="diff-16e9299583535169d893119b7d34fbfdR161"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="120" id="diff-16e9299583535169d893119b7d34fbfdL120"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="162" id="diff-16e9299583535169d893119b7d34fbfdR162"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="121" id="diff-16e9299583535169d893119b7d34fbfdL121"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="163" id="diff-16e9299583535169d893119b7d34fbfdR163"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="164" id="diff-16e9299583535169d893119b7d34fbfdR164"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="165" id="diff-16e9299583535169d893119b7d34fbfdR165"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="166" id="diff-16e9299583535169d893119b7d34fbfdR166"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="167" id="diff-16e9299583535169d893119b7d34fbfdR167"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="168" id="diff-16e9299583535169d893119b7d34fbfdR168"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="122" id="diff-16e9299583535169d893119b7d34fbfdL122"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="169" id="diff-16e9299583535169d893119b7d34fbfdR169"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="123" id="diff-16e9299583535169d893119b7d34fbfdL123"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="170" id="diff-16e9299583535169d893119b7d34fbfdR170"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="124" id="diff-16e9299583535169d893119b7d34fbfdL124"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="171" id="diff-16e9299583535169d893119b7d34fbfdR171"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="133" id="diff-16e9299583535169d893119b7d34fbfdL133"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="180" id="diff-16e9299583535169d893119b7d34fbfdR180"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="134" id="diff-16e9299583535169d893119b7d34fbfdL134"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="181" id="diff-16e9299583535169d893119b7d34fbfdR181"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="135" id="diff-16e9299583535169d893119b7d34fbfdL135"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="182" id="diff-16e9299583535169d893119b7d34fbfdR182"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="136" id="diff-16e9299583535169d893119b7d34fbfdL136"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="137" id="diff-16e9299583535169d893119b7d34fbfdL137"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="138" id="diff-16e9299583535169d893119b7d34fbfdL138"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="139" id="diff-16e9299583535169d893119b7d34fbfdL139"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="140" id="diff-16e9299583535169d893119b7d34fbfdL140"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="141" id="diff-16e9299583535169d893119b7d34fbfdL141"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="183" id="diff-16e9299583535169d893119b7d34fbfdR183"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-3">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-bdad7551b66db1e7aae57adb99696e11" data-file-deleted="false" data-file-type=".osm" data-path="src/test/resources/org/openstreetmap/atlas/geography/atlas/items/complex/restriction/atlasBrokenTurnRestrictionRoute.josm.osm" data-short-path="bdad755">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="src/test/resources/org/openstreetmap/atlas/geography/atlas/items/complex/restriction/atlasBrokenTurnRestrictionRoute.josm.osm">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/matthieun/atlas/blob/a88d52c9851af9c780a6e5b71f43fbf33f231853/src/test/resources/org/openstreetmap/atlas/geography/atlas/items/complex/restriction/atlasBrokenTurnRestrictionRoute.josm.osm" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="31 additions &amp; 0 deletions" class="diffstat tooltipped tooltipped-e">31 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span></span>
+<a class="link-gray-dark" href="#diff-bdad7551b66db1e7aae57adb99696e11" title="src/test/resources/org/openstreetmap/atlas/geography/atlas/items/complex/restriction/atlasBrokenTurnRestrictionRoute.josm.osm">.../atlas/geography/atlas/items/complex/restriction/atlasBrokenTurnRestrictionRoute.josm.osm</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-bdad7551b66db1e7aae57adb99696e11" data-tab-size="8">
+<tr data-position="0">
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-bdad7551b66db1e7aae57adb99696e11HL0"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-bdad7551b66db1e7aae57adb99696e11HR1"></td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -0,0 +1,31 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="1" id="diff-bdad7551b66db1e7aae57adb99696e11R1"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span>=<span class="pl-s"><span class="pl-pds">'</span>1.0<span class="pl-pds">'</span></span><span class="pl-e"> encoding</span>=<span class="pl-s"><span class="pl-pds">'</span>UTF-8<span class="pl-pds">'</span></span>?&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="2" id="diff-bdad7551b66db1e7aae57adb99696e11R2"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">&lt;<span class="pl-ent">osm</span> <span class="pl-e">version</span>=<span class="pl-s"><span class="pl-pds">'</span>0.6<span class="pl-pds">'</span></span> <span class="pl-e">generator</span>=<span class="pl-s"><span class="pl-pds">'</span>JOSM<span class="pl-pds">'</span></span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="3" id="diff-bdad7551b66db1e7aae57adb99696e11R3"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  &lt;<span class="pl-ent">node</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">'</span>-53448<span class="pl-pds">'</span></span> <span class="pl-e">action</span>=<span class="pl-s"><span class="pl-pds">'</span>modify<span class="pl-pds">'</span></span> <span class="pl-e">visible</span>=<span class="pl-s"><span class="pl-pds">'</span>true<span class="pl-pds">'</span></span> <span class="pl-e">lat</span>=<span class="pl-s"><span class="pl-pds">'</span>34.62756192874<span class="pl-pds">'</span></span> <span class="pl-e">lon</span>=<span class="pl-s"><span class="pl-pds">'</span>18.16333885978<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="4" id="diff-bdad7551b66db1e7aae57adb99696e11R4"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  &lt;<span class="pl-ent">node</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">'</span>-53450<span class="pl-pds">'</span></span> <span class="pl-e">action</span>=<span class="pl-s"><span class="pl-pds">'</span>modify<span class="pl-pds">'</span></span> <span class="pl-e">visible</span>=<span class="pl-s"><span class="pl-pds">'</span>true<span class="pl-pds">'</span></span> <span class="pl-e">lat</span>=<span class="pl-s"><span class="pl-pds">'</span>34.62784735183<span class="pl-pds">'</span></span> <span class="pl-e">lon</span>=<span class="pl-s"><span class="pl-pds">'</span>18.16365936012<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="5" id="diff-bdad7551b66db1e7aae57adb99696e11R5"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  &lt;<span class="pl-ent">node</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">'</span>-53452<span class="pl-pds">'</span></span> <span class="pl-e">action</span>=<span class="pl-s"><span class="pl-pds">'</span>modify<span class="pl-pds">'</span></span> <span class="pl-e">visible</span>=<span class="pl-s"><span class="pl-pds">'</span>true<span class="pl-pds">'</span></span> <span class="pl-e">lat</span>=<span class="pl-s"><span class="pl-pds">'</span>34.62764199447<span class="pl-pds">'</span></span> <span class="pl-e">lon</span>=<span class="pl-s"><span class="pl-pds">'</span>18.16434643406<span class="pl-pds">'</span></span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="6" id="diff-bdad7551b66db1e7aae57adb99696e11R6"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">tag</span> <span class="pl-e">k</span>=<span class="pl-s"><span class="pl-pds">'</span>highway<span class="pl-pds">'</span></span> <span class="pl-e">v</span>=<span class="pl-s"><span class="pl-pds">'</span>traffic_signals<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="7" id="diff-bdad7551b66db1e7aae57adb99696e11R7"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  &lt;/<span class="pl-ent">node</span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="8" id="diff-bdad7551b66db1e7aae57adb99696e11R8"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  &lt;<span class="pl-ent">node</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">'</span>-53454<span class="pl-pds">'</span></span> <span class="pl-e">action</span>=<span class="pl-s"><span class="pl-pds">'</span>modify<span class="pl-pds">'</span></span> <span class="pl-e">visible</span>=<span class="pl-s"><span class="pl-pds">'</span>true<span class="pl-pds">'</span></span> <span class="pl-e">lat</span>=<span class="pl-s"><span class="pl-pds">'</span>34.62837215166<span class="pl-pds">'</span></span> <span class="pl-e">lon</span>=<span class="pl-s"><span class="pl-pds">'</span>18.16493183339<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="9" id="diff-bdad7551b66db1e7aae57adb99696e11R9"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  &lt;<span class="pl-ent">node</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">'</span>-53456<span class="pl-pds">'</span></span> <span class="pl-e">action</span>=<span class="pl-s"><span class="pl-pds">'</span>modify<span class="pl-pds">'</span></span> <span class="pl-e">visible</span>=<span class="pl-s"><span class="pl-pds">'</span>true<span class="pl-pds">'</span></span> <span class="pl-e">lat</span>=<span class="pl-s"><span class="pl-pds">'</span>34.62822003611<span class="pl-pds">'</span></span> <span class="pl-e">lon</span>=<span class="pl-s"><span class="pl-pds">'</span>18.16460524219<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="10" id="diff-bdad7551b66db1e7aae57adb99696e11R10"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  &lt;<span class="pl-ent">way</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">'</span>-53458<span class="pl-pds">'</span></span> <span class="pl-e">action</span>=<span class="pl-s"><span class="pl-pds">'</span>modify<span class="pl-pds">'</span></span> <span class="pl-e">visible</span>=<span class="pl-s"><span class="pl-pds">'</span>true<span class="pl-pds">'</span></span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="11" id="diff-bdad7551b66db1e7aae57adb99696e11R11"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">nd</span> <span class="pl-e">ref</span>=<span class="pl-s"><span class="pl-pds">'</span>-53448<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="12" id="diff-bdad7551b66db1e7aae57adb99696e11R12"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">nd</span> <span class="pl-e">ref</span>=<span class="pl-s"><span class="pl-pds">'</span>-53450<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="13" id="diff-bdad7551b66db1e7aae57adb99696e11R13"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">nd</span> <span class="pl-e">ref</span>=<span class="pl-s"><span class="pl-pds">'</span>-53452<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="14" id="diff-bdad7551b66db1e7aae57adb99696e11R14"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">tag</span> <span class="pl-e">k</span>=<span class="pl-s"><span class="pl-pds">'</span>highway<span class="pl-pds">'</span></span> <span class="pl-e">v</span>=<span class="pl-s"><span class="pl-pds">'</span>primary<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="15" id="diff-bdad7551b66db1e7aae57adb99696e11R15"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">tag</span> <span class="pl-e">k</span>=<span class="pl-s"><span class="pl-pds">'</span>oneway<span class="pl-pds">'</span></span> <span class="pl-e">v</span>=<span class="pl-s"><span class="pl-pds">'</span>yes<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="16" id="diff-bdad7551b66db1e7aae57adb99696e11R16"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  &lt;/<span class="pl-ent">way</span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="17" id="diff-bdad7551b66db1e7aae57adb99696e11R17"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  &lt;<span class="pl-ent">way</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">'</span>-53460<span class="pl-pds">'</span></span> <span class="pl-e">action</span>=<span class="pl-s"><span class="pl-pds">'</span>modify<span class="pl-pds">'</span></span> <span class="pl-e">visible</span>=<span class="pl-s"><span class="pl-pds">'</span>true<span class="pl-pds">'</span></span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="18" id="diff-bdad7551b66db1e7aae57adb99696e11R18"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">nd</span> <span class="pl-e">ref</span>=<span class="pl-s"><span class="pl-pds">'</span>-53452<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="19" id="diff-bdad7551b66db1e7aae57adb99696e11R19"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">nd</span> <span class="pl-e">ref</span>=<span class="pl-s"><span class="pl-pds">'</span>-53456<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="20" id="diff-bdad7551b66db1e7aae57adb99696e11R20"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">nd</span> <span class="pl-e">ref</span>=<span class="pl-s"><span class="pl-pds">'</span>-53454<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="21" id="diff-bdad7551b66db1e7aae57adb99696e11R21"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">tag</span> <span class="pl-e">k</span>=<span class="pl-s"><span class="pl-pds">'</span>highway<span class="pl-pds">'</span></span> <span class="pl-e">v</span>=<span class="pl-s"><span class="pl-pds">'</span>secondary<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-bdad7551b66db1e7aae57adb99696e11R22"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">tag</span> <span class="pl-e">k</span>=<span class="pl-s"><span class="pl-pds">'</span>oneway<span class="pl-pds">'</span></span> <span class="pl-e">v</span>=<span class="pl-s"><span class="pl-pds">'</span>yes<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="23" id="diff-bdad7551b66db1e7aae57adb99696e11R23"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  &lt;/<span class="pl-ent">way</span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-bdad7551b66db1e7aae57adb99696e11R24"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  &lt;<span class="pl-ent">relation</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">'</span>-53462<span class="pl-pds">'</span></span> <span class="pl-e">action</span>=<span class="pl-s"><span class="pl-pds">'</span>modify<span class="pl-pds">'</span></span> <span class="pl-e">visible</span>=<span class="pl-s"><span class="pl-pds">'</span>true<span class="pl-pds">'</span></span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="25" id="diff-bdad7551b66db1e7aae57adb99696e11R25"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">member</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">'</span>way<span class="pl-pds">'</span></span> <span class="pl-e">ref</span>=<span class="pl-s"><span class="pl-pds">'</span>-53460<span class="pl-pds">'</span></span> <span class="pl-e">role</span>=<span class="pl-s"><span class="pl-pds">'</span>via<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="26" id="diff-bdad7551b66db1e7aae57adb99696e11R26"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">member</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">'</span>way<span class="pl-pds">'</span></span> <span class="pl-e">ref</span>=<span class="pl-s"><span class="pl-pds">'</span>-53460<span class="pl-pds">'</span></span> <span class="pl-e">role</span>=<span class="pl-s"><span class="pl-pds">'</span>to<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="27" id="diff-bdad7551b66db1e7aae57adb99696e11R27"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">member</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">'</span>way<span class="pl-pds">'</span></span> <span class="pl-e">ref</span>=<span class="pl-s"><span class="pl-pds">'</span>-53458<span class="pl-pds">'</span></span> <span class="pl-e">role</span>=<span class="pl-s"><span class="pl-pds">'</span>from<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="28" id="diff-bdad7551b66db1e7aae57adb99696e11R28"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">tag</span> <span class="pl-e">k</span>=<span class="pl-s"><span class="pl-pds">'</span>restriction<span class="pl-pds">'</span></span> <span class="pl-e">v</span>=<span class="pl-s"><span class="pl-pds">'</span>no_left_turn<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="29" id="diff-bdad7551b66db1e7aae57adb99696e11R29"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    &lt;<span class="pl-ent">tag</span> <span class="pl-e">k</span>=<span class="pl-s"><span class="pl-pds">'</span>type<span class="pl-pds">'</span></span> <span class="pl-e">v</span>=<span class="pl-s"><span class="pl-pds">'</span>restriction<span class="pl-pds">'</span></span> /&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="30" id="diff-bdad7551b66db1e7aae57adb99696e11R30"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  &lt;/<span class="pl-ent">relation</span>&gt;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="31" id="diff-bdad7551b66db1e7aae57adb99696e11R31"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">&lt;/<span class="pl-ent">osm</span>&gt;</span></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-bdad7551b66db1e7aae57adb99696e11HL0"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-bdad7551b66db1e7aae57adb99696e11HR1"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="1" id="diff-bdad7551b66db1e7aae57adb99696e11R1"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="2" id="diff-bdad7551b66db1e7aae57adb99696e11R2"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="3" id="diff-bdad7551b66db1e7aae57adb99696e11R3"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="4" id="diff-bdad7551b66db1e7aae57adb99696e11R4"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="5" id="diff-bdad7551b66db1e7aae57adb99696e11R5"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="6" id="diff-bdad7551b66db1e7aae57adb99696e11R6"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="7" id="diff-bdad7551b66db1e7aae57adb99696e11R7"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="8" id="diff-bdad7551b66db1e7aae57adb99696e11R8"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="9" id="diff-bdad7551b66db1e7aae57adb99696e11R9"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="10" id="diff-bdad7551b66db1e7aae57adb99696e11R10"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="11" id="diff-bdad7551b66db1e7aae57adb99696e11R11"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="12" id="diff-bdad7551b66db1e7aae57adb99696e11R12"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="13" id="diff-bdad7551b66db1e7aae57adb99696e11R13"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="14" id="diff-bdad7551b66db1e7aae57adb99696e11R14"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="15" id="diff-bdad7551b66db1e7aae57adb99696e11R15"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="16" id="diff-bdad7551b66db1e7aae57adb99696e11R16"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="17" id="diff-bdad7551b66db1e7aae57adb99696e11R17"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="18" id="diff-bdad7551b66db1e7aae57adb99696e11R18"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="19" id="diff-bdad7551b66db1e7aae57adb99696e11R19"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="20" id="diff-bdad7551b66db1e7aae57adb99696e11R20"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="21" id="diff-bdad7551b66db1e7aae57adb99696e11R21"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-bdad7551b66db1e7aae57adb99696e11R22"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="23" id="diff-bdad7551b66db1e7aae57adb99696e11R23"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-bdad7551b66db1e7aae57adb99696e11R24"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="25" id="diff-bdad7551b66db1e7aae57adb99696e11R25"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="26" id="diff-bdad7551b66db1e7aae57adb99696e11R26"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="27" id="diff-bdad7551b66db1e7aae57adb99696e11R27"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="28" id="diff-bdad7551b66db1e7aae57adb99696e11R28"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="29" id="diff-bdad7551b66db1e7aae57adb99696e11R29"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="30" id="diff-bdad7551b66db1e7aae57adb99696e11R30"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="31" id="diff-bdad7551b66db1e7aae57adb99696e11R31"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

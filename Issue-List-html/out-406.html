@@ -1,0 +1,2390 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-bfc906503a0a388b56552c47f3f75fd8" data-file-deleted="false" data-file-type=".java" data-path="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/DetectionPipeline.java" data-short-path="bfc9065">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/DetectionPipeline.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/jihaozh/pinot/blob/f1531964aeca302b1ef4695ae349faeecef4287e/thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/DetectionPipeline.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-bfc906503a0a388b56552c47f3f75fd8" title="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/DetectionPipeline.java">...e/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/DetectionPipeline.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-bfc906503a0a388b56552c47f3f75fd8" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-68" data-right-range="1-68" data-url="/apache/incubator-pinot/blob_excerpt/92194dc613ea030f53ba4a93c49f3b800d51abcf?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=69&amp;left_hunk_size=7&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2FDetectionPipeline.java&amp;right=69&amp;right_hunk_size=7" href="#diff-bfc906503a0a388b56552c47f3f75fd8" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -69,7 +69,7 @@ protected DetectionPipeline(DataProvider provider, DetectionConfigDTO config, lo</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="69" id="diff-bfc906503a0a388b56552c47f3f75fd8L69"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="69" id="diff-bfc906503a0a388b56552c47f3f75fd8R69"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">try</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="70" id="diff-bfc906503a0a388b56552c47f3f75fd8L70"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="70" id="diff-bfc906503a0a388b56552c47f3f75fd8R70"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>initComponents();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="71" id="diff-bfc906503a0a388b56552c47f3f75fd8L71"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="71" id="diff-bfc906503a0a388b56552c47f3f75fd8R71"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    } <span class="pl-k">catch</span> (<span class="pl-smi">Exception</span> e) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="72" id="diff-bfc906503a0a388b56552c47f3f75fd8L72"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">IllegalArgumentException</span>(<span class="pl-s"><span class="pl-pds">"</span>Initialize components failed. Please check rule parameters.<span class="pl-pds x x-first">"</span></span><span class="x x-last">, e</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="72" id="diff-bfc906503a0a388b56552c47f3f75fd8R72"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">IllegalArgumentException</span>(<span class="pl-s"><span class="pl-pds">"</span>Initialize components failed. Please check rule parameters.<span class="x x-first"> </span><span class="pl-pds x">"</span></span><span class="x"> </span><span class="pl-k x">+</span><span class="x"> e</span><span class="pl-k x">.</span><span class="x x-last">getMessage()</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-bfc906503a0a388b56552c47f3f75fd8L73"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-bfc906503a0a388b56552c47f3f75fd8R73"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-bfc906503a0a388b56552c47f3f75fd8L74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-bfc906503a0a388b56552c47f3f75fd8R74"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-bfc906503a0a388b56552c47f3f75fd8L75"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-bfc906503a0a388b56552c47f3f75fd8R75"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="76-267" data-right-range="76-267" data-url="/apache/incubator-pinot/blob_excerpt/92194dc613ea030f53ba4a93c49f3b800d51abcf?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=75&amp;last_right=75&amp;left=268&amp;left_hunk_size=&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2FDetectionPipeline.java&amp;right=268&amp;right_hunk_size=" href="#diff-bfc906503a0a388b56552c47f3f75fd8" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="69" id="diff-bfc906503a0a388b56552c47f3f75fd8L69"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="69" id="diff-bfc906503a0a388b56552c47f3f75fd8R69"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="70" id="diff-bfc906503a0a388b56552c47f3f75fd8L70"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="70" id="diff-bfc906503a0a388b56552c47f3f75fd8R70"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="71" id="diff-bfc906503a0a388b56552c47f3f75fd8L71"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="71" id="diff-bfc906503a0a388b56552c47f3f75fd8R71"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="72" id="diff-bfc906503a0a388b56552c47f3f75fd8L72"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="72" id="diff-bfc906503a0a388b56552c47f3f75fd8R72"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-bfc906503a0a388b56552c47f3f75fd8L73"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-bfc906503a0a388b56552c47f3f75fd8R73"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-bfc906503a0a388b56552c47f3f75fd8L74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-bfc906503a0a388b56552c47f3f75fd8R74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-bfc906503a0a388b56552c47f3f75fd8L75"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-bfc906503a0a388b56552c47f3f75fd8R75"></td>
+<div class="file js-file js-details-container Details Details--on open has-inline-notes show-inline-notes " id="diff-1">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-89f6c1853032c390777ed086acdf9efe" data-file-deleted="false" data-file-type=".java" data-path="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/DetectionResource.java" data-short-path="89f6c18">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/DetectionResource.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/jihaozh/pinot/blob/f1531964aeca302b1ef4695ae349faeecef4287e/thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/DetectionResource.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-89f6c1853032c390777ed086acdf9efe" title="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/DetectionResource.java">...e/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/DetectionResource.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-89f6c1853032c390777ed086acdf9efe" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-141" data-right-range="1-141" data-url="/apache/incubator-pinot/blob_excerpt/e3d7de724c76bd10938d6307a823c1ac9424eeab?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=142&amp;left_hunk_size=7&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2FDetectionResource.java&amp;right=142&amp;right_hunk_size=7" href="#diff-89f6c1853032c390777ed086acdf9efe" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -142,7 +142,7 @@ public Response getSubscriptionGroups(@ApiParam("the detection config id") @Path</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-89f6c1853032c390777ed086acdf9efeL142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-89f6c1853032c390777ed086acdf9efeR142"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">List&lt;<span class="pl-smi">DetectionAlertConfigDTO</span>&gt;</span> detectionAlertConfigDTOs <span class="pl-k">=</span> <span class="pl-c1">this</span><span class="pl-k">.</span>detectionAlertConfigDAO<span class="pl-k">.</span>findAll();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="143" id="diff-89f6c1853032c390777ed086acdf9efeL143"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="143" id="diff-89f6c1853032c390777ed086acdf9efeR143"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">Set&lt;<span class="pl-smi">DetectionAlertConfigDTO</span>&gt;</span> subscriptionGroupAlertDTOs <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">HashSet&lt;&gt;</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="144" id="diff-89f6c1853032c390777ed086acdf9efeL144"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="144" id="diff-89f6c1853032c390777ed086acdf9efeR144"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">for</span> (<span class="pl-smi">DetectionAlertConfigDTO</span> alertConfigDTO <span class="pl-k">:</span> detectionAlertConfigDTOs){</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="145" id="diff-89f6c1853032c390777ed086acdf9efeL145"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (alertConfigDTO<span class="pl-k">.</span>getVectorClocks()<span class="pl-k">.</span>containsKey(id)){</span></td>
+</tr>
+<tr class="inline-comments js-inline-comments-container">
+<td class="line-comments js-line-comments js-quote-selection-container" colspan="4" data-quote-markdown=".js-comment-body">
+<div class="review-thread comment-holder js-line-comments js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+<div class="review-comment js-minimizable-comment-group js-targetable-comment" data-gid="MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NTc1NjEwMQ==" data-url="/_render_node/MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NTc1NjEwMQ==/comments/review_comment" id="r255756101">
+<div class="minimized-comment d-none">
+<details class="Details-element details-reset " data-body-version="0d937aff955cc88d0bf4f7403001d1a3">
+<summary class="text-gray f6">
+<div class="d-flex flex-justify-between flex-items-center">
+<h3 class="review-comment-contents bg-white f5 text-normal text-italic" style="margin-left:38px">
+<div class="discussion-item-icon discussion-item-icon-gray text-gray">
+<svg aria-hidden="true" class="octicon octicon-fold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z" fill-rule="evenodd"></path></svg>
+</div>
+<div class="discussion-item-copy d-inline-block">
+                This comment has been minimized.
+
+          </div>
+</h3>
+<div class="text-gray text-small">
+<a class="link-gray" href="/login?return_to=https%3A%2F%2Fgithub.com%2Fapache%2Fincubator-pinot%2Fpull%2F3816%2Ffiles" rel="nofollow">Sign in to view</a>
+</div>
+</div>
+</summary>
+</details>
+</div>
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment " data-body-version="0d937aff955cc88d0bf4f7403001d1a3" data-thread-side="left">
+<div class="edit-comment-hide">
+<div class="timeline-comment-actions">
+<details class="details-overlay details-reset position-relative d-inline-block js-dropdown-details" id="details-r255756101">
+<summary aria-haspopup="true" aria-label="Show more options" class="btn-link timeline-comment-action">
+<svg aria-label="Show more options" class="octicon octicon-kebab-horizontal" height="16" role="img" version="1.1" viewbox="0 0 13 16" width="13"><path d="M1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" fill-rule="evenodd"></path></svg>
+</summary>
+<div class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+<clipboard-copy aria-label="Copy link" class="dropdown-item btn-link tooltipped tooltipped-nw" data-toggle-for="details-r255756101" for="r255756101-permalink" role="menuitem">
+              Copy link
+            </clipboard-copy>
+<button class="dropdown-item btn-link d-none js-comment-quote-reply" data-toggle-for="details-r255756101" type="button">
+              Quote reply
+            </button>
+</div>
+</details>
+</div>
+<span class="float-left mt-1">
+<a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=4448437" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/akshayrai"><img alt="@akshayrai" class="avatar" height="28" src="https://avatars2.githubusercontent.com/u/4448437?s=60&amp;v=4" width="28"/></a>
+</span>
+<div class="review-comment-contents js-suggested-changes-contents" data-thread-side="left">
+<h4 class="f5 text-normal d-inline">
+<strong>
+<a class="author link-gray-dark" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=4448437" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/akshayrai">akshayrai</a>
+</strong>
+<span class="text-gray">
+<a class="js-timestamp timestamp d-inline-block" href="#r255756101" id="r255756101-permalink">
+<relative-time datetime="2019-02-12T01:00:35Z">Feb 12, 2019</relative-time>
+</a>
+</span>
+</h4>
+<span aria-label="This user has previously committed to the incubator-pinot repository." class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s">
+      Contributor
+    </span>
+<task-lists disabled="" sortable="">
+<div class="comment-body markdown-body js-comment-body">
+<p>Why check both? Aren't the vector clocks and the detectionConfigIds list always in sync?</p>
+</div>
+</task-lists>
+<div class="comment-reactions js-reactions-container ">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-comment js-minimizable-comment-group js-targetable-comment" data-gid="MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NjA4MTA5NA==" data-url="/_render_node/MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NjA4MTA5NA==/comments/review_comment" id="r256081094">
+<div class="minimized-comment d-none">
+<details class="Details-element details-reset " data-body-version="c242b31890620d48af4a2170bdfc2d8c">
+<summary class="text-gray f6">
+<div class="d-flex flex-justify-between flex-items-center">
+<h3 class="review-comment-contents bg-white f5 text-normal text-italic" style="margin-left:38px">
+<div class="discussion-item-icon discussion-item-icon-gray text-gray">
+<svg aria-hidden="true" class="octicon octicon-fold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z" fill-rule="evenodd"></path></svg>
+</div>
+<div class="discussion-item-copy d-inline-block">
+                This comment has been minimized.
+
+          </div>
+</h3>
+<div class="text-gray text-small">
+<a class="link-gray" href="/login?return_to=https%3A%2F%2Fgithub.com%2Fapache%2Fincubator-pinot%2Fpull%2F3816%2Ffiles" rel="nofollow">Sign in to view</a>
+</div>
+</div>
+</summary>
+</details>
+</div>
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment " data-body-version="c242b31890620d48af4a2170bdfc2d8c" data-thread-side="left">
+<div class="edit-comment-hide">
+<div class="timeline-comment-actions">
+<details class="details-overlay details-reset position-relative d-inline-block js-dropdown-details" id="details-r256081094">
+<summary aria-haspopup="true" aria-label="Show more options" class="btn-link timeline-comment-action">
+<svg aria-label="Show more options" class="octicon octicon-kebab-horizontal" height="16" role="img" version="1.1" viewbox="0 0 13 16" width="13"><path d="M1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" fill-rule="evenodd"></path></svg>
+</summary>
+<div class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+<clipboard-copy aria-label="Copy link" class="dropdown-item btn-link tooltipped tooltipped-nw" data-toggle-for="details-r256081094" for="r256081094-permalink" role="menuitem">
+              Copy link
+            </clipboard-copy>
+<button class="dropdown-item btn-link d-none js-comment-quote-reply" data-toggle-for="details-r256081094" type="button">
+              Quote reply
+            </button>
+</div>
+</details>
+</div>
+<span class="float-left mt-1">
+<a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=36778437" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jihaozh"><img alt="@jihaozh" class="avatar" height="28" src="https://avatars2.githubusercontent.com/u/36778437?s=60&amp;v=4" width="28"/></a>
+</span>
+<div class="review-comment-contents js-suggested-changes-contents" data-thread-side="left">
+<h4 class="f5 text-normal d-inline">
+<strong>
+<a class="author link-gray-dark" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=36778437" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jihaozh">jihaozh</a>
+</strong>
+<span class="text-gray">
+<a class="js-timestamp timestamp d-inline-block" href="#r256081094" id="r256081094-permalink">
+<relative-time datetime="2019-02-12T18:13:36Z">Feb 12, 2019</relative-time>
+</a>
+<span class="d-inline-block text-gray-light">•</span>
+<details class="details-overlay details-reset d-inline-block dropdown">
+<summary class="btn-link no-underline text-gray js-notice">
+<div class="position-relative">
+<span>
+            edited
+        </span>
+<svg aria-hidden="true" class="octicon octicon-triangle-down v-align-middle" height="11" version="1.1" viewbox="0 0 12 16" width="8"><path d="M0 5l6 6 6-6H0z" fill-rule="evenodd"></path></svg>
+</div>
+</summary>
+<details-menu class="anim-scale-in dropdown-menu dropdown-menu-se py-0" preload="" src="/_render_node/MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NjA4MTA5NA==/comments/comment_edit_history_log" style="width:352px">
+<include-fragment aria-label="Loading" class="octocat-spinner my-3"></include-fragment>
+</details-menu>
+</details>
+</span>
+</h4>
+<span aria-label="This user is the author of this pull request." class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s">
+  Author
+</span>
+<span aria-label="This user is a member of the The Apache Software Foundation organization." class="timeline-comment-label text-bold tooltipped tooltipped-multiline tooltipped-s">
+      Member
+    </span>
+<task-lists disabled="" sortable="">
+<div class="comment-body markdown-body js-comment-body">
+<p>Not really. I noticed a bug caused by the id missing in the vector clocks. But the vector clock will be generated automatically from the detection config id list when alerter runs.</p>
+</div>
+</task-lists>
+<div class="comment-reactions js-reactions-container ">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="145" id="diff-89f6c1853032c390777ed086acdf9efeR145"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (alertConfigDTO<span class="pl-k">.</span>getVectorClocks()<span class="pl-k">.</span>containsKey(id)<span class="x x-first"> </span><span class="pl-k x">||</span><span class="x"> </span><span class="pl-smi x">ConfigUtils</span><span class="pl-k x">.</span><span class="x">getLongs(alertConfigDTO</span><span class="pl-k x">.</span><span class="x">getProperties()</span><span class="pl-k x">.</span><span class="x">get(</span><span class="pl-s"><span class="pl-pds x">"</span><span class="x">detectionConfigIds</span><span class="pl-pds x">"</span></span><span class="x">))</span><span class="pl-k x">.</span><span class="x x-last">contains(id)</span>){</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="146" id="diff-89f6c1853032c390777ed086acdf9efeL146"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="146" id="diff-89f6c1853032c390777ed086acdf9efeR146"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        subscriptionGroupAlertDTOs<span class="pl-k">.</span>add(alertConfigDTO);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="147" id="diff-89f6c1853032c390777ed086acdf9efeL147"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="147" id="diff-89f6c1853032c390777ed086acdf9efeR147"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">      }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="148" id="diff-89f6c1853032c390777ed086acdf9efeL148"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="148" id="diff-89f6c1853032c390777ed086acdf9efeR148"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="149-510" data-right-range="149-510" data-url="/apache/incubator-pinot/blob_excerpt/e3d7de724c76bd10938d6307a823c1ac9424eeab?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=148&amp;last_right=148&amp;left=511&amp;left_hunk_size=&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2FDetectionResource.java&amp;right=511&amp;right_hunk_size=" href="#diff-89f6c1853032c390777ed086acdf9efe" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-89f6c1853032c390777ed086acdf9efeL142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="142" id="diff-89f6c1853032c390777ed086acdf9efeR142"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="143" id="diff-89f6c1853032c390777ed086acdf9efeL143"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="143" id="diff-89f6c1853032c390777ed086acdf9efeR143"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="144" id="diff-89f6c1853032c390777ed086acdf9efeL144"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="144" id="diff-89f6c1853032c390777ed086acdf9efeR144"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="145" id="diff-89f6c1853032c390777ed086acdf9efeL145"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="145" id="diff-89f6c1853032c390777ed086acdf9efeR145"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="146" id="diff-89f6c1853032c390777ed086acdf9efeL146"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="146" id="diff-89f6c1853032c390777ed086acdf9efeR146"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="147" id="diff-89f6c1853032c390777ed086acdf9efeL147"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="147" id="diff-89f6c1853032c390777ed086acdf9efeR147"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="148" id="diff-89f6c1853032c390777ed086acdf9efeL148"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="148" id="diff-89f6c1853032c390777ed086acdf9efeR148"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-2">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36" data-file-deleted="false" data-file-type=".java" data-path="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/ConfigValidator.java" data-short-path="9f7f7ab">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/ConfigValidator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/jihaozh/pinot/blob/f1531964aeca302b1ef4695ae349faeecef4287e/thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/ConfigValidator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="17 additions &amp; 36 deletions" class="diffstat tooltipped tooltipped-e">53 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-9f7f7ab4d8e52c3dc9cbc43474b39a36" title="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/ConfigValidator.java">...e-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/ConfigValidator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-19" data-right-range="1-19" data-url="/apache/incubator-pinot/blob_excerpt/007353a988615600516f4f9abaa1c05ef672b7e4?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=20&amp;left_hunk_size=45&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2Fvalidators%2FConfigValidator.java&amp;right=20&amp;right_hunk_size=26" href="#diff-9f7f7ab4d8e52c3dc9cbc43474b39a36" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -20,45 +20,26 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R20"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">package</span> <span class="pl-smi">org.apache.pinot.thirdeye.detection.validators</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R22"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.xml.bind.ValidationException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="23" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L23"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.datalayer.bao.AlertConfigManager</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="24" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L24"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.datalayer.bao.ApplicationManager</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="25" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L25"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.datasource.DAORegistry</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="26" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L26"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.Map</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="27" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L27"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.commons.lang.StringUtils</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="28" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L28"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.yaml.snakeyaml.Yaml</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="23" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R23"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.datalayer.dto.AbstractDTO</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R24"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R25"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="31" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L31"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">abstract</span> <span class="pl-k">class</span> <span class="pl-en">ConfigValidator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="32" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L32"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="33" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L33"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">protected</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">Yaml</span> <span class="pl-c1">YAML</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Yaml</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="34" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L34"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="35" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L35"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">AlertConfigManager</span> alertDAO;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="36" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L36"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">ApplicationManager</span> applicationDAO;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="37" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L37"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="38" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L38"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-en">ConfigValidator</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="39" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L39"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>alertDAO <span class="pl-k">=</span> <span class="pl-smi">DAORegistry</span><span class="pl-k">.</span>getInstance()<span class="pl-k">.</span>getAlertConfigDAO();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="40" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L40"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>applicationDAO <span class="pl-k">=</span> <span class="pl-smi">DAORegistry</span><span class="pl-k">.</span>getInstance()<span class="pl-k">.</span>getApplicationDAO();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="41" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L41"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="42" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L42"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="26" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R26"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="27" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R27"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> * Validate a config</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="28" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R28"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> * <span class="pl-k">@param</span> &lt;T&gt; the type of the config</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="29" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R29"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="30" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R30"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">interface</span> <span class="pl-en">ConfigValidator</span>&lt;T <span class="pl-k">extends</span> <span class="pl-e">AbstractDTO</span>&gt; {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R31"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="44" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L44"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">   * Perform basic validations on a yaml file like verifying if</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="45" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L45"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">   * the yaml exists and is parsable</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="32" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R32"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">   * Validate the configuration. Thrown a validation exception if validation failed.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="33" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R33"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">   * <span class="pl-k">@param</span> config the config</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="34" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R34"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">   * <span class="pl-k">@throws</span> ValidationException the validation exception with error message</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="47" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L47"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">@SuppressWarnings</span>(<span class="pl-s"><span class="pl-pds">"</span>unchecked<span class="pl-pds">"</span></span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="48" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L48"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">boolean</span> <span class="pl-en">validateYAMLConfig</span>(<span class="pl-smi">String</span> <span class="pl-v">yamlConfig</span>) <span class="pl-k">throws</span> <span class="pl-smi">ValidationException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="49" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L49"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> Check if YAML is empty or not</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="50" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L50"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-smi">StringUtils</span><span class="pl-k">.</span>isEmpty(yamlConfig)) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="51" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L51"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">ValidationException</span>(<span class="pl-s"><span class="pl-pds">"</span>The Yaml Payload in the request is empty.<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="52" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L52"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="53" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L53"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="54" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L54"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> Check if the YAML is parsable</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="55" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L55"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">try</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="56" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L56"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">Map&lt;<span class="pl-smi">String</span>, <span class="pl-smi">Object</span>&gt;</span> yamlConfigMap <span class="pl-k">=</span> (<span class="pl-k">Map&lt;<span class="pl-smi">String</span>, <span class="pl-smi">Object</span>&gt;</span>) <span class="pl-c1">YAML</span><span class="pl-k">.</span>load(yamlConfig);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="57" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L57"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    } <span class="pl-k">catch</span> (<span class="pl-smi">Exception</span> e) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="58" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L58"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">ValidationException</span>(<span class="pl-s"><span class="pl-pds">"</span>Error parsing the Yaml payload. Check for syntax issues.<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="59" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L59"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="60" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L60"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="61" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L61"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">true</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="62" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L62"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="36" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R36"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">void</span> <span class="pl-en">validateConfig</span>(<span class="pl-smi">T</span> <span class="pl-v">config</span>) <span class="pl-k">throws</span> <span class="pl-smi">ValidationException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="63" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L63"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R37"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R38"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R39"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">   * Validate the configuration. Thrown a validation exception if validation failed.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="40" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R40"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">   * <span class="pl-k">@param</span> updatedConfig the new config</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="41" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R41"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">   * <span class="pl-k">@param</span> oldConfig the old config</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="42" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R42"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">   * <span class="pl-k">@throws</span> ValidationException the validation exception with error message</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="43" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R43"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="44" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R44"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">void</span> <span class="pl-en">validateUpdatedConfig</span>(<span class="pl-smi">T</span> <span class="pl-v">updatedConfig</span>, <span class="pl-smi">T</span> <span class="pl-v">oldConfig</span>) <span class="pl-k">throws</span> <span class="pl-smi">ValidationException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="64" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L64"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R45"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">}</span></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R22"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="23" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L23"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="24" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L24"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="25" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L25"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="26" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L26"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="27" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L27"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="28" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L28"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="23" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R25"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="31" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L31"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="32" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L32"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="33" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L33"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="34" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L34"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="35" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L35"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="36" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L36"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="37" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L37"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="38" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L38"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="39" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L39"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="40" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L40"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="41" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L41"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="42" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L42"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="26" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R26"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="27" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R27"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="28" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R28"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="29" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R29"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="30" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R31"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="44" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L44"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="45" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L45"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="32" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R32"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="33" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R33"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="34" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R35"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="47" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L47"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="48" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L48"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="49" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L49"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="50" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L50"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="51" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L51"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="52" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L52"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="53" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L53"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="54" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L54"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="55" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L55"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="56" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L56"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="57" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L57"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="58" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L58"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="59" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L59"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="60" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L60"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="61" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L61"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="62" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L62"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="36" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="63" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L63"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R37"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R38"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R39"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="40" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R40"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="41" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R41"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="42" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R42"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="43" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R43"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="44" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="64" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36L64"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-9f7f7ab4d8e52c3dc9cbc43474b39a36R45"></td>
+<div class="file js-file js-details-container Details Details--on open has-inline-notes show-inline-notes " id="diff-3">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-efcd5e2337178d28cd27ba137d3970f5" data-file-deleted="false" data-file-type=".java" data-path="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/DetectionConfigValidator.java" data-short-path="efcd5e2">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/DetectionConfigValidator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/jihaozh/pinot/blob/f1531964aeca302b1ef4695ae349faeecef4287e/thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/DetectionConfigValidator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="10 additions &amp; 20 deletions" class="diffstat tooltipped tooltipped-e">30 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-efcd5e2337178d28cd27ba137d3970f5" title="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/DetectionConfigValidator.java">...rc/main/java/org/apache/pinot/thirdeye/detection/validators/DetectionConfigValidator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-efcd5e2337178d28cd27ba137d3970f5" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-18" data-right-range="1-18" data-url="/apache/incubator-pinot/blob_excerpt/adadad7331a53decfc647f392403b086812dd342?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=19&amp;left_hunk_size=6&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2Fvalidators%2FDetectionConfigValidator.java&amp;right=19&amp;right_hunk_size=7" href="#diff-efcd5e2337178d28cd27ba137d3970f5" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -19,6 +19,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-efcd5e2337178d28cd27ba137d3970f5L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-efcd5e2337178d28cd27ba137d3970f5R19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-efcd5e2337178d28cd27ba137d3970f5L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-efcd5e2337178d28cd27ba137d3970f5R20"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">package</span> <span class="pl-smi">org.apache.pinot.thirdeye.detection.validators</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-efcd5e2337178d28cd27ba137d3970f5L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-efcd5e2337178d28cd27ba137d3970f5R21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-efcd5e2337178d28cd27ba137d3970f5R22"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.google.common.base.Preconditions</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-efcd5e2337178d28cd27ba137d3970f5L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-efcd5e2337178d28cd27ba137d3970f5R23"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.xml.bind.ValidationException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-efcd5e2337178d28cd27ba137d3970f5L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-efcd5e2337178d28cd27ba137d3970f5R24"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.datalayer.bao.DatasetConfigManager</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-efcd5e2337178d28cd27ba137d3970f5L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-efcd5e2337178d28cd27ba137d3970f5R25"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.datalayer.bao.MetricConfigManager</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="8">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="25-27" data-right-range="26-28" data-url="/apache/incubator-pinot/blob_excerpt/adadad7331a53decfc647f392403b086812dd342?diff=unified&amp;in_wiki_context=&amp;last_left=24&amp;last_right=25&amp;left=32&amp;left_hunk_size=26&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2Fvalidators%2FDetectionConfigValidator.java&amp;right=33&amp;right_hunk_size=14" href="#diff-efcd5e2337178d28cd27ba137d3970f5" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -32,26 +33,14 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-efcd5e2337178d28cd27ba137d3970f5L32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-efcd5e2337178d28cd27ba137d3970f5R33"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.detection.DataProvider</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-efcd5e2337178d28cd27ba137d3970f5L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-efcd5e2337178d28cd27ba137d3970f5R34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.detection.DefaultDataProvider</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-efcd5e2337178d28cd27ba137d3970f5L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-efcd5e2337178d28cd27ba137d3970f5R35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.detection.DetectionPipelineLoader</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="35" id="diff-efcd5e2337178d28cd27ba137d3970f5L35"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.detection.yaml.YamlDetectionAlertConfigTranslator</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="36" id="diff-efcd5e2337178d28cd27ba137d3970f5L36"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.detection.yaml.YamlDetectionTranslatorLoader</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="37" id="diff-efcd5e2337178d28cd27ba137d3970f5L37"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.yaml.snakeyaml.Yaml</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-efcd5e2337178d28cd27ba137d3970f5L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-efcd5e2337178d28cd27ba137d3970f5R36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-efcd5e2337178d28cd27ba137d3970f5L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-efcd5e2337178d28cd27ba137d3970f5R37"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="40" id="diff-efcd5e2337178d28cd27ba137d3970f5L40"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">DetectionConfigValidator</span> <span class="pl-k">extends</span> <span class="pl-e">ConfigValidator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="41" id="diff-efcd5e2337178d28cd27ba137d3970f5L41"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="42" id="diff-efcd5e2337178d28cd27ba137d3970f5L42"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-smi">DetectionConfigValidator</span> <span class="pl-c1">INSTANCE</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-efcd5e2337178d28cd27ba137d3970f5R38"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">DetectionConfigValidator</span> <span class="pl-k">implements</span> <span class="pl-e">ConfigValidator&lt;<span class="pl-smi">DetectionConfigDTO</span>&gt;</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-efcd5e2337178d28cd27ba137d3970f5L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-efcd5e2337178d28cd27ba137d3970f5R39"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-efcd5e2337178d28cd27ba137d3970f5L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-efcd5e2337178d28cd27ba137d3970f5R40"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">DataProvider</span> provider;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-efcd5e2337178d28cd27ba137d3970f5L45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-efcd5e2337178d28cd27ba137d3970f5R41"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">DetectionPipelineLoader</span> loader;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-efcd5e2337178d28cd27ba137d3970f5L46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-efcd5e2337178d28cd27ba137d3970f5R42"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="47" id="diff-efcd5e2337178d28cd27ba137d3970f5L47"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-smi">DetectionConfigValidator</span> <span class="pl-en">getInstance</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="48" id="diff-efcd5e2337178d28cd27ba137d3970f5L48"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-c1">INSTANCE</span> <span class="pl-k">==</span> <span class="pl-c1">null</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="49" id="diff-efcd5e2337178d28cd27ba137d3970f5L49"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">INSTANCE</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">DetectionConfigValidator</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="50" id="diff-efcd5e2337178d28cd27ba137d3970f5L50"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="51" id="diff-efcd5e2337178d28cd27ba137d3970f5L51"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">INSTANCE</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="52" id="diff-efcd5e2337178d28cd27ba137d3970f5L52"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="53" id="diff-efcd5e2337178d28cd27ba137d3970f5L53"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="54" id="diff-efcd5e2337178d28cd27ba137d3970f5L54"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-en">DetectionConfigValidator</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="43" id="diff-efcd5e2337178d28cd27ba137d3970f5R43"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-en">DetectionConfigValidator</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-efcd5e2337178d28cd27ba137d3970f5L55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-efcd5e2337178d28cd27ba137d3970f5R44"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">MetricConfigManager</span> metricDAO <span class="pl-k">=</span> <span class="pl-smi">DAORegistry</span><span class="pl-k">.</span>getInstance()<span class="pl-k">.</span>getMetricConfigDAO();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-efcd5e2337178d28cd27ba137d3970f5L56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-efcd5e2337178d28cd27ba137d3970f5R45"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">DatasetConfigManager</span> datasetDAO <span class="pl-k">=</span> <span class="pl-smi">DAORegistry</span><span class="pl-k">.</span>getInstance()<span class="pl-k">.</span>getDatasetConfigDAO();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-efcd5e2337178d28cd27ba137d3970f5L57"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-efcd5e2337178d28cd27ba137d3970f5R46"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="37">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="58-69" data-right-range="47-58" data-url="/apache/incubator-pinot/blob_excerpt/adadad7331a53decfc647f392403b086812dd342?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=57&amp;last_right=46&amp;left=84&amp;left_hunk_size=28&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2Fvalidators%2FDetectionConfigValidator.java&amp;right=73&amp;right_hunk_size=29" href="#diff-efcd5e2337178d28cd27ba137d3970f5" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="70-83" data-right-range="59-72" data-url="/apache/incubator-pinot/blob_excerpt/adadad7331a53decfc647f392403b086812dd342?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=57&amp;last_right=46&amp;left=84&amp;left_hunk_size=28&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2Fvalidators%2FDetectionConfigValidator.java&amp;right=73&amp;right_hunk_size=29" href="#diff-efcd5e2337178d28cd27ba137d3970f5" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -84,28 +73,29 @@ private void semanticValidation(DetectionConfigDTO detectionConfig) throws Valid</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-efcd5e2337178d28cd27ba137d3970f5L84"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-efcd5e2337178d28cd27ba137d3970f5R73"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="85" id="diff-efcd5e2337178d28cd27ba137d3970f5L85"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-efcd5e2337178d28cd27ba137d3970f5R74"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> set id back</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-efcd5e2337178d28cd27ba137d3970f5L86"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-efcd5e2337178d28cd27ba137d3970f5R75"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">      detectionConfig<span class="pl-k">.</span>setId(id);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="87" id="diff-efcd5e2337178d28cd27ba137d3970f5L87"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    } <span class="pl-k">catch</span> (<span class="pl-smi">Exception</span> e) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="88" id="diff-efcd5e2337178d28cd27ba137d3970f5L88"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">ValidationException</span>(<span class="pl-s"><span class="pl-pds">"</span>Semantic error while initializing the detection pipeline.<span class="pl-pds">"</span></span>, e<span class="pl-k">.</span>getMessage());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="76" id="diff-efcd5e2337178d28cd27ba137d3970f5R76"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    } <span class="pl-k">catch</span> (<span class="pl-smi">Exception</span> e){</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="77" id="diff-efcd5e2337178d28cd27ba137d3970f5R77"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> exception thrown in validate pipeline via reflection</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="78" id="diff-efcd5e2337178d28cd27ba137d3970f5R78"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">ValidationException</span>(<span class="pl-s"><span class="pl-pds">"</span>Semantic error: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> e<span class="pl-k">.</span>getCause()<span class="pl-k">.</span>getMessage());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="89" id="diff-efcd5e2337178d28cd27ba137d3970f5L89"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-efcd5e2337178d28cd27ba137d3970f5R79"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="90" id="diff-efcd5e2337178d28cd27ba137d3970f5L90"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-efcd5e2337178d28cd27ba137d3970f5R80"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="91" id="diff-efcd5e2337178d28cd27ba137d3970f5L91"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-efcd5e2337178d28cd27ba137d3970f5R81"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-efcd5e2337178d28cd27ba137d3970f5L92"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-efcd5e2337178d28cd27ba137d3970f5R82"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-efcd5e2337178d28cd27ba137d3970f5L93"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-efcd5e2337178d28cd27ba137d3970f5R83"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">   * Perform validation on the detection config like verifying if all the required fields are set</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-efcd5e2337178d28cd27ba137d3970f5L94"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-efcd5e2337178d28cd27ba137d3970f5R84"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="85" id="diff-efcd5e2337178d28cd27ba137d3970f5R85"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-efcd5e2337178d28cd27ba137d3970f5L95"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-efcd5e2337178d28cd27ba137d3970f5R86"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">validateConfig</span>(<span class="pl-smi">DetectionConfigDTO</span> <span class="pl-v">detectionConfig</span>) <span class="pl-k">throws</span> <span class="pl-smi">ValidationException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-efcd5e2337178d28cd27ba137d3970f5L96"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-efcd5e2337178d28cd27ba137d3970f5R87"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    semanticValidation(detectionConfig);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="97" id="diff-efcd5e2337178d28cd27ba137d3970f5L97"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="98" id="diff-efcd5e2337178d28cd27ba137d3970f5L98"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> TODO: Add more static validations here</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-efcd5e2337178d28cd27ba137d3970f5L99"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-efcd5e2337178d28cd27ba137d3970f5R88"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-efcd5e2337178d28cd27ba137d3970f5L100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="89" id="diff-efcd5e2337178d28cd27ba137d3970f5R89"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-efcd5e2337178d28cd27ba137d3970f5L101"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="90" id="diff-efcd5e2337178d28cd27ba137d3970f5R90"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-efcd5e2337178d28cd27ba137d3970f5L102"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="91" id="diff-efcd5e2337178d28cd27ba137d3970f5R91"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">   * Perform validation on the updated detection config. Check for fields which shouldn't be</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-efcd5e2337178d28cd27ba137d3970f5L103"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-efcd5e2337178d28cd27ba137d3970f5R92"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">   * updated by the user.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="104" id="diff-efcd5e2337178d28cd27ba137d3970f5L104"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-efcd5e2337178d28cd27ba137d3970f5R93"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="94" id="diff-efcd5e2337178d28cd27ba137d3970f5R94"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-efcd5e2337178d28cd27ba137d3970f5L105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-efcd5e2337178d28cd27ba137d3970f5R95"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">validateUpdatedConfig</span>(<span class="pl-smi">DetectionConfigDTO</span> <span class="pl-v">updatedConfig</span>, <span class="pl-smi">DetectionConfigDTO</span> <span class="pl-v">oldConfig</span>)</span></td>
+</tr>
+<tr class="inline-comments js-inline-comments-container">
+<td class="line-comments js-line-comments js-quote-selection-container" colspan="4" data-quote-markdown=".js-comment-body">
+<div class="review-thread comment-holder js-line-comments js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+<div class="review-comment js-minimizable-comment-group js-targetable-comment" data-gid="MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NTc2MDY0MQ==" data-url="/_render_node/MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NTc2MDY0MQ==/comments/review_comment" id="r255760641">
+<div class="minimized-comment d-none">
+<details class="Details-element details-reset " data-body-version="efbda8ad93fe68d974c94a81599b6618">
+<summary class="text-gray f6">
+<div class="d-flex flex-justify-between flex-items-center">
+<h3 class="review-comment-contents bg-white f5 text-normal text-italic" style="margin-left:38px">
+<div class="discussion-item-icon discussion-item-icon-gray text-gray">
+<svg aria-hidden="true" class="octicon octicon-fold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z" fill-rule="evenodd"></path></svg>
+</div>
+<div class="discussion-item-copy d-inline-block">
+                This comment has been minimized.
+
+          </div>
+</h3>
+<div class="text-gray text-small">
+<a class="link-gray" href="/login?return_to=https%3A%2F%2Fgithub.com%2Fapache%2Fincubator-pinot%2Fpull%2F3816%2Ffiles" rel="nofollow">Sign in to view</a>
+</div>
+</div>
+</summary>
+</details>
+</div>
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment " data-body-version="efbda8ad93fe68d974c94a81599b6618" data-thread-side="right">
+<div class="edit-comment-hide">
+<div class="timeline-comment-actions">
+<details class="details-overlay details-reset position-relative d-inline-block js-dropdown-details" id="details-r255760641">
+<summary aria-haspopup="true" aria-label="Show more options" class="btn-link timeline-comment-action">
+<svg aria-label="Show more options" class="octicon octicon-kebab-horizontal" height="16" role="img" version="1.1" viewbox="0 0 13 16" width="13"><path d="M1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" fill-rule="evenodd"></path></svg>
+</summary>
+<div class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+<clipboard-copy aria-label="Copy link" class="dropdown-item btn-link tooltipped tooltipped-nw" data-toggle-for="details-r255760641" for="r255760641-permalink" role="menuitem">
+              Copy link
+            </clipboard-copy>
+<button class="dropdown-item btn-link d-none js-comment-quote-reply" data-toggle-for="details-r255760641" type="button">
+              Quote reply
+            </button>
+</div>
+</details>
+</div>
+<span class="float-left mt-1">
+<a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=4448437" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/akshayrai"><img alt="@akshayrai" class="avatar" height="28" src="https://avatars2.githubusercontent.com/u/4448437?s=60&amp;v=4" width="28"/></a>
+</span>
+<div class="review-comment-contents js-suggested-changes-contents" data-thread-side="right">
+<h4 class="f5 text-normal d-inline">
+<strong>
+<a class="author link-gray-dark" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=4448437" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/akshayrai">akshayrai</a>
+</strong>
+<span class="text-gray">
+<a class="js-timestamp timestamp d-inline-block" href="#r255760641" id="r255760641-permalink">
+<relative-time datetime="2019-02-12T01:00:35Z">Feb 12, 2019</relative-time>
+</a>
+<span class="d-inline-block text-gray-light">•</span>
+<details class="details-overlay details-reset d-inline-block dropdown">
+<summary class="btn-link no-underline text-gray js-notice">
+<div class="position-relative">
+<span>
+            edited
+        </span>
+<svg aria-hidden="true" class="octicon octicon-triangle-down v-align-middle" height="11" version="1.1" viewbox="0 0 12 16" width="8"><path d="M0 5l6 6 6-6H0z" fill-rule="evenodd"></path></svg>
+</div>
+</summary>
+<details-menu class="anim-scale-in dropdown-menu dropdown-menu-se py-0" preload="" src="/_render_node/MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NTc2MDY0MQ==/comments/comment_edit_history_log" style="width:352px">
+<include-fragment aria-label="Loading" class="octocat-spinner my-3"></include-fragment>
+</details-menu>
+</details>
+</span>
+</h4>
+<span aria-label="This user has previously committed to the incubator-pinot repository." class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s">
+      Contributor
+    </span>
+<task-lists disabled="" sortable="">
+<div class="comment-body markdown-body js-comment-body">
+<p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=27325127" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/override">@override</a> the methods</p>
+</div>
+</task-lists>
+<div class="comment-reactions js-reactions-container ">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-comment js-minimizable-comment-group js-targetable-comment" data-gid="MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NjA4MTg3Nw==" data-url="/_render_node/MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NjA4MTg3Nw==/comments/review_comment" id="r256081877">
+<div class="minimized-comment d-none">
+<details class="Details-element details-reset " data-body-version="7d7e760a0540d0c1718b253d6b26b83a">
+<summary class="text-gray f6">
+<div class="d-flex flex-justify-between flex-items-center">
+<h3 class="review-comment-contents bg-white f5 text-normal text-italic" style="margin-left:38px">
+<div class="discussion-item-icon discussion-item-icon-gray text-gray">
+<svg aria-hidden="true" class="octicon octicon-fold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z" fill-rule="evenodd"></path></svg>
+</div>
+<div class="discussion-item-copy d-inline-block">
+                This comment has been minimized.
+
+          </div>
+</h3>
+<div class="text-gray text-small">
+<a class="link-gray" href="/login?return_to=https%3A%2F%2Fgithub.com%2Fapache%2Fincubator-pinot%2Fpull%2F3816%2Ffiles" rel="nofollow">Sign in to view</a>
+</div>
+</div>
+</summary>
+</details>
+</div>
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment " data-body-version="7d7e760a0540d0c1718b253d6b26b83a" data-thread-side="right">
+<div class="edit-comment-hide">
+<div class="timeline-comment-actions">
+<details class="details-overlay details-reset position-relative d-inline-block js-dropdown-details" id="details-r256081877">
+<summary aria-haspopup="true" aria-label="Show more options" class="btn-link timeline-comment-action">
+<svg aria-label="Show more options" class="octicon octicon-kebab-horizontal" height="16" role="img" version="1.1" viewbox="0 0 13 16" width="13"><path d="M1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" fill-rule="evenodd"></path></svg>
+</summary>
+<div class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+<clipboard-copy aria-label="Copy link" class="dropdown-item btn-link tooltipped tooltipped-nw" data-toggle-for="details-r256081877" for="r256081877-permalink" role="menuitem">
+              Copy link
+            </clipboard-copy>
+<button class="dropdown-item btn-link d-none js-comment-quote-reply" data-toggle-for="details-r256081877" type="button">
+              Quote reply
+            </button>
+</div>
+</details>
+</div>
+<span class="float-left mt-1">
+<a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=36778437" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jihaozh"><img alt="@jihaozh" class="avatar" height="28" src="https://avatars2.githubusercontent.com/u/36778437?s=60&amp;v=4" width="28"/></a>
+</span>
+<div class="review-comment-contents js-suggested-changes-contents" data-thread-side="right">
+<h4 class="f5 text-normal d-inline">
+<strong>
+<a class="author link-gray-dark" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=36778437" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jihaozh">jihaozh</a>
+</strong>
+<span class="text-gray">
+<a class="js-timestamp timestamp d-inline-block" href="#r256081877" id="r256081877-permalink">
+<relative-time datetime="2019-02-12T18:15:33Z">Feb 12, 2019</relative-time>
+</a>
+</span>
+</h4>
+<span aria-label="This user is the author of this pull request." class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s">
+  Author
+</span>
+<span aria-label="This user is a member of the The Apache Software Foundation organization." class="timeline-comment-label text-bold tooltipped tooltipped-multiline tooltipped-s">
+      Member
+    </span>
+<task-lists disabled="" sortable="">
+<div class="comment-body markdown-body js-comment-body">
+<p>added</p>
+</div>
+</task-lists>
+<div class="comment-reactions js-reactions-container ">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-efcd5e2337178d28cd27ba137d3970f5L106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-efcd5e2337178d28cd27ba137d3970f5R96"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">throws</span> <span class="pl-smi">ValidationException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-efcd5e2337178d28cd27ba137d3970f5L107"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-efcd5e2337178d28cd27ba137d3970f5R97"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    validateConfig(updatedConfig);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="108" id="diff-efcd5e2337178d28cd27ba137d3970f5L108"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="109" id="diff-efcd5e2337178d28cd27ba137d3970f5L109"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c x x-first">//</span><span class="x x-last"> TODO: Add more checks here</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="98" id="diff-efcd5e2337178d28cd27ba137d3970f5R98"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="x x-first"> </span><span class="pl-smi x">Preconditions</span><span class="pl-k x">.</span><span class="x">checkArgument(updatedConfig</span><span class="pl-k x">.</span><span class="x">getId()</span><span class="pl-k x">.</span><span class="x">equals(oldConfig</span><span class="pl-k x">.</span><span class="x x-last">getId()));</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="99" id="diff-efcd5e2337178d28cd27ba137d3970f5R99"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi x x-first">Preconditions</span><span class="pl-k x">.</span><span class="x">checkArgument(updatedConfig</span><span class="pl-k x">.</span><span class="x">getLastTimestamp() </span><span class="pl-k x">==</span><span class="x"> oldConfig</span><span class="pl-k x">.</span><span class="x x-last">getLastTimestamp());</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="110" id="diff-efcd5e2337178d28cd27ba137d3970f5L110"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-efcd5e2337178d28cd27ba137d3970f5R100"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="111" id="diff-efcd5e2337178d28cd27ba137d3970f5L111"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-efcd5e2337178d28cd27ba137d3970f5R101"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">}</span></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-efcd5e2337178d28cd27ba137d3970f5L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-efcd5e2337178d28cd27ba137d3970f5R19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-efcd5e2337178d28cd27ba137d3970f5L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-efcd5e2337178d28cd27ba137d3970f5R20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-efcd5e2337178d28cd27ba137d3970f5L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-efcd5e2337178d28cd27ba137d3970f5R21"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-efcd5e2337178d28cd27ba137d3970f5R22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-efcd5e2337178d28cd27ba137d3970f5L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-efcd5e2337178d28cd27ba137d3970f5R23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-efcd5e2337178d28cd27ba137d3970f5L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-efcd5e2337178d28cd27ba137d3970f5R24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-efcd5e2337178d28cd27ba137d3970f5L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-efcd5e2337178d28cd27ba137d3970f5R25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-efcd5e2337178d28cd27ba137d3970f5L32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-efcd5e2337178d28cd27ba137d3970f5R33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-efcd5e2337178d28cd27ba137d3970f5L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-efcd5e2337178d28cd27ba137d3970f5R34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-efcd5e2337178d28cd27ba137d3970f5L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-efcd5e2337178d28cd27ba137d3970f5R35"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="35" id="diff-efcd5e2337178d28cd27ba137d3970f5L35"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="36" id="diff-efcd5e2337178d28cd27ba137d3970f5L36"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="37" id="diff-efcd5e2337178d28cd27ba137d3970f5L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-efcd5e2337178d28cd27ba137d3970f5L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-efcd5e2337178d28cd27ba137d3970f5R36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-efcd5e2337178d28cd27ba137d3970f5L39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-efcd5e2337178d28cd27ba137d3970f5R37"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="40" id="diff-efcd5e2337178d28cd27ba137d3970f5L40"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="41" id="diff-efcd5e2337178d28cd27ba137d3970f5L41"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="42" id="diff-efcd5e2337178d28cd27ba137d3970f5L42"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-efcd5e2337178d28cd27ba137d3970f5R38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-efcd5e2337178d28cd27ba137d3970f5L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-efcd5e2337178d28cd27ba137d3970f5R39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-efcd5e2337178d28cd27ba137d3970f5L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-efcd5e2337178d28cd27ba137d3970f5R40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-efcd5e2337178d28cd27ba137d3970f5L45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-efcd5e2337178d28cd27ba137d3970f5R41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-efcd5e2337178d28cd27ba137d3970f5L46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-efcd5e2337178d28cd27ba137d3970f5R42"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="47" id="diff-efcd5e2337178d28cd27ba137d3970f5L47"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="48" id="diff-efcd5e2337178d28cd27ba137d3970f5L48"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="49" id="diff-efcd5e2337178d28cd27ba137d3970f5L49"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="50" id="diff-efcd5e2337178d28cd27ba137d3970f5L50"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="51" id="diff-efcd5e2337178d28cd27ba137d3970f5L51"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="52" id="diff-efcd5e2337178d28cd27ba137d3970f5L52"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="53" id="diff-efcd5e2337178d28cd27ba137d3970f5L53"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="54" id="diff-efcd5e2337178d28cd27ba137d3970f5L54"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="43" id="diff-efcd5e2337178d28cd27ba137d3970f5R43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-efcd5e2337178d28cd27ba137d3970f5L55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-efcd5e2337178d28cd27ba137d3970f5R44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-efcd5e2337178d28cd27ba137d3970f5L56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-efcd5e2337178d28cd27ba137d3970f5R45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-efcd5e2337178d28cd27ba137d3970f5L57"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-efcd5e2337178d28cd27ba137d3970f5R46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-efcd5e2337178d28cd27ba137d3970f5L84"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-efcd5e2337178d28cd27ba137d3970f5R73"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="85" id="diff-efcd5e2337178d28cd27ba137d3970f5L85"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-efcd5e2337178d28cd27ba137d3970f5R74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-efcd5e2337178d28cd27ba137d3970f5L86"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="75" id="diff-efcd5e2337178d28cd27ba137d3970f5R75"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="87" id="diff-efcd5e2337178d28cd27ba137d3970f5L87"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="88" id="diff-efcd5e2337178d28cd27ba137d3970f5L88"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="76" id="diff-efcd5e2337178d28cd27ba137d3970f5R76"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="77" id="diff-efcd5e2337178d28cd27ba137d3970f5R77"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="78" id="diff-efcd5e2337178d28cd27ba137d3970f5R78"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="89" id="diff-efcd5e2337178d28cd27ba137d3970f5L89"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-efcd5e2337178d28cd27ba137d3970f5R79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="90" id="diff-efcd5e2337178d28cd27ba137d3970f5L90"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-efcd5e2337178d28cd27ba137d3970f5R80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="91" id="diff-efcd5e2337178d28cd27ba137d3970f5L91"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-efcd5e2337178d28cd27ba137d3970f5R81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-efcd5e2337178d28cd27ba137d3970f5L92"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-efcd5e2337178d28cd27ba137d3970f5R82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-efcd5e2337178d28cd27ba137d3970f5L93"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-efcd5e2337178d28cd27ba137d3970f5R83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-efcd5e2337178d28cd27ba137d3970f5L94"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="84" id="diff-efcd5e2337178d28cd27ba137d3970f5R84"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="85" id="diff-efcd5e2337178d28cd27ba137d3970f5R85"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-efcd5e2337178d28cd27ba137d3970f5L95"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-efcd5e2337178d28cd27ba137d3970f5R86"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-efcd5e2337178d28cd27ba137d3970f5L96"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-efcd5e2337178d28cd27ba137d3970f5R87"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="97" id="diff-efcd5e2337178d28cd27ba137d3970f5L97"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="98" id="diff-efcd5e2337178d28cd27ba137d3970f5L98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-efcd5e2337178d28cd27ba137d3970f5L99"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-efcd5e2337178d28cd27ba137d3970f5R88"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-efcd5e2337178d28cd27ba137d3970f5L100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="89" id="diff-efcd5e2337178d28cd27ba137d3970f5R89"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-efcd5e2337178d28cd27ba137d3970f5L101"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="90" id="diff-efcd5e2337178d28cd27ba137d3970f5R90"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-efcd5e2337178d28cd27ba137d3970f5L102"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="91" id="diff-efcd5e2337178d28cd27ba137d3970f5R91"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-efcd5e2337178d28cd27ba137d3970f5L103"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-efcd5e2337178d28cd27ba137d3970f5R92"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="104" id="diff-efcd5e2337178d28cd27ba137d3970f5L104"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-efcd5e2337178d28cd27ba137d3970f5R93"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="94" id="diff-efcd5e2337178d28cd27ba137d3970f5R94"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-efcd5e2337178d28cd27ba137d3970f5L105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-efcd5e2337178d28cd27ba137d3970f5R95"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-efcd5e2337178d28cd27ba137d3970f5L106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-efcd5e2337178d28cd27ba137d3970f5R96"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="107" id="diff-efcd5e2337178d28cd27ba137d3970f5L107"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-efcd5e2337178d28cd27ba137d3970f5R97"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="108" id="diff-efcd5e2337178d28cd27ba137d3970f5L108"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="109" id="diff-efcd5e2337178d28cd27ba137d3970f5L109"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="98" id="diff-efcd5e2337178d28cd27ba137d3970f5R98"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="99" id="diff-efcd5e2337178d28cd27ba137d3970f5R99"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="110" id="diff-efcd5e2337178d28cd27ba137d3970f5L110"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-efcd5e2337178d28cd27ba137d3970f5R100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="111" id="diff-efcd5e2337178d28cd27ba137d3970f5L111"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-efcd5e2337178d28cd27ba137d3970f5R101"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-4">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-89ee9ed2853e06cca1a40d031af41c16" data-file-deleted="false" data-file-type=".java" data-path="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/SubscriptionConfigValidator.java" data-short-path="89ee9ed">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/SubscriptionConfigValidator.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/jihaozh/pinot/blob/f1531964aeca302b1ef4695ae349faeecef4287e/thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/SubscriptionConfigValidator.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="5 additions &amp; 9 deletions" class="diffstat tooltipped tooltipped-e">14 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-89ee9ed2853e06cca1a40d031af41c16" title="thirdeye/thirdeye-pinot/src/main/java/org/apache/pinot/thirdeye/detection/validators/SubscriptionConfigValidator.java">...main/java/org/apache/pinot/thirdeye/detection/validators/SubscriptionConfigValidator.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-89ee9ed2853e06cca1a40d031af41c16" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-18" data-right-range="1-18" data-url="/apache/incubator-pinot/blob_excerpt/909e50b813b7e2680e125f3e08381013de6ac44a?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=19&amp;left_hunk_size=30&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2Fvalidators%2FSubscriptionConfigValidator.java&amp;right=19&amp;right_hunk_size=25" href="#diff-89ee9ed2853e06cca1a40d031af41c16" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -19,30 +19,25 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-89ee9ed2853e06cca1a40d031af41c16L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-89ee9ed2853e06cca1a40d031af41c16R19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-89ee9ed2853e06cca1a40d031af41c16L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-89ee9ed2853e06cca1a40d031af41c16R20"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">package</span> <span class="pl-smi">org.apache.pinot.thirdeye.detection.validators</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-89ee9ed2853e06cca1a40d031af41c16L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-89ee9ed2853e06cca1a40d031af41c16R21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="22" id="diff-89ee9ed2853e06cca1a40d031af41c16L22"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.xml.bind.ValidationException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="23" id="diff-89ee9ed2853e06cca1a40d031af41c16L23"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.datalayer.dto.DetectionAlertConfigDTO</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-89ee9ed2853e06cca1a40d031af41c16L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-89ee9ed2853e06cca1a40d031af41c16R22"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.List</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-89ee9ed2853e06cca1a40d031af41c16L25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-89ee9ed2853e06cca1a40d031af41c16R23"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.Map</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-89ee9ed2853e06cca1a40d031af41c16R24"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.xml.bind.ValidationException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-89ee9ed2853e06cca1a40d031af41c16L26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-89ee9ed2853e06cca1a40d031af41c16R25"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.commons.lang.StringUtils</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="27" id="diff-89ee9ed2853e06cca1a40d031af41c16L27"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.datalayer.<span class="x x-first x-last">util.Predicate</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="26" id="diff-89ee9ed2853e06cca1a40d031af41c16R26"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.datalayer.<span class="x x-first x-last">dto.DetectionAlertConfigDTO</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-89ee9ed2853e06cca1a40d031af41c16L28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-89ee9ed2853e06cca1a40d031af41c16R27"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.datasource.DAORegistry</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-89ee9ed2853e06cca1a40d031af41c16L29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-89ee9ed2853e06cca1a40d031af41c16R28"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.apache.pinot.thirdeye.detection.ConfigUtils</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-89ee9ed2853e06cca1a40d031af41c16L30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-89ee9ed2853e06cca1a40d031af41c16R29"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-89ee9ed2853e06cca1a40d031af41c16L31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-89ee9ed2853e06cca1a40d031af41c16R30"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">org.apache.pinot.thirdeye.detection.yaml.YamlDetectionAlertConfigTranslator.*</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-89ee9ed2853e06cca1a40d031af41c16L32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-89ee9ed2853e06cca1a40d031af41c16R31"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-89ee9ed2853e06cca1a40d031af41c16L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-89ee9ed2853e06cca1a40d031af41c16R32"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="34" id="diff-89ee9ed2853e06cca1a40d031af41c16L34"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">SubscriptionConfigValidator</span> <span class="pl-k x x-first x-last">extends</span> <span class="pl-e">ConfigValidator</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="33" id="diff-89ee9ed2853e06cca1a40d031af41c16R33"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">SubscriptionConfigValidator</span> <span class="pl-k x x-first x-last">implements</span> <span class="pl-e">ConfigValidator<span class="x x-first">&lt;</span><span class="pl-smi x">DetectionAlertConfigDTO</span><span class="x x-last">&gt;</span></span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-89ee9ed2853e06cca1a40d031af41c16L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-89ee9ed2853e06cca1a40d031af41c16R34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="36" id="diff-89ee9ed2853e06cca1a40d031af41c16L36"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">SubscriptionConfigValidator</span> <span class="pl-c1">INSTANCE</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">SubscriptionConfigValidator</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-89ee9ed2853e06cca1a40d031af41c16L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-89ee9ed2853e06cca1a40d031af41c16R35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-c1">PROP_CLASS_NAME</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>className<span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-89ee9ed2853e06cca1a40d031af41c16L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-89ee9ed2853e06cca1a40d031af41c16R36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="39" id="diff-89ee9ed2853e06cca1a40d031af41c16L39"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-smi">SubscriptionConfigValidator</span> <span class="pl-en">getInstance</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="40" id="diff-89ee9ed2853e06cca1a40d031af41c16L40"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">INSTANCE</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="41" id="diff-89ee9ed2853e06cca1a40d031af41c16L41"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="42" id="diff-89ee9ed2853e06cca1a40d031af41c16L42"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-89ee9ed2853e06cca1a40d031af41c16L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-89ee9ed2853e06cca1a40d031af41c16R37"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-89ee9ed2853e06cca1a40d031af41c16L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-89ee9ed2853e06cca1a40d031af41c16R38"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">   * Perform validation on the alert config like verifying if all the required fields are set</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-89ee9ed2853e06cca1a40d031af41c16L45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-89ee9ed2853e06cca1a40d031af41c16R39"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="40" id="diff-89ee9ed2853e06cca1a40d031af41c16R40"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-89ee9ed2853e06cca1a40d031af41c16L46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-89ee9ed2853e06cca1a40d031af41c16R41"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">validateConfig</span>(<span class="pl-smi">DetectionAlertConfigDTO</span> <span class="pl-v">alertConfig</span>) <span class="pl-k">throws</span> <span class="pl-smi">ValidationException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-89ee9ed2853e06cca1a40d031af41c16L47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-89ee9ed2853e06cca1a40d031af41c16R42"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> Check for all the required fields in the alert</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-89ee9ed2853e06cca1a40d031af41c16L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-89ee9ed2853e06cca1a40d031af41c16R43"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-smi">StringUtils</span><span class="pl-k">.</span>isEmpty(alertConfig<span class="pl-k">.</span>getName())) {</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="35">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="49-69" data-right-range="44-64" data-url="/apache/incubator-pinot/blob_excerpt/909e50b813b7e2680e125f3e08381013de6ac44a?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=48&amp;last_right=43&amp;left=93&amp;left_hunk_size=6&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2Fvalidators%2FSubscriptionConfigValidator.java&amp;right=88&amp;right_hunk_size=7" href="#diff-89ee9ed2853e06cca1a40d031af41c16" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="70-92" data-right-range="65-87" data-url="/apache/incubator-pinot/blob_excerpt/909e50b813b7e2680e125f3e08381013de6ac44a?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=48&amp;last_right=43&amp;left=93&amp;left_hunk_size=6&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2Fvalidators%2FSubscriptionConfigValidator.java&amp;right=88&amp;right_hunk_size=7" href="#diff-89ee9ed2853e06cca1a40d031af41c16" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -93,6 +88,7 @@ public void validateConfig(DetectionAlertConfigDTO alertConfig) throws Validatio</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-89ee9ed2853e06cca1a40d031af41c16L93"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-89ee9ed2853e06cca1a40d031af41c16R88"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">   * Perform validation on the updated alert config. Check for fields which shouldn't be</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-89ee9ed2853e06cca1a40d031af41c16L94"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="89" id="diff-89ee9ed2853e06cca1a40d031af41c16R89"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">   * updated by the user.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-89ee9ed2853e06cca1a40d031af41c16L95"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="90" id="diff-89ee9ed2853e06cca1a40d031af41c16R90"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="91" id="diff-89ee9ed2853e06cca1a40d031af41c16R91"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-89ee9ed2853e06cca1a40d031af41c16L96"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-89ee9ed2853e06cca1a40d031af41c16R92"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">validateUpdatedConfig</span>(<span class="pl-smi">DetectionAlertConfigDTO</span> <span class="pl-v">updatedAlertConfig</span>, <span class="pl-smi">DetectionAlertConfigDTO</span> <span class="pl-v">oldAlertConfig</span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-89ee9ed2853e06cca1a40d031af41c16L97"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-89ee9ed2853e06cca1a40d031af41c16R93"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">throws</span> <span class="pl-smi">ValidationException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-89ee9ed2853e06cca1a40d031af41c16L98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-89ee9ed2853e06cca1a40d031af41c16R94"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    validateConfig(updatedAlertConfig);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="99-110" data-right-range="95-110" data-url="/apache/incubator-pinot/blob_excerpt/909e50b813b7e2680e125f3e08381013de6ac44a?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=98&amp;last_right=94&amp;left=111&amp;left_hunk_size=&amp;mode=100644&amp;path=thirdeye%2Fthirdeye-pinot%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fpinot%2Fthirdeye%2Fdetection%2Fvalidators%2FSubscriptionConfigValidator.java&amp;right=111&amp;right_hunk_size=" href="#diff-89ee9ed2853e06cca1a40d031af41c16" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-89ee9ed2853e06cca1a40d031af41c16L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-89ee9ed2853e06cca1a40d031af41c16R19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-89ee9ed2853e06cca1a40d031af41c16L20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-89ee9ed2853e06cca1a40d031af41c16R20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-89ee9ed2853e06cca1a40d031af41c16L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-89ee9ed2853e06cca1a40d031af41c16R21"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="22" id="diff-89ee9ed2853e06cca1a40d031af41c16L22"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="23" id="diff-89ee9ed2853e06cca1a40d031af41c16L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-89ee9ed2853e06cca1a40d031af41c16L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-89ee9ed2853e06cca1a40d031af41c16R22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-89ee9ed2853e06cca1a40d031af41c16L25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-89ee9ed2853e06cca1a40d031af41c16R23"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-89ee9ed2853e06cca1a40d031af41c16R24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-89ee9ed2853e06cca1a40d031af41c16L26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-89ee9ed2853e06cca1a40d031af41c16R25"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="27" id="diff-89ee9ed2853e06cca1a40d031af41c16L27"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="26" id="diff-89ee9ed2853e06cca1a40d031af41c16R26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-89ee9ed2853e06cca1a40d031af41c16L28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-89ee9ed2853e06cca1a40d031af41c16R27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-89ee9ed2853e06cca1a40d031af41c16L29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-89ee9ed2853e06cca1a40d031af41c16R28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-89ee9ed2853e06cca1a40d031af41c16L30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-89ee9ed2853e06cca1a40d031af41c16R29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-89ee9ed2853e06cca1a40d031af41c16L31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-89ee9ed2853e06cca1a40d031af41c16R30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-89ee9ed2853e06cca1a40d031af41c16L32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-89ee9ed2853e06cca1a40d031af41c16R31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-89ee9ed2853e06cca1a40d031af41c16L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-89ee9ed2853e06cca1a40d031af41c16R32"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="34" id="diff-89ee9ed2853e06cca1a40d031af41c16L34"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="33" id="diff-89ee9ed2853e06cca1a40d031af41c16R33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-89ee9ed2853e06cca1a40d031af41c16L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-89ee9ed2853e06cca1a40d031af41c16R34"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="36" id="diff-89ee9ed2853e06cca1a40d031af41c16L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-89ee9ed2853e06cca1a40d031af41c16L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-89ee9ed2853e06cca1a40d031af41c16R35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-89ee9ed2853e06cca1a40d031af41c16L38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-89ee9ed2853e06cca1a40d031af41c16R36"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="39" id="diff-89ee9ed2853e06cca1a40d031af41c16L39"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="40" id="diff-89ee9ed2853e06cca1a40d031af41c16L40"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="41" id="diff-89ee9ed2853e06cca1a40d031af41c16L41"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="42" id="diff-89ee9ed2853e06cca1a40d031af41c16L42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-89ee9ed2853e06cca1a40d031af41c16L43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-89ee9ed2853e06cca1a40d031af41c16R37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-89ee9ed2853e06cca1a40d031af41c16L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-89ee9ed2853e06cca1a40d031af41c16R38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-89ee9ed2853e06cca1a40d031af41c16L45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-89ee9ed2853e06cca1a40d031af41c16R39"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="40" id="diff-89ee9ed2853e06cca1a40d031af41c16R40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-89ee9ed2853e06cca1a40d031af41c16L46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="41" id="diff-89ee9ed2853e06cca1a40d031af41c16R41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="47" id="diff-89ee9ed2853e06cca1a40d031af41c16L47"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-89ee9ed2853e06cca1a40d031af41c16R42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-89ee9ed2853e06cca1a40d031af41c16L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-89ee9ed2853e06cca1a40d031af41c16R43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-89ee9ed2853e06cca1a40d031af41c16L93"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-89ee9ed2853e06cca1a40d031af41c16R88"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-89ee9ed2853e06cca1a40d031af41c16L94"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="89" id="diff-89ee9ed2853e06cca1a40d031af41c16R89"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-89ee9ed2853e06cca1a40d031af41c16L95"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="90" id="diff-89ee9ed2853e06cca1a40d031af41c16R90"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="91" id="diff-89ee9ed2853e06cca1a40d031af41c16R91"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-89ee9ed2853e06cca1a40d031af41c16L96"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-89ee9ed2853e06cca1a40d031af41c16R92"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-89ee9ed2853e06cca1a40d031af41c16L97"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="93" id="diff-89ee9ed2853e06cca1a40d031af41c16R93"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-89ee9ed2853e06cca1a40d031af41c16L98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="94" id="diff-89ee9ed2853e06cca1a40d031af41c16R94"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

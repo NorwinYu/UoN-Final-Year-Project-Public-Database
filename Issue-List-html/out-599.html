@@ -1,0 +1,499 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-c397a2a1f47619267d7c57494de7d835" data-file-deleted="false" data-file-type=".py" data-path="sdks/python/apache_beam/io/gcp/bigquery_file_loads.py" data-short-path="c397a2a">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="sdks/python/apache_beam/io/gcp/bigquery_file_loads.py">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/pabloem/beam/blob/3438c68b114aaea5d140b2c1eb81ca6a4be8ed84/sdks/python/apache_beam/io/gcp/bigquery_file_loads.py" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="14 additions &amp; 5 deletions" class="diffstat tooltipped tooltipped-e">19 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-c397a2a1f47619267d7c57494de7d835" title="sdks/python/apache_beam/io/gcp/bigquery_file_loads.py">sdks/python/apache_beam/io/gcp/bigquery_file_loads.py</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-c397a2a1f47619267d7c57494de7d835" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-94" data-right-range="1-94" data-url="/apache/beam/blob_excerpt/7b56704aab9f73aea4c4edb4debd933dc972c41a?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=95&amp;left_hunk_size=7&amp;mode=100644&amp;path=sdks%2Fpython%2Fapache_beam%2Fio%2Fgcp%2Fbigquery_file_loads.py&amp;right=95&amp;right_hunk_size=7" href="#diff-c397a2a1f47619267d7c57494de7d835" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -95,7 +95,7 @@ def _bq_uuid(seed=None):</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-c397a2a1f47619267d7c57494de7d835L95"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-c397a2a1f47619267d7c57494de7d835R95"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> <span class="pl-k">not</span> seed:</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-c397a2a1f47619267d7c57494de7d835L96"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-c397a2a1f47619267d7c57494de7d835R96"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">str</span>(uuid.uuid4()).replace(<span class="pl-s"><span class="pl-pds">"</span>-<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-c397a2a1f47619267d7c57494de7d835L97"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-c397a2a1f47619267d7c57494de7d835R97"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">else</span>:</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="98" id="diff-c397a2a1f47619267d7c57494de7d835L98"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">str</span>(hashlib.md5(seed).hexdigest())</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="98" id="diff-c397a2a1f47619267d7c57494de7d835R98"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">str</span>(hashlib.md5(seed<span class="x x-first">.encode(</span><span class="pl-s"><span class="pl-pds x">'</span><span class="x">utf8</span><span class="pl-pds x">'</span></span><span class="x x-last">)</span>).hexdigest())</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-c397a2a1f47619267d7c57494de7d835L99"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-c397a2a1f47619267d7c57494de7d835R99"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-c397a2a1f47619267d7c57494de7d835L100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-c397a2a1f47619267d7c57494de7d835R100"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-c397a2a1f47619267d7c57494de7d835L101"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-c397a2a1f47619267d7c57494de7d835R101"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">class</span> <span class="pl-en">_AppendDestinationsFn</span>(<span class="pl-e">beam</span>.<span class="pl-e">DoFn</span>):</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="9">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="102-141" data-right-range="102-141" data-url="/apache/beam/blob_excerpt/7b56704aab9f73aea4c4edb4debd933dc972c41a?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=101&amp;last_right=101&amp;left=184&amp;left_hunk_size=15&amp;mode=100644&amp;path=sdks%2Fpython%2Fapache_beam%2Fio%2Fgcp%2Fbigquery_file_loads.py&amp;right=184&amp;right_hunk_size=24" href="#diff-c397a2a1f47619267d7c57494de7d835" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="142-183" data-right-range="142-183" data-url="/apache/beam/blob_excerpt/7b56704aab9f73aea4c4edb4debd933dc972c41a?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=101&amp;last_right=101&amp;left=184&amp;left_hunk_size=15&amp;mode=100644&amp;path=sdks%2Fpython%2Fapache_beam%2Fio%2Fgcp%2Fbigquery_file_loads.py&amp;right=184&amp;right_hunk_size=24" href="#diff-c397a2a1f47619267d7c57494de7d835" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -184,15 +184,24 @@ def display_data(self):</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="184" id="diff-c397a2a1f47619267d7c57494de7d835L184"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="184" id="diff-c397a2a1f47619267d7c57494de7d835R184"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">def</span> <span class="pl-en">start_bundle</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="185" id="diff-c397a2a1f47619267d7c57494de7d835L185"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="185" id="diff-c397a2a1f47619267d7c57494de7d835R185"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">self</span>._destination_to_file_writer <span class="pl-k">=</span> {}</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="186" id="diff-c397a2a1f47619267d7c57494de7d835L186"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="186" id="diff-c397a2a1f47619267d7c57494de7d835R186"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="187" id="diff-c397a2a1f47619267d7c57494de7d835R187"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">def</span> <span class="pl-en">_get_string_destination</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>, <span class="pl-smi">destination</span>):</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="188" id="diff-c397a2a1f47619267d7c57494de7d835R188"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> <span class="pl-c1">isinstance</span>(destination, bigquery_api.TableReference):</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="189" id="diff-c397a2a1f47619267d7c57494de7d835R189"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">'</span><span class="pl-c1">%s</span>:<span class="pl-c1">%s</span>.<span class="pl-c1">%s</span><span class="pl-pds">'</span></span> <span class="pl-k">%</span> (</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="190" id="diff-c397a2a1f47619267d7c57494de7d835R190"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">          destination.projectId, destination.datasetId, destination.tableId)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="191" id="diff-c397a2a1f47619267d7c57494de7d835R191"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">else</span>:</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="192" id="diff-c397a2a1f47619267d7c57494de7d835R192"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> destination</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="193" id="diff-c397a2a1f47619267d7c57494de7d835R193"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="187" id="diff-c397a2a1f47619267d7c57494de7d835L187"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="194" id="diff-c397a2a1f47619267d7c57494de7d835R194"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">def</span> <span class="pl-en">process</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>, <span class="pl-smi">element</span>, <span class="pl-smi">file_prefix</span>):</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="188" id="diff-c397a2a1f47619267d7c57494de7d835L188"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="195" id="diff-c397a2a1f47619267d7c57494de7d835R195"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    destination <span class="pl-k">=</span> element[<span class="pl-c1">0</span>]</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="189" id="diff-c397a2a1f47619267d7c57494de7d835L189"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="196" id="diff-c397a2a1f47619267d7c57494de7d835R196"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    row <span class="pl-k">=</span> element[<span class="pl-c1">1</span>]</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="190" id="diff-c397a2a1f47619267d7c57494de7d835L190"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="197" id="diff-c397a2a1f47619267d7c57494de7d835R197"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="191" id="diff-c397a2a1f47619267d7c57494de7d835L191"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">if</span> destination <span class="pl-k">in</span> <span class="pl-c1">self</span>._destination_to_file_writer:</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="192" id="diff-c397a2a1f47619267d7c57494de7d835L192"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">      writer <span class="pl-k">=</span> <span class="pl-c1">self</span>._destination_to_file_writer[destination]</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="198" id="diff-c397a2a1f47619267d7c57494de7d835R198"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    key_destination <span class="pl-k">=</span> <span class="pl-c1">self</span>._get_string_destination(destination)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="199" id="diff-c397a2a1f47619267d7c57494de7d835R199"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="200" id="diff-c397a2a1f47619267d7c57494de7d835R200"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> key_destination <span class="pl-k">in</span> <span class="pl-c1">self</span>._destination_to_file_writer:</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="201" id="diff-c397a2a1f47619267d7c57494de7d835R201"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">      writer <span class="pl-k">=</span> <span class="pl-c1">self</span>._destination_to_file_writer[key_destination]</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="193" id="diff-c397a2a1f47619267d7c57494de7d835L193"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="202" id="diff-c397a2a1f47619267d7c57494de7d835R202"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">elif</span> <span class="pl-c1">len</span>(<span class="pl-c1">self</span>._destination_to_file_writer) <span class="pl-k">&lt;</span> <span class="pl-c1">self</span>.max_files_per_bundle:</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="194" id="diff-c397a2a1f47619267d7c57494de7d835L194"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="203" id="diff-c397a2a1f47619267d7c57494de7d835R203"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">      (file_path, writer) <span class="pl-k">=</span> _make_new_file_writer(file_prefix, destination)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="195" id="diff-c397a2a1f47619267d7c57494de7d835L195"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">self</span>._destination_to_file_writer[<span class="x x-first x-last">destination</span>] <span class="pl-k">=</span> writer</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="204" id="diff-c397a2a1f47619267d7c57494de7d835R204"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">self</span>._destination_to_file_writer[<span class="x x-first x-last">key_destination</span>] <span class="pl-k">=</span> writer</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="196" id="diff-c397a2a1f47619267d7c57494de7d835L196"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="205" id="diff-c397a2a1f47619267d7c57494de7d835R205"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">yield</span> pvalue.TaggedOutput(WriteRecordsToFile.<span class="pl-c1">WRITTEN_FILE_TAG</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="197" id="diff-c397a2a1f47619267d7c57494de7d835L197"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="206" id="diff-c397a2a1f47619267d7c57494de7d835R206"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">                                (destination, file_path))</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="198" id="diff-c397a2a1f47619267d7c57494de7d835L198"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="207" id="diff-c397a2a1f47619267d7c57494de7d835R207"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">else</span>:</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="37">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="199-201" data-right-range="208-210" data-url="/apache/beam/blob_excerpt/7b56704aab9f73aea4c4edb4debd933dc972c41a?diff=unified&amp;in_wiki_context=&amp;last_left=198&amp;last_right=207&amp;left=206&amp;left_hunk_size=7&amp;mode=100644&amp;path=sdks%2Fpython%2Fapache_beam%2Fio%2Fgcp%2Fbigquery_file_loads.py&amp;right=215&amp;right_hunk_size=7" href="#diff-c397a2a1f47619267d7c57494de7d835" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -206,7 +215,7 @@ def process(self, element, file_prefix):</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="206" id="diff-c397a2a1f47619267d7c57494de7d835L206"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="215" id="diff-c397a2a1f47619267d7c57494de7d835R215"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="207" id="diff-c397a2a1f47619267d7c57494de7d835L207"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="216" id="diff-c397a2a1f47619267d7c57494de7d835R216"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> writer.tell() <span class="pl-k">&gt;</span> <span class="pl-c1">self</span>.max_file_size:</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="208" id="diff-c397a2a1f47619267d7c57494de7d835L208"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="217" id="diff-c397a2a1f47619267d7c57494de7d835R217"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">      writer.close()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="209" id="diff-c397a2a1f47619267d7c57494de7d835L209"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">self</span>._destination_to_file_writer.pop(<span class="x x-first x-last">destination</span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="218" id="diff-c397a2a1f47619267d7c57494de7d835R218"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">self</span>._destination_to_file_writer.pop(<span class="x x-first x-last">key_destination</span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="210" id="diff-c397a2a1f47619267d7c57494de7d835L210"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="219" id="diff-c397a2a1f47619267d7c57494de7d835R219"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="211" id="diff-c397a2a1f47619267d7c57494de7d835L211"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="220" id="diff-c397a2a1f47619267d7c57494de7d835R220"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">def</span> <span class="pl-en">finish_bundle</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="212" id="diff-c397a2a1f47619267d7c57494de7d835L212"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="221" id="diff-c397a2a1f47619267d7c57494de7d835R221"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">for</span> _, writer <span class="pl-k">in</span> iteritems(<span class="pl-c1">self</span>._destination_to_file_writer):</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="213-610" data-right-range="222-610" data-url="/apache/beam/blob_excerpt/7b56704aab9f73aea4c4edb4debd933dc972c41a?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=212&amp;last_right=221&amp;left=611&amp;left_hunk_size=&amp;mode=100644&amp;path=sdks%2Fpython%2Fapache_beam%2Fio%2Fgcp%2Fbigquery_file_loads.py&amp;right=611&amp;right_hunk_size=" href="#diff-c397a2a1f47619267d7c57494de7d835" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-c397a2a1f47619267d7c57494de7d835L95"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="95" id="diff-c397a2a1f47619267d7c57494de7d835R95"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-c397a2a1f47619267d7c57494de7d835L96"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="96" id="diff-c397a2a1f47619267d7c57494de7d835R96"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-c397a2a1f47619267d7c57494de7d835L97"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="97" id="diff-c397a2a1f47619267d7c57494de7d835R97"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="98" id="diff-c397a2a1f47619267d7c57494de7d835L98"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="98" id="diff-c397a2a1f47619267d7c57494de7d835R98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-c397a2a1f47619267d7c57494de7d835L99"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-c397a2a1f47619267d7c57494de7d835R99"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-c397a2a1f47619267d7c57494de7d835L100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-c397a2a1f47619267d7c57494de7d835R100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-c397a2a1f47619267d7c57494de7d835L101"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-c397a2a1f47619267d7c57494de7d835R101"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="184" id="diff-c397a2a1f47619267d7c57494de7d835L184"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="184" id="diff-c397a2a1f47619267d7c57494de7d835R184"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="185" id="diff-c397a2a1f47619267d7c57494de7d835L185"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="185" id="diff-c397a2a1f47619267d7c57494de7d835R185"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="186" id="diff-c397a2a1f47619267d7c57494de7d835L186"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="186" id="diff-c397a2a1f47619267d7c57494de7d835R186"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="187" id="diff-c397a2a1f47619267d7c57494de7d835R187"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="188" id="diff-c397a2a1f47619267d7c57494de7d835R188"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="189" id="diff-c397a2a1f47619267d7c57494de7d835R189"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="190" id="diff-c397a2a1f47619267d7c57494de7d835R190"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="191" id="diff-c397a2a1f47619267d7c57494de7d835R191"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="192" id="diff-c397a2a1f47619267d7c57494de7d835R192"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="193" id="diff-c397a2a1f47619267d7c57494de7d835R193"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="187" id="diff-c397a2a1f47619267d7c57494de7d835L187"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="194" id="diff-c397a2a1f47619267d7c57494de7d835R194"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="188" id="diff-c397a2a1f47619267d7c57494de7d835L188"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="195" id="diff-c397a2a1f47619267d7c57494de7d835R195"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="189" id="diff-c397a2a1f47619267d7c57494de7d835L189"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="196" id="diff-c397a2a1f47619267d7c57494de7d835R196"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="190" id="diff-c397a2a1f47619267d7c57494de7d835L190"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="197" id="diff-c397a2a1f47619267d7c57494de7d835R197"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="191" id="diff-c397a2a1f47619267d7c57494de7d835L191"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="192" id="diff-c397a2a1f47619267d7c57494de7d835L192"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="198" id="diff-c397a2a1f47619267d7c57494de7d835R198"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="199" id="diff-c397a2a1f47619267d7c57494de7d835R199"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="200" id="diff-c397a2a1f47619267d7c57494de7d835R200"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="201" id="diff-c397a2a1f47619267d7c57494de7d835R201"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="193" id="diff-c397a2a1f47619267d7c57494de7d835L193"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="202" id="diff-c397a2a1f47619267d7c57494de7d835R202"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="194" id="diff-c397a2a1f47619267d7c57494de7d835L194"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="203" id="diff-c397a2a1f47619267d7c57494de7d835R203"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="195" id="diff-c397a2a1f47619267d7c57494de7d835L195"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="204" id="diff-c397a2a1f47619267d7c57494de7d835R204"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="196" id="diff-c397a2a1f47619267d7c57494de7d835L196"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="205" id="diff-c397a2a1f47619267d7c57494de7d835R205"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="197" id="diff-c397a2a1f47619267d7c57494de7d835L197"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="206" id="diff-c397a2a1f47619267d7c57494de7d835R206"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="198" id="diff-c397a2a1f47619267d7c57494de7d835L198"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="207" id="diff-c397a2a1f47619267d7c57494de7d835R207"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="206" id="diff-c397a2a1f47619267d7c57494de7d835L206"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="215" id="diff-c397a2a1f47619267d7c57494de7d835R215"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="207" id="diff-c397a2a1f47619267d7c57494de7d835L207"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="216" id="diff-c397a2a1f47619267d7c57494de7d835R216"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="208" id="diff-c397a2a1f47619267d7c57494de7d835L208"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="217" id="diff-c397a2a1f47619267d7c57494de7d835R217"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="209" id="diff-c397a2a1f47619267d7c57494de7d835L209"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="218" id="diff-c397a2a1f47619267d7c57494de7d835R218"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="210" id="diff-c397a2a1f47619267d7c57494de7d835L210"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="219" id="diff-c397a2a1f47619267d7c57494de7d835R219"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="211" id="diff-c397a2a1f47619267d7c57494de7d835L211"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="220" id="diff-c397a2a1f47619267d7c57494de7d835R220"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="212" id="diff-c397a2a1f47619267d7c57494de7d835L212"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="221" id="diff-c397a2a1f47619267d7c57494de7d835R221"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

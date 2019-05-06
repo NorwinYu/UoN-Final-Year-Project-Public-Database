@@ -1,0 +1,2596 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-0312569055a2b5a665792c63a7c672ca" data-file-deleted="false" data-file-type=".java" data-path="infrastructures/kubernetes/src/main/java/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerEvent.java" data-short-path="0312569">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="infrastructures/kubernetes/src/main/java/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerEvent.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/garagatyi/che/blob/a0c7b1f2d466676aed3f8046c0d8753d0431f0e5/infrastructures/kubernetes/src/main/java/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerEvent.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="36 additions &amp; 0 deletions" class="diffstat tooltipped tooltipped-e">36 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span></span>
+<a class="link-gray-dark" href="#diff-0312569055a2b5a665792c63a7c672ca" title="infrastructures/kubernetes/src/main/java/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerEvent.java">...ava/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerEvent.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-0312569055a2b5a665792c63a7c672ca" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-12" data-right-range="1-12" data-url="/eclipse/che/blob_excerpt/9f7e827a88b9e29700357bfb581ccef3db0669a3?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=13&amp;left_hunk_size=6&amp;mode=100644&amp;path=infrastructures%2Fkubernetes%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Fche%2Fworkspace%2Finfrastructure%2Fkubernetes%2Fwsplugins%2Fevents%2FBrokerEvent.java&amp;right=13&amp;right_hunk_size=7" href="#diff-0312569055a2b5a665792c63a7c672ca" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -13,6 +13,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-0312569055a2b5a665792c63a7c672caL13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-0312569055a2b5a665792c63a7c672caR13"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-0312569055a2b5a665792c63a7c672caL14"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-0312569055a2b5a665792c63a7c672caR14"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.google.common.annotations.Beta</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-0312569055a2b5a665792c63a7c672caL15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-0312569055a2b5a665792c63a7c672caR15"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.List</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="16" id="diff-0312569055a2b5a665792c63a7c672caR16"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.Objects</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-0312569055a2b5a665792c63a7c672caL16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-0312569055a2b5a665792c63a7c672caR17"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.core.model.workspace.runtime.RuntimeIdentity</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-0312569055a2b5a665792c63a7c672caL17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-0312569055a2b5a665792c63a7c672caR18"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.workspace.server.wsplugins.model.ChePlugin</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-0312569055a2b5a665792c63a7c672caL18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-0312569055a2b5a665792c63a7c672caR19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.workspace.shared.dto.BrokerStatus</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="8">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="19-48" data-right-range="20-49" data-url="/eclipse/che/blob_excerpt/9f7e827a88b9e29700357bfb581ccef3db0669a3?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=18&amp;last_right=19&amp;left=80&amp;left_hunk_size=4&amp;mode=100644&amp;path=infrastructures%2Fkubernetes%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Fche%2Fworkspace%2Finfrastructure%2Fkubernetes%2Fwsplugins%2Fevents%2FBrokerEvent.java&amp;right=81&amp;right_hunk_size=39" href="#diff-0312569055a2b5a665792c63a7c672ca" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="49-79" data-right-range="50-80" data-url="/eclipse/che/blob_excerpt/9f7e827a88b9e29700357bfb581ccef3db0669a3?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=18&amp;last_right=19&amp;left=80&amp;left_hunk_size=4&amp;mode=100644&amp;path=infrastructures%2Fkubernetes%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Fche%2Fworkspace%2Finfrastructure%2Fkubernetes%2Fwsplugins%2Fevents%2FBrokerEvent.java&amp;right=81&amp;right_hunk_size=39" href="#diff-0312569055a2b5a665792c63a7c672ca" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -80,4 +81,39 @@ BrokerEvent withTooling(List&lt;ChePlugin&gt; tooling) {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-0312569055a2b5a665792c63a7c672caL80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-0312569055a2b5a665792c63a7c672caR81"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>tooling <span class="pl-k">=</span> tooling;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-0312569055a2b5a665792c63a7c672caL81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-0312569055a2b5a665792c63a7c672caR82"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">this</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-0312569055a2b5a665792c63a7c672caL82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-0312569055a2b5a665792c63a7c672caR83"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="84" id="diff-0312569055a2b5a665792c63a7c672caR84"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="85" id="diff-0312569055a2b5a665792c63a7c672caR85"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="86" id="diff-0312569055a2b5a665792c63a7c672caR86"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">boolean</span> <span class="pl-en">equals</span>(<span class="pl-smi">Object</span> <span class="pl-v">o</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="87" id="diff-0312569055a2b5a665792c63a7c672caR87"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-c1">this</span> <span class="pl-k">==</span> o) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="88" id="diff-0312569055a2b5a665792c63a7c672caR88"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">true</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="89" id="diff-0312569055a2b5a665792c63a7c672caR89"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="90" id="diff-0312569055a2b5a665792c63a7c672caR90"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-k">!</span>(o <span class="pl-k">instanceof</span> <span class="pl-smi">BrokerEvent</span>)) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="91" id="diff-0312569055a2b5a665792c63a7c672caR91"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">false</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="92" id="diff-0312569055a2b5a665792c63a7c672caR92"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="93" id="diff-0312569055a2b5a665792c63a7c672caR93"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">BrokerEvent</span> that <span class="pl-k">=</span> (<span class="pl-smi">BrokerEvent</span>) o;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="94" id="diff-0312569055a2b5a665792c63a7c672caR94"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> getStatus() <span class="pl-k">==</span> that<span class="pl-k">.</span>getStatus()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="95" id="diff-0312569055a2b5a665792c63a7c672caR95"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">&amp;&amp;</span> <span class="pl-smi">Objects</span><span class="pl-k">.</span>equals(getRuntimeId(), that<span class="pl-k">.</span>getRuntimeId())</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="96" id="diff-0312569055a2b5a665792c63a7c672caR96"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">&amp;&amp;</span> <span class="pl-smi">Objects</span><span class="pl-k">.</span>equals(getError(), that<span class="pl-k">.</span>getError())</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="97" id="diff-0312569055a2b5a665792c63a7c672caR97"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">&amp;&amp;</span> <span class="pl-smi">Objects</span><span class="pl-k">.</span>equals(getTooling(), that<span class="pl-k">.</span>getTooling());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="98" id="diff-0312569055a2b5a665792c63a7c672caR98"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="99" id="diff-0312569055a2b5a665792c63a7c672caR99"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="100" id="diff-0312569055a2b5a665792c63a7c672caR100"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="101" id="diff-0312569055a2b5a665792c63a7c672caR101"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">int</span> <span class="pl-en">hashCode</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="102" id="diff-0312569055a2b5a665792c63a7c672caR102"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-smi">Objects</span><span class="pl-k">.</span>hash(getStatus(), getRuntimeId(), getError(), getTooling());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="103" id="diff-0312569055a2b5a665792c63a7c672caR103"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="104" id="diff-0312569055a2b5a665792c63a7c672caR104"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="105" id="diff-0312569055a2b5a665792c63a7c672caR105"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="106" id="diff-0312569055a2b5a665792c63a7c672caR106"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">String</span> <span class="pl-en">toString</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="107" id="diff-0312569055a2b5a665792c63a7c672caR107"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>BrokerEvent{<span class="pl-pds">"</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="108" id="diff-0312569055a2b5a665792c63a7c672caR108"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>status=<span class="pl-pds">"</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="109" id="diff-0312569055a2b5a665792c63a7c672caR109"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">+</span> status</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="110" id="diff-0312569055a2b5a665792c63a7c672caR110"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>, runtimeId=<span class="pl-pds">"</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="111" id="diff-0312569055a2b5a665792c63a7c672caR111"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">+</span> runtimeId</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="112" id="diff-0312569055a2b5a665792c63a7c672caR112"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>, error='<span class="pl-pds">"</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="113" id="diff-0312569055a2b5a665792c63a7c672caR113"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">+</span> error</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="114" id="diff-0312569055a2b5a665792c63a7c672caR114"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span><span class="pl-cce">\'</span><span class="pl-pds">'</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="115" id="diff-0312569055a2b5a665792c63a7c672caR115"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>, tooling=<span class="pl-pds">"</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="116" id="diff-0312569055a2b5a665792c63a7c672caR116"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">+</span> tooling</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="117" id="diff-0312569055a2b5a665792c63a7c672caR117"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>}<span class="pl-pds">'</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="118" id="diff-0312569055a2b5a665792c63a7c672caR118"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-0312569055a2b5a665792c63a7c672caL83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="119" id="diff-0312569055a2b5a665792c63a7c672caR119"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">}</span></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-0312569055a2b5a665792c63a7c672caL13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-0312569055a2b5a665792c63a7c672caR13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-0312569055a2b5a665792c63a7c672caL14"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-0312569055a2b5a665792c63a7c672caR14"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-0312569055a2b5a665792c63a7c672caL15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-0312569055a2b5a665792c63a7c672caR15"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="16" id="diff-0312569055a2b5a665792c63a7c672caR16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-0312569055a2b5a665792c63a7c672caL16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-0312569055a2b5a665792c63a7c672caR17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-0312569055a2b5a665792c63a7c672caL17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-0312569055a2b5a665792c63a7c672caR18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-0312569055a2b5a665792c63a7c672caL18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-0312569055a2b5a665792c63a7c672caR19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-0312569055a2b5a665792c63a7c672caL80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-0312569055a2b5a665792c63a7c672caR81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-0312569055a2b5a665792c63a7c672caL81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-0312569055a2b5a665792c63a7c672caR82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="82" id="diff-0312569055a2b5a665792c63a7c672caL82"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-0312569055a2b5a665792c63a7c672caR83"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="84" id="diff-0312569055a2b5a665792c63a7c672caR84"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="85" id="diff-0312569055a2b5a665792c63a7c672caR85"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="86" id="diff-0312569055a2b5a665792c63a7c672caR86"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="87" id="diff-0312569055a2b5a665792c63a7c672caR87"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="88" id="diff-0312569055a2b5a665792c63a7c672caR88"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="89" id="diff-0312569055a2b5a665792c63a7c672caR89"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="90" id="diff-0312569055a2b5a665792c63a7c672caR90"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="91" id="diff-0312569055a2b5a665792c63a7c672caR91"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="92" id="diff-0312569055a2b5a665792c63a7c672caR92"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="93" id="diff-0312569055a2b5a665792c63a7c672caR93"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="94" id="diff-0312569055a2b5a665792c63a7c672caR94"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="95" id="diff-0312569055a2b5a665792c63a7c672caR95"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="96" id="diff-0312569055a2b5a665792c63a7c672caR96"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="97" id="diff-0312569055a2b5a665792c63a7c672caR97"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="98" id="diff-0312569055a2b5a665792c63a7c672caR98"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="99" id="diff-0312569055a2b5a665792c63a7c672caR99"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="100" id="diff-0312569055a2b5a665792c63a7c672caR100"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="101" id="diff-0312569055a2b5a665792c63a7c672caR101"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="102" id="diff-0312569055a2b5a665792c63a7c672caR102"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="103" id="diff-0312569055a2b5a665792c63a7c672caR103"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="104" id="diff-0312569055a2b5a665792c63a7c672caR104"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="105" id="diff-0312569055a2b5a665792c63a7c672caR105"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="106" id="diff-0312569055a2b5a665792c63a7c672caR106"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="107" id="diff-0312569055a2b5a665792c63a7c672caR107"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="108" id="diff-0312569055a2b5a665792c63a7c672caR108"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="109" id="diff-0312569055a2b5a665792c63a7c672caR109"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="110" id="diff-0312569055a2b5a665792c63a7c672caR110"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="111" id="diff-0312569055a2b5a665792c63a7c672caR111"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="112" id="diff-0312569055a2b5a665792c63a7c672caR112"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="113" id="diff-0312569055a2b5a665792c63a7c672caR113"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="114" id="diff-0312569055a2b5a665792c63a7c672caR114"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="115" id="diff-0312569055a2b5a665792c63a7c672caR115"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="116" id="diff-0312569055a2b5a665792c63a7c672caR116"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="117" id="diff-0312569055a2b5a665792c63a7c672caR117"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="118" id="diff-0312569055a2b5a665792c63a7c672caR118"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="83" id="diff-0312569055a2b5a665792c63a7c672caL83"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="119" id="diff-0312569055a2b5a665792c63a7c672caR119"></td>
+<div class="file js-file js-details-container Details Details--on open has-inline-notes show-inline-notes " id="diff-1">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-e028bd55128993b4b99f12c54d9cbcd3" data-file-deleted="false" data-file-type=".java" data-path="infrastructures/kubernetes/src/main/java/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerEventsHandler.java" data-short-path="e028bd5">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="infrastructures/kubernetes/src/main/java/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerEventsHandler.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/garagatyi/che/blob/a0c7b1f2d466676aed3f8046c0d8753d0431f0e5/infrastructures/kubernetes/src/main/java/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerEventsHandler.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="96 additions &amp; 0 deletions" class="diffstat tooltipped tooltipped-e">96 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span></span>
+<a class="link-gray-dark" href="#diff-e028bd55128993b4b99f12c54d9cbcd3" title="infrastructures/kubernetes/src/main/java/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerEventsHandler.java">...eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerEventsHandler.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-e028bd55128993b4b99f12c54d9cbcd3" data-tab-size="8">
+<tr data-position="0">
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-e028bd55128993b4b99f12c54d9cbcd3HL0"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-e028bd55128993b4b99f12c54d9cbcd3HR1"></td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -0,0 +1,96 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="1" id="diff-e028bd55128993b4b99f12c54d9cbcd3R1"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"><span class="pl-c">/*</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="2" id="diff-e028bd55128993b4b99f12c54d9cbcd3R2"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> * Copyright (c) 2012-2018 Red Hat, Inc.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="3" id="diff-e028bd55128993b4b99f12c54d9cbcd3R3"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> * This program and the accompanying materials are made</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="4" id="diff-e028bd55128993b4b99f12c54d9cbcd3R4"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> * available under the terms of the Eclipse Public License 2.0</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="5" id="diff-e028bd55128993b4b99f12c54d9cbcd3R5"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> * which is available at https://www.eclipse.org/legal/epl-2.0/</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="6" id="diff-e028bd55128993b4b99f12c54d9cbcd3R6"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="7" id="diff-e028bd55128993b4b99f12c54d9cbcd3R7"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> * SPDX-License-Identifier: EPL-2.0</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="8" id="diff-e028bd55128993b4b99f12c54d9cbcd3R8"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="9" id="diff-e028bd55128993b4b99f12c54d9cbcd3R9"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> * Contributors:</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="10" id="diff-e028bd55128993b4b99f12c54d9cbcd3R10"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> *   Red Hat, Inc. - initial API and implementation</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="11" id="diff-e028bd55128993b4b99f12c54d9cbcd3R11"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="12" id="diff-e028bd55128993b4b99f12c54d9cbcd3R12"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">package</span> <span class="pl-smi">org.eclipse.che.workspace.infrastructure.kubernetes.wsplugins.events</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="13" id="diff-e028bd55128993b4b99f12c54d9cbcd3R13"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="14" id="diff-e028bd55128993b4b99f12c54d9cbcd3R14"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">com.google.common.base.Strings.isNullOrEmpty</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="15" id="diff-e028bd55128993b4b99f12c54d9cbcd3R15"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">java.lang.String.format</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="16" id="diff-e028bd55128993b4b99f12c54d9cbcd3R16"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">org.slf4j.LoggerFactory.getLogger</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="17" id="diff-e028bd55128993b4b99f12c54d9cbcd3R17"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="18" id="diff-e028bd55128993b4b99f12c54d9cbcd3R18"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.fasterxml.jackson.core.type.TypeReference</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="19" id="diff-e028bd55128993b4b99f12c54d9cbcd3R19"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.fasterxml.jackson.databind.ObjectMapper</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="20" id="diff-e028bd55128993b4b99f12c54d9cbcd3R20"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.io.IOException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="21" id="diff-e028bd55128993b4b99f12c54d9cbcd3R21"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.List</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-e028bd55128993b4b99f12c54d9cbcd3R22"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.inject.Inject</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="23" id="diff-e028bd55128993b4b99f12c54d9cbcd3R23"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.core.model.workspace.runtime.RuntimeIdentity</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-e028bd55128993b4b99f12c54d9cbcd3R24"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.core.notification.EventService</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="25" id="diff-e028bd55128993b4b99f12c54d9cbcd3R25"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.workspace.server.wsplugins.model.ChePlugin</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="26" id="diff-e028bd55128993b4b99f12c54d9cbcd3R26"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.workspace.shared.dto.event.BrokerLogEvent</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="27" id="diff-e028bd55128993b4b99f12c54d9cbcd3R27"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.workspace.shared.dto.event.BrokerStatusChangedEvent</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="28" id="diff-e028bd55128993b4b99f12c54d9cbcd3R28"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.workspace.shared.dto.event.RuntimeLogEvent</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="29" id="diff-e028bd55128993b4b99f12c54d9cbcd3R29"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.dto.server.DtoFactory</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="30" id="diff-e028bd55128993b4b99f12c54d9cbcd3R30"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.slf4j.Logger</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="31" id="diff-e028bd55128993b4b99f12c54d9cbcd3R31"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="32" id="diff-e028bd55128993b4b99f12c54d9cbcd3R32"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="33" id="diff-e028bd55128993b4b99f12c54d9cbcd3R33"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> * Converts events received from JSON_RPC channels to {<span class="pl-k">@link</span> EventService} events.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="34" id="diff-e028bd55128993b4b99f12c54d9cbcd3R34"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="35" id="diff-e028bd55128993b4b99f12c54d9cbcd3R35"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> * <span class="pl-k">@author</span> Oleksandr Garagatyi</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="36" id="diff-e028bd55128993b4b99f12c54d9cbcd3R36"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-e028bd55128993b4b99f12c54d9cbcd3R37"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">BrokerEventsHandler</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-e028bd55128993b4b99f12c54d9cbcd3R38"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-e028bd55128993b4b99f12c54d9cbcd3R39"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-c1">NO_ERROR_NO_TOOLING_ERROR_TEMPLATE</span> <span class="pl-k">=</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="40" id="diff-e028bd55128993b4b99f12c54d9cbcd3R40"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-s"><span class="pl-pds">"</span>Received event from plugin broker for workspace %s:%s with empty error and brokering result<span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="41" id="diff-e028bd55128993b4b99f12c54d9cbcd3R41"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="42" id="diff-e028bd55128993b4b99f12c54d9cbcd3R42"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">Logger</span> <span class="pl-c1">LOG</span> <span class="pl-k">=</span> getLogger(<span class="pl-smi">BrokerEventsHandler</span><span class="pl-k">.</span>class);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="43" id="diff-e028bd55128993b4b99f12c54d9cbcd3R43"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="44" id="diff-e028bd55128993b4b99f12c54d9cbcd3R44"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">ObjectMapper</span> objectMapper <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">ObjectMapper</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="45" id="diff-e028bd55128993b4b99f12c54d9cbcd3R45"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">EventService</span> eventService;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="46" id="diff-e028bd55128993b4b99f12c54d9cbcd3R46"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-e028bd55128993b4b99f12c54d9cbcd3R47"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Inject</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="48" id="diff-e028bd55128993b4b99f12c54d9cbcd3R48"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-en">BrokerEventsHandler</span>(<span class="pl-smi">EventService</span> <span class="pl-v">eventService</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="49" id="diff-e028bd55128993b4b99f12c54d9cbcd3R49"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>eventService <span class="pl-k">=</span> eventService;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="50" id="diff-e028bd55128993b4b99f12c54d9cbcd3R50"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="51" id="diff-e028bd55128993b4b99f12c54d9cbcd3R51"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="52" id="diff-e028bd55128993b4b99f12c54d9cbcd3R52"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">handle</span>(<span class="pl-smi">BrokerLogEvent</span> <span class="pl-v">brokerLogEvent</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="53" id="diff-e028bd55128993b4b99f12c54d9cbcd3R53"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    eventService<span class="pl-k">.</span>publish(</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="54" id="diff-e028bd55128993b4b99f12c54d9cbcd3R54"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">DtoFactory</span><span class="pl-k">.</span>newDto(<span class="pl-smi">RuntimeLogEvent</span><span class="pl-k">.</span>class)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="55" id="diff-e028bd55128993b4b99f12c54d9cbcd3R55"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            .withRuntimeId(brokerLogEvent<span class="pl-k">.</span>getRuntimeId())</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="56" id="diff-e028bd55128993b4b99f12c54d9cbcd3R56"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            .withText(brokerLogEvent<span class="pl-k">.</span>getText())</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="57" id="diff-e028bd55128993b4b99f12c54d9cbcd3R57"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            .withTime(brokerLogEvent<span class="pl-k">.</span>getTime()));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="58" id="diff-e028bd55128993b4b99f12c54d9cbcd3R58"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="59" id="diff-e028bd55128993b4b99f12c54d9cbcd3R59"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="60" id="diff-e028bd55128993b4b99f12c54d9cbcd3R60"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">handle</span>(<span class="pl-smi">BrokerStatusChangedEvent</span> <span class="pl-v">event</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="61" id="diff-e028bd55128993b4b99f12c54d9cbcd3R61"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> Tooling has fields that can't be parsed by DTO and JSON_RPC framework works with DTO only</span></span></td>
+</tr>
+<tr class="inline-comments js-inline-comments-container">
+<td class="line-comments js-line-comments js-quote-selection-container" colspan="4" data-quote-markdown=".js-comment-body">
+<div class="review-thread comment-holder js-line-comments js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+<div class="review-comment js-minimizable-comment-group js-targetable-comment" data-gid="MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NTg0NTk1OQ==" data-url="/_render_node/MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NTg0NTk1OQ==/comments/review_comment" id="r255845959">
+<div class="minimized-comment d-none">
+<details class="Details-element details-reset " data-body-version="ee08a9dbb640d5d9eec6a66db2c6bec1">
+<summary class="text-gray f6">
+<div class="d-flex flex-justify-between flex-items-center">
+<h3 class="review-comment-contents bg-white f5 text-normal text-italic" style="margin-left:38px">
+<div class="discussion-item-icon discussion-item-icon-gray text-gray">
+<svg aria-hidden="true" class="octicon octicon-fold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z" fill-rule="evenodd"></path></svg>
+</div>
+<div class="discussion-item-copy d-inline-block">
+                This comment has been minimized.
+
+          </div>
+</h3>
+<div class="text-gray text-small">
+<a class="link-gray" href="/login?return_to=https%3A%2F%2Fgithub.com%2Feclipse%2Fche%2Fpull%2F12614%2Ffiles" rel="nofollow">Sign in to view</a>
+</div>
+</div>
+</summary>
+</details>
+</div>
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment " data-body-version="ee08a9dbb640d5d9eec6a66db2c6bec1" data-thread-side="right">
+<div class="edit-comment-hide">
+<div class="timeline-comment-actions">
+<details class="details-overlay details-reset position-relative d-inline-block js-dropdown-details" id="details-r255845959">
+<summary aria-haspopup="true" aria-label="Show more options" class="btn-link timeline-comment-action">
+<svg aria-label="Show more options" class="octicon octicon-kebab-horizontal" height="16" role="img" version="1.1" viewbox="0 0 13 16" width="13"><path d="M1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" fill-rule="evenodd"></path></svg>
+</summary>
+<div class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+<clipboard-copy aria-label="Copy link" class="dropdown-item btn-link tooltipped tooltipped-nw" data-toggle-for="details-r255845959" for="r255845959-permalink" role="menuitem">
+              Copy link
+            </clipboard-copy>
+<button class="dropdown-item btn-link d-none js-comment-quote-reply" data-toggle-for="details-r255845959" type="button">
+              Quote reply
+            </button>
+</div>
+</details>
+</div>
+<span class="float-left mt-1">
+<a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=5887312" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/sleshchenko"><img alt="@sleshchenko" class="avatar" height="28" src="https://avatars1.githubusercontent.com/u/5887312?s=60&amp;v=4" width="28"/></a>
+</span>
+<div class="review-comment-contents js-suggested-changes-contents" data-thread-side="right">
+<h4 class="f5 text-normal d-inline">
+<strong>
+<a class="author link-gray-dark" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=5887312" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/sleshchenko">sleshchenko</a>
+</strong>
+<span class="text-gray">
+<a class="js-timestamp timestamp d-inline-block" href="#r255845959" id="r255845959-permalink">
+<relative-time datetime="2019-02-12T09:05:52Z">Feb 12, 2019</relative-time>
+</a>
+</span>
+</h4>
+<span aria-label="This user has previously committed to the che repository." class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s">
+      Contributor
+    </span>
+<task-lists disabled="" sortable="">
+<div class="comment-body markdown-body js-comment-body">
+<p>Actually, it's not true, right? Maybe adding usage of <a href="https://github.com/eclipse/che/blob/07263f1e30089689d71b057f747a44a29283e3c4/core/che-core-api-dto/src/test/java/org/eclipse/che/dto/definitions/DtoWithFieldNames.java#L28">@JsonFieldName</a> would make this class even simpler?</p>
+</div>
+</task-lists>
+<div class="comment-reactions js-reactions-container ">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="62" id="diff-e028bd55128993b4b99f12c54d9cbcd3R62"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">String</span> encodedTooling <span class="pl-k">=</span> event<span class="pl-k">.</span>getTooling();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="63" id="diff-e028bd55128993b4b99f12c54d9cbcd3R63"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">RuntimeIdentity</span> runtimeId <span class="pl-k">=</span> event<span class="pl-k">.</span>getRuntimeId();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="64" id="diff-e028bd55128993b4b99f12c54d9cbcd3R64"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (event<span class="pl-k">.</span>getStatus() <span class="pl-k">==</span> <span class="pl-c1">null</span> <span class="pl-k">||</span> runtimeId <span class="pl-k">==</span> <span class="pl-c1">null</span> <span class="pl-k">||</span> runtimeId<span class="pl-k">.</span>getWorkspaceId() <span class="pl-k">==</span> <span class="pl-c1">null</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="65" id="diff-e028bd55128993b4b99f12c54d9cbcd3R65"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">LOG</span><span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>Broker event skipped due to illegal content: {}<span class="pl-pds">"</span></span>, event);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="66" id="diff-e028bd55128993b4b99f12c54d9cbcd3R66"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="67" id="diff-e028bd55128993b4b99f12c54d9cbcd3R67"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="68" id="diff-e028bd55128993b4b99f12c54d9cbcd3R68"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">BrokerEvent</span> brokerEvent <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">BrokerEvent</span>(event, <span class="pl-c1">null</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="69" id="diff-e028bd55128993b4b99f12c54d9cbcd3R69"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (isNullOrEmpty(event<span class="pl-k">.</span>getError())) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="70" id="diff-e028bd55128993b4b99f12c54d9cbcd3R70"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (isNullOrEmpty(encodedTooling)) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="71" id="diff-e028bd55128993b4b99f12c54d9cbcd3R71"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        brokerEvent<span class="pl-k">.</span>withError(</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="72" id="diff-e028bd55128993b4b99f12c54d9cbcd3R72"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            format(</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="73" id="diff-e028bd55128993b4b99f12c54d9cbcd3R73"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">NO_ERROR_NO_TOOLING_ERROR_TEMPLATE</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="74" id="diff-e028bd55128993b4b99f12c54d9cbcd3R74"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                runtimeId<span class="pl-k">.</span>getOwnerId(),</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="75" id="diff-e028bd55128993b4b99f12c54d9cbcd3R75"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                runtimeId<span class="pl-k">.</span>getWorkspaceId()));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="76" id="diff-e028bd55128993b4b99f12c54d9cbcd3R76"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">      } <span class="pl-k">else</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="77" id="diff-e028bd55128993b4b99f12c54d9cbcd3R77"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">try</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="78" id="diff-e028bd55128993b4b99f12c54d9cbcd3R78"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">          brokerEvent<span class="pl-k">.</span>withTooling(parseTooling(encodedTooling));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="79" id="diff-e028bd55128993b4b99f12c54d9cbcd3R79"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        } <span class="pl-k">catch</span> (<span class="pl-smi">IOException</span> e) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="80" id="diff-e028bd55128993b4b99f12c54d9cbcd3R80"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">          brokerEvent<span class="pl-k">.</span>withError(e<span class="pl-k">.</span>getMessage());</span></td>
+</tr>
+<tr class="inline-comments js-inline-comments-container">
+<td class="line-comments js-line-comments js-quote-selection-container" colspan="4" data-quote-markdown=".js-comment-body">
+<div class="review-thread comment-holder js-line-comments js-resolvable-timeline-thread-container" data-resolved="false">
+<div class="js-resolvable-thread-contents ">
+<div class="js-comments-holder">
+<div class="review-comment js-minimizable-comment-group js-targetable-comment" data-gid="MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NTg1NDUxMg==" data-url="/_render_node/MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDI1NTg1NDUxMg==/comments/review_comment" id="r255854512">
+<div class="minimized-comment d-none">
+<details class="Details-element details-reset " data-body-version="919598f854adbc959c45c3d82532b910">
+<summary class="text-gray f6">
+<div class="d-flex flex-justify-between flex-items-center">
+<h3 class="review-comment-contents bg-white f5 text-normal text-italic" style="margin-left:38px">
+<div class="discussion-item-icon discussion-item-icon-gray text-gray">
+<svg aria-hidden="true" class="octicon octicon-fold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z" fill-rule="evenodd"></path></svg>
+</div>
+<div class="discussion-item-copy d-inline-block">
+                This comment has been minimized.
+
+          </div>
+</h3>
+<div class="text-gray text-small">
+<a class="link-gray" href="/login?return_to=https%3A%2F%2Fgithub.com%2Feclipse%2Fche%2Fpull%2F12614%2Ffiles" rel="nofollow">Sign in to view</a>
+</div>
+</div>
+</summary>
+</details>
+</div>
+<div class="previewable-edit js-suggested-changes-container js-task-list-container unminimized-comment js-comment " data-body-version="919598f854adbc959c45c3d82532b910" data-thread-side="right">
+<div class="edit-comment-hide">
+<div class="timeline-comment-actions">
+<details class="details-overlay details-reset position-relative d-inline-block js-dropdown-details" id="details-r255854512">
+<summary aria-haspopup="true" aria-label="Show more options" class="btn-link timeline-comment-action">
+<svg aria-label="Show more options" class="octicon octicon-kebab-horizontal" height="16" role="img" version="1.1" viewbox="0 0 13 16" width="13"><path d="M1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" fill-rule="evenodd"></path></svg>
+</summary>
+<div class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+<clipboard-copy aria-label="Copy link" class="dropdown-item btn-link tooltipped tooltipped-nw" data-toggle-for="details-r255854512" for="r255854512-permalink" role="menuitem">
+              Copy link
+            </clipboard-copy>
+<button class="dropdown-item btn-link d-none js-comment-quote-reply" data-toggle-for="details-r255854512" type="button">
+              Quote reply
+            </button>
+</div>
+</details>
+</div>
+<span class="float-left mt-1">
+<a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=5887312" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/sleshchenko"><img alt="@sleshchenko" class="avatar" height="28" src="https://avatars1.githubusercontent.com/u/5887312?s=60&amp;v=4" width="28"/></a>
+</span>
+<div class="review-comment-contents js-suggested-changes-contents" data-thread-side="right">
+<h4 class="f5 text-normal d-inline">
+<strong>
+<a class="author link-gray-dark" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=5887312" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/sleshchenko">sleshchenko</a>
+</strong>
+<span class="text-gray">
+<a class="js-timestamp timestamp d-inline-block" href="#r255854512" id="r255854512-permalink">
+<relative-time datetime="2019-02-12T09:05:52Z">Feb 12, 2019</relative-time>
+</a>
+</span>
+</h4>
+<span aria-label="This user has previously committed to the che repository." class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s">
+      Contributor
+    </span>
+<task-lists disabled="" sortable="">
+<div class="comment-body markdown-body js-comment-body">
+<p>I found this nested code quite difficult to understand. I think one more private method may help here</p>
+<div class="highlight highlight-source-java"><pre>  <span class="pl-k">public</span> <span class="pl-k">void</span> handle(<span class="pl-smi">BrokerStatusChangedEvent</span> event) {
+    <span class="pl-c"><span class="pl-c">//</span> Tooling has fields that can't be parsed by DTO and JSON_RPC framework works with DTO only</span>
+    <span class="pl-smi">RuntimeIdentity</span> runtimeId <span class="pl-k">=</span> event<span class="pl-k">.</span>getRuntimeId();
+    <span class="pl-k">if</span> (event<span class="pl-k">.</span>getStatus() <span class="pl-k">==</span> <span class="pl-c1">null</span> <span class="pl-k">||</span> runtimeId <span class="pl-k">==</span> <span class="pl-c1">null</span> <span class="pl-k">||</span> runtimeId<span class="pl-k">.</span>getWorkspaceId() <span class="pl-k">==</span> <span class="pl-c1">null</span>) {
+      <span class="pl-c1">LOG</span><span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>Broker event skipped due to illegal content: {}<span class="pl-pds">"</span></span>, event);
+      <span class="pl-k">return</span>;
+    }
+
+    <span class="pl-k">try</span> {
+      <span class="pl-k">List&lt;<span class="pl-smi">ChePlugin</span>&gt;</span> tooling <span class="pl-k">=</span> getTooling(event);
+      eventService<span class="pl-k">.</span>publish(<span class="pl-k">new</span> <span class="pl-smi">BrokerEvent</span>(event, tooling));
+    } <span class="pl-k">catch</span> (<span class="pl-smi">IllegalStateException</span> e) {
+      eventService<span class="pl-k">.</span>publish(<span class="pl-k">new</span> <span class="pl-smi">BrokerEvent</span>(event, <span class="pl-c1">null</span>)<span class="pl-k">.</span>withError(e<span class="pl-k">.</span>getMessage()));
+    }
+  }
+  
+  <span class="pl-k">private</span> <span class="pl-k">List&lt;<span class="pl-smi">ChePlugin</span>&gt;</span> getTooling(<span class="pl-smi">BrokerStatusChangedEvent</span> event) {
+    <span class="pl-k">if</span> (<span class="pl-k">!</span>isNullOrEmpty(event<span class="pl-k">.</span>getError())){
+      <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">IllegalStateException</span>(event<span class="pl-k">.</span>getError());
+    }
+    
+    <span class="pl-k">if</span> (isNullOrEmpty(event<span class="pl-k">.</span>getTooling())) {
+      <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">IllegalStateException</span>(format(
+          <span class="pl-c1">NO_ERROR_NO_TOOLING_ERROR_TEMPLATE</span>,
+          event<span class="pl-k">.</span>getRuntimeId()<span class="pl-k">.</span>getOwnerId(),
+          event<span class="pl-k">.</span>getRuntimeId()<span class="pl-k">.</span>getWorkspaceId()));
+    }
+
+    <span class="pl-k">try</span> {
+      <span class="pl-k">return</span> parseTooling(event<span class="pl-k">.</span>getTooling());
+    } <span class="pl-k">catch</span> (<span class="pl-smi">IOException</span> e) {
+      <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">IllegalStateException</span>(e<span class="pl-k">.</span>getMessage());
+    }
+  }</pre></div>
+<p>Up to you rework it or not.</p>
+</div>
+</task-lists>
+<div class="comment-reactions js-reactions-container ">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="81" id="diff-e028bd55128993b4b99f12c54d9cbcd3R81"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="82" id="diff-e028bd55128993b4b99f12c54d9cbcd3R82"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">      }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="83" id="diff-e028bd55128993b4b99f12c54d9cbcd3R83"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="84" id="diff-e028bd55128993b4b99f12c54d9cbcd3R84"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    eventService<span class="pl-k">.</span>publish(brokerEvent);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="85" id="diff-e028bd55128993b4b99f12c54d9cbcd3R85"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="86" id="diff-e028bd55128993b4b99f12c54d9cbcd3R86"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="87" id="diff-e028bd55128993b4b99f12c54d9cbcd3R87"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">List&lt;<span class="pl-smi">ChePlugin</span>&gt;</span> <span class="pl-en">parseTooling</span>(<span class="pl-smi">String</span> <span class="pl-v">toolingString</span>) <span class="pl-k">throws</span> <span class="pl-smi">IOException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="88" id="diff-e028bd55128993b4b99f12c54d9cbcd3R88"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">try</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="89" id="diff-e028bd55128993b4b99f12c54d9cbcd3R89"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> objectMapper<span class="pl-k">.</span>readValue(toolingString, <span class="pl-k">new</span> <span class="pl-k">TypeReference&lt;<span class="pl-k">List&lt;<span class="pl-smi">ChePlugin</span>&gt;</span>&gt;</span>() {});</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="90" id="diff-e028bd55128993b4b99f12c54d9cbcd3R90"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    } <span class="pl-k">catch</span> (<span class="pl-smi">IOException</span> e) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="91" id="diff-e028bd55128993b4b99f12c54d9cbcd3R91"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">String</span> errMessage <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Parsing Che plugin broker event failed. Error: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> e<span class="pl-k">.</span>getMessage();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="92" id="diff-e028bd55128993b4b99f12c54d9cbcd3R92"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">LOG</span><span class="pl-k">.</span>error(errMessage, e);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="93" id="diff-e028bd55128993b4b99f12c54d9cbcd3R93"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">IOException</span>(errMessage, e);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="94" id="diff-e028bd55128993b4b99f12c54d9cbcd3R94"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="95" id="diff-e028bd55128993b4b99f12c54d9cbcd3R95"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="96" id="diff-e028bd55128993b4b99f12c54d9cbcd3R96"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">}</span></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-e028bd55128993b4b99f12c54d9cbcd3HL0"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-e028bd55128993b4b99f12c54d9cbcd3HR1"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="1" id="diff-e028bd55128993b4b99f12c54d9cbcd3R1"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="2" id="diff-e028bd55128993b4b99f12c54d9cbcd3R2"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="3" id="diff-e028bd55128993b4b99f12c54d9cbcd3R3"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="4" id="diff-e028bd55128993b4b99f12c54d9cbcd3R4"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="5" id="diff-e028bd55128993b4b99f12c54d9cbcd3R5"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="6" id="diff-e028bd55128993b4b99f12c54d9cbcd3R6"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="7" id="diff-e028bd55128993b4b99f12c54d9cbcd3R7"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="8" id="diff-e028bd55128993b4b99f12c54d9cbcd3R8"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="9" id="diff-e028bd55128993b4b99f12c54d9cbcd3R9"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="10" id="diff-e028bd55128993b4b99f12c54d9cbcd3R10"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="11" id="diff-e028bd55128993b4b99f12c54d9cbcd3R11"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="12" id="diff-e028bd55128993b4b99f12c54d9cbcd3R12"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="13" id="diff-e028bd55128993b4b99f12c54d9cbcd3R13"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="14" id="diff-e028bd55128993b4b99f12c54d9cbcd3R14"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="15" id="diff-e028bd55128993b4b99f12c54d9cbcd3R15"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="16" id="diff-e028bd55128993b4b99f12c54d9cbcd3R16"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="17" id="diff-e028bd55128993b4b99f12c54d9cbcd3R17"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="18" id="diff-e028bd55128993b4b99f12c54d9cbcd3R18"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="19" id="diff-e028bd55128993b4b99f12c54d9cbcd3R19"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="20" id="diff-e028bd55128993b4b99f12c54d9cbcd3R20"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="21" id="diff-e028bd55128993b4b99f12c54d9cbcd3R21"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-e028bd55128993b4b99f12c54d9cbcd3R22"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="23" id="diff-e028bd55128993b4b99f12c54d9cbcd3R23"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-e028bd55128993b4b99f12c54d9cbcd3R24"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="25" id="diff-e028bd55128993b4b99f12c54d9cbcd3R25"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="26" id="diff-e028bd55128993b4b99f12c54d9cbcd3R26"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="27" id="diff-e028bd55128993b4b99f12c54d9cbcd3R27"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="28" id="diff-e028bd55128993b4b99f12c54d9cbcd3R28"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="29" id="diff-e028bd55128993b4b99f12c54d9cbcd3R29"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="30" id="diff-e028bd55128993b4b99f12c54d9cbcd3R30"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="31" id="diff-e028bd55128993b4b99f12c54d9cbcd3R31"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="32" id="diff-e028bd55128993b4b99f12c54d9cbcd3R32"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="33" id="diff-e028bd55128993b4b99f12c54d9cbcd3R33"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="34" id="diff-e028bd55128993b4b99f12c54d9cbcd3R34"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="35" id="diff-e028bd55128993b4b99f12c54d9cbcd3R35"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="36" id="diff-e028bd55128993b4b99f12c54d9cbcd3R36"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-e028bd55128993b4b99f12c54d9cbcd3R37"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="38" id="diff-e028bd55128993b4b99f12c54d9cbcd3R38"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="39" id="diff-e028bd55128993b4b99f12c54d9cbcd3R39"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="40" id="diff-e028bd55128993b4b99f12c54d9cbcd3R40"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="41" id="diff-e028bd55128993b4b99f12c54d9cbcd3R41"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="42" id="diff-e028bd55128993b4b99f12c54d9cbcd3R42"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="43" id="diff-e028bd55128993b4b99f12c54d9cbcd3R43"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="44" id="diff-e028bd55128993b4b99f12c54d9cbcd3R44"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="45" id="diff-e028bd55128993b4b99f12c54d9cbcd3R45"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="46" id="diff-e028bd55128993b4b99f12c54d9cbcd3R46"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-e028bd55128993b4b99f12c54d9cbcd3R47"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="48" id="diff-e028bd55128993b4b99f12c54d9cbcd3R48"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="49" id="diff-e028bd55128993b4b99f12c54d9cbcd3R49"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="50" id="diff-e028bd55128993b4b99f12c54d9cbcd3R50"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="51" id="diff-e028bd55128993b4b99f12c54d9cbcd3R51"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="52" id="diff-e028bd55128993b4b99f12c54d9cbcd3R52"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="53" id="diff-e028bd55128993b4b99f12c54d9cbcd3R53"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="54" id="diff-e028bd55128993b4b99f12c54d9cbcd3R54"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="55" id="diff-e028bd55128993b4b99f12c54d9cbcd3R55"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="56" id="diff-e028bd55128993b4b99f12c54d9cbcd3R56"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="57" id="diff-e028bd55128993b4b99f12c54d9cbcd3R57"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="58" id="diff-e028bd55128993b4b99f12c54d9cbcd3R58"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="59" id="diff-e028bd55128993b4b99f12c54d9cbcd3R59"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="60" id="diff-e028bd55128993b4b99f12c54d9cbcd3R60"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="61" id="diff-e028bd55128993b4b99f12c54d9cbcd3R61"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="62" id="diff-e028bd55128993b4b99f12c54d9cbcd3R62"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="63" id="diff-e028bd55128993b4b99f12c54d9cbcd3R63"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="64" id="diff-e028bd55128993b4b99f12c54d9cbcd3R64"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="65" id="diff-e028bd55128993b4b99f12c54d9cbcd3R65"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="66" id="diff-e028bd55128993b4b99f12c54d9cbcd3R66"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="67" id="diff-e028bd55128993b4b99f12c54d9cbcd3R67"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="68" id="diff-e028bd55128993b4b99f12c54d9cbcd3R68"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="69" id="diff-e028bd55128993b4b99f12c54d9cbcd3R69"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="70" id="diff-e028bd55128993b4b99f12c54d9cbcd3R70"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="71" id="diff-e028bd55128993b4b99f12c54d9cbcd3R71"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="72" id="diff-e028bd55128993b4b99f12c54d9cbcd3R72"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="73" id="diff-e028bd55128993b4b99f12c54d9cbcd3R73"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="74" id="diff-e028bd55128993b4b99f12c54d9cbcd3R74"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="75" id="diff-e028bd55128993b4b99f12c54d9cbcd3R75"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="76" id="diff-e028bd55128993b4b99f12c54d9cbcd3R76"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="77" id="diff-e028bd55128993b4b99f12c54d9cbcd3R77"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="78" id="diff-e028bd55128993b4b99f12c54d9cbcd3R78"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="79" id="diff-e028bd55128993b4b99f12c54d9cbcd3R79"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="80" id="diff-e028bd55128993b4b99f12c54d9cbcd3R80"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="81" id="diff-e028bd55128993b4b99f12c54d9cbcd3R81"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="82" id="diff-e028bd55128993b4b99f12c54d9cbcd3R82"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="83" id="diff-e028bd55128993b4b99f12c54d9cbcd3R83"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="84" id="diff-e028bd55128993b4b99f12c54d9cbcd3R84"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="85" id="diff-e028bd55128993b4b99f12c54d9cbcd3R85"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="86" id="diff-e028bd55128993b4b99f12c54d9cbcd3R86"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="87" id="diff-e028bd55128993b4b99f12c54d9cbcd3R87"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="88" id="diff-e028bd55128993b4b99f12c54d9cbcd3R88"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="89" id="diff-e028bd55128993b4b99f12c54d9cbcd3R89"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="90" id="diff-e028bd55128993b4b99f12c54d9cbcd3R90"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="91" id="diff-e028bd55128993b4b99f12c54d9cbcd3R91"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="92" id="diff-e028bd55128993b4b99f12c54d9cbcd3R92"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="93" id="diff-e028bd55128993b4b99f12c54d9cbcd3R93"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="94" id="diff-e028bd55128993b4b99f12c54d9cbcd3R94"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="95" id="diff-e028bd55128993b4b99f12c54d9cbcd3R95"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="96" id="diff-e028bd55128993b4b99f12c54d9cbcd3R96"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-2">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-0098d7e83a9d534abfbae86408aed707" data-file-deleted="false" data-file-type=".java" data-path="infrastructures/kubernetes/src/main/java/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerService.java" data-short-path="0098d7e">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="infrastructures/kubernetes/src/main/java/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerService.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/garagatyi/che/blob/a0c7b1f2d466676aed3f8046c0d8753d0431f0e5/infrastructures/kubernetes/src/main/java/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerService.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="6 additions &amp; 54 deletions" class="diffstat tooltipped tooltipped-e">60 <span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-0098d7e83a9d534abfbae86408aed707" title="infrastructures/kubernetes/src/main/java/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerService.java">...a/org/eclipse/che/workspace/infrastructure/kubernetes/wsplugins/events/BrokerService.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-0098d7e83a9d534abfbae86408aed707" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-10" data-right-range="1-10" data-url="/eclipse/che/blob_excerpt/7b27896897fcc72e165ab01d39939d6bb45b0009?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=11&amp;left_hunk_size=26&amp;mode=100644&amp;path=infrastructures%2Fkubernetes%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Fche%2Fworkspace%2Finfrastructure%2Fkubernetes%2Fwsplugins%2Fevents%2FBrokerService.java&amp;right=11&amp;right_hunk_size=12" href="#diff-0098d7e83a9d534abfbae86408aed707" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -11,26 +11,12 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-0098d7e83a9d534abfbae86408aed707L11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-0098d7e83a9d534abfbae86408aed707R11"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-0098d7e83a9d534abfbae86408aed707L12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-0098d7e83a9d534abfbae86408aed707R12"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">package</span> <span class="pl-smi">org.eclipse.che.workspace.infrastructure.kubernetes.wsplugins.events</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-0098d7e83a9d534abfbae86408aed707L13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-0098d7e83a9d534abfbae86408aed707R13"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="14" id="diff-0098d7e83a9d534abfbae86408aed707L14"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">com.google.common.base.Strings.isNullOrEmpty</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="15" id="diff-0098d7e83a9d534abfbae86408aed707L15"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import static</span> <span class="pl-smi">org.slf4j.LoggerFactory.getLogger</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="16" id="diff-0098d7e83a9d534abfbae86408aed707L16"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="17" id="diff-0098d7e83a9d534abfbae86408aed707L17"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.fasterxml.jackson.core.type.TypeReference</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="18" id="diff-0098d7e83a9d534abfbae86408aed707L18"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.fasterxml.jackson.databind.ObjectMapper</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-0098d7e83a9d534abfbae86408aed707L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-0098d7e83a9d534abfbae86408aed707R14"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.google.common.annotations.Beta</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="20" id="diff-0098d7e83a9d534abfbae86408aed707L20"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.io.IOException</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="21" id="diff-0098d7e83a9d534abfbae86408aed707L21"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.List</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-0098d7e83a9d534abfbae86408aed707L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-0098d7e83a9d534abfbae86408aed707R15"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.inject.Inject</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-0098d7e83a9d534abfbae86408aed707L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-0098d7e83a9d534abfbae86408aed707R16"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.inject.Singleton</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-0098d7e83a9d534abfbae86408aed707L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-0098d7e83a9d534abfbae86408aed707R17"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.core.jsonrpc.commons.RequestHandlerConfigurator</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="25" id="diff-0098d7e83a9d534abfbae86408aed707L25"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.core.model.workspace.runtime.RuntimeIdentity</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="26" id="diff-0098d7e83a9d534abfbae86408aed707L26"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.core.notification.EventService</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="27" id="diff-0098d7e83a9d534abfbae86408aed707L27"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.workspace.server.wsplugins.model.ChePlugin</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-0098d7e83a9d534abfbae86408aed707L28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-0098d7e83a9d534abfbae86408aed707R18"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.workspace.shared.dto.event.BrokerLogEvent</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-0098d7e83a9d534abfbae86408aed707L29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-0098d7e83a9d534abfbae86408aed707R19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.workspace.shared.dto.event.BrokerStatusChangedEvent</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="30" id="diff-0098d7e83a9d534abfbae86408aed707L30"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.api.workspace.shared.dto.event.RuntimeLogEvent</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="31" id="diff-0098d7e83a9d534abfbae86408aed707L31"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.commons.annotation.Nullable</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="32" id="diff-0098d7e83a9d534abfbae86408aed707L32"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.eclipse.che.dto.server.DtoFactory</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="33" id="diff-0098d7e83a9d534abfbae86408aed707L33"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.slf4j.Logger</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-0098d7e83a9d534abfbae86408aed707L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-0098d7e83a9d534abfbae86408aed707R20"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-0098d7e83a9d534abfbae86408aed707L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-0098d7e83a9d534abfbae86408aed707R21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-0098d7e83a9d534abfbae86408aed707L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-0098d7e83a9d534abfbae86408aed707R22"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> * Configure JSON_RPC consumers of Che plugin broker events. Also converts {<span class="pl-k">@link</span></span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="27">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="37-39" data-right-range="23-25" data-url="/eclipse/che/blob_excerpt/7b27896897fcc72e165ab01d39939d6bb45b0009?diff=unified&amp;in_wiki_context=&amp;last_left=36&amp;last_right=22&amp;left=44&amp;left_hunk_size=18&amp;mode=100644&amp;path=infrastructures%2Fkubernetes%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Fche%2Fworkspace%2Finfrastructure%2Fkubernetes%2Fwsplugins%2Fevents%2FBrokerService.java&amp;right=30&amp;right_hunk_size=15" href="#diff-0098d7e83a9d534abfbae86408aed707" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -44,18 +30,15 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-0098d7e83a9d534abfbae86408aed707L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-0098d7e83a9d534abfbae86408aed707R30"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">@Singleton</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-0098d7e83a9d534abfbae86408aed707L45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-0098d7e83a9d534abfbae86408aed707R31"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">BrokerService</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-0098d7e83a9d534abfbae86408aed707L46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-0098d7e83a9d534abfbae86408aed707R32"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="47" id="diff-0098d7e83a9d534abfbae86408aed707L47"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">Logger</span> <span class="pl-c1">LOG</span> <span class="pl-k">=</span> getLogger(<span class="pl-smi">BrokerService</span><span class="pl-k">.</span>class);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="48" id="diff-0098d7e83a9d534abfbae86408aed707L48"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-0098d7e83a9d534abfbae86408aed707L49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-0098d7e83a9d534abfbae86408aed707R33"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-c1">BROKER_RESULT_METHOD</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>broker/result<span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-0098d7e83a9d534abfbae86408aed707L50"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-0098d7e83a9d534abfbae86408aed707R34"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-c1">BROKER_STATUS_CHANGED_METHOD</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>broker/statusChanged<span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-0098d7e83a9d534abfbae86408aed707L51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-0098d7e83a9d534abfbae86408aed707R35"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-c1">BROKER_LOG_METHOD</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>broker/log<span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-0098d7e83a9d534abfbae86408aed707L52"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-0098d7e83a9d534abfbae86408aed707R36"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="53" id="diff-0098d7e83a9d534abfbae86408aed707L53"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">ObjectMapper</span> objectMapper <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">ObjectMapper</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="54" id="diff-0098d7e83a9d534abfbae86408aed707L54"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">EventService</span> eventService;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-0098d7e83a9d534abfbae86408aed707R37"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">BrokerEventsHandler</span> eventsHandler;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-0098d7e83a9d534abfbae86408aed707L55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-0098d7e83a9d534abfbae86408aed707R38"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-0098d7e83a9d534abfbae86408aed707L56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-0098d7e83a9d534abfbae86408aed707R39"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Inject</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="57" id="diff-0098d7e83a9d534abfbae86408aed707L57"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-en">BrokerService</span>(<span class="pl-smi x x-first">EventService</span><span class="x"> </span><span class="pl-v x x-last">eventService</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="58" id="diff-0098d7e83a9d534abfbae86408aed707L58"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span><span class="x x-first x-last">eventService</span> <span class="pl-k">=</span> <span class="x x-first x-last">eventService</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="40" id="diff-0098d7e83a9d534abfbae86408aed707R40"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-en">BrokerService</span>(<span class="pl-smi x x-first">BrokerEventsHandler</span><span class="x"> </span><span class="pl-v x x-last">eventsHandler</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="41" id="diff-0098d7e83a9d534abfbae86408aed707R41"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span><span class="x x-first x-last">eventsHandler</span> <span class="pl-k">=</span> <span class="x x-first x-last">eventsHandler</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-0098d7e83a9d534abfbae86408aed707L59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-0098d7e83a9d534abfbae86408aed707R42"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-0098d7e83a9d534abfbae86408aed707L60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-0098d7e83a9d534abfbae86408aed707R43"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="61" id="diff-0098d7e83a9d534abfbae86408aed707L61"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-0098d7e83a9d534abfbae86408aed707R44"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Inject</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="49">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="62-62" data-right-range="45-45" data-url="/eclipse/che/blob_excerpt/7b27896897fcc72e165ab01d39939d6bb45b0009?diff=unified&amp;in_wiki_context=&amp;last_left=61&amp;last_right=44&amp;left=65&amp;left_hunk_size=51&amp;mode=100644&amp;path=infrastructures%2Fkubernetes%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Fche%2Fworkspace%2Finfrastructure%2Fkubernetes%2Fwsplugins%2Fevents%2FBrokerService.java&amp;right=48&amp;right_hunk_size=20" href="#diff-0098d7e83a9d534abfbae86408aed707" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -65,51 +48,20 @@ public void configureMethods(RequestHandlerConfigurator requestHandler) {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="65" id="diff-0098d7e83a9d534abfbae86408aed707L65"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-0098d7e83a9d534abfbae86408aed707R48"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        .methodName(<span class="pl-c1">BROKER_STATUS_CHANGED_METHOD</span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="66" id="diff-0098d7e83a9d534abfbae86408aed707L66"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-0098d7e83a9d534abfbae86408aed707R49"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        .paramsAsDto(<span class="pl-smi">BrokerStatusChangedEvent</span><span class="pl-k">.</span>class)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="67" id="diff-0098d7e83a9d534abfbae86408aed707L67"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-0098d7e83a9d534abfbae86408aed707R50"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        .noResult()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="68" id="diff-0098d7e83a9d534abfbae86408aed707L68"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        .withConsumer(<span class="pl-c1 x x-first x-last">this</span><span class="pl-k">::</span>handle);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="51" id="diff-0098d7e83a9d534abfbae86408aed707R51"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        .withConsumer(<span class="x x-first x-last">eventsHandler</span><span class="pl-k">::</span>handle);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="69" id="diff-0098d7e83a9d534abfbae86408aed707L69"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-0098d7e83a9d534abfbae86408aed707R52"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="70" id="diff-0098d7e83a9d534abfbae86408aed707L70"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="53" id="diff-0098d7e83a9d534abfbae86408aed707R53"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    requestHandler</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="71" id="diff-0098d7e83a9d534abfbae86408aed707L71"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-0098d7e83a9d534abfbae86408aed707R54"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        .newConfiguration()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="72" id="diff-0098d7e83a9d534abfbae86408aed707L72"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-0098d7e83a9d534abfbae86408aed707R55"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        .methodName(<span class="pl-c1">BROKER_RESULT_METHOD</span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-0098d7e83a9d534abfbae86408aed707L73"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-0098d7e83a9d534abfbae86408aed707R56"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        .paramsAsDto(<span class="pl-smi">BrokerStatusChangedEvent</span><span class="pl-k">.</span>class)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-0098d7e83a9d534abfbae86408aed707L74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-0098d7e83a9d534abfbae86408aed707R57"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        .noResult()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="75" id="diff-0098d7e83a9d534abfbae86408aed707L75"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        .withConsumer(<span class="pl-c1 x x-first x-last">this</span><span class="pl-k">::</span>handle);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="58" id="diff-0098d7e83a9d534abfbae86408aed707R58"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        .withConsumer(<span class="x x-first x-last">eventsHandler</span><span class="pl-k">::</span>handle);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="76" id="diff-0098d7e83a9d534abfbae86408aed707L76"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-0098d7e83a9d534abfbae86408aed707R59"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-0098d7e83a9d534abfbae86408aed707L77"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-0098d7e83a9d534abfbae86408aed707R60"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    requestHandler</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-0098d7e83a9d534abfbae86408aed707L78"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="61" id="diff-0098d7e83a9d534abfbae86408aed707R61"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        .newConfiguration()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-0098d7e83a9d534abfbae86408aed707L79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="62" id="diff-0098d7e83a9d534abfbae86408aed707R62"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        .methodName(<span class="pl-c1">BROKER_LOG_METHOD</span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-0098d7e83a9d534abfbae86408aed707L80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="63" id="diff-0098d7e83a9d534abfbae86408aed707R63"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        .paramsAsDto(<span class="pl-smi">BrokerLogEvent</span><span class="pl-k">.</span>class)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-0098d7e83a9d534abfbae86408aed707L81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="64" id="diff-0098d7e83a9d534abfbae86408aed707R64"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        .noResult()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="82" id="diff-0098d7e83a9d534abfbae86408aed707L82"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        .withConsumer(<span class="pl-c1">this</span><span class="pl-k">::</span>handle);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="83" id="diff-0098d7e83a9d534abfbae86408aed707L83"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="84" id="diff-0098d7e83a9d534abfbae86408aed707L84"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="85" id="diff-0098d7e83a9d534abfbae86408aed707L85"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">void</span> <span class="pl-en">handle</span>(<span class="pl-smi">BrokerLogEvent</span> <span class="pl-v">brokerLogEvent</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="86" id="diff-0098d7e83a9d534abfbae86408aed707L86"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    eventService<span class="pl-k">.</span>publish(</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="87" id="diff-0098d7e83a9d534abfbae86408aed707L87"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">DtoFactory</span><span class="pl-k">.</span>newDto(<span class="pl-smi">RuntimeLogEvent</span><span class="pl-k">.</span>class)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="88" id="diff-0098d7e83a9d534abfbae86408aed707L88"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">            .withRuntimeId(brokerLogEvent<span class="pl-k">.</span>getRuntimeId())</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="89" id="diff-0098d7e83a9d534abfbae86408aed707L89"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">            .withText(brokerLogEvent<span class="pl-k">.</span>getText())</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="90" id="diff-0098d7e83a9d534abfbae86408aed707L90"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">            .withTime(brokerLogEvent<span class="pl-k">.</span>getTime()));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="91" id="diff-0098d7e83a9d534abfbae86408aed707L91"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="92" id="diff-0098d7e83a9d534abfbae86408aed707L92"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="93" id="diff-0098d7e83a9d534abfbae86408aed707L93"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">void</span> <span class="pl-en">handle</span>(<span class="pl-smi">BrokerStatusChangedEvent</span> <span class="pl-v">event</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="94" id="diff-0098d7e83a9d534abfbae86408aed707L94"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> Tooling has fields that can't be parsed by DTO and JSON_RPC framework works with DTO only</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="95" id="diff-0098d7e83a9d534abfbae86408aed707L95"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">String</span> encodedTooling <span class="pl-k">=</span> event<span class="pl-k">.</span>getTooling();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="96" id="diff-0098d7e83a9d534abfbae86408aed707L96"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">RuntimeIdentity</span> runtimeId <span class="pl-k">=</span> event<span class="pl-k">.</span>getRuntimeId();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="97" id="diff-0098d7e83a9d534abfbae86408aed707L97"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (event<span class="pl-k">.</span>getStatus() <span class="pl-k">==</span> <span class="pl-c1">null</span> <span class="pl-k">||</span> runtimeId <span class="pl-k">==</span> <span class="pl-c1">null</span> <span class="pl-k">||</span> runtimeId<span class="pl-k">.</span>getWorkspaceId() <span class="pl-k">==</span> <span class="pl-c1">null</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="98" id="diff-0098d7e83a9d534abfbae86408aed707L98"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">LOG</span><span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>Broker event skipped due to illegal content: {}<span class="pl-pds">"</span></span>, event);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="99" id="diff-0098d7e83a9d534abfbae86408aed707L99"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="100" id="diff-0098d7e83a9d534abfbae86408aed707L100"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="101" id="diff-0098d7e83a9d534abfbae86408aed707L101"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    eventService<span class="pl-k">.</span>publish(<span class="pl-k">new</span> <span class="pl-smi">BrokerEvent</span>(event, parseTooling(encodedTooling)));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="102" id="diff-0098d7e83a9d534abfbae86408aed707L102"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="103" id="diff-0098d7e83a9d534abfbae86408aed707L103"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="104" id="diff-0098d7e83a9d534abfbae86408aed707L104"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">@Nullable</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="105" id="diff-0098d7e83a9d534abfbae86408aed707L105"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">List&lt;<span class="pl-smi">ChePlugin</span>&gt;</span> <span class="pl-en">parseTooling</span>(<span class="pl-smi">String</span> <span class="pl-v">toolingString</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="106" id="diff-0098d7e83a9d534abfbae86408aed707L106"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (<span class="pl-k">!</span>isNullOrEmpty(toolingString)) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="107" id="diff-0098d7e83a9d534abfbae86408aed707L107"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">try</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="108" id="diff-0098d7e83a9d534abfbae86408aed707L108"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span> objectMapper<span class="pl-k">.</span>readValue(toolingString, <span class="pl-k">new</span> <span class="pl-k">TypeReference&lt;<span class="pl-k">List&lt;<span class="pl-smi">ChePlugin</span>&gt;</span>&gt;</span>() {});</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="109" id="diff-0098d7e83a9d534abfbae86408aed707L109"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">      } <span class="pl-k">catch</span> (<span class="pl-smi">IOException</span> e) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="110" id="diff-0098d7e83a9d534abfbae86408aed707L110"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-c1">LOG</span><span class="pl-k">.</span>error(<span class="pl-s"><span class="pl-pds">"</span>Parsing Che plugin broker event failed. Error: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> e<span class="pl-k">.</span>getMessage(), e);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="111" id="diff-0098d7e83a9d534abfbae86408aed707L111"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">      }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="112" id="diff-0098d7e83a9d534abfbae86408aed707L112"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="113" id="diff-0098d7e83a9d534abfbae86408aed707L113"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-c1">null</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="65" id="diff-0098d7e83a9d534abfbae86408aed707R65"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        .withConsumer(eventsHandler<span class="pl-k">::</span>handle);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="114" id="diff-0098d7e83a9d534abfbae86408aed707L114"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="66" id="diff-0098d7e83a9d534abfbae86408aed707R66"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">  }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="115" id="diff-0098d7e83a9d534abfbae86408aed707L115"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="67" id="diff-0098d7e83a9d534abfbae86408aed707R67"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">}</span></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-0098d7e83a9d534abfbae86408aed707L11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-0098d7e83a9d534abfbae86408aed707R11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-0098d7e83a9d534abfbae86408aed707L12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-0098d7e83a9d534abfbae86408aed707R12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-0098d7e83a9d534abfbae86408aed707L13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-0098d7e83a9d534abfbae86408aed707R13"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="14" id="diff-0098d7e83a9d534abfbae86408aed707L14"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="15" id="diff-0098d7e83a9d534abfbae86408aed707L15"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="16" id="diff-0098d7e83a9d534abfbae86408aed707L16"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="17" id="diff-0098d7e83a9d534abfbae86408aed707L17"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="18" id="diff-0098d7e83a9d534abfbae86408aed707L18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-0098d7e83a9d534abfbae86408aed707L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-0098d7e83a9d534abfbae86408aed707R14"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="20" id="diff-0098d7e83a9d534abfbae86408aed707L20"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="21" id="diff-0098d7e83a9d534abfbae86408aed707L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-0098d7e83a9d534abfbae86408aed707L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-0098d7e83a9d534abfbae86408aed707R15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-0098d7e83a9d534abfbae86408aed707L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-0098d7e83a9d534abfbae86408aed707R16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-0098d7e83a9d534abfbae86408aed707L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-0098d7e83a9d534abfbae86408aed707R17"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="25" id="diff-0098d7e83a9d534abfbae86408aed707L25"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="26" id="diff-0098d7e83a9d534abfbae86408aed707L26"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="27" id="diff-0098d7e83a9d534abfbae86408aed707L27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-0098d7e83a9d534abfbae86408aed707L28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-0098d7e83a9d534abfbae86408aed707R18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="29" id="diff-0098d7e83a9d534abfbae86408aed707L29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-0098d7e83a9d534abfbae86408aed707R19"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="30" id="diff-0098d7e83a9d534abfbae86408aed707L30"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="31" id="diff-0098d7e83a9d534abfbae86408aed707L31"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="32" id="diff-0098d7e83a9d534abfbae86408aed707L32"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="33" id="diff-0098d7e83a9d534abfbae86408aed707L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-0098d7e83a9d534abfbae86408aed707L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-0098d7e83a9d534abfbae86408aed707R20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-0098d7e83a9d534abfbae86408aed707L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-0098d7e83a9d534abfbae86408aed707R21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-0098d7e83a9d534abfbae86408aed707L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-0098d7e83a9d534abfbae86408aed707R22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-0098d7e83a9d534abfbae86408aed707L44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-0098d7e83a9d534abfbae86408aed707R30"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-0098d7e83a9d534abfbae86408aed707L45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="31" id="diff-0098d7e83a9d534abfbae86408aed707R31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-0098d7e83a9d534abfbae86408aed707L46"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-0098d7e83a9d534abfbae86408aed707R32"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="47" id="diff-0098d7e83a9d534abfbae86408aed707L47"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="48" id="diff-0098d7e83a9d534abfbae86408aed707L48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-0098d7e83a9d534abfbae86408aed707L49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-0098d7e83a9d534abfbae86408aed707R33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-0098d7e83a9d534abfbae86408aed707L50"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-0098d7e83a9d534abfbae86408aed707R34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-0098d7e83a9d534abfbae86408aed707L51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-0098d7e83a9d534abfbae86408aed707R35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-0098d7e83a9d534abfbae86408aed707L52"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-0098d7e83a9d534abfbae86408aed707R36"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="53" id="diff-0098d7e83a9d534abfbae86408aed707L53"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="54" id="diff-0098d7e83a9d534abfbae86408aed707L54"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-0098d7e83a9d534abfbae86408aed707R37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-0098d7e83a9d534abfbae86408aed707L55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-0098d7e83a9d534abfbae86408aed707R38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-0098d7e83a9d534abfbae86408aed707L56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-0098d7e83a9d534abfbae86408aed707R39"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="57" id="diff-0098d7e83a9d534abfbae86408aed707L57"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="58" id="diff-0098d7e83a9d534abfbae86408aed707L58"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="40" id="diff-0098d7e83a9d534abfbae86408aed707R40"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="41" id="diff-0098d7e83a9d534abfbae86408aed707R41"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-0098d7e83a9d534abfbae86408aed707L59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="42" id="diff-0098d7e83a9d534abfbae86408aed707R42"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-0098d7e83a9d534abfbae86408aed707L60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="43" id="diff-0098d7e83a9d534abfbae86408aed707R43"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="61" id="diff-0098d7e83a9d534abfbae86408aed707L61"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-0098d7e83a9d534abfbae86408aed707R44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="65" id="diff-0098d7e83a9d534abfbae86408aed707L65"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="48" id="diff-0098d7e83a9d534abfbae86408aed707R48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="66" id="diff-0098d7e83a9d534abfbae86408aed707L66"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-0098d7e83a9d534abfbae86408aed707R49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="67" id="diff-0098d7e83a9d534abfbae86408aed707L67"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-0098d7e83a9d534abfbae86408aed707R50"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="68" id="diff-0098d7e83a9d534abfbae86408aed707L68"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="51" id="diff-0098d7e83a9d534abfbae86408aed707R51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="69" id="diff-0098d7e83a9d534abfbae86408aed707L69"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="52" id="diff-0098d7e83a9d534abfbae86408aed707R52"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="70" id="diff-0098d7e83a9d534abfbae86408aed707L70"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="53" id="diff-0098d7e83a9d534abfbae86408aed707R53"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="71" id="diff-0098d7e83a9d534abfbae86408aed707L71"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="54" id="diff-0098d7e83a9d534abfbae86408aed707R54"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="72" id="diff-0098d7e83a9d534abfbae86408aed707L72"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="55" id="diff-0098d7e83a9d534abfbae86408aed707R55"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="73" id="diff-0098d7e83a9d534abfbae86408aed707L73"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="56" id="diff-0098d7e83a9d534abfbae86408aed707R56"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="74" id="diff-0098d7e83a9d534abfbae86408aed707L74"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="57" id="diff-0098d7e83a9d534abfbae86408aed707R57"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="75" id="diff-0098d7e83a9d534abfbae86408aed707L75"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="58" id="diff-0098d7e83a9d534abfbae86408aed707R58"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="76" id="diff-0098d7e83a9d534abfbae86408aed707L76"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="59" id="diff-0098d7e83a9d534abfbae86408aed707R59"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="77" id="diff-0098d7e83a9d534abfbae86408aed707L77"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="60" id="diff-0098d7e83a9d534abfbae86408aed707R60"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="78" id="diff-0098d7e83a9d534abfbae86408aed707L78"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="61" id="diff-0098d7e83a9d534abfbae86408aed707R61"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="79" id="diff-0098d7e83a9d534abfbae86408aed707L79"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="62" id="diff-0098d7e83a9d534abfbae86408aed707R62"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="80" id="diff-0098d7e83a9d534abfbae86408aed707L80"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="63" id="diff-0098d7e83a9d534abfbae86408aed707R63"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="81" id="diff-0098d7e83a9d534abfbae86408aed707L81"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="64" id="diff-0098d7e83a9d534abfbae86408aed707R64"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="82" id="diff-0098d7e83a9d534abfbae86408aed707L82"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="83" id="diff-0098d7e83a9d534abfbae86408aed707L83"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="84" id="diff-0098d7e83a9d534abfbae86408aed707L84"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="85" id="diff-0098d7e83a9d534abfbae86408aed707L85"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="86" id="diff-0098d7e83a9d534abfbae86408aed707L86"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="87" id="diff-0098d7e83a9d534abfbae86408aed707L87"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="88" id="diff-0098d7e83a9d534abfbae86408aed707L88"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="89" id="diff-0098d7e83a9d534abfbae86408aed707L89"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="90" id="diff-0098d7e83a9d534abfbae86408aed707L90"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="91" id="diff-0098d7e83a9d534abfbae86408aed707L91"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="92" id="diff-0098d7e83a9d534abfbae86408aed707L92"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="93" id="diff-0098d7e83a9d534abfbae86408aed707L93"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="94" id="diff-0098d7e83a9d534abfbae86408aed707L94"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="95" id="diff-0098d7e83a9d534abfbae86408aed707L95"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="96" id="diff-0098d7e83a9d534abfbae86408aed707L96"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="97" id="diff-0098d7e83a9d534abfbae86408aed707L97"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="98" id="diff-0098d7e83a9d534abfbae86408aed707L98"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="99" id="diff-0098d7e83a9d534abfbae86408aed707L99"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="100" id="diff-0098d7e83a9d534abfbae86408aed707L100"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="101" id="diff-0098d7e83a9d534abfbae86408aed707L101"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="102" id="diff-0098d7e83a9d534abfbae86408aed707L102"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="103" id="diff-0098d7e83a9d534abfbae86408aed707L103"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="104" id="diff-0098d7e83a9d534abfbae86408aed707L104"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="105" id="diff-0098d7e83a9d534abfbae86408aed707L105"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="106" id="diff-0098d7e83a9d534abfbae86408aed707L106"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="107" id="diff-0098d7e83a9d534abfbae86408aed707L107"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="108" id="diff-0098d7e83a9d534abfbae86408aed707L108"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="109" id="diff-0098d7e83a9d534abfbae86408aed707L109"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="110" id="diff-0098d7e83a9d534abfbae86408aed707L110"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="111" id="diff-0098d7e83a9d534abfbae86408aed707L111"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="112" id="diff-0098d7e83a9d534abfbae86408aed707L112"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="113" id="diff-0098d7e83a9d534abfbae86408aed707L113"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="65" id="diff-0098d7e83a9d534abfbae86408aed707R65"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="114" id="diff-0098d7e83a9d534abfbae86408aed707L114"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="66" id="diff-0098d7e83a9d534abfbae86408aed707R66"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="115" id="diff-0098d7e83a9d534abfbae86408aed707L115"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="67" id="diff-0098d7e83a9d534abfbae86408aed707R67"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

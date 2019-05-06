@@ -1,0 +1,868 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-a1ee068e6c689194cfa3eefcdc583f47" data-file-deleted="false" data-file-type=".java" data-path="app/src/main/java/teamh/boostcamp/myapplication/data/local/room/AppDatabase.java" data-short-path="a1ee068">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="app/src/main/java/teamh/boostcamp/myapplication/data/local/room/AppDatabase.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/boostcampth/boostcamp3_H/blob/ca6a02aa5d274bcb155d1b2c5ca52147e0197348/app/src/main/java/teamh/boostcamp/myapplication/data/local/room/AppDatabase.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="1 addition &amp; 9 deletions" class="diffstat tooltipped tooltipped-e">10 <span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-a1ee068e6c689194cfa3eefcdc583f47" title="app/src/main/java/teamh/boostcamp/myapplication/data/local/room/AppDatabase.java">app/src/main/java/teamh/boostcamp/myapplication/data/local/room/AppDatabase.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-a1ee068e6c689194cfa3eefcdc583f47" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-85" data-right-range="1-85" data-url="/boostcampth/boostcamp3_H/blob_excerpt/0d0f96c5d85cbf20ba5dd85421fbba48db888010?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=86&amp;left_hunk_size=15&amp;mode=100644&amp;path=app%2Fsrc%2Fmain%2Fjava%2Fteamh%2Fboostcamp%2Fmyapplication%2Fdata%2Flocal%2Froom%2FAppDatabase.java&amp;right=86&amp;right_hunk_size=7" href="#diff-a1ee068e6c689194cfa3eefcdc583f47" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -86,15 +86,7 @@ public void onCreate(@NonNull SupportSQLiteDatabase db) {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-a1ee068e6c689194cfa3eefcdc583f47L86"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-a1ee068e6c689194cfa3eefcdc583f47R86"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-a1ee068e6c689194cfa3eefcdc583f47L87"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-a1ee068e6c689194cfa3eefcdc583f47R87"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">DiaryEntity</span>[] temp <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">DiaryEntity</span>[samples<span class="pl-k">.</span>size()];</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-a1ee068e6c689194cfa3eefcdc583f47L88"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-a1ee068e6c689194cfa3eefcdc583f47R88"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="89" id="diff-a1ee068e6c689194cfa3eefcdc583f47L89"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">Completable</span><span class="pl-k">.</span>fromAction(() <span class="pl-k">-</span><span class="pl-k">&gt;</span> <span class="pl-c1">INSTANCE</span><span class="pl-k">.</span>diaryDao()</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="90" id="diff-a1ee068e6c689194cfa3eefcdc583f47L90"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">                                            .insert(samples<span class="pl-k">.</span>toArray(temp)))</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="91" id="diff-a1ee068e6c689194cfa3eefcdc583f47L91"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">                                            .subscribeOn(<span class="pl-smi">Schedulers</span><span class="pl-k">.</span>io())</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="92" id="diff-a1ee068e6c689194cfa3eefcdc583f47L92"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">                                            .subscribe(() <span class="pl-k">-</span><span class="pl-k">&gt;</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="93" id="diff-a1ee068e6c689194cfa3eefcdc583f47L93"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">Log</span><span class="pl-k">.</span>d(<span class="pl-s"><span class="pl-pds">"</span>Test<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>데이터 저장<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="94" id="diff-a1ee068e6c689194cfa3eefcdc583f47L94"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">                                                    },</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="95" id="diff-a1ee068e6c689194cfa3eefcdc583f47L95"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">                                                    throwable <span class="pl-k">-</span><span class="pl-k">&gt;</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="96" id="diff-a1ee068e6c689194cfa3eefcdc583f47L96"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">                                                        throwable<span class="pl-k">.</span>printStackTrace();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="97" id="diff-a1ee068e6c689194cfa3eefcdc583f47L97"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">                                                    });</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="89" id="diff-a1ee068e6c689194cfa3eefcdc583f47R89"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-a1ee068e6c689194cfa3eefcdc583f47L98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="90" id="diff-a1ee068e6c689194cfa3eefcdc583f47R90"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-a1ee068e6c689194cfa3eefcdc583f47L99"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="91" id="diff-a1ee068e6c689194cfa3eefcdc583f47R91"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">RecallEntity</span>[] recallList <span class="pl-k">=</span> {<span class="pl-k">new</span> <span class="pl-smi">RecallEntity</span>(<span class="pl-c1">0</span>, <span class="pl-k">new</span> <span class="pl-smi">Date</span>(), <span class="pl-smi">Emotion</span><span class="pl-k">.</span>fromValue(<span class="pl-c1">0</span>))</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-a1ee068e6c689194cfa3eefcdc583f47L100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-a1ee068e6c689194cfa3eefcdc583f47R92"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">                                            , <span class="pl-k">new</span> <span class="pl-smi">RecallEntity</span>(<span class="pl-c1">0</span>, <span class="pl-k">new</span> <span class="pl-smi">Date</span>(), <span class="pl-smi">Emotion</span><span class="pl-k">.</span>fromValue(<span class="pl-c1">1</span>))</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="101-115" data-right-range="93-115" data-url="/boostcampth/boostcamp3_H/blob_excerpt/0d0f96c5d85cbf20ba5dd85421fbba48db888010?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=100&amp;last_right=92&amp;left=116&amp;left_hunk_size=&amp;mode=100644&amp;path=app%2Fsrc%2Fmain%2Fjava%2Fteamh%2Fboostcamp%2Fmyapplication%2Fdata%2Flocal%2Froom%2FAppDatabase.java&amp;right=116&amp;right_hunk_size=" href="#diff-a1ee068e6c689194cfa3eefcdc583f47" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-a1ee068e6c689194cfa3eefcdc583f47L86"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="86" id="diff-a1ee068e6c689194cfa3eefcdc583f47R86"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-a1ee068e6c689194cfa3eefcdc583f47L87"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="87" id="diff-a1ee068e6c689194cfa3eefcdc583f47R87"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-a1ee068e6c689194cfa3eefcdc583f47L88"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="88" id="diff-a1ee068e6c689194cfa3eefcdc583f47R88"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="89" id="diff-a1ee068e6c689194cfa3eefcdc583f47L89"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="90" id="diff-a1ee068e6c689194cfa3eefcdc583f47L90"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="91" id="diff-a1ee068e6c689194cfa3eefcdc583f47L91"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="92" id="diff-a1ee068e6c689194cfa3eefcdc583f47L92"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="93" id="diff-a1ee068e6c689194cfa3eefcdc583f47L93"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="94" id="diff-a1ee068e6c689194cfa3eefcdc583f47L94"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="95" id="diff-a1ee068e6c689194cfa3eefcdc583f47L95"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="96" id="diff-a1ee068e6c689194cfa3eefcdc583f47L96"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="97" id="diff-a1ee068e6c689194cfa3eefcdc583f47L97"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="89" id="diff-a1ee068e6c689194cfa3eefcdc583f47R89"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="98" id="diff-a1ee068e6c689194cfa3eefcdc583f47L98"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="90" id="diff-a1ee068e6c689194cfa3eefcdc583f47R90"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="99" id="diff-a1ee068e6c689194cfa3eefcdc583f47L99"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="91" id="diff-a1ee068e6c689194cfa3eefcdc583f47R91"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-a1ee068e6c689194cfa3eefcdc583f47L100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="92" id="diff-a1ee068e6c689194cfa3eefcdc583f47R92"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-1">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-2ed3c41260ace6d5814fdadedb9f8bf0" data-file-deleted="false" data-file-type=".java" data-path="app/src/main/java/teamh/boostcamp/myapplication/view/diarylist/DiaryListFragment.java" data-short-path="2ed3c41">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="app/src/main/java/teamh/boostcamp/myapplication/view/diarylist/DiaryListFragment.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/boostcampth/boostcamp3_H/blob/ca6a02aa5d274bcb155d1b2c5ca52147e0197348/app/src/main/java/teamh/boostcamp/myapplication/view/diarylist/DiaryListFragment.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="0 additions &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">1 <span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-2ed3c41260ace6d5814fdadedb9f8bf0" title="app/src/main/java/teamh/boostcamp/myapplication/view/diarylist/DiaryListFragment.java">app/src/main/java/teamh/boostcamp/myapplication/view/diarylist/DiaryListFragment.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-2ed3c41260ace6d5814fdadedb9f8bf0" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-99" data-right-range="1-99" data-url="/boostcampth/boostcamp3_H/blob_excerpt/2de4edce1daaecffdceb378822d02890b04ecfd7?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=100&amp;left_hunk_size=7&amp;mode=100644&amp;path=app%2Fsrc%2Fmain%2Fjava%2Fteamh%2Fboostcamp%2Fmyapplication%2Fview%2Fdiarylist%2FDiaryListFragment.java&amp;right=100&amp;right_hunk_size=6" href="#diff-2ed3c41260ace6d5814fdadedb9f8bf0" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -100,7 +100,6 @@ public void addDiaryList(@NonNull List&lt;Diary&gt; diaryList) {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0R100"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L101"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0R101"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">notifyTodayDiarySaved</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L102"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0R102"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        isSaving<span class="pl-k">.</span>set(<span class="pl-c1">false</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="103" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L103"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        clearDiary();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="104" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L104"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0R103"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        presenter<span class="pl-k">.</span>loadDiaryList(<span class="pl-c1">NEW_ITEM_LOAD</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="104" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0R104"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0R105"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="107-222" data-right-range="106-222" data-url="/boostcampth/boostcamp3_H/blob_excerpt/2de4edce1daaecffdceb378822d02890b04ecfd7?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=106&amp;last_right=105&amp;left=223&amp;left_hunk_size=&amp;mode=100644&amp;path=app%2Fsrc%2Fmain%2Fjava%2Fteamh%2Fboostcamp%2Fmyapplication%2Fview%2Fdiarylist%2FDiaryListFragment.java&amp;right=223&amp;right_hunk_size=" href="#diff-2ed3c41260ace6d5814fdadedb9f8bf0" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="100" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0R100"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L101"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="101" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0R101"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L102"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="102" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0R102"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="103" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L103"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="104" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L104"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="103" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0R103"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L105"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="104" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0R104"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="106" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0L106"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="105" id="diff-2ed3c41260ace6d5814fdadedb9f8bf0R105"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-2">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-3520904067838bb02719cfd52e756777" data-file-deleted="false" data-file-type=".java" data-path="app/src/main/java/teamh/boostcamp/myapplication/view/graph/GraphAxisValueFormatter.java" data-short-path="3520904">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="app/src/main/java/teamh/boostcamp/myapplication/view/graph/GraphAxisValueFormatter.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/boostcampth/boostcamp3_H/blob/ca6a02aa5d274bcb155d1b2c5ca52147e0197348/app/src/main/java/teamh/boostcamp/myapplication/view/graph/GraphAxisValueFormatter.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="11 additions &amp; 1 deletion" class="diffstat tooltipped tooltipped-e">12 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-3520904067838bb02719cfd52e756777" title="app/src/main/java/teamh/boostcamp/myapplication/view/graph/GraphAxisValueFormatter.java">app/src/main/java/teamh/boostcamp/myapplication/view/graph/GraphAxisValueFormatter.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-3520904067838bb02719cfd52e756777" data-tab-size="8">
+<tr data-position="0">
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-3520904067838bb02719cfd52e756777HL1"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-3520904067838bb02719cfd52e756777HR1"></td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -1,5 +1,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="1" id="diff-3520904067838bb02719cfd52e756777L1"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="1" id="diff-3520904067838bb02719cfd52e756777R1"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">package</span> <span class="pl-smi">teamh.boostcamp.myapplication.view.graph</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="2" id="diff-3520904067838bb02719cfd52e756777L2"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="2" id="diff-3520904067838bb02719cfd52e756777R2"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="3" id="diff-3520904067838bb02719cfd52e756777R3"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">android.util.Log</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="4" id="diff-3520904067838bb02719cfd52e756777R4"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="3" id="diff-3520904067838bb02719cfd52e756777L3"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-3520904067838bb02719cfd52e756777R5"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.github.mikephil.charting.components.AxisBase</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-3520904067838bb02719cfd52e756777L4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-3520904067838bb02719cfd52e756777R6"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.github.mikephil.charting.formatter.IAxisValueFormatter</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-3520904067838bb02719cfd52e756777L5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-3520904067838bb02719cfd52e756777R7"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="8">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="6-10" data-right-range="8-12" data-url="/boostcampth/boostcamp3_H/blob_excerpt/70c9024a074032692989a8fd15ea8a88ac79d8e3?diff=unified&amp;in_wiki_context=&amp;last_left=5&amp;last_right=7&amp;left=17&amp;left_hunk_size=6&amp;mode=100644&amp;path=app%2Fsrc%2Fmain%2Fjava%2Fteamh%2Fboostcamp%2Fmyapplication%2Fview%2Fgraph%2FGraphAxisValueFormatter.java&amp;right=19&amp;right_hunk_size=14" href="#diff-3520904067838bb02719cfd52e756777" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -17,6 +19,14 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-3520904067838bb02719cfd52e756777L17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-3520904067838bb02719cfd52e756777R19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-3520904067838bb02719cfd52e756777L18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-3520904067838bb02719cfd52e756777R20"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-3520904067838bb02719cfd52e756777L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-3520904067838bb02719cfd52e756777R21"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">String</span> <span class="pl-en">getFormattedValue</span>(<span class="pl-k">float</span> <span class="pl-v">value</span>, <span class="pl-smi">AxisBase</span> <span class="pl-v">axis</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="20" id="diff-3520904067838bb02719cfd52e756777L20"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">return</span> values[(<span class="pl-k">int</span>) value];</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-3520904067838bb02719cfd52e756777R22"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">Log</span><span class="pl-k">.</span>v(<span class="pl-s"><span class="pl-pds">"</span>Test<span class="pl-pds">"</span></span>,<span class="pl-smi">String</span><span class="pl-k">.</span>valueOf(value));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="23" id="diff-3520904067838bb02719cfd52e756777R23"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-3520904067838bb02719cfd52e756777R24"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">try</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="25" id="diff-3520904067838bb02719cfd52e756777R25"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">int</span> index <span class="pl-k">=</span> (<span class="pl-k">int</span>) value;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="26" id="diff-3520904067838bb02719cfd52e756777R26"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> values[index];</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="27" id="diff-3520904067838bb02719cfd52e756777R27"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        }<span class="pl-k">catch</span> (<span class="pl-smi">Exception</span> e){</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="28" id="diff-3520904067838bb02719cfd52e756777R28"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="29" id="diff-3520904067838bb02719cfd52e756777R29"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-3520904067838bb02719cfd52e756777L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-3520904067838bb02719cfd52e756777R30"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="31" id="diff-3520904067838bb02719cfd52e756777R31"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-3520904067838bb02719cfd52e756777L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-3520904067838bb02719cfd52e756777R32"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">}</span></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-3520904067838bb02719cfd52e756777HL1"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-3520904067838bb02719cfd52e756777HR1"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="1" id="diff-3520904067838bb02719cfd52e756777L1"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="1" id="diff-3520904067838bb02719cfd52e756777R1"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="2" id="diff-3520904067838bb02719cfd52e756777L2"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="2" id="diff-3520904067838bb02719cfd52e756777R2"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="3" id="diff-3520904067838bb02719cfd52e756777R3"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="4" id="diff-3520904067838bb02719cfd52e756777R4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="3" id="diff-3520904067838bb02719cfd52e756777L3"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-3520904067838bb02719cfd52e756777R5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-3520904067838bb02719cfd52e756777L4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-3520904067838bb02719cfd52e756777R6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-3520904067838bb02719cfd52e756777L5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-3520904067838bb02719cfd52e756777R7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-3520904067838bb02719cfd52e756777L17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-3520904067838bb02719cfd52e756777R19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-3520904067838bb02719cfd52e756777L18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="20" id="diff-3520904067838bb02719cfd52e756777R20"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-3520904067838bb02719cfd52e756777L19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-3520904067838bb02719cfd52e756777R21"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="20" id="diff-3520904067838bb02719cfd52e756777L20"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="22" id="diff-3520904067838bb02719cfd52e756777R22"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="23" id="diff-3520904067838bb02719cfd52e756777R23"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="24" id="diff-3520904067838bb02719cfd52e756777R24"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="25" id="diff-3520904067838bb02719cfd52e756777R25"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="26" id="diff-3520904067838bb02719cfd52e756777R26"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="27" id="diff-3520904067838bb02719cfd52e756777R27"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="28" id="diff-3520904067838bb02719cfd52e756777R28"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="29" id="diff-3520904067838bb02719cfd52e756777R29"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="21" id="diff-3520904067838bb02719cfd52e756777L21"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="30" id="diff-3520904067838bb02719cfd52e756777R30"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="31" id="diff-3520904067838bb02719cfd52e756777R31"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="22" id="diff-3520904067838bb02719cfd52e756777L22"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-3520904067838bb02719cfd52e756777R32"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-3">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-0ff45578b272f3bd29063b7ec1f448e8" data-file-deleted="false" data-file-type=".java" data-path="app/src/main/java/teamh/boostcamp/myapplication/view/graph/StatisticsFragment.java" data-short-path="0ff4557">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="app/src/main/java/teamh/boostcamp/myapplication/view/graph/StatisticsFragment.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/boostcampth/boostcamp3_H/blob/ca6a02aa5d274bcb155d1b2c5ca52147e0197348/app/src/main/java/teamh/boostcamp/myapplication/view/graph/StatisticsFragment.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="3 additions &amp; 0 deletions" class="diffstat tooltipped tooltipped-e">3 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-0ff45578b272f3bd29063b7ec1f448e8" title="app/src/main/java/teamh/boostcamp/myapplication/view/graph/StatisticsFragment.java">app/src/main/java/teamh/boostcamp/myapplication/view/graph/StatisticsFragment.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-0ff45578b272f3bd29063b7ec1f448e8" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-230" data-right-range="1-230" data-url="/boostcampth/boostcamp3_H/blob_excerpt/9fd952b266ac36b9436c1c84c6b6866fa54d54b6?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=231&amp;left_hunk_size=6&amp;mode=100644&amp;path=app%2Fsrc%2Fmain%2Fjava%2Fteamh%2Fboostcamp%2Fmyapplication%2Fview%2Fgraph%2FStatisticsFragment.java&amp;right=231&amp;right_hunk_size=7" href="#diff-0ff45578b272f3bd29063b7ec1f448e8" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -231,6 +231,7 @@ private void drawGraph() {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="231" id="diff-0ff45578b272f3bd29063b7ec1f448e8L231"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="231" id="diff-0ff45578b272f3bd29063b7ec1f448e8R231"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        yLeftAxis <span class="pl-k">=</span> binding<span class="pl-k">.</span>lcEmotionGraph<span class="pl-k">.</span>getAxisLeft();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="232" id="diff-0ff45578b272f3bd29063b7ec1f448e8L232"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="232" id="diff-0ff45578b272f3bd29063b7ec1f448e8R232"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        yRightAxis <span class="pl-k">=</span> binding<span class="pl-k">.</span>lcEmotionGraph<span class="pl-k">.</span>getAxisRight();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="233" id="diff-0ff45578b272f3bd29063b7ec1f448e8L233"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="233" id="diff-0ff45578b272f3bd29063b7ec1f448e8R233"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> X축 설정</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="234" id="diff-0ff45578b272f3bd29063b7ec1f448e8R234"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        xAxis<span class="pl-k">.</span>setYOffset(<span class="pl-c1">15f</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="234" id="diff-0ff45578b272f3bd29063b7ec1f448e8L234"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="235" id="diff-0ff45578b272f3bd29063b7ec1f448e8R235"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        xAxis<span class="pl-k">.</span>setPosition(<span class="pl-smi">XAxis</span><span class="pl-k">.</span><span class="pl-smi">XAxisPosition</span><span class="pl-c1"><span class="pl-k">.</span>BOTTOM</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="235" id="diff-0ff45578b272f3bd29063b7ec1f448e8L235"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="236" id="diff-0ff45578b272f3bd29063b7ec1f448e8R236"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        xAxis<span class="pl-k">.</span>setLabelCount(dates<span class="pl-k">.</span>length, <span class="pl-c1">true</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="236" id="diff-0ff45578b272f3bd29063b7ec1f448e8L236"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="237" id="diff-0ff45578b272f3bd29063b7ec1f448e8R237"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        xAxis<span class="pl-k">.</span>setTextColor(<span class="pl-smi">R</span><span class="pl-k">.</span>color<span class="pl-k">.</span>black);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="8">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="237-236" data-right-range="238-237" data-url="/boostcampth/boostcamp3_H/blob_excerpt/9fd952b266ac36b9436c1c84c6b6866fa54d54b6?diff=unified&amp;in_wiki_context=&amp;last_left=236&amp;last_right=237&amp;left=239&amp;left_hunk_size=6&amp;mode=100644&amp;path=app%2Fsrc%2Fmain%2Fjava%2Fteamh%2Fboostcamp%2Fmyapplication%2Fview%2Fgraph%2FStatisticsFragment.java&amp;right=240&amp;right_hunk_size=7" href="#diff-0ff45578b272f3bd29063b7ec1f448e8" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -239,6 +240,7 @@ private void drawGraph() {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="239" id="diff-0ff45578b272f3bd29063b7ec1f448e8L239"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="240" id="diff-0ff45578b272f3bd29063b7ec1f448e8R240"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="240" id="diff-0ff45578b272f3bd29063b7ec1f448e8L240"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="241" id="diff-0ff45578b272f3bd29063b7ec1f448e8R241"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> y축 왼쪽 설정</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="241" id="diff-0ff45578b272f3bd29063b7ec1f448e8L241"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="242" id="diff-0ff45578b272f3bd29063b7ec1f448e8R242"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        yLeftAxis<span class="pl-k">.</span>setTextColor(<span class="pl-smi">R</span><span class="pl-k">.</span>color<span class="pl-k">.</span>black);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="243" id="diff-0ff45578b272f3bd29063b7ec1f448e8R243"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        yLeftAxis<span class="pl-k">.</span>setXOffset(<span class="pl-c1">15f</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="242" id="diff-0ff45578b272f3bd29063b7ec1f448e8L242"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="244" id="diff-0ff45578b272f3bd29063b7ec1f448e8R244"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">//</span> y축 텍스트 사이즈 지정.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="243" id="diff-0ff45578b272f3bd29063b7ec1f448e8L243"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="245" id="diff-0ff45578b272f3bd29063b7ec1f448e8R245"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        yLeftAxis<span class="pl-k">.</span>setTextSize(<span class="pl-c1">20f</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="244" id="diff-0ff45578b272f3bd29063b7ec1f448e8L244"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="246" id="diff-0ff45578b272f3bd29063b7ec1f448e8R246"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        yLeftAxis<span class="pl-k">.</span>setValueFormatter(<span class="pl-k">new</span> <span class="pl-smi">GraphAxisValueFormatter</span>(emojis));</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="16">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="245-249" data-right-range="247-251" data-url="/boostcampth/boostcamp3_H/blob_excerpt/9fd952b266ac36b9436c1c84c6b6866fa54d54b6?diff=unified&amp;in_wiki_context=&amp;last_left=244&amp;last_right=246&amp;left=256&amp;left_hunk_size=6&amp;mode=100644&amp;path=app%2Fsrc%2Fmain%2Fjava%2Fteamh%2Fboostcamp%2Fmyapplication%2Fview%2Fgraph%2FStatisticsFragment.java&amp;right=258&amp;right_hunk_size=7" href="#diff-0ff45578b272f3bd29063b7ec1f448e8" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -256,6 +258,7 @@ private void drawGraph() {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="256" id="diff-0ff45578b272f3bd29063b7ec1f448e8L256"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="258" id="diff-0ff45578b272f3bd29063b7ec1f448e8R258"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        yRightAxis<span class="pl-k">.</span>setDrawAxisLine(<span class="pl-c1">false</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="257" id="diff-0ff45578b272f3bd29063b7ec1f448e8L257"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="259" id="diff-0ff45578b272f3bd29063b7ec1f448e8R259"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        yRightAxis<span class="pl-k">.</span>setDrawGridLines(<span class="pl-c1">false</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="258" id="diff-0ff45578b272f3bd29063b7ec1f448e8L258"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="260" id="diff-0ff45578b272f3bd29063b7ec1f448e8R260"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="261" id="diff-0ff45578b272f3bd29063b7ec1f448e8R261"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="259" id="diff-0ff45578b272f3bd29063b7ec1f448e8L259"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="262" id="diff-0ff45578b272f3bd29063b7ec1f448e8R262"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        binding<span class="pl-k">.</span>lcEmotionGraph<span class="pl-k">.</span>setDescription(<span class="pl-c1">null</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="260" id="diff-0ff45578b272f3bd29063b7ec1f448e8L260"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="263" id="diff-0ff45578b272f3bd29063b7ec1f448e8R263"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        binding<span class="pl-k">.</span>lcEmotionGraph<span class="pl-k">.</span>setBackgroundColor(<span class="pl-smi">Color</span><span class="pl-c1"><span class="pl-k">.</span>TRANSPARENT</span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="261" id="diff-0ff45578b272f3bd29063b7ec1f448e8L261"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="264" id="diff-0ff45578b272f3bd29063b7ec1f448e8R264"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        binding<span class="pl-k">.</span>lcEmotionGraph<span class="pl-k">.</span>setDoubleTapToZoomEnabled(<span class="pl-c1">false</span>);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="262-269" data-right-range="265-269" data-url="/boostcampth/boostcamp3_H/blob_excerpt/9fd952b266ac36b9436c1c84c6b6866fa54d54b6?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=261&amp;last_right=264&amp;left=270&amp;left_hunk_size=&amp;mode=100644&amp;path=app%2Fsrc%2Fmain%2Fjava%2Fteamh%2Fboostcamp%2Fmyapplication%2Fview%2Fgraph%2FStatisticsFragment.java&amp;right=270&amp;right_hunk_size=" href="#diff-0ff45578b272f3bd29063b7ec1f448e8" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="231" id="diff-0ff45578b272f3bd29063b7ec1f448e8L231"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="231" id="diff-0ff45578b272f3bd29063b7ec1f448e8R231"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="232" id="diff-0ff45578b272f3bd29063b7ec1f448e8L232"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="232" id="diff-0ff45578b272f3bd29063b7ec1f448e8R232"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="233" id="diff-0ff45578b272f3bd29063b7ec1f448e8L233"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="233" id="diff-0ff45578b272f3bd29063b7ec1f448e8R233"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="234" id="diff-0ff45578b272f3bd29063b7ec1f448e8R234"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="234" id="diff-0ff45578b272f3bd29063b7ec1f448e8L234"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="235" id="diff-0ff45578b272f3bd29063b7ec1f448e8R235"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="235" id="diff-0ff45578b272f3bd29063b7ec1f448e8L235"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="236" id="diff-0ff45578b272f3bd29063b7ec1f448e8R236"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="236" id="diff-0ff45578b272f3bd29063b7ec1f448e8L236"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="237" id="diff-0ff45578b272f3bd29063b7ec1f448e8R237"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="239" id="diff-0ff45578b272f3bd29063b7ec1f448e8L239"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="240" id="diff-0ff45578b272f3bd29063b7ec1f448e8R240"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="240" id="diff-0ff45578b272f3bd29063b7ec1f448e8L240"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="241" id="diff-0ff45578b272f3bd29063b7ec1f448e8R241"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="241" id="diff-0ff45578b272f3bd29063b7ec1f448e8L241"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="242" id="diff-0ff45578b272f3bd29063b7ec1f448e8R242"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="243" id="diff-0ff45578b272f3bd29063b7ec1f448e8R243"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="242" id="diff-0ff45578b272f3bd29063b7ec1f448e8L242"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="244" id="diff-0ff45578b272f3bd29063b7ec1f448e8R244"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="243" id="diff-0ff45578b272f3bd29063b7ec1f448e8L243"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="245" id="diff-0ff45578b272f3bd29063b7ec1f448e8R245"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="244" id="diff-0ff45578b272f3bd29063b7ec1f448e8L244"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="246" id="diff-0ff45578b272f3bd29063b7ec1f448e8R246"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="256" id="diff-0ff45578b272f3bd29063b7ec1f448e8L256"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="258" id="diff-0ff45578b272f3bd29063b7ec1f448e8R258"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="257" id="diff-0ff45578b272f3bd29063b7ec1f448e8L257"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="259" id="diff-0ff45578b272f3bd29063b7ec1f448e8R259"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="258" id="diff-0ff45578b272f3bd29063b7ec1f448e8L258"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="260" id="diff-0ff45578b272f3bd29063b7ec1f448e8R260"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="261" id="diff-0ff45578b272f3bd29063b7ec1f448e8R261"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="259" id="diff-0ff45578b272f3bd29063b7ec1f448e8L259"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="262" id="diff-0ff45578b272f3bd29063b7ec1f448e8R262"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="260" id="diff-0ff45578b272f3bd29063b7ec1f448e8L260"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="263" id="diff-0ff45578b272f3bd29063b7ec1f448e8R263"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="261" id="diff-0ff45578b272f3bd29063b7ec1f448e8L261"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="264" id="diff-0ff45578b272f3bd29063b7ec1f448e8R264"></td>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>

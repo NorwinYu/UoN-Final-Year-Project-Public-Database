@@ -1,0 +1,156 @@
+/*
+ * Copyright 2012 Red Hat, Inc. and/or its affiliates.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.jbpm.workbench.client;
+
+import java.util.Arrays;
+import java.util.List;
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Produces;
+import javax.inject.Inject;
+
+import com.google.gwt.user.client.ui.Image;
+import org.guvnor.common.services.shared.config.AppConfigService;
+import org.jboss.errai.common.client.api.Caller;
+import org.jboss.errai.ioc.client.api.EntryPoint;
+import org.jboss.errai.ioc.client.container.SyncBeanManager;
+import org.jboss.errai.security.shared.api.identity.User;
+import org.jboss.errai.ui.shared.api.annotations.Bundle;
+import org.jbpm.workbench.client.i18n.Constants;
+import org.jbpm.workbench.client.perspectives.ProcessAdminSettingsPerspective;
+import org.jbpm.workbench.client.perspectives.TaskAdminSettingsPerspective;
+import org.kie.workbench.common.workbench.client.admin.DefaultAdminPageHelper;
+import org.kie.workbench.common.workbench.client.entrypoint.DefaultWorkbenchEntryPoint;
+import org.kie.workbench.common.workbench.client.entrypoint.GenericErrorPopup;
+import org.kie.workbench.common.workbench.client.error.DefaultWorkbenchErrorCallback;
+import org.kie.workbench.common.workbench.client.menu.DefaultWorkbenchFeaturesMenusHelper;
+import org.uberfire.client.mvp.ActivityBeansCache;
+import org.uberfire.client.views.pfly.menu.MainBrand;
+import org.uberfire.client.workbench.widgets.menu.megamenu.WorkbenchMegaMenuPresenter;
+import org.uberfire.workbench.model.menu.MenuFactory;
+import org.uberfire.workbench.model.menu.MenuItem;
+import org.uberfire.workbench.model.menu.Menus;
+
+import static org.kie.workbench.common.workbench.client.PerspectiveIds.*;
+
+@EntryPoint
+@Bundle("i18n/HomeConstants.properties")
+public class ShowcaseEntryPoint extends DefaultWorkbenchEntryPoint {
+
+    protected Constants constants = Constants.INSTANCE;
+
+    protected org.jbpm.workbench.common.client.resources.i18n.Constants commonConstants = org.jbpm.workbench.common.client.resources.i18n.Constants.INSTANCE;
+
+    protected SyncBeanManager iocManager;
+
+    protected User identity;
+
+    protected DefaultWorkbenchFeaturesMenusHelper menusHelper;
+
+    protected WorkbenchMegaMenuPresenter menuBar;
+
+    protected DefaultAdminPageHelper adminPageHelper;
+
+    @Inject
+    public ShowcaseEntryPoint(final Caller<AppConfigService> appConfigService,
+                              final ActivityBeansCache activityBeansCache,
+                              final SyncBeanManager iocManager,
+                              final User identity,
+                              final DefaultAdminPageHelper adminPageHelper,
+                              final DefaultWorkbenchFeaturesMenusHelper menusHelper,
+                              final WorkbenchMegaMenuPresenter menuBar,
+                              final DefaultWorkbenchErrorCallback defaultWorkbenchErrorCallback,
+                              final GenericErrorPopup genericErrorPopup) {
+        super(appConfigService,
+              activityBeansCache,
+              defaultWorkbenchErrorCallback,
+              genericErrorPopup);
+        this.iocManager = iocManager;
+        this.identity = identity;
+        this.menusHelper = menusHelper;
+        this.menuBar = menuBar;
+        this.adminPageHelper = adminPageHelper;
+    }
+
+    @Override
+    protected void setupMenu() {
+        final Menus menus = MenuFactory
+                .newTopLevelMenu(constants.Authoring()).withItems(getAuthoringViews()).endMenu()
+                .newTopLevelMenu(constants.Deploy()).withItems(getDeploymentViews()).endMenu()
+                .newTopLevelMenu(constants.Process_Management()).withItems(getProcessManagementViews()).endMenu()
+                .newTopLevelMenu(constants.Work()).withItems(getWorkViews()).endMenu()
+                .newTopLevelMenu(constants.Dashboards()).withItems(getDashboardsViews()).endMenu()
+                .newTopLevelMenu(constants.Extensions()).withItems(menusHelper.getExtensionsViews()).endMenu()
+                .build();
+
+        menuBar.addMenus(menus);
+
+        menusHelper.addRolesMenuItems();
+        menusHelper.addGroupsMenuItems();
+        menusHelper.addWorkbenchConfigurationMenuItem();
+        menusHelper.addUtilitiesMenuItems();
+    }
+
+    @Override
+    protected void setupAdminPage() {
+        adminPageHelper.setup();
+    }
+
+    protected List<? extends MenuItem> getAuthoringViews() {
+        return Arrays.asList(
+                MenuFactory.newSimpleItem(constants.Project_Authoring()).perspective(LIBRARY).endMenu().build().getItems().get(0),
+                MenuFactory.newSimpleItem(constants.artifactRepository()).perspective(GUVNOR_M2REPO).endMenu().build().getItems().get(0),
+                MenuFactory.newSimpleItem(constants.Administration()).perspective(ADMINISTRATION).endMenu().build().getItems().get(0)
+        );
+    }
+
+    protected List<? extends MenuItem> getProcessManagementViews() {
+        return Arrays.asList(
+                MenuFactory.newSimpleItem(commonConstants.Process_Definitions()).perspective(PROCESS_DEFINITIONS).endMenu().build().getItems().get(0),
+                MenuFactory.newSimpleItem(commonConstants.Process_Instances()).perspective(PROCESS_INSTANCES).endMenu().build().getItems().get(0),
+                MenuFactory.newSimpleItem(constants.Process_Instances_Admin()).perspective(ProcessAdminSettingsPerspective.PERSPECTIVE_ID).endMenu().build().getItems().get(0),
+                MenuFactory.newSimpleItem(commonConstants.Tasks()).perspective(TASKS_ADMIN).endMenu().build().getItems().get(0),
+                MenuFactory.newSimpleItem(commonConstants.ExecutionErrors()).perspective(EXECUTION_ERRORS).endMenu().build().getItems().get(0)
+        );
+    }
+
+    protected List<? extends MenuItem> getDeploymentViews() {
+        return Arrays.asList(
+                MenuFactory.newSimpleItem(constants.Execution_Servers()).perspective(SERVER_MANAGEMENT).endMenu().build().getItems().get(0),
+                MenuFactory.newSimpleItem(commonConstants.Jobs()).perspective(JOBS).endMenu().build().getItems().get(0)
+        );
+    }
+
+    protected List<? extends MenuItem> getWorkViews() {
+        return Arrays.asList(
+                MenuFactory.newSimpleItem(commonConstants.Task_Inbox()).perspective(TASKS).endMenu().build().getItems().get(0),
+                MenuFactory.newSimpleItem(constants.Tasks_List_Admin()).perspective(TaskAdminSettingsPerspective.PERSPECTIVE_ID).endMenu().build().getItems().get(0),
+                MenuFactory.newSimpleItem(constants.Data_Sets()).perspective(DATASET_AUTHORING).endMenu().build().getItems().get(0)
+        );
+    }
+
+    protected List<? extends MenuItem> getDashboardsViews() {
+        return Arrays.asList(
+                MenuFactory.newSimpleItem(constants.Process_Reports()).perspective(PROCESS_DASHBOARD).endMenu().build().getItems().get(0),
+                MenuFactory.newSimpleItem(constants.Task_Reports()).perspective(TASK_DASHBOARD).endMenu().build().getItems().get(0)
+        );
+    }
+
+    @Produces
+    @ApplicationScoped
+    public MainBrand createBrandLogo() {
+        return () -> new Image(AppResource.INSTANCE.images().logo());
+    }
+}

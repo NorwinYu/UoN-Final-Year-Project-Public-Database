@@ -1,0 +1,2312 @@
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-0">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-61e8a2b328829a11561fab08e9915e98" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/org/mapfish/print/config/SmtpConfig.java" data-short-path="61e8a2b">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/org/mapfish/print/config/SmtpConfig.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/mapfish/mapfish-print/blob/9829326b6df5e4ecdf595fc0dcd8cdcc16792c6d/core/src/main/java/org/mapfish/print/config/SmtpConfig.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="58 additions &amp; 9 deletions" class="diffstat tooltipped tooltipped-e">67 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-61e8a2b328829a11561fab08e9915e98" title="core/src/main/java/org/mapfish/print/config/SmtpConfig.java">core/src/main/java/org/mapfish/print/config/SmtpConfig.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-61e8a2b328829a11561fab08e9915e98" data-tab-size="8">
+<tr data-position="0">
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-61e8a2b328829a11561fab08e9915e98HL1"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-61e8a2b328829a11561fab08e9915e98HR1"></td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -1,6 +1,8 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="1" id="diff-61e8a2b328829a11561fab08e9915e98L1"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="1" id="diff-61e8a2b328829a11561fab08e9915e98R1"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">package</span> <span class="pl-smi">org.mapfish.print.config</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="2" id="diff-61e8a2b328829a11561fab08e9915e98L2"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="2" id="diff-61e8a2b328829a11561fab08e9915e98R2"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="3" id="diff-61e8a2b328829a11561fab08e9915e98L3"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="3" id="diff-61e8a2b328829a11561fab08e9915e98R3"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">java.util.List</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="4" id="diff-61e8a2b328829a11561fab08e9915e98R4"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.annotation.Nonnull</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="5" id="diff-61e8a2b328829a11561fab08e9915e98R5"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">javax.annotation.Nullable</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-61e8a2b328829a11561fab08e9915e98L4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-61e8a2b328829a11561fab08e9915e98R6"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-61e8a2b328829a11561fab08e9915e98L5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-61e8a2b328829a11561fab08e9915e98R7"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-61e8a2b328829a11561fab08e9915e98L6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-61e8a2b328829a11561fab08e9915e98R8"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> * Email sending configuration.</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="9">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="7-7" data-right-range="9-9" data-url="/mapfish/mapfish-print/blob_excerpt/566b2dd22a2e9bde76e636280117906a59031775?diff=unified&amp;in_wiki_context=&amp;last_left=6&amp;last_right=8&amp;left=11&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fconfig%2FSmtpConfig.java&amp;right=13&amp;right_hunk_size=7" href="#diff-61e8a2b328829a11561fab08e9915e98" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -11,7 +13,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-61e8a2b328829a11561fab08e9915e98L11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-61e8a2b328829a11561fab08e9915e98R13"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-61e8a2b328829a11561fab08e9915e98L12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-61e8a2b328829a11561fab08e9915e98R14"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * The default subject.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-61e8a2b328829a11561fab08e9915e98L13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-61e8a2b328829a11561fab08e9915e98R15"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="14" id="diff-61e8a2b328829a11561fab08e9915e98L14"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-c1">DEFAULT_SUBJECT</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span><span class="x x-first x-last">Mapfish</span> print document<span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="16" id="diff-61e8a2b328829a11561fab08e9915e98R16"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-c1">DEFAULT_SUBJECT</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span><span class="x x-first x-last">MapFish</span> print document<span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-61e8a2b328829a11561fab08e9915e98L15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-61e8a2b328829a11561fab08e9915e98R17"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-61e8a2b328829a11561fab08e9915e98L16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-61e8a2b328829a11561fab08e9915e98R18"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-61e8a2b328829a11561fab08e9915e98L17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-61e8a2b328829a11561fab08e9915e98R19"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * The default body.</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="18">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="18-19" data-right-range="20-21" data-url="/mapfish/mapfish-print/blob_excerpt/566b2dd22a2e9bde76e636280117906a59031775?diff=unified&amp;in_wiki_context=&amp;last_left=17&amp;last_right=19&amp;left=23&amp;left_hunk_size=6&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fconfig%2FSmtpConfig.java&amp;right=25&amp;right_hunk_size=16" href="#diff-61e8a2b328829a11561fab08e9915e98" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -23,6 +25,16 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-61e8a2b328829a11561fab08e9915e98L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-61e8a2b328829a11561fab08e9915e98R25"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-61e8a2b328829a11561fab08e9915e98L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-61e8a2b328829a11561fab08e9915e98R26"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-c1">DEFAULT_BODY_STORAGE</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Please find the requested document there: {url}<span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-61e8a2b328829a11561fab08e9915e98L25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-61e8a2b328829a11561fab08e9915e98R27"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="28" id="diff-61e8a2b328829a11561fab08e9915e98R28"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="29" id="diff-61e8a2b328829a11561fab08e9915e98R29"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * The default subject in case of error.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="30" id="diff-61e8a2b328829a11561fab08e9915e98R30"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="31" id="diff-61e8a2b328829a11561fab08e9915e98R31"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-c1">DEFAULT_ERROR_SUBJECT</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>MapFish print error<span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="32" id="diff-61e8a2b328829a11561fab08e9915e98R32"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="33" id="diff-61e8a2b328829a11561fab08e9915e98R33"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="34" id="diff-61e8a2b328829a11561fab08e9915e98R34"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * The default body in case of error.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="35" id="diff-61e8a2b328829a11561fab08e9915e98R35"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="36" id="diff-61e8a2b328829a11561fab08e9915e98R36"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-c1">DEFAULT_ERROR_BODY</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>The print job failed:&lt;br&gt;{message}<span class="pl-pds">"</span></span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-61e8a2b328829a11561fab08e9915e98R37"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-61e8a2b328829a11561fab08e9915e98L26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-61e8a2b328829a11561fab08e9915e98R38"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">String</span> fromAddress;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-61e8a2b328829a11561fab08e9915e98L27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-61e8a2b328829a11561fab08e9915e98R39"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">String</span> host;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-61e8a2b328829a11561fab08e9915e98L28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-61e8a2b328829a11561fab08e9915e98R40"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">int</span> port <span class="pl-k">=</span> <span class="pl-c1">25</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="35">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="29-29" data-right-range="41-41" data-url="/mapfish/mapfish-print/blob_excerpt/566b2dd22a2e9bde76e636280117906a59031775?diff=unified&amp;in_wiki_context=&amp;last_left=28&amp;last_right=40&amp;left=32&amp;left_hunk_size=6&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fconfig%2FSmtpConfig.java&amp;right=44&amp;right_hunk_size=8" href="#diff-61e8a2b328829a11561fab08e9915e98" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -32,6 +44,8 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-61e8a2b328829a11561fab08e9915e98L32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-61e8a2b328829a11561fab08e9915e98R44"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">boolean</span> ssl <span class="pl-k">=</span> <span class="pl-c1">false</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-61e8a2b328829a11561fab08e9915e98L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-61e8a2b328829a11561fab08e9915e98R45"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">String</span> subject <span class="pl-k">=</span> <span class="pl-c1">DEFAULT_SUBJECT</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-61e8a2b328829a11561fab08e9915e98L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-61e8a2b328829a11561fab08e9915e98R46"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">String</span> body <span class="pl-k">=</span> <span class="pl-c1">null</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-61e8a2b328829a11561fab08e9915e98R47"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">String</span> errorSubject <span class="pl-k">=</span> <span class="pl-c1">DEFAULT_ERROR_SUBJECT</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="48" id="diff-61e8a2b328829a11561fab08e9915e98R48"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">String</span> errorBody <span class="pl-k">=</span> <span class="pl-c1">DEFAULT_ERROR_BODY</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-61e8a2b328829a11561fab08e9915e98L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-61e8a2b328829a11561fab08e9915e98R49"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">ReportStorage</span> storage <span class="pl-k">=</span> <span class="pl-c1">null</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-61e8a2b328829a11561fab08e9915e98L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-61e8a2b328829a11561fab08e9915e98R50"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-61e8a2b328829a11561fab08e9915e98L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-61e8a2b328829a11561fab08e9915e98R51"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">@Override</span></span></td>
+</tr>
+<tr class="js-expandable-line" data-position="44">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="38-93" data-right-range="52-107" data-url="/mapfish/mapfish-print/blob_excerpt/566b2dd22a2e9bde76e636280117906a59031775?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=37&amp;last_right=51&amp;left=152&amp;left_hunk_size=25&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fconfig%2FSmtpConfig.java&amp;right=166&amp;right_hunk_size=26" href="#diff-61e8a2b328829a11561fab08e9915e98" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="94-151" data-right-range="108-165" data-url="/mapfish/mapfish-print/blob_excerpt/566b2dd22a2e9bde76e636280117906a59031775?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=37&amp;last_right=51&amp;left=152&amp;left_hunk_size=25&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fconfig%2FSmtpConfig.java&amp;right=166&amp;right_hunk_size=26" href="#diff-61e8a2b328829a11561fab08e9915e98" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -152,25 +166,26 @@ public void setSsl(final boolean ssl) {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="152" id="diff-61e8a2b328829a11561fab08e9915e98L152"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="166" id="diff-61e8a2b328829a11561fab08e9915e98R166"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>ssl <span class="pl-k">=</span> ssl;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="153" id="diff-61e8a2b328829a11561fab08e9915e98L153"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="167" id="diff-61e8a2b328829a11561fab08e9915e98R167"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="154" id="diff-61e8a2b328829a11561fab08e9915e98L154"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="168" id="diff-61e8a2b328829a11561fab08e9915e98R168"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="169" id="diff-61e8a2b328829a11561fab08e9915e98R169"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Nonnull</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="155" id="diff-61e8a2b328829a11561fab08e9915e98L155"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="170" id="diff-61e8a2b328829a11561fab08e9915e98R170"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">String</span> <span class="pl-en">getSubject</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="156" id="diff-61e8a2b328829a11561fab08e9915e98L156"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="171" id="diff-61e8a2b328829a11561fab08e9915e98R171"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> subject;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="157" id="diff-61e8a2b328829a11561fab08e9915e98L157"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="172" id="diff-61e8a2b328829a11561fab08e9915e98R172"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="158" id="diff-61e8a2b328829a11561fab08e9915e98L158"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="173" id="diff-61e8a2b328829a11561fab08e9915e98R173"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="159" id="diff-61e8a2b328829a11561fab08e9915e98L159"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="174" id="diff-61e8a2b328829a11561fab08e9915e98R174"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="160" id="diff-61e8a2b328829a11561fab08e9915e98L160"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="175" id="diff-61e8a2b328829a11561fab08e9915e98R175"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * The default email subject.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="161" id="diff-61e8a2b328829a11561fab08e9915e98L161"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="176" id="diff-61e8a2b328829a11561fab08e9915e98R176"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * &lt;<span class="pl-ent">br</span>&gt;</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="162" id="diff-61e8a2b328829a11561fab08e9915e98L162"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * This can be changed by the &lt;<span class="pl-ent">code</span>&gt;smtp&lt;/code&gt;.&lt;<span class="pl-ent">code</span>&gt;subject&lt;/code&gt;</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="163" id="diff-61e8a2b328829a11561fab08e9915e98L163"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * property in the request.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="177" id="diff-61e8a2b328829a11561fab08e9915e98R177"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * This can be changed by the &lt;<span class="pl-ent">code</span>&gt;smtp&lt;/code&gt;.&lt;<span class="pl-ent">code</span>&gt;subject&lt;/code&gt; property in the request.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="164" id="diff-61e8a2b328829a11561fab08e9915e98L164"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="178" id="diff-61e8a2b328829a11561fab08e9915e98R178"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="165" id="diff-61e8a2b328829a11561fab08e9915e98L165"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="179" id="diff-61e8a2b328829a11561fab08e9915e98R179"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> subject The subject</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="166" id="diff-61e8a2b328829a11561fab08e9915e98L166"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="180" id="diff-61e8a2b328829a11561fab08e9915e98R180"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="167" id="diff-61e8a2b328829a11561fab08e9915e98L167"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">setSubject</span>(<span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-v">subject</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="181" id="diff-61e8a2b328829a11561fab08e9915e98R181"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">setSubject</span>(<span class="pl-k x x-first">@Nonnull</span><span class="x x-last"> </span><span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-v">subject</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="168" id="diff-61e8a2b328829a11561fab08e9915e98L168"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="182" id="diff-61e8a2b328829a11561fab08e9915e98R182"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>subject <span class="pl-k">=</span> subject;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="169" id="diff-61e8a2b328829a11561fab08e9915e98L169"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="183" id="diff-61e8a2b328829a11561fab08e9915e98R183"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="170" id="diff-61e8a2b328829a11561fab08e9915e98L170"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="184" id="diff-61e8a2b328829a11561fab08e9915e98R184"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="171" id="diff-61e8a2b328829a11561fab08e9915e98L171"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="185" id="diff-61e8a2b328829a11561fab08e9915e98R185"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="172" id="diff-61e8a2b328829a11561fab08e9915e98L172"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="186" id="diff-61e8a2b328829a11561fab08e9915e98R186"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * Returns the configured body or the default value.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="173" id="diff-61e8a2b328829a11561fab08e9915e98L173"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="187" id="diff-61e8a2b328829a11561fab08e9915e98R187"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="188" id="diff-61e8a2b328829a11561fab08e9915e98R188"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Nonnull</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="174" id="diff-61e8a2b328829a11561fab08e9915e98L174"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="189" id="diff-61e8a2b328829a11561fab08e9915e98R189"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">String</span> <span class="pl-en">getBody</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="175" id="diff-61e8a2b328829a11561fab08e9915e98L175"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="190" id="diff-61e8a2b328829a11561fab08e9915e98R190"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (body <span class="pl-k">==</span> <span class="pl-c1">null</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="176" id="diff-61e8a2b328829a11561fab08e9915e98L176"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="191" id="diff-61e8a2b328829a11561fab08e9915e98R191"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> storage <span class="pl-k">==</span> <span class="pl-c1">null</span> <span class="pl-k">?</span> <span class="pl-c1">DEFAULT_BODY</span> <span class="pl-k">:</span> <span class="pl-c1">DEFAULT_BODY_STORAGE</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="74">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="177-178" data-right-range="192-193" data-url="/mapfish/mapfish-print/blob_excerpt/566b2dd22a2e9bde76e636280117906a59031775?diff=unified&amp;in_wiki_context=&amp;last_left=176&amp;last_right=191&amp;left=182&amp;left_hunk_size=18&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fconfig%2FSmtpConfig.java&amp;right=197&amp;right_hunk_size=18" href="#diff-61e8a2b328829a11561fab08e9915e98" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -182,18 +197,18 @@ public String getBody() {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="182" id="diff-61e8a2b328829a11561fab08e9915e98L182"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="197" id="diff-61e8a2b328829a11561fab08e9915e98R197"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="183" id="diff-61e8a2b328829a11561fab08e9915e98L183"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="198" id="diff-61e8a2b328829a11561fab08e9915e98R198"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * The default email body.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="184" id="diff-61e8a2b328829a11561fab08e9915e98L184"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="199" id="diff-61e8a2b328829a11561fab08e9915e98R199"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * &lt;<span class="pl-ent">br</span>&gt;</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="185" id="diff-61e8a2b328829a11561fab08e9915e98L185"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * This can be changed by the &lt;<span class="pl-ent">code</span>&gt;smtp&lt;/code&gt;.&lt;<span class="pl-ent">code</span>&gt;body&lt;/code&gt; property</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="186" id="diff-61e8a2b328829a11561fab08e9915e98L186"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * in the request.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="187" id="diff-61e8a2b328829a11561fab08e9915e98L187"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="188" id="diff-61e8a2b328829a11561fab08e9915e98L188"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * If you have setup a storage, you must put a "{url}" marker where the URL</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="189" id="diff-61e8a2b328829a11561fab08e9915e98L189"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"><span class="pl-c">     * to fetch the report should be put.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="200" id="diff-61e8a2b328829a11561fab08e9915e98R200"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * This can be changed by the &lt;<span class="pl-ent">code</span>&gt;smtp&lt;/code&gt;.&lt;<span class="pl-ent">code</span>&gt;body&lt;/code&gt; property in the request.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="201" id="diff-61e8a2b328829a11561fab08e9915e98R201"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * &lt;<span class="pl-ent">p</span>&gt;</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="202" id="diff-61e8a2b328829a11561fab08e9915e98R202"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * If you have setup a storage, you must put a "{url}" marker where the URL to fetch the report should be</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="203" id="diff-61e8a2b328829a11561fab08e9915e98R203"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * put.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="190" id="diff-61e8a2b328829a11561fab08e9915e98L190"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="204" id="diff-61e8a2b328829a11561fab08e9915e98R204"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="191" id="diff-61e8a2b328829a11561fab08e9915e98L191"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="205" id="diff-61e8a2b328829a11561fab08e9915e98R205"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> body The body</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="192" id="diff-61e8a2b328829a11561fab08e9915e98L192"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="206" id="diff-61e8a2b328829a11561fab08e9915e98R206"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="193" id="diff-61e8a2b328829a11561fab08e9915e98L193"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="207" id="diff-61e8a2b328829a11561fab08e9915e98R207"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">setBody</span>(<span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-v">body</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="194" id="diff-61e8a2b328829a11561fab08e9915e98L194"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="208" id="diff-61e8a2b328829a11561fab08e9915e98R208"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>body <span class="pl-k">=</span> body;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="195" id="diff-61e8a2b328829a11561fab08e9915e98L195"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="209" id="diff-61e8a2b328829a11561fab08e9915e98R209"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="196" id="diff-61e8a2b328829a11561fab08e9915e98L196"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="210" id="diff-61e8a2b328829a11561fab08e9915e98R210"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="211" id="diff-61e8a2b328829a11561fab08e9915e98R211"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Nullable</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="197" id="diff-61e8a2b328829a11561fab08e9915e98L197"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="212" id="diff-61e8a2b328829a11561fab08e9915e98R212"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">ReportStorage</span> <span class="pl-en">getStorage</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="198" id="diff-61e8a2b328829a11561fab08e9915e98L198"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="213" id="diff-61e8a2b328829a11561fab08e9915e98R213"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">return</span> storage;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="199" id="diff-61e8a2b328829a11561fab08e9915e98L199"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="214" id="diff-61e8a2b328829a11561fab08e9915e98R214"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="98">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="200-203" data-right-range="215-218" data-url="/mapfish/mapfish-print/blob_excerpt/566b2dd22a2e9bde76e636280117906a59031775?diff=unified&amp;in_wiki_context=&amp;last_left=199&amp;last_right=214&amp;left=209&amp;left_hunk_size=4&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fconfig%2FSmtpConfig.java&amp;right=224&amp;right_hunk_size=38" href="#diff-61e8a2b328829a11561fab08e9915e98" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -209,4 +224,38 @@ public ReportStorage getStorage() {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="209" id="diff-61e8a2b328829a11561fab08e9915e98L209"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="224" id="diff-61e8a2b328829a11561fab08e9915e98R224"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">setStorage</span>(<span class="pl-k">final</span> <span class="pl-smi">ReportStorage</span> <span class="pl-v">storage</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="210" id="diff-61e8a2b328829a11561fab08e9915e98L210"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="225" id="diff-61e8a2b328829a11561fab08e9915e98R225"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>storage <span class="pl-k">=</span> storage;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="211" id="diff-61e8a2b328829a11561fab08e9915e98L211"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="226" id="diff-61e8a2b328829a11561fab08e9915e98R226"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="227" id="diff-61e8a2b328829a11561fab08e9915e98R227"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="228" id="diff-61e8a2b328829a11561fab08e9915e98R228"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Nonnull</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="229" id="diff-61e8a2b328829a11561fab08e9915e98R229"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">String</span> <span class="pl-en">getErrorSubject</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="230" id="diff-61e8a2b328829a11561fab08e9915e98R230"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> errorSubject;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="231" id="diff-61e8a2b328829a11561fab08e9915e98R231"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="232" id="diff-61e8a2b328829a11561fab08e9915e98R232"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="233" id="diff-61e8a2b328829a11561fab08e9915e98R233"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="234" id="diff-61e8a2b328829a11561fab08e9915e98R234"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * The default email subject in case of error.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="235" id="diff-61e8a2b328829a11561fab08e9915e98R235"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * &lt;<span class="pl-ent">br</span>&gt;</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="236" id="diff-61e8a2b328829a11561fab08e9915e98R236"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * This can be changed by the &lt;<span class="pl-ent">code</span>&gt;smtp&lt;/code&gt;.&lt;<span class="pl-ent">code</span>&gt;errorSubject&lt;/code&gt; property in the request.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="237" id="diff-61e8a2b328829a11561fab08e9915e98R237"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="238" id="diff-61e8a2b328829a11561fab08e9915e98R238"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> errorSubject The subject</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="239" id="diff-61e8a2b328829a11561fab08e9915e98R239"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="240" id="diff-61e8a2b328829a11561fab08e9915e98R240"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">setErrorSubject</span>(<span class="pl-k">@Nonnull</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-v">errorSubject</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="241" id="diff-61e8a2b328829a11561fab08e9915e98R241"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>errorSubject <span class="pl-k">=</span> errorSubject;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="242" id="diff-61e8a2b328829a11561fab08e9915e98R242"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="243" id="diff-61e8a2b328829a11561fab08e9915e98R243"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="244" id="diff-61e8a2b328829a11561fab08e9915e98R244"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">@Nonnull</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="245" id="diff-61e8a2b328829a11561fab08e9915e98R245"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-smi">String</span> <span class="pl-en">getErrorBody</span>() {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="246" id="diff-61e8a2b328829a11561fab08e9915e98R246"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> errorBody;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="247" id="diff-61e8a2b328829a11561fab08e9915e98R247"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="248" id="diff-61e8a2b328829a11561fab08e9915e98R248"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="249" id="diff-61e8a2b328829a11561fab08e9915e98R249"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="250" id="diff-61e8a2b328829a11561fab08e9915e98R250"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * The default email body in case of error.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="251" id="diff-61e8a2b328829a11561fab08e9915e98R251"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * &lt;<span class="pl-ent">br</span>&gt;</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="252" id="diff-61e8a2b328829a11561fab08e9915e98R252"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * This can be changed by the &lt;<span class="pl-ent">code</span>&gt;smtp&lt;/code&gt;.&lt;<span class="pl-ent">code</span>&gt;body&lt;/code&gt; property in the request.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="253" id="diff-61e8a2b328829a11561fab08e9915e98R253"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * &lt;<span class="pl-ent">p</span>&gt;</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="254" id="diff-61e8a2b328829a11561fab08e9915e98R254"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * The error message can be places in the text using a "{message}" marker.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="255" id="diff-61e8a2b328829a11561fab08e9915e98R255"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     *</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="256" id="diff-61e8a2b328829a11561fab08e9915e98R256"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c">     * <span class="pl-k">@param</span> errorBody The body</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="257" id="diff-61e8a2b328829a11561fab08e9915e98R257"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="258" id="diff-61e8a2b328829a11561fab08e9915e98R258"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">setErrorBody</span>(<span class="pl-k">@Nonnull</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-v">errorBody</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="259" id="diff-61e8a2b328829a11561fab08e9915e98R259"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>errorBody <span class="pl-k">=</span> errorBody;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="260" id="diff-61e8a2b328829a11561fab08e9915e98R260"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="212" id="diff-61e8a2b328829a11561fab08e9915e98L212"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="261" id="diff-61e8a2b328829a11561fab08e9915e98R261"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">}</span></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-61e8a2b328829a11561fab08e9915e98HL1"></td>
+<td class="blob-num blob-num-hunk non-expandable" data-line-number="..." id="diff-61e8a2b328829a11561fab08e9915e98HR1"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="1" id="diff-61e8a2b328829a11561fab08e9915e98L1"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="1" id="diff-61e8a2b328829a11561fab08e9915e98R1"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="2" id="diff-61e8a2b328829a11561fab08e9915e98L2"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="2" id="diff-61e8a2b328829a11561fab08e9915e98R2"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="3" id="diff-61e8a2b328829a11561fab08e9915e98L3"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="3" id="diff-61e8a2b328829a11561fab08e9915e98R3"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="4" id="diff-61e8a2b328829a11561fab08e9915e98R4"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="5" id="diff-61e8a2b328829a11561fab08e9915e98R5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-61e8a2b328829a11561fab08e9915e98L4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-61e8a2b328829a11561fab08e9915e98R6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-61e8a2b328829a11561fab08e9915e98L5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-61e8a2b328829a11561fab08e9915e98R7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-61e8a2b328829a11561fab08e9915e98L6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-61e8a2b328829a11561fab08e9915e98R8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="11" id="diff-61e8a2b328829a11561fab08e9915e98L11"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-61e8a2b328829a11561fab08e9915e98R13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="12" id="diff-61e8a2b328829a11561fab08e9915e98L12"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="14" id="diff-61e8a2b328829a11561fab08e9915e98R14"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="13" id="diff-61e8a2b328829a11561fab08e9915e98L13"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-61e8a2b328829a11561fab08e9915e98R15"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="14" id="diff-61e8a2b328829a11561fab08e9915e98L14"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="16" id="diff-61e8a2b328829a11561fab08e9915e98R16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="15" id="diff-61e8a2b328829a11561fab08e9915e98L15"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-61e8a2b328829a11561fab08e9915e98R17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="16" id="diff-61e8a2b328829a11561fab08e9915e98L16"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="18" id="diff-61e8a2b328829a11561fab08e9915e98R18"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="17" id="diff-61e8a2b328829a11561fab08e9915e98L17"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="19" id="diff-61e8a2b328829a11561fab08e9915e98R19"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="23" id="diff-61e8a2b328829a11561fab08e9915e98L23"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-61e8a2b328829a11561fab08e9915e98R25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="24" id="diff-61e8a2b328829a11561fab08e9915e98L24"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-61e8a2b328829a11561fab08e9915e98R26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="25" id="diff-61e8a2b328829a11561fab08e9915e98L25"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-61e8a2b328829a11561fab08e9915e98R27"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="28" id="diff-61e8a2b328829a11561fab08e9915e98R28"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="29" id="diff-61e8a2b328829a11561fab08e9915e98R29"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="30" id="diff-61e8a2b328829a11561fab08e9915e98R30"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="31" id="diff-61e8a2b328829a11561fab08e9915e98R31"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="32" id="diff-61e8a2b328829a11561fab08e9915e98R32"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="33" id="diff-61e8a2b328829a11561fab08e9915e98R33"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="34" id="diff-61e8a2b328829a11561fab08e9915e98R34"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="35" id="diff-61e8a2b328829a11561fab08e9915e98R35"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="36" id="diff-61e8a2b328829a11561fab08e9915e98R36"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="37" id="diff-61e8a2b328829a11561fab08e9915e98R37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="26" id="diff-61e8a2b328829a11561fab08e9915e98L26"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="38" id="diff-61e8a2b328829a11561fab08e9915e98R38"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="27" id="diff-61e8a2b328829a11561fab08e9915e98L27"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="39" id="diff-61e8a2b328829a11561fab08e9915e98R39"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="28" id="diff-61e8a2b328829a11561fab08e9915e98L28"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="40" id="diff-61e8a2b328829a11561fab08e9915e98R40"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="32" id="diff-61e8a2b328829a11561fab08e9915e98L32"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="44" id="diff-61e8a2b328829a11561fab08e9915e98R44"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="33" id="diff-61e8a2b328829a11561fab08e9915e98L33"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="45" id="diff-61e8a2b328829a11561fab08e9915e98R45"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="34" id="diff-61e8a2b328829a11561fab08e9915e98L34"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="46" id="diff-61e8a2b328829a11561fab08e9915e98R46"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="47" id="diff-61e8a2b328829a11561fab08e9915e98R47"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="48" id="diff-61e8a2b328829a11561fab08e9915e98R48"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="35" id="diff-61e8a2b328829a11561fab08e9915e98L35"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="49" id="diff-61e8a2b328829a11561fab08e9915e98R49"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="36" id="diff-61e8a2b328829a11561fab08e9915e98L36"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="50" id="diff-61e8a2b328829a11561fab08e9915e98R50"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="37" id="diff-61e8a2b328829a11561fab08e9915e98L37"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="51" id="diff-61e8a2b328829a11561fab08e9915e98R51"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="152" id="diff-61e8a2b328829a11561fab08e9915e98L152"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="166" id="diff-61e8a2b328829a11561fab08e9915e98R166"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="153" id="diff-61e8a2b328829a11561fab08e9915e98L153"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="167" id="diff-61e8a2b328829a11561fab08e9915e98R167"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="154" id="diff-61e8a2b328829a11561fab08e9915e98L154"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="168" id="diff-61e8a2b328829a11561fab08e9915e98R168"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="169" id="diff-61e8a2b328829a11561fab08e9915e98R169"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="155" id="diff-61e8a2b328829a11561fab08e9915e98L155"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="170" id="diff-61e8a2b328829a11561fab08e9915e98R170"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="156" id="diff-61e8a2b328829a11561fab08e9915e98L156"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="171" id="diff-61e8a2b328829a11561fab08e9915e98R171"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="157" id="diff-61e8a2b328829a11561fab08e9915e98L157"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="172" id="diff-61e8a2b328829a11561fab08e9915e98R172"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="158" id="diff-61e8a2b328829a11561fab08e9915e98L158"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="173" id="diff-61e8a2b328829a11561fab08e9915e98R173"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="159" id="diff-61e8a2b328829a11561fab08e9915e98L159"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="174" id="diff-61e8a2b328829a11561fab08e9915e98R174"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="160" id="diff-61e8a2b328829a11561fab08e9915e98L160"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="175" id="diff-61e8a2b328829a11561fab08e9915e98R175"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="161" id="diff-61e8a2b328829a11561fab08e9915e98L161"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="176" id="diff-61e8a2b328829a11561fab08e9915e98R176"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="162" id="diff-61e8a2b328829a11561fab08e9915e98L162"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="163" id="diff-61e8a2b328829a11561fab08e9915e98L163"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="177" id="diff-61e8a2b328829a11561fab08e9915e98R177"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="164" id="diff-61e8a2b328829a11561fab08e9915e98L164"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="178" id="diff-61e8a2b328829a11561fab08e9915e98R178"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="165" id="diff-61e8a2b328829a11561fab08e9915e98L165"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="179" id="diff-61e8a2b328829a11561fab08e9915e98R179"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="166" id="diff-61e8a2b328829a11561fab08e9915e98L166"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="180" id="diff-61e8a2b328829a11561fab08e9915e98R180"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="167" id="diff-61e8a2b328829a11561fab08e9915e98L167"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="181" id="diff-61e8a2b328829a11561fab08e9915e98R181"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="168" id="diff-61e8a2b328829a11561fab08e9915e98L168"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="182" id="diff-61e8a2b328829a11561fab08e9915e98R182"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="169" id="diff-61e8a2b328829a11561fab08e9915e98L169"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="183" id="diff-61e8a2b328829a11561fab08e9915e98R183"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="170" id="diff-61e8a2b328829a11561fab08e9915e98L170"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="184" id="diff-61e8a2b328829a11561fab08e9915e98R184"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="171" id="diff-61e8a2b328829a11561fab08e9915e98L171"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="185" id="diff-61e8a2b328829a11561fab08e9915e98R185"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="172" id="diff-61e8a2b328829a11561fab08e9915e98L172"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="186" id="diff-61e8a2b328829a11561fab08e9915e98R186"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="173" id="diff-61e8a2b328829a11561fab08e9915e98L173"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="187" id="diff-61e8a2b328829a11561fab08e9915e98R187"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="188" id="diff-61e8a2b328829a11561fab08e9915e98R188"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="174" id="diff-61e8a2b328829a11561fab08e9915e98L174"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="189" id="diff-61e8a2b328829a11561fab08e9915e98R189"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="175" id="diff-61e8a2b328829a11561fab08e9915e98L175"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="190" id="diff-61e8a2b328829a11561fab08e9915e98R190"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="176" id="diff-61e8a2b328829a11561fab08e9915e98L176"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="191" id="diff-61e8a2b328829a11561fab08e9915e98R191"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="182" id="diff-61e8a2b328829a11561fab08e9915e98L182"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="197" id="diff-61e8a2b328829a11561fab08e9915e98R197"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="183" id="diff-61e8a2b328829a11561fab08e9915e98L183"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="198" id="diff-61e8a2b328829a11561fab08e9915e98R198"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="184" id="diff-61e8a2b328829a11561fab08e9915e98L184"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="199" id="diff-61e8a2b328829a11561fab08e9915e98R199"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="185" id="diff-61e8a2b328829a11561fab08e9915e98L185"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="186" id="diff-61e8a2b328829a11561fab08e9915e98L186"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="187" id="diff-61e8a2b328829a11561fab08e9915e98L187"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="188" id="diff-61e8a2b328829a11561fab08e9915e98L188"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="189" id="diff-61e8a2b328829a11561fab08e9915e98L189"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="200" id="diff-61e8a2b328829a11561fab08e9915e98R200"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="201" id="diff-61e8a2b328829a11561fab08e9915e98R201"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="202" id="diff-61e8a2b328829a11561fab08e9915e98R202"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="203" id="diff-61e8a2b328829a11561fab08e9915e98R203"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="190" id="diff-61e8a2b328829a11561fab08e9915e98L190"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="204" id="diff-61e8a2b328829a11561fab08e9915e98R204"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="191" id="diff-61e8a2b328829a11561fab08e9915e98L191"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="205" id="diff-61e8a2b328829a11561fab08e9915e98R205"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="192" id="diff-61e8a2b328829a11561fab08e9915e98L192"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="206" id="diff-61e8a2b328829a11561fab08e9915e98R206"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="193" id="diff-61e8a2b328829a11561fab08e9915e98L193"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="207" id="diff-61e8a2b328829a11561fab08e9915e98R207"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="194" id="diff-61e8a2b328829a11561fab08e9915e98L194"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="208" id="diff-61e8a2b328829a11561fab08e9915e98R208"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="195" id="diff-61e8a2b328829a11561fab08e9915e98L195"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="209" id="diff-61e8a2b328829a11561fab08e9915e98R209"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="196" id="diff-61e8a2b328829a11561fab08e9915e98L196"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="210" id="diff-61e8a2b328829a11561fab08e9915e98R210"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="211" id="diff-61e8a2b328829a11561fab08e9915e98R211"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="197" id="diff-61e8a2b328829a11561fab08e9915e98L197"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="212" id="diff-61e8a2b328829a11561fab08e9915e98R212"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="198" id="diff-61e8a2b328829a11561fab08e9915e98L198"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="213" id="diff-61e8a2b328829a11561fab08e9915e98R213"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="199" id="diff-61e8a2b328829a11561fab08e9915e98L199"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="214" id="diff-61e8a2b328829a11561fab08e9915e98R214"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="209" id="diff-61e8a2b328829a11561fab08e9915e98L209"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="224" id="diff-61e8a2b328829a11561fab08e9915e98R224"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="210" id="diff-61e8a2b328829a11561fab08e9915e98L210"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="225" id="diff-61e8a2b328829a11561fab08e9915e98R225"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="211" id="diff-61e8a2b328829a11561fab08e9915e98L211"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="226" id="diff-61e8a2b328829a11561fab08e9915e98R226"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="227" id="diff-61e8a2b328829a11561fab08e9915e98R227"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="228" id="diff-61e8a2b328829a11561fab08e9915e98R228"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="229" id="diff-61e8a2b328829a11561fab08e9915e98R229"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="230" id="diff-61e8a2b328829a11561fab08e9915e98R230"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="231" id="diff-61e8a2b328829a11561fab08e9915e98R231"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="232" id="diff-61e8a2b328829a11561fab08e9915e98R232"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="233" id="diff-61e8a2b328829a11561fab08e9915e98R233"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="234" id="diff-61e8a2b328829a11561fab08e9915e98R234"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="235" id="diff-61e8a2b328829a11561fab08e9915e98R235"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="236" id="diff-61e8a2b328829a11561fab08e9915e98R236"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="237" id="diff-61e8a2b328829a11561fab08e9915e98R237"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="238" id="diff-61e8a2b328829a11561fab08e9915e98R238"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="239" id="diff-61e8a2b328829a11561fab08e9915e98R239"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="240" id="diff-61e8a2b328829a11561fab08e9915e98R240"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="241" id="diff-61e8a2b328829a11561fab08e9915e98R241"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="242" id="diff-61e8a2b328829a11561fab08e9915e98R242"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="243" id="diff-61e8a2b328829a11561fab08e9915e98R243"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="244" id="diff-61e8a2b328829a11561fab08e9915e98R244"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="245" id="diff-61e8a2b328829a11561fab08e9915e98R245"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="246" id="diff-61e8a2b328829a11561fab08e9915e98R246"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="247" id="diff-61e8a2b328829a11561fab08e9915e98R247"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="248" id="diff-61e8a2b328829a11561fab08e9915e98R248"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="249" id="diff-61e8a2b328829a11561fab08e9915e98R249"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="250" id="diff-61e8a2b328829a11561fab08e9915e98R250"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="251" id="diff-61e8a2b328829a11561fab08e9915e98R251"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="252" id="diff-61e8a2b328829a11561fab08e9915e98R252"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="253" id="diff-61e8a2b328829a11561fab08e9915e98R253"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="254" id="diff-61e8a2b328829a11561fab08e9915e98R254"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="255" id="diff-61e8a2b328829a11561fab08e9915e98R255"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="256" id="diff-61e8a2b328829a11561fab08e9915e98R256"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="257" id="diff-61e8a2b328829a11561fab08e9915e98R257"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="258" id="diff-61e8a2b328829a11561fab08e9915e98R258"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="259" id="diff-61e8a2b328829a11561fab08e9915e98R259"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="260" id="diff-61e8a2b328829a11561fab08e9915e98R260"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="212" id="diff-61e8a2b328829a11561fab08e9915e98L212"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="261" id="diff-61e8a2b328829a11561fab08e9915e98R261"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-1">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-9ff01825819289105eb9e459239d405a" data-file-deleted="false" data-file-type=".java" data-path="core/src/main/java/org/mapfish/print/servlet/job/PrintJob.java" data-short-path="9ff0182">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="core/src/main/java/org/mapfish/print/servlet/job/PrintJob.java">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/mapfish/mapfish-print/blob/9829326b6df5e4ecdf595fc0dcd8cdcc16792c6d/core/src/main/java/org/mapfish/print/servlet/job/PrintJob.java" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="52 additions &amp; 6 deletions" class="diffstat tooltipped tooltipped-e">58 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span></span>
+<a class="link-gray-dark" href="#diff-9ff01825819289105eb9e459239d405a" title="core/src/main/java/org/mapfish/print/servlet/job/PrintJob.java">core/src/main/java/org/mapfish/print/servlet/job/PrintJob.java</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+<table class="diff-table js-diff-table tab-size " data-diff-anchor="diff-9ff01825819289105eb9e459239d405a" data-tab-size="8">
+<tr class="js-expandable-line" data-position="0">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Up" class="js-expand directional-expander single-expander" data-left-range="1-2" data-right-range="1-2" data-url="/mapfish/mapfish-print/blob_excerpt/b1ed4a3fa0b2bc3a5f7bd07ce3a09c1f91f3d865?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=3&amp;left_hunk_size=6&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fservlet%2Fjob%2FPrintJob.java&amp;right=3&amp;right_hunk_size=7" href="#diff-9ff01825819289105eb9e459239d405a" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -3,6 +3,7 @@</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="3" id="diff-9ff01825819289105eb9e459239d405aL3"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="3" id="diff-9ff01825819289105eb9e459239d405aR3"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.codahale.metrics.MetricRegistry</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-9ff01825819289105eb9e459239d405aL4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-9ff01825819289105eb9e459239d405aR4"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">com.codahale.metrics.Timer</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-9ff01825819289105eb9e459239d405aL5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-9ff01825819289105eb9e459239d405aR5"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.mapfish.print.Constants</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="6" id="diff-9ff01825819289105eb9e459239d405aR6"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.mapfish.print.ExceptionUtils</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-9ff01825819289105eb9e459239d405aL6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-9ff01825819289105eb9e459239d405aR7"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.mapfish.print.MapPrinter</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-9ff01825819289105eb9e459239d405aL7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-9ff01825819289105eb9e459239d405aR8"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.mapfish.print.MapPrinterFactory</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-9ff01825819289105eb9e459239d405aL8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-9ff01825819289105eb9e459239d405aR9"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><span class="pl-k">import</span> <span class="pl-smi">org.mapfish.print.config.Configuration</span>;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="8">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="9-89" data-right-range="10-90" data-url="/mapfish/mapfish-print/blob_excerpt/b1ed4a3fa0b2bc3a5f7bd07ce3a09c1f91f3d865?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=8&amp;last_right=9&amp;left=173&amp;left_hunk_size=6&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fservlet%2Fjob%2FPrintJob.java&amp;right=174&amp;right_hunk_size=7" href="#diff-9ff01825819289105eb9e459239d405a" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="90-172" data-right-range="91-173" data-url="/mapfish/mapfish-print/blob_excerpt/b1ed4a3fa0b2bc3a5f7bd07ce3a09c1f91f3d865?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=8&amp;last_right=9&amp;left=173&amp;left_hunk_size=6&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fservlet%2Fjob%2FPrintJob.java&amp;right=174&amp;right_hunk_size=7" href="#diff-9ff01825819289105eb9e459239d405a" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -173,6 +174,7 @@ public final PrintJobResult call() throws Exception {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="173" id="diff-9ff01825819289105eb9e459239d405aL173"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="174" id="diff-9ff01825819289105eb9e459239d405aR174"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">                jobTracker<span class="pl-k">.</span>onJobError();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="174" id="diff-9ff01825819289105eb9e459239d405aL174"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="175" id="diff-9ff01825819289105eb9e459239d405aR175"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="175" id="diff-9ff01825819289105eb9e459239d405aL175"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="176" id="diff-9ff01825819289105eb9e459239d405aR176"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">            deleteReport();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="177" id="diff-9ff01825819289105eb9e459239d405aR177"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            maybeSendError(mapPrinter<span class="pl-k">.</span>getConfiguration(), e);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="176" id="diff-9ff01825819289105eb9e459239d405aL176"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="178" id="diff-9ff01825819289105eb9e459239d405aR178"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">LOGGER</span><span class="pl-k">.</span>warn(<span class="pl-s"><span class="pl-pds">"</span>Error executing print job {} {}<span class="pl-cce">\n</span>{}<span class="pl-pds">"</span></span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="177" id="diff-9ff01825819289105eb9e459239d405aL177"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="179" id="diff-9ff01825819289105eb9e459239d405aR179"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">this</span><span class="pl-k">.</span>entry<span class="pl-k">.</span>getRequestData(), canceledText, <span class="pl-c1">this</span><span class="pl-k">.</span>entry<span class="pl-k">.</span>getReferenceId(), e);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="178" id="diff-9ff01825819289105eb9e459239d405aL178"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="180" id="diff-9ff01825819289105eb9e459239d405aR180"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">throw</span> e;</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="16">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="179-182" data-right-range="181-184" data-url="/mapfish/mapfish-print/blob_excerpt/b1ed4a3fa0b2bc3a5f7bd07ce3a09c1f91f3d865?diff=unified&amp;in_wiki_context=&amp;last_left=178&amp;last_right=180&amp;left=188&amp;left_hunk_size=6&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fservlet%2Fjob%2FPrintJob.java&amp;right=190&amp;right_hunk_size=54" href="#diff-9ff01825819289105eb9e459239d405a" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -188,6 +190,54 @@ public final PrintJobResult call() throws Exception {</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="188" id="diff-9ff01825819289105eb9e459239d405aL188"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="190" id="diff-9ff01825819289105eb9e459239d405aR190"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="189" id="diff-9ff01825819289105eb9e459239d405aL189"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="191" id="diff-9ff01825819289105eb9e459239d405aR191"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="190" id="diff-9ff01825819289105eb9e459239d405aL190"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="192" id="diff-9ff01825819289105eb9e459239d405aR192"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="193" id="diff-9ff01825819289105eb9e459239d405aR193"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">void</span> <span class="pl-en">maybeSendError</span>(<span class="pl-k">final</span> <span class="pl-smi">Configuration</span> <span class="pl-v">configuration</span>, <span class="pl-k">final</span> <span class="pl-smi">Exception</span> <span class="pl-v">e</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="194" id="diff-9ff01825819289105eb9e459239d405aR194"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">PJsonObject</span> requestData <span class="pl-k">=</span> entry<span class="pl-k">.</span>getRequestData();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="195" id="diff-9ff01825819289105eb9e459239d405aR195"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">SmtpConfig</span> smtp <span class="pl-k">=</span> configuration<span class="pl-k">.</span>getSmtp();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="196" id="diff-9ff01825819289105eb9e459239d405aR196"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">PJsonObject</span> requestSmtp <span class="pl-k">=</span> requestData<span class="pl-k">.</span>optJSONObject(<span class="pl-s"><span class="pl-pds">"</span>smtp<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="197" id="diff-9ff01825819289105eb9e459239d405aR197"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">if</span> (smtp <span class="pl-k">==</span> <span class="pl-c1">null</span> <span class="pl-k">||</span> requestSmtp <span class="pl-k">==</span> <span class="pl-c1">null</span>) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="198" id="diff-9ff01825819289105eb9e459239d405aR198"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span>;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="199" id="diff-9ff01825819289105eb9e459239d405aR199"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="200" id="diff-9ff01825819289105eb9e459239d405aR200"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">try</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="201" id="diff-9ff01825819289105eb9e459239d405aR201"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">            sendErrorEmail(smtp, requestSmtp, e);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="202" id="diff-9ff01825819289105eb9e459239d405aR202"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        } <span class="pl-k">catch</span> (<span class="pl-smi">MessagingException</span> sendException) {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="203" id="diff-9ff01825819289105eb9e459239d405aR203"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">LOGGER</span><span class="pl-k">.</span>warn(<span class="pl-s"><span class="pl-pds">"</span>Error sending error email<span class="pl-pds">"</span></span>, sendException);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="204" id="diff-9ff01825819289105eb9e459239d405aR204"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="205" id="diff-9ff01825819289105eb9e459239d405aR205"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="206" id="diff-9ff01825819289105eb9e459239d405aR206"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="207" id="diff-9ff01825819289105eb9e459239d405aR207"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">void</span> <span class="pl-en">sendErrorEmail</span>(</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="208" id="diff-9ff01825819289105eb9e459239d405aR208"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">SmtpConfig</span> <span class="pl-v">config</span>, <span class="pl-k">final</span> <span class="pl-smi">PJsonObject</span> <span class="pl-v">request</span>, <span class="pl-k">final</span> <span class="pl-smi">Exception</span> <span class="pl-v">e</span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="209" id="diff-9ff01825819289105eb9e459239d405aR209"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">throws</span> <span class="pl-smi">MessagingException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="210" id="diff-9ff01825819289105eb9e459239d405aR210"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">String</span> to <span class="pl-k">=</span> request<span class="pl-k">.</span>getString(<span class="pl-s"><span class="pl-pds">"</span>to<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="211" id="diff-9ff01825819289105eb9e459239d405aR211"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-k">InternetAddress</span>[] recipients <span class="pl-k">=</span> <span class="pl-smi">InternetAddress</span><span class="pl-k">.</span>parse(to);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="212" id="diff-9ff01825819289105eb9e459239d405aR212"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">Message</span> message <span class="pl-k">=</span> createMessage(config, recipients);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="213" id="diff-9ff01825819289105eb9e459239d405aR213"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        message<span class="pl-k">.</span>setSubject(request<span class="pl-k">.</span>optString(<span class="pl-s"><span class="pl-pds">"</span>errorSubject<span class="pl-pds">"</span></span>, config<span class="pl-k">.</span>getErrorSubject()));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="214" id="diff-9ff01825819289105eb9e459239d405aR214"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="215" id="diff-9ff01825819289105eb9e459239d405aR215"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">String</span> msg <span class="pl-k">=</span> request<span class="pl-k">.</span>optString(<span class="pl-s"><span class="pl-pds">"</span>errorBody<span class="pl-pds">"</span></span>, config<span class="pl-k">.</span>getErrorBody())<span class="pl-c1">.</span></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="216" id="diff-9ff01825819289105eb9e459239d405aR216"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">                replace(<span class="pl-s"><span class="pl-pds">"</span>{message}<span class="pl-pds">"</span></span>, <span class="pl-smi">ExceptionUtils</span><span class="pl-k">.</span>getRootCause(e)<span class="pl-k">.</span>toString());</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="217" id="diff-9ff01825819289105eb9e459239d405aR217"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">MimeBodyPart</span> html <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">MimeBodyPart</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="218" id="diff-9ff01825819289105eb9e459239d405aR218"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        html<span class="pl-k">.</span>setContent(msg, <span class="pl-s"><span class="pl-pds">"</span>text/html; charset=utf-8<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="219" id="diff-9ff01825819289105eb9e459239d405aR219"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="220" id="diff-9ff01825819289105eb9e459239d405aR220"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">Multipart</span> multipart <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">MimeMultipart</span>();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="221" id="diff-9ff01825819289105eb9e459239d405aR221"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        multipart<span class="pl-k">.</span>addBodyPart(html);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="222" id="diff-9ff01825819289105eb9e459239d405aR222"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="223" id="diff-9ff01825819289105eb9e459239d405aR223"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        message<span class="pl-k">.</span>setContent(multipart);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="224" id="diff-9ff01825819289105eb9e459239d405aR224"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="225" id="diff-9ff01825819289105eb9e459239d405aR225"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-c1">LOGGER</span><span class="pl-k">.</span>info(<span class="pl-s"><span class="pl-pds">"</span>Emailing error to {}<span class="pl-pds">"</span></span>, to);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="226" id="diff-9ff01825819289105eb9e459239d405aR226"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">Timer</span><span class="pl-k">.</span><span class="pl-smi">Context</span> timer <span class="pl-k">=</span> <span class="pl-c1">this</span><span class="pl-k">.</span>metricRegistry<span class="pl-k">.</span>timer(getClass()<span class="pl-k">.</span>getName() <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>.email.success<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>time();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="227" id="diff-9ff01825819289105eb9e459239d405aR227"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">Transport</span><span class="pl-k">.</span>send(message);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="228" id="diff-9ff01825819289105eb9e459239d405aR228"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        timer<span class="pl-k">.</span>stop();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="229" id="diff-9ff01825819289105eb9e459239d405aR229"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="230" id="diff-9ff01825819289105eb9e459239d405aR230"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="231" id="diff-9ff01825819289105eb9e459239d405aR231"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-smi">Message</span> <span class="pl-en">createMessage</span>(<span class="pl-k">final</span> <span class="pl-smi">SmtpConfig</span> <span class="pl-v">config</span>, <span class="pl-k">final</span> <span class="pl-k">InternetAddress</span>[] <span class="pl-v">recipients</span>)</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="232" id="diff-9ff01825819289105eb9e459239d405aR232"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">throws</span> <span class="pl-smi">MessagingException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="233" id="diff-9ff01825819289105eb9e459239d405aR233"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">Session</span> session <span class="pl-k">=</span> createEmailSession(config);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="234" id="diff-9ff01825819289105eb9e459239d405aR234"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">Message</span> message <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">MimeMessage</span>(session);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="235" id="diff-9ff01825819289105eb9e459239d405aR235"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        message<span class="pl-k">.</span>setFrom(<span class="pl-k">new</span> <span class="pl-smi">InternetAddress</span>(config<span class="pl-k">.</span>getFromAddress()));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="236" id="diff-9ff01825819289105eb9e459239d405aR236"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">        message<span class="pl-k">.</span>setRecipients(</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="237" id="diff-9ff01825819289105eb9e459239d405aR237"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">Message</span><span class="pl-k">.</span><span class="pl-smi">RecipientType</span><span class="pl-c1"><span class="pl-k">.</span>TO</span>, recipients);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="238" id="diff-9ff01825819289105eb9e459239d405aR238"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">return</span> message;</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="239" id="diff-9ff01825819289105eb9e459239d405aR239"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner">    }</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="240" id="diff-9ff01825819289105eb9e459239d405aR240"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="191" id="diff-9ff01825819289105eb9e459239d405aL191"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="241" id="diff-9ff01825819289105eb9e459239d405aR241"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">private</span> <span class="pl-k">boolean</span> <span class="pl-en">maybeSendResult</span>(</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="192" id="diff-9ff01825819289105eb9e459239d405aL192"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="242" id="diff-9ff01825819289105eb9e459239d405aR242"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">Configuration</span> <span class="pl-v">configuration</span>, <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-v">fileName</span>, <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-v">fileExtension</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="193" id="diff-9ff01825819289105eb9e459239d405aL193"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="243" id="diff-9ff01825819289105eb9e459239d405aR243"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-v">mimeType</span>, <span class="pl-k">final</span> <span class="pl-smi">ExecutionStats</span> <span class="pl-v">stats</span>)</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="71">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand All" class="js-expand directional-expander single-expander" data-left-range="194-199" data-right-range="244-249" data-url="/mapfish/mapfish-print/blob_excerpt/b1ed4a3fa0b2bc3a5f7bd07ce3a09c1f91f3d865?diff=unified&amp;in_wiki_context=&amp;last_left=193&amp;last_right=243&amp;left=207&amp;left_hunk_size=13&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fservlet%2Fjob%2FPrintJob.java&amp;right=257&amp;right_hunk_size=9" href="#diff-9ff01825819289105eb9e459239d405a" title="Expand All">
+<svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -207,13 +257,9 @@ private void sendEmail(</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="207" id="diff-9ff01825819289105eb9e459239d405aL207"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="257" id="diff-9ff01825819289105eb9e459239d405aR257"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">SmtpConfig</span> <span class="pl-v">config</span>, <span class="pl-k">final</span> <span class="pl-smi">PJsonObject</span> <span class="pl-v">request</span>, <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-v">fileName</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="208" id="diff-9ff01825819289105eb9e459239d405aL208"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="258" id="diff-9ff01825819289105eb9e459239d405aR258"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-v">fileExtension</span>, <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-v">mimeType</span>,</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="209" id="diff-9ff01825819289105eb9e459239d405aL209"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="259" id="diff-9ff01825819289105eb9e459239d405aR259"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">ExecutionStats</span> <span class="pl-v">stats</span>) <span class="pl-k">throws</span> <span class="pl-smi">MessagingException</span>, <span class="pl-smi">IOException</span> {</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="210" id="diff-9ff01825819289105eb9e459239d405aL210"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">Session</span> session <span class="pl-k">=</span> createEmailSession(config);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="211" id="diff-9ff01825819289105eb9e459239d405aL211"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">Message</span> message <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">MimeMessage</span>(session);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="212" id="diff-9ff01825819289105eb9e459239d405aL212"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        message<span class="pl-k">.</span>setFrom(<span class="pl-k">new</span> <span class="pl-smi">InternetAddress</span>(config<span class="pl-k">.</span>getFromAddress()));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="213" id="diff-9ff01825819289105eb9e459239d405aL213"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="260" id="diff-9ff01825819289105eb9e459239d405aR260"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">String</span> to <span class="pl-k">=</span> request<span class="pl-k">.</span>getString(<span class="pl-s"><span class="pl-pds">"</span>to<span class="pl-pds">"</span></span>);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="214" id="diff-9ff01825819289105eb9e459239d405aL214"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="261" id="diff-9ff01825819289105eb9e459239d405aR261"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-k">InternetAddress</span>[] recipients <span class="pl-k">=</span> <span class="pl-smi">InternetAddress</span><span class="pl-k">.</span>parse(to);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="215" id="diff-9ff01825819289105eb9e459239d405aL215"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner">        message<span class="pl-k">.</span>setRecipients(</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="216" id="diff-9ff01825819289105eb9e459239d405aL216"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">Message</span><span class="pl-k">.</span><span class="pl-smi">RecipientType</span><span class="pl-c1"><span class="pl-k">.</span>TO</span>, recipients);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="262" id="diff-9ff01825819289105eb9e459239d405aR262"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-k">final</span> <span class="pl-smi">Message</span> message <span class="pl-k">=</span> createMessage(config, recipients);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="217" id="diff-9ff01825819289105eb9e459239d405aL217"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="263" id="diff-9ff01825819289105eb9e459239d405aR263"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        message<span class="pl-k">.</span>setSubject(request<span class="pl-k">.</span>optString(<span class="pl-s"><span class="pl-pds">"</span>subject<span class="pl-pds">"</span></span>, config<span class="pl-k">.</span>getSubject()));</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="218" id="diff-9ff01825819289105eb9e459239d405aL218"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="264" id="diff-9ff01825819289105eb9e459239d405aR264"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="219" id="diff-9ff01825819289105eb9e459239d405aL219"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="265" id="diff-9ff01825819289105eb9e459239d405aR265"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">String</span> msg <span class="pl-k">=</span> request<span class="pl-k">.</span>optString(<span class="pl-s"><span class="pl-pds">"</span>body<span class="pl-pds">"</span></span>, config<span class="pl-k">.</span>getBody());</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="86">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander" data-left-range="220-229" data-right-range="266-275" data-url="/mapfish/mapfish-print/blob_excerpt/b1ed4a3fa0b2bc3a5f7bd07ce3a09c1f91f3d865?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=219&amp;last_right=265&amp;left=241&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fservlet%2Fjob%2FPrintJob.java&amp;right=287&amp;right_hunk_size=7" href="#diff-9ff01825819289105eb9e459239d405a" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+<a aria-label="Expand Up" class="js-expand directional-expander" data-left-range="230-240" data-right-range="276-286" data-url="/mapfish/mapfish-print/blob_excerpt/b1ed4a3fa0b2bc3a5f7bd07ce3a09c1f91f3d865?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=219&amp;last_right=265&amp;left=241&amp;left_hunk_size=7&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fservlet%2Fjob%2FPrintJob.java&amp;right=287&amp;right_hunk_size=7" href="#diff-9ff01825819289105eb9e459239d405a" title="Expand Up">
+<svg aria-hidden="true" class="octicon octicon-fold-up" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2">@@ -241,7 +287,7 @@ private void sendEmail(</td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="241" id="diff-9ff01825819289105eb9e459239d405aL241"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="287" id="diff-9ff01825819289105eb9e459239d405aR287"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        message<span class="pl-k">.</span>setContent(multipart);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="242" id="diff-9ff01825819289105eb9e459239d405aL242"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="288" id="diff-9ff01825819289105eb9e459239d405aR288"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"><br/></span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="243" id="diff-9ff01825819289105eb9e459239d405aL243"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="289" id="diff-9ff01825819289105eb9e459239d405aR289"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-c1">LOGGER</span><span class="pl-k">.</span>info(<span class="pl-s"><span class="pl-pds">"</span>Emailing result to {}<span class="pl-pds">"</span></span>, to);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="244" id="diff-9ff01825819289105eb9e459239d405aL244"></td>
+<td class="blob-num blob-num-deletion empty-cell"></td>
+<td class="blob-code blob-code-deletion blob-code-marker-cell" data-code-marker="-">
+</td>
+<td class="blob-code blob-code-deletion">
+<span class="blob-code-inner"> <span class="pl-smi">Timer</span><span class="pl-k">.</span><span class="pl-smi">Context</span> timer <span class="pl-k">=</span> <span class="pl-c1">this</span><span class="pl-k">.</span>metricRegistry<span class="pl-k">.</span>timer(getClass()<span class="pl-k">.</span>getName() <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>.email<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>time();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-addition empty-cell"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="290" id="diff-9ff01825819289105eb9e459239d405aR290"></td>
+<td class="blob-code blob-code-addition blob-code-marker-cell" data-code-marker="+">
+</td>
+<td class="blob-code blob-code-addition">
+<span class="blob-code-inner"> <span class="pl-smi">Timer</span><span class="pl-k">.</span><span class="pl-smi">Context</span> timer <span class="pl-k">=</span> <span class="pl-c1">this</span><span class="pl-k">.</span>metricRegistry<span class="pl-k">.</span>timer(getClass()<span class="pl-k">.</span>getName() <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>.email<span class="x x-first x-last">.error</span><span class="pl-pds">"</span></span>)<span class="pl-k">.</span>time();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="245" id="diff-9ff01825819289105eb9e459239d405aL245"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="291" id="diff-9ff01825819289105eb9e459239d405aR291"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner"> <span class="pl-smi">Transport</span><span class="pl-k">.</span>send(message);</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="246" id="diff-9ff01825819289105eb9e459239d405aL246"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="292" id="diff-9ff01825819289105eb9e459239d405aR292"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        timer<span class="pl-k">.</span>stop();</span></td>
+</tr>
+<tr>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="247" id="diff-9ff01825819289105eb9e459239d405aL247"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="293" id="diff-9ff01825819289105eb9e459239d405aR293"></td>
+<td class="blob-code blob-code-context blob-code-marker-cell" data-code-marker=" ">
+</td>
+<td class="blob-code blob-code-context">
+<span class="blob-code-inner">        stats<span class="pl-k">.</span>addEmailStats(recipients, config<span class="pl-k">.</span>getStorage() <span class="pl-k">!=</span> <span class="pl-c1">null</span>);</span></td>
+</tr>
+<tr class="js-expandable-line" data-position="">
+<td class="blob-num blob-num-expandable" colspan="2">
+<a aria-label="Expand Down" class="js-expand directional-expander single-expander" data-left-range="248-397" data-right-range="294-397" data-url="/mapfish/mapfish-print/blob_excerpt/b1ed4a3fa0b2bc3a5f7bd07ce3a09c1f91f3d865?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=247&amp;last_right=293&amp;left=398&amp;left_hunk_size=&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Forg%2Fmapfish%2Fprint%2Fservlet%2Fjob%2FPrintJob.java&amp;right=398&amp;right_hunk_size=" href="#diff-9ff01825819289105eb9e459239d405a" title="Expand Down">
+<svg aria-hidden="true" class="octicon octicon-fold-down" height="16" version="1.1" viewbox="0 0 14 16" width="14"><path d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z" fill-rule="evenodd"></path></svg>
+</a>
+</td>
+<td class="blob-code blob-code-inner blob-code-hunk" colspan="2"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="3" id="diff-9ff01825819289105eb9e459239d405aL3"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="3" id="diff-9ff01825819289105eb9e459239d405aR3"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-9ff01825819289105eb9e459239d405aL4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="4" id="diff-9ff01825819289105eb9e459239d405aR4"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-9ff01825819289105eb9e459239d405aL5"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="5" id="diff-9ff01825819289105eb9e459239d405aR5"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="6" id="diff-9ff01825819289105eb9e459239d405aR6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="6" id="diff-9ff01825819289105eb9e459239d405aL6"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-9ff01825819289105eb9e459239d405aR7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="7" id="diff-9ff01825819289105eb9e459239d405aL7"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-9ff01825819289105eb9e459239d405aR8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="8" id="diff-9ff01825819289105eb9e459239d405aL8"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="9" id="diff-9ff01825819289105eb9e459239d405aR9"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="173" id="diff-9ff01825819289105eb9e459239d405aL173"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="174" id="diff-9ff01825819289105eb9e459239d405aR174"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="174" id="diff-9ff01825819289105eb9e459239d405aL174"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="175" id="diff-9ff01825819289105eb9e459239d405aR175"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="175" id="diff-9ff01825819289105eb9e459239d405aL175"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="176" id="diff-9ff01825819289105eb9e459239d405aR176"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="177" id="diff-9ff01825819289105eb9e459239d405aR177"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="176" id="diff-9ff01825819289105eb9e459239d405aL176"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="178" id="diff-9ff01825819289105eb9e459239d405aR178"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="177" id="diff-9ff01825819289105eb9e459239d405aL177"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="179" id="diff-9ff01825819289105eb9e459239d405aR179"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="178" id="diff-9ff01825819289105eb9e459239d405aL178"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="180" id="diff-9ff01825819289105eb9e459239d405aR180"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="188" id="diff-9ff01825819289105eb9e459239d405aL188"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="190" id="diff-9ff01825819289105eb9e459239d405aR190"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="189" id="diff-9ff01825819289105eb9e459239d405aL189"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="191" id="diff-9ff01825819289105eb9e459239d405aR191"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="190" id="diff-9ff01825819289105eb9e459239d405aL190"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="192" id="diff-9ff01825819289105eb9e459239d405aR192"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="193" id="diff-9ff01825819289105eb9e459239d405aR193"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="194" id="diff-9ff01825819289105eb9e459239d405aR194"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="195" id="diff-9ff01825819289105eb9e459239d405aR195"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="196" id="diff-9ff01825819289105eb9e459239d405aR196"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="197" id="diff-9ff01825819289105eb9e459239d405aR197"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="198" id="diff-9ff01825819289105eb9e459239d405aR198"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="199" id="diff-9ff01825819289105eb9e459239d405aR199"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="200" id="diff-9ff01825819289105eb9e459239d405aR200"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="201" id="diff-9ff01825819289105eb9e459239d405aR201"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="202" id="diff-9ff01825819289105eb9e459239d405aR202"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="203" id="diff-9ff01825819289105eb9e459239d405aR203"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="204" id="diff-9ff01825819289105eb9e459239d405aR204"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="205" id="diff-9ff01825819289105eb9e459239d405aR205"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="206" id="diff-9ff01825819289105eb9e459239d405aR206"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="207" id="diff-9ff01825819289105eb9e459239d405aR207"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="208" id="diff-9ff01825819289105eb9e459239d405aR208"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="209" id="diff-9ff01825819289105eb9e459239d405aR209"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="210" id="diff-9ff01825819289105eb9e459239d405aR210"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="211" id="diff-9ff01825819289105eb9e459239d405aR211"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="212" id="diff-9ff01825819289105eb9e459239d405aR212"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="213" id="diff-9ff01825819289105eb9e459239d405aR213"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="214" id="diff-9ff01825819289105eb9e459239d405aR214"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="215" id="diff-9ff01825819289105eb9e459239d405aR215"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="216" id="diff-9ff01825819289105eb9e459239d405aR216"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="217" id="diff-9ff01825819289105eb9e459239d405aR217"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="218" id="diff-9ff01825819289105eb9e459239d405aR218"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="219" id="diff-9ff01825819289105eb9e459239d405aR219"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="220" id="diff-9ff01825819289105eb9e459239d405aR220"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="221" id="diff-9ff01825819289105eb9e459239d405aR221"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="222" id="diff-9ff01825819289105eb9e459239d405aR222"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="223" id="diff-9ff01825819289105eb9e459239d405aR223"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="224" id="diff-9ff01825819289105eb9e459239d405aR224"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="225" id="diff-9ff01825819289105eb9e459239d405aR225"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="226" id="diff-9ff01825819289105eb9e459239d405aR226"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="227" id="diff-9ff01825819289105eb9e459239d405aR227"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="228" id="diff-9ff01825819289105eb9e459239d405aR228"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="229" id="diff-9ff01825819289105eb9e459239d405aR229"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="230" id="diff-9ff01825819289105eb9e459239d405aR230"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="231" id="diff-9ff01825819289105eb9e459239d405aR231"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="232" id="diff-9ff01825819289105eb9e459239d405aR232"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="233" id="diff-9ff01825819289105eb9e459239d405aR233"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="234" id="diff-9ff01825819289105eb9e459239d405aR234"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="235" id="diff-9ff01825819289105eb9e459239d405aR235"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="236" id="diff-9ff01825819289105eb9e459239d405aR236"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="237" id="diff-9ff01825819289105eb9e459239d405aR237"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="238" id="diff-9ff01825819289105eb9e459239d405aR238"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="239" id="diff-9ff01825819289105eb9e459239d405aR239"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="240" id="diff-9ff01825819289105eb9e459239d405aR240"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="191" id="diff-9ff01825819289105eb9e459239d405aL191"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="241" id="diff-9ff01825819289105eb9e459239d405aR241"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="192" id="diff-9ff01825819289105eb9e459239d405aL192"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="242" id="diff-9ff01825819289105eb9e459239d405aR242"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="193" id="diff-9ff01825819289105eb9e459239d405aL193"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="243" id="diff-9ff01825819289105eb9e459239d405aR243"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="207" id="diff-9ff01825819289105eb9e459239d405aL207"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="257" id="diff-9ff01825819289105eb9e459239d405aR257"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="208" id="diff-9ff01825819289105eb9e459239d405aL208"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="258" id="diff-9ff01825819289105eb9e459239d405aR258"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="209" id="diff-9ff01825819289105eb9e459239d405aL209"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="259" id="diff-9ff01825819289105eb9e459239d405aR259"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="210" id="diff-9ff01825819289105eb9e459239d405aL210"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="211" id="diff-9ff01825819289105eb9e459239d405aL211"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="212" id="diff-9ff01825819289105eb9e459239d405aL212"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="213" id="diff-9ff01825819289105eb9e459239d405aL213"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="260" id="diff-9ff01825819289105eb9e459239d405aR260"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="214" id="diff-9ff01825819289105eb9e459239d405aL214"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="261" id="diff-9ff01825819289105eb9e459239d405aR261"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="215" id="diff-9ff01825819289105eb9e459239d405aL215"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="216" id="diff-9ff01825819289105eb9e459239d405aL216"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="262" id="diff-9ff01825819289105eb9e459239d405aR262"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="217" id="diff-9ff01825819289105eb9e459239d405aL217"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="263" id="diff-9ff01825819289105eb9e459239d405aR263"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="218" id="diff-9ff01825819289105eb9e459239d405aL218"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="264" id="diff-9ff01825819289105eb9e459239d405aR264"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="219" id="diff-9ff01825819289105eb9e459239d405aL219"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="265" id="diff-9ff01825819289105eb9e459239d405aR265"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="241" id="diff-9ff01825819289105eb9e459239d405aL241"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="287" id="diff-9ff01825819289105eb9e459239d405aR287"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="242" id="diff-9ff01825819289105eb9e459239d405aL242"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="288" id="diff-9ff01825819289105eb9e459239d405aR288"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="243" id="diff-9ff01825819289105eb9e459239d405aL243"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="289" id="diff-9ff01825819289105eb9e459239d405aR289"></td>
+<td class="blob-num blob-num-deletion js-linkable-line-number" data-line-number="244" id="diff-9ff01825819289105eb9e459239d405aL244"></td>
+<td class="blob-num blob-num-addition js-linkable-line-number" data-line-number="290" id="diff-9ff01825819289105eb9e459239d405aR290"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="245" id="diff-9ff01825819289105eb9e459239d405aL245"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="291" id="diff-9ff01825819289105eb9e459239d405aR291"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="246" id="diff-9ff01825819289105eb9e459239d405aL246"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="292" id="diff-9ff01825819289105eb9e459239d405aR292"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="247" id="diff-9ff01825819289105eb9e459239d405aL247"></td>
+<td class="blob-num blob-num-context js-linkable-line-number" data-line-number="293" id="diff-9ff01825819289105eb9e459239d405aR293"></td>
+<div class="file js-file js-details-container Details Details--on open show-inline-notes " id="diff-2">
+<div class="file-header file-header--expandable js-file-header " data-anchor="diff-eb672b1ddd3aa7dae5f2577f38daa271" data-file-deleted="true" data-file-type=".yaml" data-path="docker-compose.yaml" data-short-path="eb672b1">
+<div class="file-actions">
+<span class="show-file-notes pt-1">
+<label>
+<input checked="checked" class="js-toggle-file-notes" type="checkbox"/>
+            Show comments
+          </label>
+</span>
+<div class="BtnGroup">
+<clipboard-copy class="btn btn-sm BtnGroup-item" value="docker-compose.yaml">
+                Copy path
+              </clipboard-copy>
+<a class="btn btn-sm BtnGroup-item" href="/mapfish/mapfish-print/blob/bcab5cb1e923e355993dca8cbc8c43f0ce739634/docker-compose.yaml" rel="nofollow">
+              View file
+            </a>
+</div>
+<button aria-expanded="true" aria-label="Toggle diff contents" class="btn-octicon p-1 pr-2 js-details-target tooltipped tooltipped-w" type="button">
+<svg aria-hidden="true" class="octicon octicon-chevron-down Details-content--hidden" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z" fill-rule="evenodd"></path></svg>
+<svg aria-hidden="true" class="octicon octicon-chevron-up Details-content--shown" height="16" version="1.1" viewbox="0 0 10 16" width="10"><path d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5 5 5z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="file-info">
+<span aria-label="Empty file removed" class="diffstat tooltipped tooltipped-e">
+          0
+            <span class="text-red">
+<span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span>
+</span>
+</span>
+<a class="link-gray-dark" href="#diff-eb672b1ddd3aa7dae5f2577f38daa271" title="docker-compose.yaml">docker-compose.yaml</a>
+</div>
+</div>
+<div class="js-file-content Details-content--hidden">
+<div class="data highlight empty">
+            No changes.
+        </div>
+</div>
+</div>
+<clippath id="diff-placeholder">
+<rect height="11.9298746" rx="2" width="67.0175439" x="0" y="0"></rect>
+<rect height="11.9298746" rx="2" width="100.701754" x="18.9473684" y="47.7194983"></rect>
+<rect height="11.9298746" rx="2" width="37.8947368" x="0" y="71.930126"></rect>
+<rect height="11.9298746" rx="2" width="53.3333333" x="127.017544" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="72.9824561" x="187.719298" y="48.0703769"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="76.8421053" y="0"></rect>
+<rect height="11.9298746" rx="2" width="140.350877" x="17.8947368" y="23.8597491"></rect>
+<rect height="11.9298746" rx="2" width="173.684211" x="166.315789" y="23.8597491"></rect>
+</clippath>
+<lineargradient id="animated-diff-gradient" spreadmethod="reflect" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#eee"></stop>
+<stop offset="0.2" stop-color="#eee"></stop>
+<stop offset="0.5" stop-color="#ddd"></stop>
+<stop offset="0.8" stop-color="#eee"></stop>
+<stop offset="1" stop-color="#eee"></stop>
+<animatetransform attributename="y1" dur="1s" repeatcount="3" values="0%; 100%; 0"></animatetransform>
+<animatetransform attributename="y2" dur="1s" repeatcount="3" values="100%; 200%; 0"></animatetransform>
+</lineargradient>
